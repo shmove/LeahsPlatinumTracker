@@ -1,4 +1,4 @@
-﻿namespace Leah_s_Platinum_Tracker
+﻿namespace LeahsPlatinumTracker
 {
     partial class Form1
     {

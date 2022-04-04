@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Leah_s_Platinum_Tracker
+namespace LeahsPlatinumTracker
 {
     public partial class TrackerMain : Form
     {

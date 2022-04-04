@@ -4,8 +4,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leah_s_Platinum_Tracker
+namespace LeahsPlatinumTracker
 {
+    internal class VisualMapSector
+    {
+        public string VisualMapID { get; set; }
+        public List<MapSector> MapSectors { get; set; }
+        public bool IsUnlocked
+        {
+            get
+            {
+                foreach (MapSector sector in MapSectors)
+                {
+                    if (sector.IsUnlocked) return true;
+                }
+                return false;
+            }
+        }
+        public bool IsCompleted
+        {
+            get
+            {
+                foreach(MapSector sector in MapSectors)
+                {
+                    // if the area is unlocked and a warp is unchecked, the area is not finished
+                    if (sector.IsUnlocked)
+                    {
+                        foreach(Warp warp in sector.Warps)
+                        {
+                            if (warp.WarpID < 0) return false; 
+                        }
+                    }
+                }
+                return true;
+            }
+        }
+
+        public VisualMapSector(string _VisualMapID, List<MapSector>_MapSectors)
+        {
+            VisualMapID = _VisualMapID;
+            MapSectors = _MapSectors;
+        }
+
+        public VisualMapSector(MapSector _MapSector)
+        {
+            VisualMapID = _MapSector.MapID;
+            MapSectors = new List<MapSector>();
+            MapSectors.Add(_MapSector);
+        }
+    }
+
     internal class MapSector
     {
         public string MapID { get; set; }

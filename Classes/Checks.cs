@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leah_s_Platinum_Tracker
+namespace LeahsPlatinumTracker
 {
     internal class Checks
     {

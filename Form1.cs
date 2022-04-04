@@ -1,4 +1,4 @@
-namespace Leah_s_Platinum_Tracker
+namespace LeahsPlatinumTracker
 {
     public partial class Form1 : Form
     {
