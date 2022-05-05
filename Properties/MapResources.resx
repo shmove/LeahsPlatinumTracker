@@ -117,4 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Eterna2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Eterna2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Floaroma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Floaroma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Canalave2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Canalave2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FloaromaMeadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\FloaromaMeadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pokecentre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Pokecentre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sandgem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Sandgem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EternaForest1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\EternaForest1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeptStore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\DeptStore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eterna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Eterna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EternaForest2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\EternaForest2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BacklotMansion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\BacklotMansion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FightArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\FightArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Celestic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Celestic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Canalave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Canalave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GalacticHQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\GalacticHQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FuegoIronworks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\FuegoIronworks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

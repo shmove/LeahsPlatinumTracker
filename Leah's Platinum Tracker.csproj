@@ -10,18 +10,67 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
+    <Compile Update="Maps\BacklotMansion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Canalave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Celestic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\DeptStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Eterna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\EternaForest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\FightArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\FloaromaMeadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\GalacticHQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\FuegoIronworks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Floaroma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\MapResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
+      <DependentUpon>MapResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\MarkerResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MarkerResources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
+    <EmbeddedResource Update="Properties\MapResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>MapResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Properties\MarkerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MarkerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Maps\Images\" />
   </ItemGroup>
 
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeahsPlatinumTracker
 {
-    internal class VisualMapSector
+    public class VisualMapSector
     {
         public string VisualMapID { get; set; }
         public List<MapSector> MapSectors { get; set; }
@@ -25,42 +25,65 @@ namespace LeahsPlatinumTracker
         {
             get
             {
-                foreach(MapSector sector in MapSectors)
+                foreach (MapSector sector in MapSectors)
                 {
                     // if the area is unlocked and a warp is unchecked, the area is not finished
                     if (sector.IsUnlocked)
                     {
-                        foreach(Warp warp in sector.Warps)
+                        foreach (Warp warp in sector.Warps)
                         {
-                            if (warp.WarpID < 0) return false; 
+                            if (warp.Destination.WarpID < 0 && warp.VisualMarkers != 1) return false;  // if warp is unset or dead-end
                         }
                     }
                 }
                 return true;
             }
         }
+        public Tracker? Tracker { get; }
+        public string DisplayName { get; set; }
 
-        public VisualMapSector(string _VisualMapID, List<MapSector>_MapSectors)
+        // Constructors
+        public VisualMapSector(Tracker _Tracker, string _VisualMapID, List<MapSector>_MapSectors, string _DisplayName = "")
         {
+            Tracker = _Tracker;
             VisualMapID = _VisualMapID;
-            MapSectors = _MapSectors;
+            MapSectors = new List<MapSector>();
+            foreach (MapSector sector in _MapSectors)
+            {
+                sector.ParentVisualMapSector = this;
+                MapSectors.Add(sector);
+            }
+            if (_DisplayName != "") DisplayName = _DisplayName;
+            else DisplayName = VisualMapID;
         }
 
-        public VisualMapSector(MapSector _MapSector)
+        public VisualMapSector(Tracker _Tracker, MapSector _MapSector, string _DisplayName = "")
         {
+            Tracker = _Tracker;
             VisualMapID = _MapSector.MapID;
             MapSectors = new List<MapSector>();
+            _MapSector.ParentVisualMapSector = this;
             MapSectors.Add(_MapSector);
+            if (_DisplayName != "") DisplayName = _DisplayName;
+            else DisplayName = VisualMapID;
         }
     }
 
-    internal class MapSector
+    public class MapSector
     {
         public string MapID { get; set; }
         public List<Warp> Warps { get; set; }
         public List<Condition> Conditions { get; set; }
         public bool IsUnlocked { get; set; }
         public bool DefaultUnlocked { get; set; }
+        public VisualMapSector? ParentVisualMapSector { get; set; } // needs to be initialised on creation
+        public Tracker Tracker
+        {
+            get
+            {
+                return ParentVisualMapSector.Tracker;
+            }
+        }
 
         // Constructors
         public MapSector(string _MapID, int numberOfWarps, string AccessMap)
@@ -70,7 +93,7 @@ namespace LeahsPlatinumTracker
             Warps = new List<Warp>();
             for (int i = 0; i < numberOfWarps; i++)
             {
-                Warps.Add(new Warp(MapID, i));
+                Warps.Add(new Warp(MapID, i, this));
             }
         }
         public MapSector(string _MapID, int numberOfWarps, Condition _Condition)
@@ -80,7 +103,7 @@ namespace LeahsPlatinumTracker
             Warps = new List<Warp>();
             for (int i = 0; i < numberOfWarps; i++)
             {
-                Warps.Add(new Warp(MapID, i));
+                Warps.Add(new Warp(MapID, i, this));
             }
         }
 
@@ -91,35 +114,24 @@ namespace LeahsPlatinumTracker
             Warps = new List<Warp>();
             for (int i = 0; i < numberOfWarps; i++)
             {
-                Warps.Add(new Warp(MapID, i));
+                Warps.Add(new Warp(MapID, i, this));
             }
         }
 
-        public MapSector(string _MapID, int numberOfWarps, bool defaultUnlocked)
+        public MapSector(string _MapID, int numberOfWarps, bool defaultUnlocked = false)
         {
             MapID = _MapID;
             Conditions = new List<Condition>();
             Warps = new List<Warp>();
             for (int i = 0; i < numberOfWarps; i++)
             {
-                Warps.Add(new Warp(MapID, i));
+                Warps.Add(new Warp(MapID, i, this));
             }
 
             if (defaultUnlocked)
             {
                 IsUnlocked = true;
                 DefaultUnlocked = true;
-            }
-        }
-
-        public MapSector(string _MapID, int numberOfWarps)
-        {
-            MapID = _MapID;
-            Conditions = new List<Condition>();
-            Warps = new List<Warp>();
-            for (int i = 0; i < numberOfWarps; i++)
-            {
-                Warps.Add(new Warp(MapID, i));
             }
         }
 
@@ -280,7 +292,7 @@ namespace LeahsPlatinumTracker
 
     }
 
-    internal class Condition
+    public class Condition
     {
         public string AccessMap { get; set; }
         public Checks RequiredChecks { get; set; }
@@ -321,27 +333,103 @@ namespace LeahsPlatinumTracker
         }
     }
 
-    internal class Warp
+    public class Warp
     {
         public string MapID { get; set; }
         public int WarpID { get; set; }
         public (string MapID, int WarpID) Destination { get; set; }
+        public int VisualMarkers { get; set; }
 
-        public Warp(string _MapID, int _WarpID)
+        /*
+        public enum Markers
+        {
+            None = 0,
+            DeadEnd = 1,
+            Arrow = 2,
+            Bike = 4,
+            Trainer = 8,
+            Badge1 = 16,
+            Badge2 = 32,
+            Badge3 = 64,
+            Badge4 = 128,
+            Badge5 = 256,
+            Badge6 = 512,
+            Badge7 = 1024,
+            Badge8 = 2048,
+            EliteFour1 = 4096,
+            EliteFour2 = 8192,
+            EliteFour3 = 16384,
+            EliteFour4 = 32768,
+            Champion = 65536,
+            RockSmash = 131072,
+            Cut = 262144,
+            Strength = 524288,
+            Surf = 1048576,
+            Waterfall = 2097152,
+            RockClimb = 4194304
+        }
+        */
+
+        public Warp(string _MapID, int _WarpID, MapSector _Parent)
         {
             MapID = _MapID;
             WarpID = _WarpID;
+            ParentMapSector = _Parent;
             Destination = ("Not set", -1);
+            VisualMarkers = 0;
         }
 
         public void Set(string _MapID, int _WarpID)
         {
             Destination = (_MapID, _WarpID);
+            VisualMarkers = 0;
         }
 
         public void Clear()
         {
             Destination = ("Not set", -1);
+            VisualMarkers = 0;
+        }
+
+        // References
+        public Tracker Tracker
+        {
+            get
+            {
+                return ParentMapSector.Tracker;
+            }
+        }
+
+        public MapSector ParentMapSector { get; }
+
+        public MapSector DestinationMapSector
+        {
+            get
+            {
+                if (Destination.WarpID < 0)
+                {
+                    return null;
+                }
+                else
+                {
+                    return Tracker.GetMapSector(Destination.MapID);
+                }
+            }
+        }
+        
+        public VisualMapSector DestinationVisualMapSector
+        {
+            get
+            {
+                if (Destination.WarpID < 0)
+                {
+                    return null;
+                }
+                else
+                {
+                    return Tracker.GetVisualMapSector(Destination.MapID);
+                }
+            }
         }
     }
 }

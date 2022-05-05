@@ -240,5 +240,13 @@ namespace LeahsPlatinumTracker
             Player.UpdateMap();
         }
 
+        private void button16_Click(object sender, EventArgs e)
+        {
+            UITest form = new UITest
+            {
+                Player = Player
+            };
+            form.Show();
+        }
     }
 }

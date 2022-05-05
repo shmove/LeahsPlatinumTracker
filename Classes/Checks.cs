@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeahsPlatinumTracker
 {
-    internal class Checks
+    public class Checks
     {
 
         // https://stackoverflow.com/a/3261485/13460028

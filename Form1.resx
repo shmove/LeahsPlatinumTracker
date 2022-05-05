@@ -9335,16 +9335,4 @@
         ODNpOdhWFh6Z5ZnnMcrUbIm0mWWy5q3/rwC4v9Pnv/23/x9ePzxbzohL4AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>remaining things:
-
-VisualMaps that consist of 
-- a list of mapID's
-- have the ability to know whether
-they are locked or unlocked, and
-whether there's unchecked
-available warps
-- a set of coordinates assigned to
-each warp for ui</value>
-  </data>
 </root>
