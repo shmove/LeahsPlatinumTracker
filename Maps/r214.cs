@@ -27,6 +27,9 @@ namespace LeahsPlatinumTracker.Maps
             // create warp buttons
             // CreateWarpButton(this, Floaroma.Warps[0], new Point(0, 0));
 
+            CreateRouteConnectorButton(this, Player, "SendoffSpring", new Point(402, 480));
+            CreateRouteConnectorButton(this, Player, "ValorLake", new Point(290, 774));
+
             MapImages.SendToBack();
         }
 

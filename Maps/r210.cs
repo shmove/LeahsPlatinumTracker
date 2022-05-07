@@ -27,6 +27,10 @@ namespace LeahsPlatinumTracker.Maps
             // create warp buttons
             // CreateWarpButton(this, Floaroma.Warps[0], new Point(0, 0));
 
+            CreateRouteConnectorButton(this, Player, "Celestic", new Point(5, 189)); // extended route past psyduck up to celestic
+            CreateRouteConnectorButton(this, Player, "215", new Point(884, 537)); // route to the right
+            CreateRouteConnectorButton(this, Player, "Solaceon", new Point(695, 774)); // way down to solaceon
+
             MapImages.SendToBack();
         }
 

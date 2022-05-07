@@ -35,7 +35,8 @@ namespace LeahsPlatinumTracker.Maps
             CreateWarpButton(this, SandgemPokecentre.Warps[1], new Point(pictureBox2.Location.X + 58, pictureBox2.Location.Y + 139)); // centre entrance
             CreateWarpButton(this, SandgemPokecentre.Warps[2], new Point(pictureBox2.Location.X + 145, pictureBox2.Location.Y + 113)); // centre right stairs
 
-            CreateRouteConnectorButton(this, Player, "Jubilife", new Point(368, 12)); // Route upwards to Jubilife
+            CreateRouteConnectorButton(this, Player, "Jubilife", new Point(368, 5)); // Route upwards to Jubilife
+            CreateRouteConnectorButton(this, Player, "VerityLake", new Point(5, 160)); // leftmost route to lake verity
             CreateRouteConnectorButton(this, Player, "221", new Point(306, 374)); // Surf route downwards to 221
 
             MapImages.SendToBack();

@@ -9335,4 +9335,17 @@
         ODNpOdhWFh6Z5ZnnMcrUbIm0mWWy5q3/rwC4v9Pnv/23/x9ePzxbzohL4AAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>remaining things:
+
+(shaymin is character code 158 btw)
+
+- fill out all the maps with warps
+- put shaymin everywhere
+- more markers
+- checks on actual ui
+- fix issue with linking two marked warps on same map
+- fix issue with marked warps looking selected
+</value>
+  </data>
 </root>

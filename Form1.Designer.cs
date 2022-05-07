@@ -880,11 +880,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 440);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(292, 120);
+            this.label3.Size = new System.Drawing.Size(297, 150);
             this.label3.TabIndex = 91;
-            this.label3.Text = "remaining things:\r\n\r\n(shaymin is character code 158 btw)\r\n\r\n- fill out all the ma" +
-    "ps with warps and route connectors\r\n- put shaymin everywhere\r\n- more markers\r\n- " +
-    "checks on actual ui\r\n";
+            this.label3.Text = resources.GetString("label3.Text");
             // 
             // button2
             // 

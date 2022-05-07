@@ -580,7 +580,7 @@
             this.Poketch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Poketch.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Poketch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Poketch.Location = new System.Drawing.Point(351, 70);
+            this.Poketch.Location = new System.Drawing.Point(464, 70);
             this.Poketch.Name = "Poketch";
             this.Poketch.Size = new System.Drawing.Size(107, 23);
             this.Poketch.TabIndex = 93;
@@ -596,7 +596,7 @@
             this.PokeLeague.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PokeLeague.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PokeLeague.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.PokeLeague.Location = new System.Drawing.Point(464, 70);
+            this.PokeLeague.Location = new System.Drawing.Point(351, 70);
             this.PokeLeague.Name = "PokeLeague";
             this.PokeLeague.Size = new System.Drawing.Size(107, 23);
             this.PokeLeague.TabIndex = 94;

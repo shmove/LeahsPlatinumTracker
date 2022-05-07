@@ -27,6 +27,9 @@ namespace LeahsPlatinumTracker.Maps
             // create warp buttons
             // CreateWarpButton(this, Floaroma.Warps[0], new Point(0, 0));
 
+            CreateRouteConnectorButton(this, Player, "AcuityLake", new Point(42, 546)); // connected to acuity lakefront
+            CreateRouteConnectorButton(this, Player, "FightArea", new Point(69, 695)); // ferry to fight area
+
             MapImages.SendToBack();
         }
 

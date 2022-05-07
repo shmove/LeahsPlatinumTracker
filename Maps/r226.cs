@@ -27,6 +27,9 @@ namespace LeahsPlatinumTracker.Maps
             // create warp buttons
             // CreateWarpButton(this, Floaroma.Warps[0], new Point(0, 0));
 
+            CreateRouteConnectorButton(this, Player, "SurvivalArea", new Point(5, 283)); // path left to survival area
+            CreateRouteConnectorButton(this, Player, "227", new Point(702, 60)); // path top right to 227
+
             MapImages.SendToBack();
         }
 

@@ -27,6 +27,9 @@ namespace LeahsPlatinumTracker.Maps
             // create warp buttons
             // CreateWarpButton(this, Floaroma.Warps[0], new Point(0, 0));
 
+            CreateRouteConnectorButton(this, Player, "206", new Point(173, 5)); // way up to 206
+            CreateRouteConnectorButton(this, Player, "Oreburgh", new Point(110, 388)); // bike ramp down to Oreburgh
+
             MapImages.SendToBack();
         }
 
