@@ -148,7 +148,7 @@ namespace LeahsPlatinumTracker
         {
             foreach (MapsForm panel in mapPanels)
             {
-                if (panel.Name == MapName)
+                if (panel.Name == MapName || MapName.StartsWith("2") && panel.Name == ("r" + MapName))
                 {
                     activePanel.Hide();
                     activePanel = panel;

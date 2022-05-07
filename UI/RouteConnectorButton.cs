@@ -17,6 +17,7 @@ namespace LeahsPlatinumTracker
         {
             parent = form;
             Player = tracker;
+            if (sectorName.StartsWith("r2")) sectorName = sectorName.Substring(1);
             associatedVisualMapSector = Player.GetVisualMapSector(sectorName);
 
             FlatStyle = FlatStyle.Flat;

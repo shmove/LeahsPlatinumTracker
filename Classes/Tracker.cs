@@ -165,19 +165,14 @@ namespace LeahsPlatinumTracker
             {
                 new MapSector("228", 2, new List<Condition>
                 {
-                    new Condition("229"),
+                    new Condition("ResortArea"),
                     new Condition("228 SW"), // accessible by sliding down bike ramp
                     new Condition("228 C", new Checks(Checks.CheckFlags.HasBike)) // riding up bike ramp from cave
                 }),
                 new MapSector("228 SW", 1, new Condition("228", new Checks(Checks.CheckFlags.HasBike))), // southwesterly section
                 new MapSector("228 C", 1, new Condition("228")) // cave
             }));
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("229", 0, new List<Condition> {
-                new Condition("228"),
-                new Condition("ResortArea"),
-                new Condition("FightArea", new Checks(16)) // surf through 230 to fight area
-            })));
-            // 230 is surf corridor, treat 229 <-(surf)-> fight area
+            // 230/229 is surf/corridor, treat resort area <-(surf)-> fight area
 
             // Named Locations
             VisualMapSectors.Add(new VisualMapSector(this, "AcuityLake", new List<MapSector>
@@ -240,7 +235,7 @@ namespace LeahsPlatinumTracker
             {
                 new MapSector("FightArea", 5, new List<Condition>
                 {
-                    new Condition("229", new Checks(16)), // Accessible via 229 if Surf through 230
+                    new Condition("ResortArea", new Checks(16)), // Accessible via ResortArea/229 if Surf through 230
                     new Condition("Snowpoint", new Checks(Checks.ProgressFlags.HasCynthia)), // can get here from Snowpoint, but only postgame
                     new Condition("FightArea Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))
                 }),
@@ -334,12 +329,15 @@ namespace LeahsPlatinumTracker
                 new MapSector("MtCoronet 4F 1 A", 1, new Condition("MtCoronet 4F 1 C", new Checks(64))), // MtCoronet room with a waterfall - leftmost entrance, only connected via rock climb
                 new MapSector("MtCoronet 4F 1 B", 1, new Condition("MtCoronet 4F 1 D", new Checks(144))), // bottomright entrance, only connected via waterfall + surf
                 new MapSector("MtCoronet 4F 1 C", 1, new Condition("MtCoronet 4F 1 A", new Checks(64))), // topright entrance, only connected to bottomleft via rock climb
-                new MapSector("MtCoronet 4F 1 D", 1, new Condition("MtCoronet 4F 1 B", new Checks(144))), // top of waterfall, only connected to bottomright via waterfall+surf
-                new MapSector("MtCoronet Summit A", 1, new Condition("MtCoronet Summit B", new Checks(64))), // bottommost entrance, connects to middle sect via RC
-                new MapSector("MtCoronet Summit B", 2, new Condition("MtCoronet Summit A", new Checks(64))), // middle section, accessed from below via RC
-                new MapSector("MtCoronet Summit C", 2, new Condition("MtCoronet Summit D", new Checks(64))), // top right section, accessed from top via RC
-                new MapSector("MtCoronet Summit D", 1, new Condition("MtCoronet Summit C", new Checks(64))) // topmost section, access from topright via RC
+                new MapSector("MtCoronet 4F 1 D", 1, new Condition("MtCoronet 4F 1 B", new Checks(144))), // top of waterfall, only connected to bottomright via waterfall+surf 
             }, "Mt. Coronet"));
+            VisualMapSectors.Add(new VisualMapSector(this, "MtCoronetPeak", new List<MapSector>
+            {
+                new MapSector("MtCoronetPeak A", 1, new Condition("MtCoronetPeak B", new Checks(64))), // bottommost entrance, connects to middle sect via RC
+                new MapSector("MtCoronetPeak B", 2, new Condition("MtCoronetPeak A", new Checks(64))), // middle section, accessed from below via RC
+                new MapSector("MtCoronetPeak C", 2, new Condition("MtCoronetPeak D", new Checks(64))), // top right section, accessed from top via RC
+                new MapSector("MtCoronetPeak D", 1, new Condition("MtCoronetPeak C", new Checks(64))) // topmost section, access from topright via RC
+            }, "Mt. Coronet Peak"));
             VisualMapSectors.Add(new VisualMapSector(this, "OldChateau", new List<MapSector>
             {
                 new MapSector("OldChateau 1F", 5), // self contained
@@ -387,7 +385,8 @@ namespace LeahsPlatinumTracker
             {
                 new MapSector("ResortArea", 2, new List<Condition>
                 {
-                    new Condition("229"),
+                    new Condition("FightArea", new Checks(16)), // surf through 230 to fight area
+                    new Condition("228"),
                     new Condition("ResortArea Pokecentre")
                 }),
                 new MapSector("ResortArea Pokecentre", 3)

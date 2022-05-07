@@ -40,6 +40,151 @@
     <Compile Update="Maps\FuegoIronworks.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Maps\Hearthome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\IronIsland.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Jubilife.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\JubilifeGTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\JubilifeTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\AcuityLake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\MtCoronet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\MtCoronetPeak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\OldChateau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Oreburgh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\OreburghGate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Pastoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Poketch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\PokeLeague.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\ResortArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\SendoffSpring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Snowpoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Solaceon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\SolaceonRuins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\StarkMtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Sunyshore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\SurvivalArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r203.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r204.cs" />
+    <Compile Update="Maps\r205.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r206.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r207.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r208.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r209.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r210.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r211.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r212.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r213.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r214.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r215.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r216.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r217.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r221.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r222.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r225.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r226.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r227.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\r228.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\VictoryRoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\Veilstone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\ValleyWindworks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\TGEterna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\ValorLake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maps\VerityLake.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Maps\Template.cs">
       <SubType>Form</SubType>
     </Compile>
