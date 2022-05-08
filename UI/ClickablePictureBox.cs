@@ -27,5 +27,11 @@ namespace LeahsPlatinumTracker
             Location = new Point(Location.X + 2, Location.Y + 2);
         }
 
+        internal new void Dispose()
+        {
+            Image.Dispose();
+            base.Dispose();
+        }
+
     }
 }

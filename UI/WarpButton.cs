@@ -29,12 +29,12 @@ namespace LeahsPlatinumTracker
             FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
         }
 
-        public void Init()
+        public void Init(bool fromUpdate = false)
         {
             parent = (MapsForm)Parent;
             associatedWarp = parent.Player.GetMapSector(MapID).Warps[WarpID];
             position = Location;
-            updateAppearance();
+            if (!fromUpdate) updateAppearance();
         }
 
         public WarpButton(MapsForm form, Warp warp, Point position)
@@ -51,7 +51,7 @@ namespace LeahsPlatinumTracker
 
         public void updateAppearance()
         {
-            if (parent == null) Init();
+            if (parent == null) Init(true);
             if (Marker != null) Marker.RemoveFrom(parent);
             Marker = null;
             if (associatedWarp.VisualMarkers == 0)
@@ -141,9 +141,10 @@ namespace LeahsPlatinumTracker
 
         public void RemoveFrom(MapsForm form)
         {
-            this.Hide();
-            this.Dispose();
+            Hide();
             form.Controls.Remove(this);
+            Dispose();
         }
+
     }
 }

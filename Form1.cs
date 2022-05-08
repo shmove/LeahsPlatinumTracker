@@ -2,7 +2,7 @@ namespace LeahsPlatinumTracker
 {
     public partial class Form1 : Form
     {
-        Tracker Player;
+        public Tracker Player;
         public Form1()
         {
             InitializeComponent();

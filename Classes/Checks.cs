@@ -89,20 +89,9 @@ namespace LeahsPlatinumTracker
             HM07 = 128  // Waterfall
         }
 
-        [Flags]
-        public enum CustomCheckFlags
-        {
-            None = 0,
-            CustomCheck1 = 1,       // will be used for specific checks, like NPC's
-            CustomCheck2 = 2,       // blocking paths until certain story
-            CustomCheck3 = 4,       // requirements have been met.
-            CustomCheck4 = 8
-        }
-
-        public CheckFlags ChecksMade;
-        public ProgressFlags Progress;
-        public HMFlags HMs;
-        public CustomCheckFlags CustomChecks;
+        public CheckFlags ChecksMade { get; set; }
+        public ProgressFlags Progress { get; set; }
+        public HMFlags HMs { get; set; }
 
         // Constructors
         public Checks() { }
@@ -124,51 +113,90 @@ namespace LeahsPlatinumTracker
             ChecksMade = checkFlags;
         }
 
-        public Checks(CustomCheckFlags customCheckFlags)
-        {
-            CustomChecks = customCheckFlags;
-        }
-
         // Functions
 
         public void Unlock(CheckFlags flag)
         {
-            FlagsTool.Set(ref ChecksMade, flag);
+            CheckFlags _checks = ChecksMade;
+            FlagsTool.Set(ref _checks, flag);
+            ChecksMade = _checks;
         }
 
         public void Lock(CheckFlags flag)
         {
-            FlagsTool.Unset(ref ChecksMade, flag);
+            CheckFlags _checks = ChecksMade;
+            FlagsTool.Unset(ref _checks, flag);
+            ChecksMade = _checks;
+        }
+
+        public bool Toggle(CheckFlags flag)
+        {
+            if (!FlagsTool.IsSet(ChecksMade, flag))
+            {
+                Unlock(flag);
+                return true;
+            }
+            else
+            {
+                Lock(flag);
+                return false;
+            }
         }
 
         public void Unlock(ProgressFlags flag)
         {
-            FlagsTool.Set(ref Progress, flag);
+            ProgressFlags _progress = Progress;
+            FlagsTool.Set(ref _progress, flag);
+            Progress = _progress;
         }
 
         public void Lock(ProgressFlags flag)
         {
-            FlagsTool.Unset(ref Progress, flag);
+            ProgressFlags _progress = Progress;
+            FlagsTool.Unset(ref _progress, flag);
+            Progress = _progress;
+        }
+
+        public bool Toggle(ProgressFlags flag)
+        {
+            if (!FlagsTool.IsSet(Progress, flag))
+            {
+                Unlock(flag);
+                return true;
+            }
+            else
+            {
+                Lock(flag);
+                return false;
+            }
         }
 
         public void Unlock(HMFlags flag)
         {
-            FlagsTool.Set(ref HMs, flag);
+            HMFlags _hmflags = HMs;
+            FlagsTool.Set(ref _hmflags, flag);
+            HMs = _hmflags;
         }
 
         public void Lock(HMFlags flag)
         {
-            FlagsTool.Unset(ref HMs, flag);
+            HMFlags _hmflags = HMs;
+            FlagsTool.Unset(ref _hmflags, flag);
+            HMs = _hmflags;
         }
 
-        public void Unlock(CustomCheckFlags flag)
+        public bool Toggle(HMFlags flag)
         {
-            FlagsTool.Set(ref CustomChecks, flag);
-        }
-
-        public void Lock(CustomCheckFlags flag)
-        {
-            FlagsTool.Unset(ref CustomChecks, flag);
+            if (!FlagsTool.IsSet(HMs, flag))
+            {
+                Unlock(flag);
+                return true;
+            }
+            else
+            {
+                Lock(flag);
+                return false;
+            }
         }
 
         public bool meetsRequirements(Checks currentChecks)
@@ -214,10 +242,6 @@ namespace LeahsPlatinumTracker
             if (!MeetsRequiredFlags(HMs, currentChecks.HMs, HMFlags.HM06))                                      return false;
             if (!MeetsRequiredFlags(HMs, currentChecks.HMs, HMFlags.HM07))                                      return false;
             if (!MeetsRequiredFlags(HMs, currentChecks.HMs, HMFlags.HM08))                                      return false;
-            if (!MeetsRequiredFlags(CustomChecks, currentChecks.CustomChecks, CustomCheckFlags.CustomCheck1))   return false;
-            if (!MeetsRequiredFlags(CustomChecks, currentChecks.CustomChecks, CustomCheckFlags.CustomCheck2))   return false;
-            if (!MeetsRequiredFlags(CustomChecks, currentChecks.CustomChecks, CustomCheckFlags.CustomCheck3))   return false;
-            if (!MeetsRequiredFlags(CustomChecks, currentChecks.CustomChecks, CustomCheckFlags.CustomCheck4))   return false;
             return true; // meets all requirements!
         }
 
@@ -249,10 +273,6 @@ namespace LeahsPlatinumTracker
             if (FlagsTool.IsSet(HMs, HMFlags.HM06)) output += "Rock Smash ";
             if (FlagsTool.IsSet(HMs, HMFlags.HM07)) output += "Waterfall ";
             if (FlagsTool.IsSet(HMs, HMFlags.HM08)) output += "Rock Climb ";
-            if (FlagsTool.IsSet(CustomChecks, CustomCheckFlags.CustomCheck1)) output += "CustomCheck1 ";
-            if (FlagsTool.IsSet(CustomChecks, CustomCheckFlags.CustomCheck2)) output += "CustomCheck2 ";
-            if (FlagsTool.IsSet(CustomChecks, CustomCheckFlags.CustomCheck3)) output += "CustomCheck3 ";
-            if (FlagsTool.IsSet(CustomChecks, CustomCheckFlags.CustomCheck4)) output += "CustomCheck4 ";
             if (output == "") output = "None";
             return output;
         }

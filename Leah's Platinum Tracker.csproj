@@ -10,9 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="Maps\BacklotMansion.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Maps\BacklotMansion.cs" />
     <Compile Update="Maps\Canalave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +189,11 @@
     <Compile Update="Maps\Floaroma.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Properties\ChecksResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ChecksResources.resx</DependentUpon>
+    </Compile>
     <Compile Update="Properties\MapResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -204,6 +207,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Properties\ChecksResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChecksResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Properties\MapResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MapResources.Designer.cs</LastGenOutput>

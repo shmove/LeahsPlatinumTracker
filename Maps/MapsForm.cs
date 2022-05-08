@@ -49,6 +49,12 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        public new void Dispose()
+        {
+            MapImages.Dispose();
+            base.Dispose();
+        }
+
         // Warp Buttons
         [Obsolete("Please opt for creating warp buttons at design time instead.")]
         internal void CreateWarpButton(MapsForm form, Warp warp, Point location)
@@ -65,12 +71,14 @@ namespace LeahsPlatinumTracker
                 if (item.GetType().Name == "WarpButton")
                 {
                     WarpButton button = (WarpButton)item;
+                    button.MouseDown -= new MouseEventHandler(Warp_Click);
                     button.MouseDown += new MouseEventHandler(Warp_Click);
                     button.updateAppearance();
                 }
                 else if (item.GetType().Name == "RouteConnectorButton")
                 {
                     RouteConnectorButton button = (RouteConnectorButton)item;
+                    button.MouseDown -= new MouseEventHandler(RouteConnector_Click);
                     button.MouseDown += new MouseEventHandler(RouteConnector_Click);
                     button.updateAppearance();
                 }
@@ -82,6 +90,7 @@ namespace LeahsPlatinumTracker
         public void CreateRouteConnectorButton(MapsForm form, Tracker Player, string sectorName, Point location)
         {
             RouteConnectorButton button = new RouteConnectorButton(form, Player, sectorName, location);
+            button.MouseClick -= new MouseEventHandler(RouteConnector_Click);
             button.MouseClick += new MouseEventHandler(RouteConnector_Click);
             form.Controls.Add(button);
         }
@@ -121,7 +130,7 @@ namespace LeahsPlatinumTracker
                 // Apply dead end marker
                 if (warpButton.associatedWarp.VisualMarkers == 1) warpButton.associatedWarp.VisualMarkers = 0;
                 else warpButton.associatedWarp.VisualMarkers = 1;
-                UpdateWarpAppearances();
+                warpButton.updateAppearance();
             }
         }
 
@@ -161,6 +170,14 @@ namespace LeahsPlatinumTracker
             foreach (PictureBox image in images)
             {
                 image.SendToBack();
+            }
+        }
+
+        public void Dispose()
+        {
+            foreach(PictureBox pictureBox in images)
+            {
+                pictureBox.Image.Dispose();
             }
         }
     }

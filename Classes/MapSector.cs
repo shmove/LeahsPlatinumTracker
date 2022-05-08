@@ -227,7 +227,7 @@ namespace LeahsPlatinumTracker
             bool stillUnlocked = false; // keeps track of whether ANY condition flags as remaining unlocked
             foreach(Condition Condition in Conditions)
             {
-                if (Condition.RequiredChecks.meetsRequirements(currentChecks)) { stillUnlocked = true; break; };
+                if (Condition.MapAccessible && Condition.RequiredChecks.meetsRequirements(currentChecks)) { stillUnlocked = true; break; };
             }
 
             if (!stillUnlocked)
