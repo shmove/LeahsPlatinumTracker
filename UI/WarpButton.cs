@@ -8,11 +8,34 @@ namespace LeahsPlatinumTracker
 {
     public class WarpButton : Button
     {
+        public string MapID { get; set; }
+        public int WarpID { get; set; }
         public Warp associatedWarp;
         private Point position;
         private MarkerPictureBox? Marker;
         private MapsForm? parent;
         public bool selected = false;
+
+        public WarpButton()
+        {
+            FlatStyle = FlatStyle.Flat;
+            FlatAppearance.BorderSize = 2;
+            UseCompatibleTextRendering = true;
+
+            Size = new(107, 23);
+            Font = new Font("Nirmala UI", (float)8.25, FontStyle.Regular);
+            ForeColor = Color.FromArgb(255, 54, 82, 129);
+            BackColor = Color.FromArgb(255, 160, 183, 214);
+            FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
+        }
+
+        public void Init()
+        {
+            parent = (MapsForm)Parent;
+            associatedWarp = parent.Player.GetMapSector(MapID).Warps[WarpID];
+            position = Location;
+            updateAppearance();
+        }
 
         public WarpButton(MapsForm form, Warp warp, Point position)
         {
@@ -28,6 +51,7 @@ namespace LeahsPlatinumTracker
 
         public void updateAppearance()
         {
+            if (parent == null) Init();
             if (Marker != null) Marker.RemoveFrom(parent);
             Marker = null;
             if (associatedWarp.VisualMarkers == 0)

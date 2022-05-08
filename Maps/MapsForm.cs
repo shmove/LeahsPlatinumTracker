@@ -20,6 +20,19 @@ namespace LeahsPlatinumTracker
             MapImages = new MapImages();
         }
 
+        internal void Form_Load(object sender, EventArgs e)
+        {
+            foreach (Control control in Controls)
+            {
+                if (control.GetType().Name == "PictureBox")
+                {
+                    PictureBox pictureBox = (PictureBox)control;
+                    MapImages.Add(pictureBox);
+                    pictureBox.SendToBack();
+                }
+            }
+        }
+
         public void Reload()
         {
             foreach(var item in this.Controls)
@@ -37,6 +50,7 @@ namespace LeahsPlatinumTracker
         }
 
         // Warp Buttons
+        [Obsolete("Please opt for creating warp buttons at design time instead.")]
         internal void CreateWarpButton(MapsForm form, Warp warp, Point location)
         {
             WarpButton button = new WarpButton(form, warp, location);
@@ -51,17 +65,20 @@ namespace LeahsPlatinumTracker
                 if (item.GetType().Name == "WarpButton")
                 {
                     WarpButton button = (WarpButton)item;
+                    button.MouseDown += new MouseEventHandler(Warp_Click);
                     button.updateAppearance();
                 }
                 else if (item.GetType().Name == "RouteConnectorButton")
                 {
                     RouteConnectorButton button = (RouteConnectorButton)item;
+                    button.MouseDown += new MouseEventHandler(RouteConnector_Click);
                     button.updateAppearance();
                 }
             }
         }
 
         // Route Connector Buttons
+        [Obsolete("Please opt for creating route connector buttons at design time instead.")]
         public void CreateRouteConnectorButton(MapsForm form, Tracker Player, string sectorName, Point location)
         {
             RouteConnectorButton button = new RouteConnectorButton(form, Player, sectorName, location);
