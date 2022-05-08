@@ -28,43 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.routeConnectorButton1 = new LeahsPlatinumTracker.RouteConnectorButton();
+            this.routeConnectorButton2 = new LeahsPlatinumTracker.RouteConnectorButton();
+            this.routeConnectorButton3 = new LeahsPlatinumTracker.RouteConnectorButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Power Clear", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.button1.Location = new System.Drawing.Point(547, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 23);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "?";
-            this.button1.UseCompatibleTextRendering = true;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button24.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button24.FlatAppearance.BorderSize = 2;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button24.Location = new System.Drawing.Point(596, 338);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(107, 23);
-            this.button24.TabIndex = 27;
-            this.button24.Text = "Canalave";
-            this.button24.UseCompatibleTextRendering = true;
-            this.button24.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -77,6 +46,60 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // routeConnectorButton1
+            // 
+            this.routeConnectorButton1.associatedVisualMapSector = null;
+            this.routeConnectorButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
+            this.routeConnectorButton1.destinationVisualMapSectorID = "Eterna";
+            this.routeConnectorButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.routeConnectorButton1.FlatAppearance.BorderSize = 2;
+            this.routeConnectorButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.routeConnectorButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.routeConnectorButton1.ForeColor = System.Drawing.Color.White;
+            this.routeConnectorButton1.Location = new System.Drawing.Point(884, 166);
+            this.routeConnectorButton1.Name = "routeConnectorButton1";
+            this.routeConnectorButton1.Size = new System.Drawing.Size(107, 23);
+            this.routeConnectorButton1.TabIndex = 1;
+            this.routeConnectorButton1.Text = "routeConnectorButton1";
+            this.routeConnectorButton1.UseCompatibleTextRendering = true;
+            this.routeConnectorButton1.UseVisualStyleBackColor = false;
+            // 
+            // routeConnectorButton2
+            // 
+            this.routeConnectorButton2.associatedVisualMapSector = null;
+            this.routeConnectorButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
+            this.routeConnectorButton2.destinationVisualMapSectorID = "Floaroma";
+            this.routeConnectorButton2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.routeConnectorButton2.FlatAppearance.BorderSize = 2;
+            this.routeConnectorButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.routeConnectorButton2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.routeConnectorButton2.ForeColor = System.Drawing.Color.White;
+            this.routeConnectorButton2.Location = new System.Drawing.Point(5, 694);
+            this.routeConnectorButton2.Name = "routeConnectorButton2";
+            this.routeConnectorButton2.Size = new System.Drawing.Size(107, 23);
+            this.routeConnectorButton2.TabIndex = 2;
+            this.routeConnectorButton2.Text = "routeConnectorButton2";
+            this.routeConnectorButton2.UseCompatibleTextRendering = true;
+            this.routeConnectorButton2.UseVisualStyleBackColor = false;
+            // 
+            // routeConnectorButton3
+            // 
+            this.routeConnectorButton3.associatedVisualMapSector = null;
+            this.routeConnectorButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
+            this.routeConnectorButton3.destinationVisualMapSectorID = "ValleyWindworks";
+            this.routeConnectorButton3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.routeConnectorButton3.FlatAppearance.BorderSize = 2;
+            this.routeConnectorButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.routeConnectorButton3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.routeConnectorButton3.ForeColor = System.Drawing.Color.White;
+            this.routeConnectorButton3.Location = new System.Drawing.Point(402, 710);
+            this.routeConnectorButton3.Name = "routeConnectorButton3";
+            this.routeConnectorButton3.Size = new System.Drawing.Size(107, 23);
+            this.routeConnectorButton3.TabIndex = 3;
+            this.routeConnectorButton3.Text = "routeConnectorButton3";
+            this.routeConnectorButton3.UseCompatibleTextRendering = true;
+            this.routeConnectorButton3.UseVisualStyleBackColor = false;
+            // 
             // r205
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -84,8 +107,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(996, 802);
-            this.Controls.Add(this.button24);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.routeConnectorButton3);
+            this.Controls.Add(this.routeConnectorButton2);
+            this.Controls.Add(this.routeConnectorButton1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "r205";
@@ -98,8 +122,9 @@
         }
 
         #endregion
-        private Button button1;
-        private Button button24;
         private PictureBox pictureBox1;
+        private RouteConnectorButton routeConnectorButton1;
+        private RouteConnectorButton routeConnectorButton2;
+        private RouteConnectorButton routeConnectorButton3;
     }
 }

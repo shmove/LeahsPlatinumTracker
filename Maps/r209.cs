@@ -18,19 +18,5 @@ namespace LeahsPlatinumTracker.Maps
             InitializeComponent();
         }
 
-        private void Form_Load(object sender, EventArgs e)
-        {
-            MapImages.Add(pictureBox1);
-            //MapSector Floaroma = Player.GetMapSector("Floaroma");
-            //MapSector FloaromaPokecentre = Player.GetMapSector("Floaroma Pokecentre");
-
-            // create warp buttons
-            // CreateWarpButton(this, Floaroma.Warps[0], new Point(0, 0));
-
-            CreateRouteConnectorButton(this, Player, "Solaceon", new Point(729, 5));
-
-            MapImages.SendToBack();
-        }
-
     }
 }

@@ -18,19 +18,5 @@ namespace LeahsPlatinumTracker.Maps
             InitializeComponent();
         }
 
-        private void Form_Load(object sender, EventArgs e)
-        {
-            MapImages.Add(pictureBox1);
-            //MapSector Floaroma = Player.GetMapSector("Floaroma");
-            //MapSector FloaromaPokecentre = Player.GetMapSector("Floaroma Pokecentre");
-
-            // create warp buttons
-            // CreateWarpButton(this, Floaroma.Warps[0], new Point(0, 0));
-
-            CreateRouteConnectorButton(this, Player, "ValorLake", new Point(5, 327)); // path left to valor lakefront
-
-            MapImages.SendToBack();
-        }
-
     }
 }

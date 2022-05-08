@@ -33,6 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.routeConnectorButton1 = new LeahsPlatinumTracker.RouteConnectorButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -103,6 +104,24 @@
             this.pictureBox3.TabIndex = 29;
             this.pictureBox3.TabStop = false;
             // 
+            // routeConnectorButton1
+            // 
+            this.routeConnectorButton1.associatedVisualMapSector = null;
+            this.routeConnectorButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
+            this.routeConnectorButton1.destinationVisualMapSectorID = "Sunyshore";
+            this.routeConnectorButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.routeConnectorButton1.FlatAppearance.BorderSize = 2;
+            this.routeConnectorButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.routeConnectorButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.routeConnectorButton1.ForeColor = System.Drawing.Color.White;
+            this.routeConnectorButton1.Location = new System.Drawing.Point(203, 774);
+            this.routeConnectorButton1.Name = "routeConnectorButton1";
+            this.routeConnectorButton1.Size = new System.Drawing.Size(107, 23);
+            this.routeConnectorButton1.TabIndex = 30;
+            this.routeConnectorButton1.Text = "routeConnectorButton1";
+            this.routeConnectorButton1.UseCompatibleTextRendering = true;
+            this.routeConnectorButton1.UseVisualStyleBackColor = false;
+            // 
             // PokeLeague
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -110,6 +129,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(996, 802);
+            this.Controls.Add(this.routeConnectorButton1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button24);
@@ -133,5 +153,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private RouteConnectorButton routeConnectorButton1;
     }
 }
