@@ -13,9 +13,9 @@ namespace LeahsPlatinumTracker
     public partial class UITest : Form
     {
 
-        internal Tracker? Player;
+        internal Tracker Player;
         private MapsForm? activePanel;
-        private List<MapsForm>? mapPanels;
+        private List<System.Reflection.TypeInfo> mapPanels;
 
         public Warp? warp1 { get; set; } = null;
         private Warp? warp2 = null;
@@ -30,32 +30,19 @@ namespace LeahsPlatinumTracker
         {
 
             // Map Buttons
-            foreach(Control control in this.Controls)
+            foreach (Control control in this.Controls)
             {
                 initialiseControls(control);
             }
 
             // Map Sectors / Sub-forms
-            mapPanels = new List<MapsForm>();
 
             var classType = typeof(MapsForm);
-            var subClassTypes = classType.Assembly.DefinedTypes
+            mapPanels = classType.Assembly.DefinedTypes
                 .Where(x => classType.IsAssignableFrom(x) && x != classType)
                 .ToList();
 
-            foreach (var subClassType in subClassTypes)
-            {
-                MapsForm subClass = (MapsForm)Activator.CreateInstance(subClassType);
-                subClass.Player = Player;
-                subClass.parent = this;
-                subClass.TopLevel = false;
-                mapPanels.Add(subClass);
-            }
-            // https://stackoverflow.com/a/32795682 - Loops through all classes that derive from MapsForm and makes a map panel
-
-            activePanel = mapPanels[0];
-            MainPanel.Controls.Add(activePanel);
-            activePanel.Show();
+            LoadMapPanel("Sandgem");
         }
 
         private void initialiseControls(Control control)
@@ -79,7 +66,7 @@ namespace LeahsPlatinumTracker
             }
         }
 
-        internal void updateMapSelectorButtons()
+        public void updateMapSelectorButtons()
         {
             foreach (Control control in this.Controls)
             {
@@ -89,6 +76,12 @@ namespace LeahsPlatinumTracker
                     button.updateAppearance();
                 }
             }
+        }
+
+        public void updateAllAppearances()
+        {
+            updateMapSelectorButtons();
+            activePanel.UpdateWarpAppearances();
         }
 
         private void button62_Click(object sender, EventArgs e)
@@ -146,18 +139,29 @@ namespace LeahsPlatinumTracker
 
         public void LoadMapPanel(string MapName)
         {
-            foreach (MapsForm panel in mapPanels)
+            foreach(var panelClass in mapPanels)
             {
-                if (panel.Name == MapName || MapName.StartsWith("2") && panel.Name == ("r" + MapName))
+                if (panelClass.Name == MapName || MapName.StartsWith("2") && panelClass.Name == ("r" + MapName))
                 {
-                    activePanel.Hide();
+                    MapsForm panel = (MapsForm)Activator.CreateInstance(panelClass);
+                    panel.Player = Player;
+                    panel.parent = this;
+                    panel.TopLevel = false;
+
+                    if (activePanel != null)
+                    {
+                        activePanel.Hide();
+                        MainPanel.Controls.Clear();
+                        activePanel.Dispose();
+                    }
+
                     activePanel = panel;
-                    MainPanel.Controls.Clear();
-                    MainPanel.Controls.Add(panel);
-                    panel.Reload();
-                    panel.UpdateWarpAppearances();
+                    MainPanel.Controls.Add(activePanel);
+                    activePanel.Reload();
+                    activePanel.UpdateWarpAppearances();
                     activePanel.Show();
                 }
+                // https://stackoverflow.com/a/32795682
             }
         }
 
