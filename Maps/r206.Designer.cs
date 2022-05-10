@@ -48,7 +48,8 @@
             // 
             this.routeConnectorButton1.associatedVisualMapSector = null;
             this.routeConnectorButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
-            this.routeConnectorButton1.destinationVisualMapSectorID = "207";
+            this.routeConnectorButton1.ConditionIndex = 1;
+            this.routeConnectorButton1.DestinationMapSector = "207 N";
             this.routeConnectorButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.routeConnectorButton1.FlatAppearance.BorderSize = 2;
             this.routeConnectorButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

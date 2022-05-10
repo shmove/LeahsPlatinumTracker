@@ -125,7 +125,7 @@
             this.warpButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton3.Location = new System.Drawing.Point(547, 298);
+            this.warpButton3.Location = new System.Drawing.Point(537, 298);
             this.warpButton3.MapID = "Canalave Pokecentre";
             this.warpButton3.Name = "warpButton3";
             this.warpButton3.Size = new System.Drawing.Size(107, 23);
@@ -319,7 +319,8 @@
             // 
             this.routeConnectorButton1.associatedVisualMapSector = null;
             this.routeConnectorButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
-            this.routeConnectorButton1.destinationVisualMapSectorID = "IronIsland";
+            this.routeConnectorButton1.ConditionIndex = 1;
+            this.routeConnectorButton1.DestinationMapSector = "IronIsland Ext A ";
             this.routeConnectorButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.routeConnectorButton1.FlatAppearance.BorderSize = 2;
             this.routeConnectorButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

@@ -71,8 +71,8 @@ namespace LeahsPlatinumTracker
             VisualMapSectors.Add(new VisualMapSector(this, "206", new List<MapSector>
             {
                 new MapSector("206 S A", 1, "207 N"),
-                new MapSector("206 S B", 2, new Condition("206 S A", new Checks(2))),
-                new MapSector("206 N", 2) // basically a hallway but its on the same route
+                new MapSector("206 S B", 2, new Condition("206 S A", new Checks(2)))
+                //new MapSector("206 N", 2) // basically a hallway but its on the same route
             }));
             VisualMapSectors.Add(new VisualMapSector(this, "207", new List<MapSector>
             {
@@ -393,7 +393,12 @@ namespace LeahsPlatinumTracker
             }, "Resort Area"));
             VisualMapSectors.Add(new VisualMapSector(this, "Sandgem", new List<MapSector>
             {
-                new MapSector("Sandgem", 4, true),
+                new MapSector("Sandgem", 4, new List<Condition>
+                {
+                    new Condition("Jubilife"),
+                    new Condition("VerityLake Ext"),
+                    new Condition("221", new Checks(16))
+                }, true),
                 new MapSector("Sandgem Pokecentre", 3)
             }));
             VisualMapSectors.Add(new VisualMapSector(this, "Snowpoint", new List<MapSector>

@@ -96,7 +96,7 @@ namespace LeahsPlatinumTracker
                 Warps.Add(new Warp(MapID, i, this));
             }
         }
-        public MapSector(string _MapID, int numberOfWarps, Condition _Condition)
+        public MapSector(string _MapID, int numberOfWarps, Condition _Condition, bool defaultUnlocked = false)
         {
             MapID = _MapID;
             Conditions = new List<Condition> { _Condition };
@@ -105,9 +105,15 @@ namespace LeahsPlatinumTracker
             {
                 Warps.Add(new Warp(MapID, i, this));
             }
+
+            if (defaultUnlocked)
+            {
+                IsUnlocked = true;
+                DefaultUnlocked = true;
+            }
         }
 
-        public MapSector(string _MapID, int numberOfWarps, List<Condition> _Conditions)
+        public MapSector(string _MapID, int numberOfWarps, List<Condition> _Conditions, bool defaultUnlocked = false)
         {
             MapID = _MapID;
             Conditions = _Conditions;
@@ -115,6 +121,12 @@ namespace LeahsPlatinumTracker
             for (int i = 0; i < numberOfWarps; i++)
             {
                 Warps.Add(new Warp(MapID, i, this));
+            }
+
+            if (defaultUnlocked)
+            {
+                IsUnlocked = true;
+                DefaultUnlocked = true;
             }
         }
 

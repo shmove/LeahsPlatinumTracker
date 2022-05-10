@@ -62,7 +62,8 @@
             // 
             this.routeConnectorButton1.associatedVisualMapSector = null;
             this.routeConnectorButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
-            this.routeConnectorButton1.destinationVisualMapSectorID = "AcuityLake";
+            this.routeConnectorButton1.ConditionIndex = 1;
+            this.routeConnectorButton1.DestinationMapSector = "AcuityLake Ext S";
             this.routeConnectorButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.routeConnectorButton1.FlatAppearance.BorderSize = 2;
             this.routeConnectorButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -80,7 +81,8 @@
             // 
             this.routeConnectorButton2.associatedVisualMapSector = null;
             this.routeConnectorButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
-            this.routeConnectorButton2.destinationVisualMapSectorID = "FightArea";
+            this.routeConnectorButton2.ConditionIndex = 1;
+            this.routeConnectorButton2.DestinationMapSector = "FightArea";
             this.routeConnectorButton2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.routeConnectorButton2.FlatAppearance.BorderSize = 2;
             this.routeConnectorButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

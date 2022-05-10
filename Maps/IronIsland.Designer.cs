@@ -48,7 +48,8 @@
             // 
             this.routeConnectorButton1.associatedVisualMapSector = null;
             this.routeConnectorButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(180)))), ((int)(((byte)(111)))));
-            this.routeConnectorButton1.destinationVisualMapSectorID = "Canalave";
+            this.routeConnectorButton1.ConditionIndex = 0;
+            this.routeConnectorButton1.DestinationMapSector = "Canalave";
             this.routeConnectorButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.routeConnectorButton1.FlatAppearance.BorderSize = 2;
             this.routeConnectorButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
