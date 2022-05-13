@@ -10,7 +10,7 @@ namespace LeahsPlatinumTracker
     {
 
         // https://stackoverflow.com/a/3261485/13460028
-        private static class FlagsTool
+        internal static class FlagsTool
         {
             // The casts to object in the below code are an unfortunate necessity due to
             // C#'s restriction against a where T : Enum constraint. (There are ways around

@@ -64,6 +64,10 @@ namespace LeahsPlatinumTracker
                     initialiseControls(subControl);
                 }
             }
+            else if (control.GetType().Name.EndsWith("FlagsButton"))
+            {
+                ((ChecksButton)control).Initialise(control);
+            }
         }
 
         public void updateMapSelectorButtons()

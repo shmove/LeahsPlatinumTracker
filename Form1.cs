@@ -1,8 +1,10 @@
+using Newtonsoft.Json;
+
 namespace LeahsPlatinumTracker
 {
     public partial class Form1 : Form
     {
-        public Tracker Player;
+        public Tracker Player { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -247,6 +249,20 @@ namespace LeahsPlatinumTracker
                 Player = Player
             };
             form.Show();
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            Player.ToJSON();
+            System.Diagnostics.Debug.WriteLine("Wrote tracker to JSON.");
+        }
+
+        private void button80_Click(object sender, EventArgs e)
+        {
+            string filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "LeahsPlatinumTracker") + "\\save.lpt";
+            string json = File.ReadAllText(filename);
+            Player = TrackerManager.FromJSON(json);
+            System.Diagnostics.Debug.WriteLine("Loaded tracker from JSON.");
         }
     }
 }

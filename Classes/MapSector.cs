@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace LeahsPlatinumTracker
     {
         public string VisualMapID { get; set; }
         public List<MapSector> MapSectors { get; set; }
+
+        [JsonIgnore]
         public bool IsUnlocked
         {
             get
@@ -21,6 +24,7 @@ namespace LeahsPlatinumTracker
                 return false;
             }
         }
+        [JsonIgnore]
         public bool IsCompleted
         {
             get
@@ -39,7 +43,9 @@ namespace LeahsPlatinumTracker
                 return true;
             }
         }
+        [JsonIgnore]
         public Tracker? Tracker { get; }
+        [JsonIgnore]
         public string DisplayName { get; set; }
 
         // Constructors
@@ -67,16 +73,21 @@ namespace LeahsPlatinumTracker
             if (_DisplayName != "") DisplayName = _DisplayName;
             else DisplayName = VisualMapID;
         }
+
     }
 
     public class MapSector
     {
         public string MapID { get; set; }
         public List<Warp> Warps { get; set; }
+        [JsonIgnore]
         public List<Condition> Conditions { get; set; }
         public bool IsUnlocked { get; set; }
+        [JsonIgnore]
         public bool DefaultUnlocked { get; set; }
+        [JsonIgnore]
         public VisualMapSector? ParentVisualMapSector { get; set; } // needs to be initialised on creation
+        [JsonIgnore]
         public Tracker Tracker
         {
             get
@@ -343,6 +354,7 @@ namespace LeahsPlatinumTracker
             RequiredChecks = _RequiredChecks;
             MapAccessible = _MapAccessible;
         }
+
     }
 
     public class Warp
@@ -414,6 +426,7 @@ namespace LeahsPlatinumTracker
 
         public MapSector ParentMapSector { get; }
 
+        [JsonIgnore]
         public MapSector DestinationMapSector
         {
             get
@@ -428,7 +441,8 @@ namespace LeahsPlatinumTracker
                 }
             }
         }
-        
+
+        [JsonIgnore]
         public VisualMapSector DestinationVisualMapSector
         {
             get

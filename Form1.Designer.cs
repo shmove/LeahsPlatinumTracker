@@ -123,6 +123,8 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button80 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1089,12 +1091,34 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(878, 677);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 94;
+            this.button24.Text = "save json";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button80
+            // 
+            this.button80.Location = new System.Drawing.Point(959, 677);
+            this.button80.Name = "button80";
+            this.button80.Size = new System.Drawing.Size(75, 23);
+            this.button80.TabIndex = 96;
+            this.button80.Text = "load json";
+            this.button80.UseVisualStyleBackColor = true;
+            this.button80.Click += new System.EventHandler(this.button80_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.ClientSize = new System.Drawing.Size(1234, 711);
+            this.Controls.Add(this.button80);
+            this.Controls.Add(this.button24);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
@@ -1290,5 +1314,7 @@
         private Button button25;
         private Button button44;
         private Button button16;
+        private Button button24;
+        private Button button80;
     }
 }

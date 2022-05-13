@@ -43,15 +43,20 @@ namespace LeahsPlatinumTracker
             switch (sender.GetType().Name)
             {
                 case "CheckFlagsButton":
+                    CheckState = Checks.FlagsTool.IsSet(Player.Checks.ChecksMade, ((CheckFlagsButton)sender).Flag);
                     tooltip.SetToolTip(this, ((CheckFlagsButton)sender).Flag.ToString());
                     break;
                 case "ProgressFlagsButton":
+                    CheckState = Checks.FlagsTool.IsSet(Player.Checks.Progress, ((ProgressFlagsButton)sender).Flag);
                     tooltip.SetToolTip(this, ((ProgressFlagsButton)sender).Flag.ToString());
                     break;
                 case "HMFlagsButton":
+                    CheckState = Checks.FlagsTool.IsSet(Player.Checks.HMs, ((HMFlagsButton)sender).Flag);
                     tooltip.SetToolTip(this, ((HMFlagsButton)sender).Flag.ToString());
                     break;
             }
+
+            if (CheckState) Image = Image_Unlocked;
 
             MouseHover -= Initialise;
         }

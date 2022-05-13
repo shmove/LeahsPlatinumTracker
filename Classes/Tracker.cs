@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace LeahsPlatinumTracker
 {
@@ -13,6 +14,7 @@ namespace LeahsPlatinumTracker
 
         // Map
         public List<VisualMapSector> VisualMapSectors { get; set; }
+        [JsonIgnore]
         public List<MapSector> MapSectors
         {
             get
@@ -30,10 +32,17 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        // Identifiers
+        public string Game { get; set; }
+        public string CreatedVersion { get; set; }
+
         public Tracker()
         {
 
             Checks = new Checks(); // Creates Checks with nothing set
+
+            Game = "PokemonPlatinum";
+            CreatedVersion = Program.Version;
 
             // Entire map
             VisualMapSectors = new List<VisualMapSector>();
@@ -325,11 +334,13 @@ namespace LeahsPlatinumTracker
                 }),
                 new MapSector("MtCoronet Upper 1F 1 D", 1, new Condition("MtCoronet Upper 1F 1 C", new Checks(32))),
                 new MapSector("MtCoronet Upper 1F 2", 3), // self contained room with two cave exits and a set of stairs
+                new MapSector("MtCoronet 2F A", 2, new Condition("MtCoronet 2F B", new Checks(32))), // broken boards cave room, leftmost warps
+                new MapSector("MtCoronet 2F B", 2, new Condition("MtCoronet 2F A")), // broken boards cave room rightmost stairs
                 new MapSector("MtCoronet 3F", 3), // self contained room with cave entrance and two set of stairs down
                 new MapSector("MtCoronet 4F 1 A", 1, new Condition("MtCoronet 4F 1 C", new Checks(64))), // MtCoronet room with a waterfall - leftmost entrance, only connected via rock climb
                 new MapSector("MtCoronet 4F 1 B", 1, new Condition("MtCoronet 4F 1 D", new Checks(144))), // bottomright entrance, only connected via waterfall + surf
                 new MapSector("MtCoronet 4F 1 C", 1, new Condition("MtCoronet 4F 1 A", new Checks(64))), // topright entrance, only connected to bottomleft via rock climb
-                new MapSector("MtCoronet 4F 1 D", 1, new Condition("MtCoronet 4F 1 B", new Checks(144))), // top of waterfall, only connected to bottomright via waterfall+surf 
+                new MapSector("MtCoronet 4F 1 D", 1, new Condition("MtCoronet 4F 1 B", new Checks(144))), // top of waterfall, only connected to bottomright via waterfall+surf
             }, "Mt. Coronet"));
             VisualMapSectors.Add(new VisualMapSector(this, "MtCoronetPeak", new List<MapSector>
             {
@@ -752,6 +763,55 @@ namespace LeahsPlatinumTracker
             System.Diagnostics.Debug.WriteLine("");
         }
 
+        // Convert tracker to JSON
+        public void ToJSON()
+        {
+            string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "LeahsPlatinumTracker");
+            Directory.CreateDirectory(folder);
+
+            string filename = folder + "\\save.lpt";
+
+            string json = JsonConvert.SerializeObject(this, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
+            File.WriteAllText(filename, json);
+        }
+
     }
 
+    public static class TrackerManager
+    {
+        public static Tracker FromJSON(string json)
+        {
+            Tracker tracker = new Tracker();
+            dynamic? loadedTracker = JsonConvert.DeserializeObject<dynamic>(json);
+
+            tracker.Game = loadedTracker.Game;
+            tracker.CreatedVersion = loadedTracker.CreatedVersion;
+
+            tracker.Checks = new Checks();
+            tracker.Checks.ChecksMade = loadedTracker.Checks.ChecksMade;
+            tracker.Checks.Progress = loadedTracker.Checks.Progress;
+            tracker.Checks.HMs = loadedTracker.Checks.HMs;
+
+            foreach (var JSONVisualMapSector in loadedTracker.VisualMapSectors)
+            {
+                foreach (var JSONMapSector in JSONVisualMapSector.MapSectors)
+                {
+                    string thisMapID = JSONMapSector.MapID;
+                    MapSector thisMapSector = tracker.GetMapSector(thisMapID);
+                    foreach(var JSONWarp in JSONMapSector.Warps)
+                    {
+                        int thisWarpID = JSONWarp.WarpID;
+                        Warp thisWarp = thisMapSector.Warps[thisWarpID];
+                        string thisWarpDestinationMapID = JSONWarp.Destination.Item1;
+                        int thisWarpDestinationWarpID = JSONWarp.Destination.Item2;
+                        thisWarp.Destination = (thisWarpDestinationMapID, thisWarpDestinationWarpID);
+                        thisWarp.VisualMarkers = JSONWarp.VisualMarkers;
+                    }
+                    thisMapSector.IsUnlocked = (bool)JSONMapSector.IsUnlocked;
+                }
+            }
+
+            return tracker;
+        }
+    }
 }
