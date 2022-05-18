@@ -127,6 +127,9 @@
   <data name="Poketch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Poketch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DeptStore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\DeptStore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Route206" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Route206.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,11 +145,14 @@
   <data name="BacklotMansion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\BacklotMansion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Snowpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\Images\Snowpoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MtCoronet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\MtCoronet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route211" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Route211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snowpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Snowpoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VerityLake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\VerityLake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +175,9 @@
   <data name="Route228" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Route228.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Route217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Route217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Route225" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Route225.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,9 +199,6 @@
   <data name="FightArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\FightArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Jubilife" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\Images\Jubilife.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Pokecentre1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Pokecentre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,8 +214,8 @@
   <data name="ValleyWindworks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\ValleyWindworks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Route217" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\Images\Route217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FloaromaMeadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\FloaromaMeadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TGEterna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\TGEterna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,14 +235,8 @@
   <data name="Route209" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Route209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FloaromaMeadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\Images\FloaromaMeadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MtCoronetPeak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\MtCoronetPeak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Canalave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\Images\Canalave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Solaceon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Solaceon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,11 +298,11 @@
   <data name="Eterna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Eterna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MtCoronet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\Images\MtCoronet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PokeLeague2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\PokeLeague2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Floaroma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Floaroma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Eterna2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Eterna2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,13 +310,13 @@
   <data name="Pastoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Pastoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Floaroma" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\Images\Floaroma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Canalave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Canalave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route214" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\Images\Route214.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DeptStore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\Images\DeptStore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Jubilife" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\Images\Jubilife.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

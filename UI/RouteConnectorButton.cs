@@ -8,8 +8,6 @@ namespace LeahsPlatinumTracker
 {
     internal class RouteConnectorButton : Button
     {
-        [Obsolete("Use .DestinationMapSector and .ConditionIndex")]
-        public string destinationVisualMapSectorID { get; set; }
         public string DestinationMapSector { get; set; }
         public int ConditionIndex { get; set; }
 
@@ -34,27 +32,9 @@ namespace LeahsPlatinumTracker
         {
             parent = (MapsForm)Parent;
             Player = parent.Player;
-            associatedVisualMapSector = Player.GetVisualMapSector(destinationVisualMapSectorID);
-            if (DestinationMapSector != null) AssociatedMapSector = Player.GetMapSector(DestinationMapSector);
-            if (DestinationMapSector != null) associatedVisualMapSector = AssociatedMapSector.ParentVisualMapSector;
+            AssociatedMapSector = Player.GetMapSector(DestinationMapSector);
+            associatedVisualMapSector = AssociatedMapSector.ParentVisualMapSector;
             Text = associatedVisualMapSector.DisplayName;
-            updateAppearance();
-        }
-
-        public RouteConnectorButton(MapsForm form, Tracker tracker, string sectorName, Point location)
-        {
-            parent = form;
-            Player = tracker;
-            if (sectorName.StartsWith("r2")) sectorName = sectorName.Substring(1);
-            associatedVisualMapSector = Player.GetVisualMapSector(sectorName);
-
-            FlatStyle = FlatStyle.Flat;
-            FlatAppearance.BorderSize = 2;
-            UseCompatibleTextRendering = true;
-            Text = associatedVisualMapSector.DisplayName;
-            Font = new Font("Nirmala UI", (float)8.25, (FontStyle)5);
-            Location = location;
-            Size = new(107, 23);
             updateAppearance();
         }
 
@@ -65,8 +45,7 @@ namespace LeahsPlatinumTracker
             {
                 if (
                     AssociatedMapSector.DefaultUnlocked && AssociatedMapSector.Conditions.Count == 0 ||
-                    AssociatedMapSector.DefaultUnlocked && AssociatedMapSector.Conditions[ConditionIndex].RequiredChecks.meetsRequirements(Player.Checks) ||
-                    (AssociatedMapSector.Conditions[ConditionIndex].RequiredChecks.meetsRequirements(Player.Checks) && AssociatedMapSector.IsUnlocked)
+                    AssociatedMapSector.IsUnlocked      && AssociatedMapSector.Conditions[ConditionIndex].RequiredChecks.meetsRequirements(Player.Checks)
                 ){
                     // regular visuals, unlocked
                     ForeColor = Color.White;

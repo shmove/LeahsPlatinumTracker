@@ -8,7 +8,7 @@ namespace LeahsPlatinumTracker
 {
     public partial class MapsForm : Form
     {
-        public Tracker? Player = null;
+        public Tracker? Player { get; set; }
         public UITest? parent { get; set; }
         public MapImages MapImages { get; set; }
         public WarpButton? lastSelectedWarp { get; set; }
@@ -56,14 +56,6 @@ namespace LeahsPlatinumTracker
         }
 
         // Warp Buttons
-        [Obsolete("Please opt for creating warp buttons at design time instead.")]
-        internal void CreateWarpButton(MapsForm form, Warp warp, Point location)
-        {
-            WarpButton button = new WarpButton(form, warp, location);
-            button.MouseDown += new MouseEventHandler(Warp_Click);
-            form.Controls.Add(button);
-        }
-
         public void UpdateWarpAppearances()
         {
             foreach (var item in this.Controls)
@@ -83,16 +75,6 @@ namespace LeahsPlatinumTracker
                     button.updateAppearance();
                 }
             }
-        }
-
-        // Route Connector Buttons
-        [Obsolete("Please opt for creating route connector buttons at design time instead.")]
-        public void CreateRouteConnectorButton(MapsForm form, Tracker Player, string sectorName, Point location)
-        {
-            RouteConnectorButton button = new RouteConnectorButton(form, Player, sectorName, location);
-            button.MouseDown -= new MouseEventHandler(RouteConnector_Click);
-            button.MouseDown += new MouseEventHandler(RouteConnector_Click);
-            form.Controls.Add(button);
         }
 
         // Mouse Events
