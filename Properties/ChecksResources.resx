@@ -118,10 +118,184 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Teleport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Teleport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Teleport-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Teleport-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DefeatedWindworks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\DefeatedWindworks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Roark-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Roark-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Bike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Waterfall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Waterfall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GalacticKey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Checks\GalacticKey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SecretPotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\SecretPotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Surf-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Surf-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym6-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym6-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym3-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym3-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RockSmash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\RockSmash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bike-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Bike-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym4-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym4-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym1-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym1-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Defog-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Defog-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkner-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Volkner-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fantina-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Fantina-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym7-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym7-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RockClimb-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\RockClimb-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DefeatedWindworks-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\DefeatedWindworks-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Roark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Roark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fantina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Fantina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WorksKey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\WorksKey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GalacticKey-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Checks\GalacticKey-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Strength-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Strength-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Cut-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Volkner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WorksKey-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\WorksKey-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fly-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Fly-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecretPotion-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\SecretPotion-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Surf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Surf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Defog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Defog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym8-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym8-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Fly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Strength" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Strength.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Waterfall-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Waterfall-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RockClimb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\RockClimb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym2-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym2-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RockSmash-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\RockSmash-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gym5-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Gym5-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aaron" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Aaron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aaron-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Aaron-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bertha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Bertha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bertha-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Bertha-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cynthia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Cynthia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cynthia-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Cynthia-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Flint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flint-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Flint-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lucian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Lucian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lucian-Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checks\Lucian-Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

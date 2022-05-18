@@ -57,6 +57,7 @@ namespace LeahsPlatinumTracker
             }
 
             if (CheckState) Image = Image_Unlocked;
+            else Image = Image_Locked;
 
             MouseHover -= Initialise;
         }

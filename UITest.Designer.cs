@@ -32,19 +32,11 @@
             this.MarkerSelector2 = new LeahsPlatinumTracker.ClickablePictureBox();
             this.MarkerSelector1 = new LeahsPlatinumTracker.ClickablePictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.hmFlagsButton8 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton7 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton6 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton5 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton4 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton3 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton2 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton1 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.progressFlagsButton13 = new LeahsPlatinumTracker.ProgressFlagsButton();
-            this.progressFlagsButton12 = new LeahsPlatinumTracker.ProgressFlagsButton();
-            this.progressFlagsButton11 = new LeahsPlatinumTracker.ProgressFlagsButton();
-            this.progressFlagsButton10 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton9 = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsButton10 = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsButton11 = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsButton12 = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsButton13 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton8 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton7 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton6 = new LeahsPlatinumTracker.ProgressFlagsButton();
@@ -53,6 +45,14 @@
             this.progressFlagsButton3 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton2 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton1 = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.hmFlagsButton8 = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsButton7 = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsButton6 = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsButton5 = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsButton4 = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsButton3 = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsButton2 = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsButton1 = new LeahsPlatinumTracker.HMFlagsButton();
             this.checkFlagsButton9 = new LeahsPlatinumTracker.CheckFlagsButton();
             this.checkFlagsButton8 = new LeahsPlatinumTracker.CheckFlagsButton();
             this.checkFlagsButton7 = new LeahsPlatinumTracker.CheckFlagsButton();
@@ -126,25 +126,19 @@
             this.r228 = new LeahsPlatinumTracker.MapSelectorButton();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.MtCoronetPeak = new LeahsPlatinumTracker.MapSelectorButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MarkerSelector2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MarkerSelector1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton6)).BeginInit();
@@ -153,6 +147,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton7)).BeginInit();
@@ -163,6 +165,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton1)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,7 +178,7 @@
             this.panel1.Controls.Add(this.MarkerSelector1);
             this.panel1.Location = new System.Drawing.Point(4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(149, 206);
+            this.panel1.Size = new System.Drawing.Size(154, 206);
             this.panel1.TabIndex = 63;
             // 
             // MarkerSelector2
@@ -203,19 +207,11 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.hmFlagsButton8);
-            this.panel2.Controls.Add(this.hmFlagsButton7);
-            this.panel2.Controls.Add(this.hmFlagsButton6);
-            this.panel2.Controls.Add(this.hmFlagsButton5);
-            this.panel2.Controls.Add(this.hmFlagsButton4);
-            this.panel2.Controls.Add(this.hmFlagsButton3);
-            this.panel2.Controls.Add(this.hmFlagsButton2);
-            this.panel2.Controls.Add(this.hmFlagsButton1);
-            this.panel2.Controls.Add(this.progressFlagsButton13);
-            this.panel2.Controls.Add(this.progressFlagsButton12);
-            this.panel2.Controls.Add(this.progressFlagsButton11);
-            this.panel2.Controls.Add(this.progressFlagsButton10);
             this.panel2.Controls.Add(this.progressFlagsButton9);
+            this.panel2.Controls.Add(this.progressFlagsButton10);
+            this.panel2.Controls.Add(this.progressFlagsButton11);
+            this.panel2.Controls.Add(this.progressFlagsButton12);
+            this.panel2.Controls.Add(this.progressFlagsButton13);
             this.panel2.Controls.Add(this.progressFlagsButton8);
             this.panel2.Controls.Add(this.progressFlagsButton7);
             this.panel2.Controls.Add(this.progressFlagsButton6);
@@ -224,196 +220,83 @@
             this.panel2.Controls.Add(this.progressFlagsButton3);
             this.panel2.Controls.Add(this.progressFlagsButton2);
             this.panel2.Controls.Add(this.progressFlagsButton1);
-            this.panel2.Controls.Add(this.checkFlagsButton9);
-            this.panel2.Controls.Add(this.checkFlagsButton8);
-            this.panel2.Controls.Add(this.checkFlagsButton7);
-            this.panel2.Controls.Add(this.checkFlagsButton6);
-            this.panel2.Controls.Add(this.checkFlagsButton5);
-            this.panel2.Controls.Add(this.checkFlagsButton4);
-            this.panel2.Controls.Add(this.checkFlagsButton3);
-            this.panel2.Controls.Add(this.checkFlagsButton2);
-            this.panel2.Controls.Add(this.checkFlagsButton1);
-            this.panel2.Location = new System.Drawing.Point(5, 370);
+            this.panel2.Location = new System.Drawing.Point(5, 629);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 428);
+            this.panel2.Size = new System.Drawing.Size(154, 169);
             this.panel2.TabIndex = 64;
-            // 
-            // hmFlagsButton8
-            // 
-            this.hmFlagsButton8.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM07;
-            this.hmFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.hmFlagsButton8.Location = new System.Drawing.Point(114, 192);
-            this.hmFlagsButton8.Name = "hmFlagsButton8";
-            this.hmFlagsButton8.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton8.TabIndex = 138;
-            this.hmFlagsButton8.TabStop = false;
-            // 
-            // hmFlagsButton7
-            // 
-            this.hmFlagsButton7.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM08;
-            this.hmFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.hmFlagsButton7.Location = new System.Drawing.Point(76, 192);
-            this.hmFlagsButton7.Name = "hmFlagsButton7";
-            this.hmFlagsButton7.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton7.TabIndex = 137;
-            this.hmFlagsButton7.TabStop = false;
-            // 
-            // hmFlagsButton6
-            // 
-            this.hmFlagsButton6.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM04;
-            this.hmFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.hmFlagsButton6.Location = new System.Drawing.Point(36, 192);
-            this.hmFlagsButton6.Name = "hmFlagsButton6";
-            this.hmFlagsButton6.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton6.TabIndex = 136;
-            this.hmFlagsButton6.TabStop = false;
-            // 
-            // hmFlagsButton5
-            // 
-            this.hmFlagsButton5.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM03;
-            this.hmFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.hmFlagsButton5.Location = new System.Drawing.Point(-2, 192);
-            this.hmFlagsButton5.Name = "hmFlagsButton5";
-            this.hmFlagsButton5.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton5.TabIndex = 135;
-            this.hmFlagsButton5.TabStop = false;
-            // 
-            // hmFlagsButton4
-            // 
-            this.hmFlagsButton4.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM02;
-            this.hmFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.hmFlagsButton4.Location = new System.Drawing.Point(114, 154);
-            this.hmFlagsButton4.Name = "hmFlagsButton4";
-            this.hmFlagsButton4.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton4.TabIndex = 134;
-            this.hmFlagsButton4.TabStop = false;
-            // 
-            // hmFlagsButton3
-            // 
-            this.hmFlagsButton3.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM05;
-            this.hmFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.hmFlagsButton3.Location = new System.Drawing.Point(76, 154);
-            this.hmFlagsButton3.Name = "hmFlagsButton3";
-            this.hmFlagsButton3.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton3.TabIndex = 133;
-            this.hmFlagsButton3.TabStop = false;
-            // 
-            // hmFlagsButton2
-            // 
-            this.hmFlagsButton2.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM01;
-            this.hmFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.hmFlagsButton2.Location = new System.Drawing.Point(36, 154);
-            this.hmFlagsButton2.Name = "hmFlagsButton2";
-            this.hmFlagsButton2.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton2.TabIndex = 132;
-            this.hmFlagsButton2.TabStop = false;
-            // 
-            // hmFlagsButton1
-            // 
-            this.hmFlagsButton1.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM06;
-            this.hmFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.hmFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.hmFlagsButton1.Location = new System.Drawing.Point(-2, 154);
-            this.hmFlagsButton1.Name = "hmFlagsButton1";
-            this.hmFlagsButton1.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton1.TabIndex = 113;
-            this.hmFlagsButton1.TabStop = false;
-            // 
-            // progressFlagsButton13
-            // 
-            this.progressFlagsButton13.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCynthia;
-            this.progressFlagsButton13.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton13.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton13.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton13.Location = new System.Drawing.Point(58, 391);
-            this.progressFlagsButton13.Name = "progressFlagsButton13";
-            this.progressFlagsButton13.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton13.TabIndex = 131;
-            this.progressFlagsButton13.TabStop = false;
-            // 
-            // progressFlagsButton12
-            // 
-            this.progressFlagsButton12.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasLucian;
-            this.progressFlagsButton12.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton12.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton12.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton12.Location = new System.Drawing.Point(115, 353);
-            this.progressFlagsButton12.Name = "progressFlagsButton12";
-            this.progressFlagsButton12.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton12.TabIndex = 130;
-            this.progressFlagsButton12.TabStop = false;
-            // 
-            // progressFlagsButton11
-            // 
-            this.progressFlagsButton11.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasFlint;
-            this.progressFlagsButton11.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton11.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton11.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton11.Location = new System.Drawing.Point(77, 353);
-            this.progressFlagsButton11.Name = "progressFlagsButton11";
-            this.progressFlagsButton11.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton11.TabIndex = 129;
-            this.progressFlagsButton11.TabStop = false;
-            // 
-            // progressFlagsButton10
-            // 
-            this.progressFlagsButton10.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasBertha;
-            this.progressFlagsButton10.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton10.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton10.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton10.Location = new System.Drawing.Point(37, 353);
-            this.progressFlagsButton10.Name = "progressFlagsButton10";
-            this.progressFlagsButton10.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton10.TabIndex = 128;
-            this.progressFlagsButton10.TabStop = false;
             // 
             // progressFlagsButton9
             // 
             this.progressFlagsButton9.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasAaron;
-            this.progressFlagsButton9.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton9.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton9.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton9.Location = new System.Drawing.Point(-1, 353);
+            this.progressFlagsButton9.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Aaron;
+            this.progressFlagsButton9.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Aaron_Locked;
+            this.progressFlagsButton9.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Aaron;
+            this.progressFlagsButton9.Location = new System.Drawing.Point(2, 92);
             this.progressFlagsButton9.Name = "progressFlagsButton9";
             this.progressFlagsButton9.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton9.TabIndex = 127;
             this.progressFlagsButton9.TabStop = false;
             // 
+            // progressFlagsButton10
+            // 
+            this.progressFlagsButton10.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasBertha;
+            this.progressFlagsButton10.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Bertha;
+            this.progressFlagsButton10.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bertha_Locked;
+            this.progressFlagsButton10.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bertha;
+            this.progressFlagsButton10.Location = new System.Drawing.Point(40, 92);
+            this.progressFlagsButton10.Name = "progressFlagsButton10";
+            this.progressFlagsButton10.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsButton10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsButton10.TabIndex = 128;
+            this.progressFlagsButton10.TabStop = false;
+            // 
+            // progressFlagsButton11
+            // 
+            this.progressFlagsButton11.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasFlint;
+            this.progressFlagsButton11.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Flint;
+            this.progressFlagsButton11.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Flint_Locked;
+            this.progressFlagsButton11.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Flint;
+            this.progressFlagsButton11.Location = new System.Drawing.Point(78, 92);
+            this.progressFlagsButton11.Name = "progressFlagsButton11";
+            this.progressFlagsButton11.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsButton11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsButton11.TabIndex = 129;
+            this.progressFlagsButton11.TabStop = false;
+            // 
+            // progressFlagsButton12
+            // 
+            this.progressFlagsButton12.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasLucian;
+            this.progressFlagsButton12.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Lucian;
+            this.progressFlagsButton12.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Lucian_Locked;
+            this.progressFlagsButton12.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Lucian;
+            this.progressFlagsButton12.Location = new System.Drawing.Point(116, 92);
+            this.progressFlagsButton12.Name = "progressFlagsButton12";
+            this.progressFlagsButton12.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsButton12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsButton12.TabIndex = 130;
+            this.progressFlagsButton12.TabStop = false;
+            // 
+            // progressFlagsButton13
+            // 
+            this.progressFlagsButton13.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCynthia;
+            this.progressFlagsButton13.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Cynthia;
+            this.progressFlagsButton13.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cynthia_Locked;
+            this.progressFlagsButton13.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cynthia;
+            this.progressFlagsButton13.Location = new System.Drawing.Point(59, 130);
+            this.progressFlagsButton13.Name = "progressFlagsButton13";
+            this.progressFlagsButton13.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsButton13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsButton13.TabIndex = 131;
+            this.progressFlagsButton13.TabStop = false;
+            // 
             // progressFlagsButton8
             // 
             this.progressFlagsButton8.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasBeaconBadge;
-            this.progressFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton8.Location = new System.Drawing.Point(115, 306);
+            this.progressFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym8;
+            this.progressFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym8_Locked;
+            this.progressFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym8;
+            this.progressFlagsButton8.Location = new System.Drawing.Point(116, 41);
             this.progressFlagsButton8.Name = "progressFlagsButton8";
             this.progressFlagsButton8.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -423,10 +306,10 @@
             // progressFlagsButton7
             // 
             this.progressFlagsButton7.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasIcicleBadge;
-            this.progressFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton7.Location = new System.Drawing.Point(77, 306);
+            this.progressFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym7;
+            this.progressFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym7_Locked;
+            this.progressFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym7;
+            this.progressFlagsButton7.Location = new System.Drawing.Point(78, 41);
             this.progressFlagsButton7.Name = "progressFlagsButton7";
             this.progressFlagsButton7.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -436,10 +319,10 @@
             // progressFlagsButton6
             // 
             this.progressFlagsButton6.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasMineBadge;
-            this.progressFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton6.Location = new System.Drawing.Point(37, 306);
+            this.progressFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6;
+            this.progressFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6_Locked;
+            this.progressFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6;
+            this.progressFlagsButton6.Location = new System.Drawing.Point(40, 41);
             this.progressFlagsButton6.Name = "progressFlagsButton6";
             this.progressFlagsButton6.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -449,10 +332,10 @@
             // progressFlagsButton5
             // 
             this.progressFlagsButton5.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasFenBadge;
-            this.progressFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton5.Location = new System.Drawing.Point(-1, 306);
+            this.progressFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5;
+            this.progressFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5_Locked;
+            this.progressFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5;
+            this.progressFlagsButton5.Location = new System.Drawing.Point(2, 41);
             this.progressFlagsButton5.Name = "progressFlagsButton5";
             this.progressFlagsButton5.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -462,10 +345,10 @@
             // progressFlagsButton4
             // 
             this.progressFlagsButton4.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCobbleBadge;
-            this.progressFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton4.Location = new System.Drawing.Point(115, 268);
+            this.progressFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4;
+            this.progressFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4_Locked;
+            this.progressFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4;
+            this.progressFlagsButton4.Location = new System.Drawing.Point(116, 3);
             this.progressFlagsButton4.Name = "progressFlagsButton4";
             this.progressFlagsButton4.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -475,10 +358,10 @@
             // progressFlagsButton3
             // 
             this.progressFlagsButton3.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasRelicBadge;
-            this.progressFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton3.Location = new System.Drawing.Point(77, 268);
+            this.progressFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3;
+            this.progressFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3_Locked;
+            this.progressFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3;
+            this.progressFlagsButton3.Location = new System.Drawing.Point(78, 3);
             this.progressFlagsButton3.Name = "progressFlagsButton3";
             this.progressFlagsButton3.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -488,10 +371,10 @@
             // progressFlagsButton2
             // 
             this.progressFlagsButton2.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasForestBadge;
-            this.progressFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton2.Location = new System.Drawing.Point(37, 268);
+            this.progressFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2;
+            this.progressFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2_Locked;
+            this.progressFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2;
+            this.progressFlagsButton2.Location = new System.Drawing.Point(40, 3);
             this.progressFlagsButton2.Name = "progressFlagsButton2";
             this.progressFlagsButton2.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -501,23 +384,127 @@
             // progressFlagsButton1
             // 
             this.progressFlagsButton1.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCoalBadge;
-            this.progressFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.progressFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.progressFlagsButton1.Location = new System.Drawing.Point(-1, 268);
+            this.progressFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym1;
+            this.progressFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym1_Locked;
+            this.progressFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym1;
+            this.progressFlagsButton1.Location = new System.Drawing.Point(2, 3);
             this.progressFlagsButton1.Name = "progressFlagsButton1";
             this.progressFlagsButton1.Size = new System.Drawing.Size(32, 32);
             this.progressFlagsButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton1.TabIndex = 119;
             this.progressFlagsButton1.TabStop = false;
             // 
+            // hmFlagsButton8
+            // 
+            this.hmFlagsButton8.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM07;
+            this.hmFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Waterfall;
+            this.hmFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Waterfall_Locked;
+            this.hmFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Waterfall;
+            this.hmFlagsButton8.Location = new System.Drawing.Point(118, 41);
+            this.hmFlagsButton8.Name = "hmFlagsButton8";
+            this.hmFlagsButton8.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsButton8.TabIndex = 138;
+            this.hmFlagsButton8.TabStop = false;
+            // 
+            // hmFlagsButton7
+            // 
+            this.hmFlagsButton7.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM08;
+            this.hmFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.RockClimb;
+            this.hmFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockClimb_Locked;
+            this.hmFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockClimb;
+            this.hmFlagsButton7.Location = new System.Drawing.Point(80, 41);
+            this.hmFlagsButton7.Name = "hmFlagsButton7";
+            this.hmFlagsButton7.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsButton7.TabIndex = 137;
+            this.hmFlagsButton7.TabStop = false;
+            // 
+            // hmFlagsButton6
+            // 
+            this.hmFlagsButton6.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM04;
+            this.hmFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength;
+            this.hmFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength_Locked;
+            this.hmFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength;
+            this.hmFlagsButton6.Location = new System.Drawing.Point(43, 41);
+            this.hmFlagsButton6.Name = "hmFlagsButton6";
+            this.hmFlagsButton6.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsButton6.TabIndex = 136;
+            this.hmFlagsButton6.TabStop = false;
+            // 
+            // hmFlagsButton5
+            // 
+            this.hmFlagsButton5.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM03;
+            this.hmFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf;
+            this.hmFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf_Locked;
+            this.hmFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf;
+            this.hmFlagsButton5.Location = new System.Drawing.Point(4, 41);
+            this.hmFlagsButton5.Name = "hmFlagsButton5";
+            this.hmFlagsButton5.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsButton5.TabIndex = 135;
+            this.hmFlagsButton5.TabStop = false;
+            // 
+            // hmFlagsButton4
+            // 
+            this.hmFlagsButton4.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM02;
+            this.hmFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly;
+            this.hmFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly_Locked;
+            this.hmFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly;
+            this.hmFlagsButton4.Location = new System.Drawing.Point(118, 3);
+            this.hmFlagsButton4.Name = "hmFlagsButton4";
+            this.hmFlagsButton4.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsButton4.TabIndex = 134;
+            this.hmFlagsButton4.TabStop = false;
+            // 
+            // hmFlagsButton3
+            // 
+            this.hmFlagsButton3.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM05;
+            this.hmFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog;
+            this.hmFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog_Locked;
+            this.hmFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog;
+            this.hmFlagsButton3.Location = new System.Drawing.Point(80, 3);
+            this.hmFlagsButton3.Name = "hmFlagsButton3";
+            this.hmFlagsButton3.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsButton3.TabIndex = 133;
+            this.hmFlagsButton3.TabStop = false;
+            // 
+            // hmFlagsButton2
+            // 
+            this.hmFlagsButton2.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM01;
+            this.hmFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut;
+            this.hmFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut_Locked;
+            this.hmFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut;
+            this.hmFlagsButton2.Location = new System.Drawing.Point(43, 3);
+            this.hmFlagsButton2.Name = "hmFlagsButton2";
+            this.hmFlagsButton2.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsButton2.TabIndex = 132;
+            this.hmFlagsButton2.TabStop = false;
+            // 
+            // hmFlagsButton1
+            // 
+            this.hmFlagsButton1.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM06;
+            this.hmFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.RockSmash;
+            this.hmFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockSmash_Locked;
+            this.hmFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockSmash;
+            this.hmFlagsButton1.Location = new System.Drawing.Point(4, 3);
+            this.hmFlagsButton1.Name = "hmFlagsButton1";
+            this.hmFlagsButton1.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsButton1.TabIndex = 113;
+            this.hmFlagsButton1.TabStop = false;
+            // 
             // checkFlagsButton9
             // 
             this.checkFlagsButton9.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSecretPotion;
-            this.checkFlagsButton9.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton9.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton9.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton9.Location = new System.Drawing.Point(58, 79);
+            this.checkFlagsButton9.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.SecretPotion;
+            this.checkFlagsButton9.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.SecretPotion_Locked;
+            this.checkFlagsButton9.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.SecretPotion;
+            this.checkFlagsButton9.Location = new System.Drawing.Point(62, 79);
             this.checkFlagsButton9.Name = "checkFlagsButton9";
             this.checkFlagsButton9.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -527,10 +514,10 @@
             // checkFlagsButton8
             // 
             this.checkFlagsButton8.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasDefeatedWindworks;
-            this.checkFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton8.Location = new System.Drawing.Point(115, 41);
+            this.checkFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.DefeatedWindworks;
+            this.checkFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.DefeatedWindworks_Locked;
+            this.checkFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.DefeatedWindworks;
+            this.checkFlagsButton8.Location = new System.Drawing.Point(119, 41);
             this.checkFlagsButton8.Name = "checkFlagsButton8";
             this.checkFlagsButton8.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -540,10 +527,10 @@
             // checkFlagsButton7
             // 
             this.checkFlagsButton7.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenVolkner;
-            this.checkFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton7.Location = new System.Drawing.Point(77, 41);
+            this.checkFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Volkner;
+            this.checkFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Volkner_Locked;
+            this.checkFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Volkner;
+            this.checkFlagsButton7.Location = new System.Drawing.Point(81, 41);
             this.checkFlagsButton7.Name = "checkFlagsButton7";
             this.checkFlagsButton7.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -553,10 +540,10 @@
             // checkFlagsButton6
             // 
             this.checkFlagsButton6.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenFantina;
-            this.checkFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton6.Location = new System.Drawing.Point(37, 41);
+            this.checkFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina;
+            this.checkFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina_Locked;
+            this.checkFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina;
+            this.checkFlagsButton6.Location = new System.Drawing.Point(43, 41);
             this.checkFlagsButton6.Name = "checkFlagsButton6";
             this.checkFlagsButton6.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -566,10 +553,10 @@
             // checkFlagsButton5
             // 
             this.checkFlagsButton5.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenRoark;
-            this.checkFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton5.Location = new System.Drawing.Point(-1, 41);
+            this.checkFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark;
+            this.checkFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark_Locked;
+            this.checkFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark;
+            this.checkFlagsButton5.Location = new System.Drawing.Point(5, 41);
             this.checkFlagsButton5.Name = "checkFlagsButton5";
             this.checkFlagsButton5.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -579,10 +566,10 @@
             // checkFlagsButton4
             // 
             this.checkFlagsButton4.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasBike;
-            this.checkFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton4.Location = new System.Drawing.Point(115, 3);
+            this.checkFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike;
+            this.checkFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike_Locked;
+            this.checkFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike;
+            this.checkFlagsButton4.Location = new System.Drawing.Point(119, 3);
             this.checkFlagsButton4.Name = "checkFlagsButton4";
             this.checkFlagsButton4.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -592,10 +579,10 @@
             // checkFlagsButton3
             // 
             this.checkFlagsButton3.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasTeleport;
-            this.checkFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton3.Location = new System.Drawing.Point(77, 3);
+            this.checkFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport;
+            this.checkFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport_Locked;
+            this.checkFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport;
+            this.checkFlagsButton3.Location = new System.Drawing.Point(81, 3);
             this.checkFlagsButton3.Name = "checkFlagsButton3";
             this.checkFlagsButton3.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -605,10 +592,10 @@
             // checkFlagsButton2
             // 
             this.checkFlagsButton2.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasWorksKey;
-            this.checkFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton2.Location = new System.Drawing.Point(-1, 3);
+            this.checkFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey;
+            this.checkFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey_Locked;
+            this.checkFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey;
+            this.checkFlagsButton2.Location = new System.Drawing.Point(5, 3);
             this.checkFlagsButton2.Name = "checkFlagsButton2";
             this.checkFlagsButton2.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -618,10 +605,10 @@
             // checkFlagsButton1
             // 
             this.checkFlagsButton1.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasGalacticKey;
-            this.checkFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
+            this.checkFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
             this.checkFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
             this.checkFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton1.Location = new System.Drawing.Point(37, 3);
+            this.checkFlagsButton1.Location = new System.Drawing.Point(43, 3);
             this.checkFlagsButton1.Name = "checkFlagsButton1";
             this.checkFlagsButton1.Size = new System.Drawing.Size(32, 32);
             this.checkFlagsButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -631,7 +618,7 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.MainPanel.Location = new System.Drawing.Point(167, 128);
+            this.MainPanel.Location = new System.Drawing.Point(171, 128);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(996, 802);
             this.MainPanel.TabIndex = 66;
@@ -646,7 +633,7 @@
             this.button62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
             this.button62.Location = new System.Drawing.Point(4, 215);
             this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(149, 31);
+            this.button62.Size = new System.Drawing.Size(154, 31);
             this.button62.TabIndex = 67;
             this.button62.Text = "LINK";
             this.button62.UseCompatibleTextRendering = true;
@@ -1644,7 +1631,7 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
             this.button1.Location = new System.Drawing.Point(4, 252);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 31);
+            this.button1.Size = new System.Drawing.Size(154, 31);
             this.button1.TabIndex = 109;
             this.button1.Text = "temp: update";
             this.button1.UseCompatibleTextRendering = true;
@@ -1654,14 +1641,49 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.button62);
             this.panel3.Location = new System.Drawing.Point(8, 128);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(160, 802);
+            this.panel3.Size = new System.Drawing.Size(164, 802);
             this.panel3.TabIndex = 110;
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.hmFlagsButton1);
+            this.panel6.Controls.Add(this.hmFlagsButton2);
+            this.panel6.Controls.Add(this.hmFlagsButton8);
+            this.panel6.Controls.Add(this.hmFlagsButton3);
+            this.panel6.Controls.Add(this.hmFlagsButton4);
+            this.panel6.Controls.Add(this.hmFlagsButton7);
+            this.panel6.Controls.Add(this.hmFlagsButton5);
+            this.panel6.Controls.Add(this.hmFlagsButton6);
+            this.panel6.Location = new System.Drawing.Point(4, 417);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(154, 80);
+            this.panel6.TabIndex = 111;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.checkFlagsButton2);
+            this.panel5.Controls.Add(this.checkFlagsButton1);
+            this.panel5.Controls.Add(this.checkFlagsButton3);
+            this.panel5.Controls.Add(this.checkFlagsButton4);
+            this.panel5.Controls.Add(this.checkFlagsButton5);
+            this.panel5.Controls.Add(this.checkFlagsButton6);
+            this.panel5.Controls.Add(this.checkFlagsButton7);
+            this.panel5.Controls.Add(this.checkFlagsButton8);
+            this.panel5.Controls.Add(this.checkFlagsButton9);
+            this.panel5.Location = new System.Drawing.Point(5, 296);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(154, 115);
+            this.panel5.TabIndex = 110;
             // 
             // panel4
             // 
@@ -1687,7 +1709,7 @@
             this.panel4.Controls.Add(this.r215);
             this.panel4.Controls.Add(this.r216);
             this.panel4.Controls.Add(this.r217);
-            this.panel4.Location = new System.Drawing.Point(1161, 128);
+            this.panel4.Location = new System.Drawing.Point(1165, 128);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(92, 802);
             this.panel4.TabIndex = 111;
@@ -1713,7 +1735,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(1265, 938);
+            this.ClientSize = new System.Drawing.Size(1269, 938);
             this.Controls.Add(this.MtCoronetPeak);
             this.Controls.Add(this.VictoryRoad);
             this.Controls.Add(this.Veilstone);
@@ -1769,19 +1791,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.MarkerSelector1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton6)).EndInit();
@@ -1790,6 +1804,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton7)).EndInit();
@@ -1800,6 +1822,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton1)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1906,5 +1932,7 @@
         private HMFlagsButton hmFlagsButton3;
         private HMFlagsButton hmFlagsButton2;
         private HMFlagsButton hmFlagsButton1;
+        private Panel panel6;
+        private Panel panel5;
     }
 }
