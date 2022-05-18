@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace LeahsPlatinumTracker
 {
+    /// <summary>
+    /// <see cref="Checks"/> class.                                                         <br />
+    ///                                                                                     <br />
+    /// Used for keeping track of various progress and area availability related flags.     <br />
+    /// </summary>
     public class Checks
     {
-
-        // https://stackoverflow.com/a/3261485/13460028
+        /// <summary>
+        /// <see cref="FlagsTool"/> internal class, used for setting and unsetting flags in enums.      <br />
+        ///                                                                                             <br />
+        /// <see href="https://stackoverflow.com/a/3261485/13460028"/>                                  <br />
+        /// </summary>
         internal static class FlagsTool
         {
             // The casts to object in the below code are an unfortunate necessity due to
@@ -41,6 +49,10 @@ namespace LeahsPlatinumTracker
         }
 
         // Check Enums
+
+        /// <summary>
+        /// Check flags. Contains checks that aren't specific in nature or inherently related to progress, but still important for tracking area availability.
+        /// </summary>
         [Flags]
         public enum CheckFlags
         {
@@ -56,6 +68,9 @@ namespace LeahsPlatinumTracker
             HasSecretPotion = 256
         }
 
+        /// <summary>
+        /// Progress flags. Contains checks that are relevant to typical game progression, like gyms and elite four members.
+        /// </summary>
         [Flags]
         public enum ProgressFlags
         {
@@ -75,6 +90,9 @@ namespace LeahsPlatinumTracker
             HasCynthia = 4096
         }
 
+        /// <summary>
+        /// HM flags. Contains checks for HM unlocks.
+        /// </summary>
         [Flags]
         public enum HMFlags
         {
@@ -89,25 +107,53 @@ namespace LeahsPlatinumTracker
             HM07 = 128  // Waterfall
         }
 
+        /// <summary>
+        /// This instance's associated nonspecific checks.
+        /// </summary>
         public CheckFlags ChecksMade { get; set; }
+
+        /// <summary>
+        /// This instance's associated progress related checks.
+        /// </summary>
         public ProgressFlags Progress { get; set; }
+
+        /// <summary>
+        /// This instance's associated HM related checks.
+        /// </summary>
         public HMFlags HMs { get; set; }
 
         // Constructors
+
+        /// <summary>
+        /// Empty constructor. Creates a set of checks with nothing set.
+        /// </summary>
         public Checks() { }
 
         // int to enum explicit conversion, used for HM requirements
+        /// <summary>
+        /// Integer constructor. Used for HM requirements, explicitly converting int to enum and allowing multiple HM requirements along with their associated required gyms.   <br />
+        /// <em>e.g; a given value of 65 requires Rock Climb (64), Icicle Badge (64), Rock Smash (1) and Coal Badge (1).</em>                                                   <br />
+        /// </summary>
+        /// <param name="progressFlags">The given integer to be converted to enum.</param>
         public Checks(int progressFlags)
         {
             HMs = (HMFlags)progressFlags;
             Progress = (ProgressFlags)progressFlags;
         }
 
+        /// <summary>
+        /// ProgressFlags constructor. Takes an instance of the ProgressFlags enum and creates a Checks instance with those flags set.
+        /// </summary>
+        /// <param name="progressFlags">The given instance of the ProgressFlags enum.</param>
         public Checks(ProgressFlags progressFlags)
         {
-            Progress = (ProgressFlags)progressFlags;
+            Progress = progressFlags;
         }
 
+        /// <summary>
+        /// CheckFlags constructor. Takes an instance of the CheckFlags enum and creates a Checks instance with those flags set.
+        /// </summary>
+        /// <param name="checkFlags">The given instance of the CheckFlags enum.</param>
         public Checks(CheckFlags checkFlags)
         {
             ChecksMade = checkFlags;
@@ -115,6 +161,10 @@ namespace LeahsPlatinumTracker
 
         // Functions
 
+        /// <summary>
+        /// Sets a flag in this instance's CheckFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be set.</param>
         public void Unlock(CheckFlags flag)
         {
             CheckFlags _checks = ChecksMade;
@@ -122,6 +172,10 @@ namespace LeahsPlatinumTracker
             ChecksMade = _checks;
         }
 
+        /// <summary>
+        /// Unsets a flag in this instance's CheckFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be unset.</param>
         public void Lock(CheckFlags flag)
         {
             CheckFlags _checks = ChecksMade;
@@ -129,6 +183,11 @@ namespace LeahsPlatinumTracker
             ChecksMade = _checks;
         }
 
+        /// <summary>
+        /// Toggles a flag in this instance's CheckFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be toggled.</param>
+        /// <returns>A boolean pertaining to the state of the flag after toggling.</returns>
         public bool Toggle(CheckFlags flag)
         {
             if (!FlagsTool.IsSet(ChecksMade, flag))
@@ -143,6 +202,10 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// Sets a flag in this instance's ProgressFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be set.</param>
         public void Unlock(ProgressFlags flag)
         {
             ProgressFlags _progress = Progress;
@@ -150,6 +213,10 @@ namespace LeahsPlatinumTracker
             Progress = _progress;
         }
 
+        /// <summary>
+        /// Unsets a flag in this instance's ProgressFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be unset.</param>
         public void Lock(ProgressFlags flag)
         {
             ProgressFlags _progress = Progress;
@@ -157,6 +224,11 @@ namespace LeahsPlatinumTracker
             Progress = _progress;
         }
 
+        /// <summary>
+        /// Toggles a flag in this instance's ProgressFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be toggled.</param>
+        /// <returns>A boolean pertaining to the state of the flag after toggling.</returns>
         public bool Toggle(ProgressFlags flag)
         {
             if (!FlagsTool.IsSet(Progress, flag))
@@ -171,6 +243,10 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// Sets a flag in this instance's HMFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be set.</param>
         public void Unlock(HMFlags flag)
         {
             HMFlags _hmflags = HMs;
@@ -178,6 +254,10 @@ namespace LeahsPlatinumTracker
             HMs = _hmflags;
         }
 
+        /// <summary>
+        /// Unsets a flag in this instance's HMFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be unset.</param>
         public void Lock(HMFlags flag)
         {
             HMFlags _hmflags = HMs;
@@ -185,6 +265,11 @@ namespace LeahsPlatinumTracker
             HMs = _hmflags;
         }
 
+        /// <summary>
+        /// Toggles a flag in this instance's HMFlags.
+        /// </summary>
+        /// <param name="flag">The flag to be toggled.</param>
+        /// <returns>A boolean pertaining to the state of the flag after toggling.</returns>
         public bool Toggle(HMFlags flag)
         {
             if (!FlagsTool.IsSet(HMs, flag))
@@ -199,6 +284,11 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// Evaluates if, for every flag that is set in this instance, the given instance has the flag set too.
+        /// </summary>
+        /// <param name="currentChecks">The Checks instance to compare to this instance.</param>
+        /// <returns>A boolean pertaining to whether the given Checks instance meets the flags set in this instance.</returns>
         public bool meetsRequirements(Checks currentChecks)
         {
             bool MeetsRequiredFlags<T>(T requirementChecks, T currentChecks, T flag) where T : struct
@@ -245,6 +335,10 @@ namespace LeahsPlatinumTracker
             return true; // meets all requirements!
         }
 
+        /// <summary>
+        /// Debug method. Creates a string representing the flags set in this instance.
+        /// </summary>
+        /// <returns>A string representing the flags set in this instance.</returns>
         public string CheckString()
         {
             string output = "";

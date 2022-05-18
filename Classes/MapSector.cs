@@ -7,11 +7,26 @@ using System.Threading.Tasks;
 
 namespace LeahsPlatinumTracker
 {
+    /// <summary>
+    /// <see cref="VisualMapSector"/> class.                                            <br />
+    ///                                                                                 <br />
+    /// Used to represent a group of <see cref="MapSector"/> instances within the UI.   <br />
+    /// </summary>
     public class VisualMapSector
     {
+        /// <summary>
+        /// The unique identifier for this instance.
+        /// </summary>
         public string VisualMapID { get; set; }
+
+        /// <summary>
+        /// The <see cref="MapSector"/> instances that this instance consists of.
+        /// </summary>
         public List<MapSector> MapSectors { get; set; }
 
+        /// <summary>
+        /// A boolean pertaining to whether any of this instance's <see cref="MapSector"/>s are unlocked.
+        /// </summary>
         [JsonIgnore]
         public bool IsUnlocked
         {
@@ -24,6 +39,10 @@ namespace LeahsPlatinumTracker
                 return false;
             }
         }
+
+        /// <summary>
+        /// A boolean pertaining to whether every accessible <see cref="Warp"/> in this instance has been checked.
+        /// </summary>
         [JsonIgnore]
         public bool IsCompleted
         {
@@ -43,12 +62,28 @@ namespace LeahsPlatinumTracker
                 return true;
             }
         }
+
+        /// <summary>
+        /// The <see cref="LeahsPlatinumTracker.Tracker"/> that this instance belongs to.
+        /// </summary>
         [JsonIgnore]
         public Tracker? Tracker { get; }
+
+        /// <summary>
+        /// A string used to represent this instance in UI elements.
+        /// </summary>
         [JsonIgnore]
         public string DisplayName { get; set; }
 
         // Constructors
+
+        /// <summary>
+        /// <see cref="VisualMapSector"/> constructor for an instance with multiple child <see cref="MapSector"/> instances.
+        /// </summary>
+        /// <param name="_Tracker">The parent <see cref="LeahsPlatinumTracker.Tracker"/> for this instance.</param>
+        /// <param name="_VisualMapID">The unique identifier for this instance.</param>
+        /// <param name="_MapSectors">A list of <see cref="MapSector"/> instances to be set as a child of this instance.</param>
+        /// <param name="_DisplayName">The string used to represent this instance in UI elements. Defaults to the same as <paramref name="_VisualMapID"/>.</param>
         public VisualMapSector(Tracker _Tracker, string _VisualMapID, List<MapSector>_MapSectors, string _DisplayName = "")
         {
             Tracker = _Tracker;
@@ -63,6 +98,12 @@ namespace LeahsPlatinumTracker
             else DisplayName = VisualMapID;
         }
 
+        /// <summary>
+        /// <see cref="VisualMapSector"/> constructor for an instance with a single child <see cref="MapSector"/>.
+        /// </summary>
+        /// <param name="_Tracker">The parent <see cref="LeahsPlatinumTracker.Tracker"/> for this instance.</param>
+        /// <param name="_MapSector">The <see cref="MapSector"/> that belongs to this instance.</param>
+        /// <param name="_DisplayName">The string used to represent this instance in UI elements. Defaults to the same as <paramref name="_MapSector"/>.MapID.</param>
         public VisualMapSector(Tracker _Tracker, MapSector _MapSector, string _DisplayName = "")
         {
             Tracker = _Tracker;
@@ -76,17 +117,49 @@ namespace LeahsPlatinumTracker
 
     }
 
+    /// <summary>
+    /// <see cref="MapSector"/> class.                                                                                                                                                                                          <br />
+    ///                                                                                                                                                                                                                         <br />
+    /// Used to represent a group of <see cref="Warp"/>s in an area within the <see cref="LeahsPlatinumTracker.Tracker"/>, keep track of the <see cref="Condition"/>s required to reach this area and know whether it is possible to do so.   <br />
+    /// </summary>
     public class MapSector
     {
+        /// <summary>
+        /// The unique identifier for this instance.
+        /// </summary>
         public string MapID { get; set; }
+
+        /// <summary>
+        /// The <see cref="Warp"/>s that this instance consists of.
+        /// </summary>
         public List<Warp> Warps { get; set; }
+
+        /// <summary>
+        /// The checks and/or maps required for this MapSector to become unlocked.
+        /// </summary>
         [JsonIgnore]
         public List<Condition> Conditions { get; set; }
+
+        /// <summary>
+        /// The boolean representing if this instance is either accessible and has any condition fully met, or is linked by one of its warps.
+        /// </summary>
         public bool IsUnlocked { get; set; }
+
+        /// <summary>
+        /// The boolean representing if this instance is unlocked by default.
+        /// </summary>
         [JsonIgnore]
         public bool DefaultUnlocked { get; set; }
+
+        /// <summary>
+        /// The <see cref="VisualMapSector"/> that this instance belongs to. This <b>needs</b> to be set after creation, as it is not set by any constructor.
+        /// </summary>
         [JsonIgnore]
         public VisualMapSector? ParentVisualMapSector { get; set; } // needs to be initialised on creation
+
+        /// <summary>
+        /// The <see cref="LeahsPlatinumTracker.Tracker"/> that this instance belongs to.
+        /// </summary>
         [JsonIgnore]
         public Tracker Tracker
         {
@@ -97,6 +170,13 @@ namespace LeahsPlatinumTracker
         }
 
         // Constructors
+
+        /// <summary>
+        /// <see cref="MapSector"/> constructor for an area that only requires a map connection.
+        /// </summary>
+        /// <param name="_MapID">The unique identifier for this <see cref="MapSector"/>.</param>
+        /// <param name="numberOfWarps">The number of <see cref="Warp"/> instances to create.</param>
+        /// <param name="AccessMap">The <see cref="MapID"/> of another <see cref="MapSector"/> required for accessing this one.</param>
         public MapSector(string _MapID, int numberOfWarps, string AccessMap)
         {
             MapID = _MapID;
@@ -107,6 +187,14 @@ namespace LeahsPlatinumTracker
                 Warps.Add(new Warp(MapID, i, this));
             }
         }
+
+        /// <summary>
+        /// <see cref="MapSector"/> constructor for an area that requires <see cref="Checks"/> and/or a map connection to be unlocked.
+        /// </summary>
+        /// <param name="_MapID">The unique identifier for this <see cref="MapSector"/>.</param>
+        /// <param name="numberOfWarps">The number of <see cref="Warp"/> instances to create.</param>
+        /// <param name="_Condition">A <see cref="Condition"/> instance that represents the required <see cref="Checks"/> and/or map connection.</param>
+        /// <param name="defaultUnlocked">A boolean representing if this <see cref="MapSector"/> should be unlocked by default. Defaults to <b>false</b>.</param>
         public MapSector(string _MapID, int numberOfWarps, Condition _Condition, bool defaultUnlocked = false)
         {
             MapID = _MapID;
@@ -124,6 +212,13 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// <see cref="MapSector"/> constructor for an area that can require any of a given list of <see cref="Checks"/> and/or map connections to be unlocked.
+        /// </summary>
+        /// <param name="_MapID">The unique identifier for this <see cref="MapSector"/>.</param>
+        /// <param name="numberOfWarps">The number of <see cref="Warp"/> instances to create.</param>
+        /// <param name="_Conditions">A list of <see cref="Condition"/> instances representing the required <see cref="Checks"/> and or/map connections.</param>
+        /// <param name="defaultUnlocked">A boolean representing if this <see cref="MapSector"/> should be unlocked by default. Defaults to <b>false</b>.</param>
         public MapSector(string _MapID, int numberOfWarps, List<Condition> _Conditions, bool defaultUnlocked = false)
         {
             MapID = _MapID;
@@ -141,6 +236,12 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// <see cref="MapSector"/> constructor for an area with no access conditions.
+        /// </summary>
+        /// <param name="_MapID">The unique identifier for this <see cref="MapSector"/>.</param>
+        /// <param name="numberOfWarps">The number of <see cref="Warp"/> instances to create.</param>
+        /// <param name="defaultUnlocked">A boolean representing if this <see cref="MapSector"/> should be unlocked by default. Defaults to <b>false</b>.</param>
         public MapSector(string _MapID, int numberOfWarps, bool defaultUnlocked = false)
         {
             MapID = _MapID;
@@ -159,6 +260,13 @@ namespace LeahsPlatinumTracker
         }
 
         // Functions
+
+        /// <summary>
+        /// Sets the destination of one of this instance's <see cref="Warp"/>s matching a given <paramref name="WarpID"/>.
+        /// </summary>
+        /// <param name="WarpID">The unique identifier of the <see cref="Warp"/> to set the destination of.</param>
+        /// <param name="Destination">A tuple representing the intended destination of this <see cref="Warp"/>.</param>
+        /// <returns>A boolean pertaining to whether the destination of the matching <see cref="Warp"/> was successfully set.</returns>
         public bool Link(int WarpID, (string MapID, int WarpID) Destination)
         {
             foreach(Warp warp in Warps)
@@ -173,7 +281,11 @@ namespace LeahsPlatinumTracker
             return false;
         }
 
-        // Unlinks a warp of specified ID and returns if this MapSector is still linked by any warp
+        /// <summary>
+        /// Unsets the destination of one of this instance's <see cref="Warp"/>s matching a given <paramref name="WarpID"/>.
+        /// </summary>
+        /// <param name="WarpID">The <paramref name="WarpID"/> of the <see cref="Warp"/> to reset the destination of.</param>
+        /// <returns>A boolean pertaining to whether any of the <see cref="Warp"/>s in this instance has a set destination.</returns>
         public bool Unlink(int WarpID)
         {
             foreach(Warp warp in Warps)
@@ -187,7 +299,10 @@ namespace LeahsPlatinumTracker
             return true;
         }
 
-        // checks if this MapSector is linked at all via warps
+        /// <summary>
+        /// Evaluates if any of this instance's <see cref="Warp"/>s has a set destination. Also returns true if this instance is unlocked by default.
+        /// </summary>
+        /// <returns>A boolean pertaining to whether any of this instance's <see cref="Warp"/>s has a set destination, or if this instance is unlocked by default.</returns>
         public bool IsLinked()
         {
             foreach (Warp warp in Warps)
@@ -197,7 +312,11 @@ namespace LeahsPlatinumTracker
             return DefaultUnlocked;
         }
 
-        // checks if a specific warp is linked
+        /// <summary>
+        /// Evaluates if a <see cref="Warp"/> matching the given <paramref name="WarpID"/> has a set destination.
+        /// </summary>
+        /// <param name="WarpID">The <paramref name="WarpID"/> of the <see cref="Warp"/> to check if it has a set destination or not.</param>
+        /// <returns>A boolean pertaining to if the <see cref="Warp"/> matching the given <paramref name="WarpID"/> has a set destination.</returns>
         public bool IsLinked(int WarpID)
         {
             foreach (Warp warp in Warps)
@@ -210,6 +329,10 @@ namespace LeahsPlatinumTracker
             return false;
         }
 
+        /// <summary>
+        /// Evaluates if this instance is accessible from a physical connection.
+        /// </summary>
+        /// <returns>A boolean pertaining to whether this instance is accessible from a physical connection, or whether it is unlocked by default.</returns>
         public bool IsMapAccessible()
         {
             foreach (Condition condition in Conditions)
@@ -219,6 +342,11 @@ namespace LeahsPlatinumTracker
             return DefaultUnlocked;
         }
 
+        /// <summary>
+        /// Returns a <see cref="Warp"/> from this instance matching a given <see cref="Warp.WarpID"/>.
+        /// </summary>
+        /// <param name="WarpID">Unique identifier of the <see cref="Warp"/> to return.</param>
+        /// <returns><see cref="Warp"/> instance matching the given <see cref="Warp.WarpID"/>, or <b>null</b> if none was found.</returns>
         public Warp GetWarp(int WarpID)
         {
             foreach (Warp warp in Warps)
@@ -231,6 +359,11 @@ namespace LeahsPlatinumTracker
             return null;
         }
 
+        /// <summary>
+        /// Attempts to unlock this instance given available <see cref="Checks"/>.
+        /// </summary>
+        /// <param name="currentChecks">The <see cref="Checks"/> instance to compare this instance's conditions to.</param>
+        /// <returns>A boolean pertaining to whether this instance is unlocked.</returns>
         public bool AttemptUnlock(Checks currentChecks)
         {
             if (IsUnlocked) return false;
@@ -243,6 +376,11 @@ namespace LeahsPlatinumTracker
             return IsUnlocked;
         }
 
+        /// <summary>
+        /// Evaluates if this instance should be re-locked given available <see cref="Checks"/>.
+        /// </summary>
+        /// <param name="currentChecks">The <see cref="Checks"/> instance to compare this instance's conditions to.</param>
+        /// <returns>A boolean pertaining to whether this instance has changed state to become locked.</returns>
         public bool AttemptLock(Checks currentChecks)
         {
             if (!IsUnlocked || IsLinked()) return false; // if the map is linked via warp, assume it should remain unlocked
@@ -262,6 +400,12 @@ namespace LeahsPlatinumTracker
             return false;
         }
 
+        /// <summary>
+        /// Attempts to unlock this instance given the <see cref="MapID"/> of a newly locked <see cref="MapSector"/> and current available checks.
+        /// </summary>
+        /// <param name="UnlockedMap">The <see cref="MapID"/> of the <see cref="MapSector"/> that has become unlocked.</param>
+        /// <param name="currentChecks">The <see cref="Checks"/> instance to compare this instance's conditions to.</param>
+        /// <returns>A boolean pertaining to whether this instance is unlocked.</returns>
         public bool AttemptUnlock(string UnlockedMap, Checks currentChecks)
         {
             if (IsUnlocked) return false;
@@ -279,6 +423,12 @@ namespace LeahsPlatinumTracker
             return IsUnlocked;
         }
 
+        /// <summary>
+        /// Evaluates if this instance should be re-locked given the <see cref="MapID"/> of a newly locked <see cref="MapSector"/> and current available <see cref="Checks"/>.
+        /// </summary>
+        /// <param name="LockedMap">The <see cref="MapID"/> of the <see cref="MapSector"/> that has become locked.</param>
+        /// <param name="currentChecks">The <see cref="Checks"/> instance to compare this instance's conditions to.</param>
+        /// <returns>A boolean pertaining to whether this instance has changed state to become locked.</returns>
         public bool AttemptLock(string LockedMap, Checks currentChecks)
         {
             if (!IsUnlocked || IsLinked()) return false; // if the map is linked via warp, assume it should remain unlocked
@@ -304,6 +454,11 @@ namespace LeahsPlatinumTracker
             return false;
         }
 
+        /// <summary>
+        /// Debug method. Returns a boolean pertaining to whether this instance can be unlocked by a given <see cref="MapID"/>.
+        /// </summary>
+        /// <param name="MapName">The <see cref="MapID"/> to check this instance's conditions for.</param>
+        /// <returns>A boolean pertaining to whether this instance can be unlocked by the given <see cref="MapID"/>.</returns>
         public bool CanAccess(string MapName) 
         {
             foreach (Condition Condition in Conditions)
@@ -315,18 +470,32 @@ namespace LeahsPlatinumTracker
 
     }
 
+    /// <summary>
+    /// <see cref="Condition"/> class.                                                                                                                          <br />
+    ///                                                                                                                                                         <br />
+    /// Used to represent a way that a <see cref="MapSector"/> can become unlocked; from a simple map connection, to an area and a set of <see cref="Checks"/>.  <br />
+    /// </summary>
     public class Condition
     {
+        /// <summary>
+        /// The <see cref="MapSector.MapID"/> of the <see cref="MapSector"/> that is required to be unlocked for this instance to become MapAccessible.
+        /// </summary>
         public string AccessMap { get; set; }
+
+        /// <summary>
+        /// The <see cref="Checks"/> that are required for this instance to become unlocked, provided it is MapAccessible.
+        /// </summary>
         public Checks RequiredChecks { get; set; }
+
+        /// <summary>
+        /// A value determining if this instance has its AccessMap requirement met, and can be reached from a physical route.
+        /// </summary>
         public bool MapAccessible { get; set; }
 
-        public Condition()
-        {
-            AccessMap = "";
-            RequiredChecks = new Checks();
-            MapAccessible = false;
-        }
+        /// <summary>
+        /// <see cref="Condition"/> constructor for a condition that becomes unlocked from a simple physical connection.
+        /// </summary>
+        /// <param name="_AccessMap">The <see cref="MapSector.MapID"/> of the <see cref="MapSector"/> that is required to be unlocked for this condition to become unlocked.</param>
         public Condition(string _AccessMap)
         {
             AccessMap = _AccessMap;
@@ -334,21 +503,13 @@ namespace LeahsPlatinumTracker
             MapAccessible = false;
         }
 
-        public Condition(Checks _RequiredChecks)
-        {
-            AccessMap = "";
-            RequiredChecks = _RequiredChecks;
-            MapAccessible = true;
-        }
-
-        public Condition(string _AccessMap, Checks _RequiredChecks)
-        {
-            AccessMap = _AccessMap;
-            RequiredChecks = _RequiredChecks;
-            MapAccessible = false;
-        }
-
-        public Condition(string _AccessMap, Checks _RequiredChecks, bool _MapAccessible)
+        /// <summary>
+        /// <see cref="Condition"/> constructor for a condition that becomes unlocked from a physical connection and a set of checks being met.
+        /// </summary>
+        /// <param name="_AccessMap">The <see cref="MapSector.MapID"/> of the <see cref="MapSector"/> that is required to be unlocked for this instance to become MapAccessible.</param>
+        /// <param name="_RequiredChecks">The <see cref="Checks"/> instance for the set of Checks that are required for this instance to become unlocked, if MapAccessible.</param>
+        /// <param name="_MapAccessible">Optional boolean determining if this instance is MapAccessible by default. Defaults to <b>false</b>.</param>
+        public Condition(string _AccessMap, Checks _RequiredChecks, bool _MapAccessible = false)
         {
             AccessMap = _AccessMap;
             RequiredChecks = _RequiredChecks;
@@ -357,43 +518,71 @@ namespace LeahsPlatinumTracker
 
     }
 
+    /// <summary>
+    /// <see cref="Warp"/> class.                                                                                           <br />
+    ///                                                                                                                     <br />
+    /// Created for each warp in a <see cref="MapSector"/>, used for keeping track of warp destination and UI markers.      <br />
+    /// </summary>
     public class Warp
     {
+        /// <summary>
+        /// The <see cref="MapSector.MapID"/> of the <see cref="MapSector"/> this warp belongs to.
+        /// </summary>
         public string MapID { get; set; }
+
+        /// <summary>
+        /// The unique identifier for this <see cref="Warp"/>.
+        /// </summary>
         public int WarpID { get; set; }
+
+        /// <summary>
+        /// A tuple representing the set destination of this <see cref="Warp"/>.
+        /// </summary>
         public (string MapID, int WarpID) Destination { get; set; }
+
+        /// <summary>
+        /// A value used to represent this <see cref="Warp"/> with an icon/marker on the UI.        <br />
+        ///                                                                                         <br />
+        /// Supported values: 0 - 23. <em>(see <see cref="VisualMarkers"/> for full list.)</em>     <br />
+        /// </summary>
         public int VisualMarkers { get; set; }
 
         /*
-        public enum Markers
-        {
-            None = 0,
-            DeadEnd = 1,
-            Arrow = 2,
-            Bike = 4,
-            Trainer = 8,
-            Badge1 = 16,
-            Badge2 = 32,
-            Badge3 = 64,
-            Badge4 = 128,
-            Badge5 = 256,
-            Badge6 = 512,
-            Badge7 = 1024,
-            Badge8 = 2048,
-            EliteFour1 = 4096,
-            EliteFour2 = 8192,
-            EliteFour3 = 16384,
-            EliteFour4 = 32768,
-            Champion = 65536,
-            RockSmash = 131072,
-            Cut = 262144,
-            Strength = 524288,
-            Surf = 1048576,
-            Waterfall = 2097152,
-            RockClimb = 4194304
-        }
+         * Supported values for VisualMarkers
+         * 
+         *  0: None
+         *  1: Dead End
+         *  2: Arrow
+         *  3: Bike
+         *  4: Trainer
+         *  5: Coal Badge
+         *  6: Forest Badge
+         *  7: Relic Badge
+         *  8: Cobble Badge
+         *  9: Fen Badge
+         * 10: Mine Badge
+         * 11: Icicle Badge
+         * 12: Beacon Badge
+         * 13: Aaron
+         * 14: Bertha
+         * 15: Flint
+         * 16: Lucian
+         * 17: Cynthia
+         * 18: Rock Smash
+         * 19: Cut
+         * 20: Strength
+         * 21: Surf
+         * 22: Waterfall
+         * 23: Rock Climb
+         * 
         */
-
+       
+        /// <summary>
+        /// <see cref="Warp"/> constructor.
+        /// </summary>
+        /// <param name="_MapID">The <see cref="MapSector.MapID"/> of the <see cref="MapSector"/> that this instance belongs to.</param>
+        /// <param name="_WarpID">The unique identifier for this instance.</param>
+        /// <param name="_Parent">The <see cref="MapSector"/> that this instance belongs to.</param>
         public Warp(string _MapID, int _WarpID, MapSector _Parent)
         {
             MapID = _MapID;
@@ -403,12 +592,20 @@ namespace LeahsPlatinumTracker
             VisualMarkers = 0;
         }
 
+        /// <summary>
+        /// Sets the <see cref="Destination"/> of this instance.
+        /// </summary>
+        /// <param name="_MapID">The <see cref="MapSector.MapID"/> of the destination warp.</param>
+        /// <param name="_WarpID">The <see cref="WarpID"/> of the destination warp.</param>
         public void Set(string _MapID, int _WarpID)
         {
             Destination = (_MapID, _WarpID);
             VisualMarkers = 0;
         }
 
+        /// <summary>
+        /// Clears the <see cref="Destination"/> of this instance.
+        /// </summary>
         public void Clear()
         {
             Destination = ("Not set", -1);
@@ -416,6 +613,10 @@ namespace LeahsPlatinumTracker
         }
 
         // References
+
+        /// <summary>
+        /// The <see cref="LeahsPlatinumTracker.Tracker"/> instance that this <see cref="Warp"/> belongs to.
+        /// </summary>
         public Tracker Tracker
         {
             get
@@ -424,8 +625,14 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// The <see cref="MapSector"/> that this <see cref="Warp"/> belongs to.
+        /// </summary>
         public MapSector ParentMapSector { get; }
 
+        /// <summary>
+        /// The <see cref="MapSector"/> that this <see cref="Warp"/> is linked to.
+        /// </summary>
         [JsonIgnore]
         public MapSector DestinationMapSector
         {
@@ -442,6 +649,9 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// The <see cref="VisualMapSector"/> that this <see cref="Warp"/> is linked to.
+        /// </summary>
         [JsonIgnore]
         public VisualMapSector DestinationVisualMapSector
         {

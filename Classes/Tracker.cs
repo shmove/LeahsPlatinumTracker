@@ -7,13 +7,33 @@ using Newtonsoft.Json;
 
 namespace LeahsPlatinumTracker
 {
+    /// <summary>
+    /// <see cref="Tracker"/> class. This is version 0.1.0 of Leah's Platinum Tracker.  <br/>
+    ///                                                                                 <br/>
+    /// This version supports:                                                          <br/>
+    ///     - Pokemon Platinum.                                                         <br/>
+    ///                                                                                 <br/>
+    /// In terms of tracking, this version supports:                                    <br/>
+    ///     - All areas and warps in Pokemon Platinum.                                  <br/>
+    ///     - The ability to link warps together.                                       <br/>
+    ///     - The ability to mark warps with visual markers.                            <br/>
+    ///     - A check system that keeps track of which areas have become available.     <br/>
+    /// </summary>
     public class Tracker
     {
-        // Checks
+        /// <summary>
+        /// A <see cref="LeahsPlatinumTracker.Checks"/> instance that keeps track of which checks the player has unlocked.
+        /// </summary>
         public Checks Checks { get; set; }
 
-        // Map
+        /// <summary>
+        /// A list of <see cref="VisualMapSector"/> instances that the map consists of.
+        /// </summary>
         public List<VisualMapSector> VisualMapSectors { get; set; }
+
+        /// <summary>
+        /// A list of all the <see cref="MapSector"/> instances from the <see cref="VisualMapSectors"/> list.
+        /// </summary>
         [JsonIgnore]
         public List<MapSector> MapSectors
         {
@@ -32,10 +52,19 @@ namespace LeahsPlatinumTracker
             }
         }
 
-        // Identifiers
+        /// <summary>
+        /// The game that this <see cref="Tracker"/> is created for.
+        /// </summary>
         public string Game { get; set; }
+
+        /// <summary>
+        /// The current version of the <see cref="Tracker"/> at the time of this instance's creation.
+        /// </summary>
         public string CreatedVersion { get; set; }
 
+        /// <summary>
+        /// Constructor. Initialises an empty set of <see cref="LeahsPlatinumTracker.Checks"/>, and creates a <see cref="Tracker"/> for Pokemon Platinum with all map areas and warps.
+        /// </summary>
         public Tracker()
         {
 
@@ -533,6 +562,13 @@ namespace LeahsPlatinumTracker
         }
 
         // Functions
+
+        /// <summary>
+        /// Called when a <see cref="MapSector"/> becomes unlocked. Will attempt to unlock/update any <see cref="MapSector"/>s that require the given <paramref name="unlockedArea"/> as an access map.     <br/>
+        /// Calls recursively if any <see cref="MapSector"/>s become unlocked as a result of the given one becoming unlocked.                                                                               <br/>
+        /// </summary>
+        /// <param name="unlockedArea">The <see cref="MapSector.MapID"/> of the <see cref="MapSector"/> that has become unlocked.</param>
+        /// <returns>A boolean pertaining to whether the map has changed.</returns>
         public bool UpdateMap(string unlockedArea)
         {
             bool successfullyUpdated = false;
@@ -548,6 +584,11 @@ namespace LeahsPlatinumTracker
             return successfullyUpdated;
         }
 
+        /// <summary>
+        /// Called when a <see cref="MapSector"/> becomes locked. Will attempt to lock/update any <see cref="MapSector"/>s that require the given <paramref name="lockedArea"/> as an access map.      <br/>
+        /// Calls recursively if any <see cref="MapSector"/>s become locked as a result of the given one becoming locked.                                                                              <br/>
+        /// </summary>
+        /// <param name="lockedArea">The <see cref="MapSector.MapID"/> of the <see cref="MapSector"/> that has become locked.</param>
         public void RevertMap(string lockedArea)
         {
             foreach(MapSector sector in MapSectors)
@@ -560,6 +601,10 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// Called when a <see cref="LeahsPlatinumTracker.Checks"/> becomes unlocked. Will attempt to unlock/update any <see cref="MapSector"/>s that meet the requirements of the new current checks, or that are unlocked as a result of other maps becoming unlocked.
+        /// </summary>
+        /// <returns>A boolean pertaining to whether the map has changed.</returns>
         public bool UpdateMap()
         {
             bool successfullyUpdated = false;
@@ -575,6 +620,9 @@ namespace LeahsPlatinumTracker
             return successfullyUpdated;
         }
 
+        /// <summary>
+        /// Called when a check in the <see cref="LeahsPlatinumTracker.Checks"/> becomes locked. Will attempt to lock/update any <see cref="MapSector"/>s that don't meet their given conditions anymore, or that are subsequently locked following others.
+        /// </summary>
         public void RevertMap()
         {
             foreach(MapSector sector in MapSectors)
@@ -587,6 +635,12 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// Given the respective <see cref="MapSector.MapID"/> and <see cref="Warp.WarpID"/> of two seperate <see cref="Warp"/> instances, set each warp as the other's destination; linking the warps to each other.
+        /// </summary>
+        /// <param name="warp1">A tuple used as a reference to the first given <see cref="Warp"/> to link.</param>
+        /// <param name="warp2">A tuple used as a reference to the second given <see cref="Warp"/> to link.</param>
+        /// <returns>A boolean pertaining to whether both of the warps have successfully been linked to each other.</returns>
         public bool LinkWarps((string MapID, int WarpID) warp1, (string MapID, int WarpID) warp2)
         {
             bool linked1 = false;
@@ -631,6 +685,10 @@ namespace LeahsPlatinumTracker
             return linked1 && linked2;
         }
 
+        /// <summary>
+        /// Given the <see cref="MapSector.MapID"/> and <see cref="Warp.WarpID"/> of a <see cref="Warp"/>, resets its' destination and resets the destination of the warp it was originally linked to; unlinking the warps from each other.
+        /// </summary>
+        /// <param name="warp">A tuple used as a reference to the given warp to unlink.</param>
         public void UnlinkWarp((string MapID, int WarpID) warp)
         {
             // loop to find initial warp to unlink
@@ -667,6 +725,11 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// Returns a <see cref="MapSector"/> from the <see cref="Tracker"/> that matches the given <paramref name="MapID"/>.
+        /// </summary>
+        /// <param name="MapID">The given <see cref="MapSector.MapID"/> to search for.</param>
+        /// <returns>The <see cref="MapSector"/> with a matching <paramref name="MapID"/>, or <b>null</b> if none was found.</returns>
         public MapSector GetMapSector(string MapID)
         {
             foreach (MapSector sector in MapSectors)
@@ -676,6 +739,13 @@ namespace LeahsPlatinumTracker
             return null;
         }
 
+        /// <summary>
+        /// Returns a <see cref="VisualMapSector"/> from the <see cref="Tracker"/> that either;                                             <br />
+        /// - Matches the given <see cref="VisualMapSector.VisualMapID"/>.                                                                  <br />
+        /// - Is the parent <see cref="VisualMapSector"/> of the <see cref="MapSector"/> that matches the given <see cref="MapSector.MapID"/>.   <br />
+        /// </summary>
+        /// <param name="MapID">The given <see cref="VisualMapSector.VisualMapID"/> or <see cref="MapSector.MapID"/>.</param>
+        /// <returns>The matching <see cref="VisualMapSector"/>, or <b>null</b> if none was found.</returns>
         public VisualMapSector GetVisualMapSector(string MapID)
         {
             foreach(VisualMapSector VisualSector in VisualMapSectors)
@@ -689,6 +759,9 @@ namespace LeahsPlatinumTracker
             return null;
         }
 
+        /// <summary>
+        /// Debug method. Prints all tracker data to system console.
+        /// </summary>
         public void log()
         {
             System.Diagnostics.Debug.WriteLine("");
@@ -763,7 +836,9 @@ namespace LeahsPlatinumTracker
             System.Diagnostics.Debug.WriteLine("");
         }
 
-        // Convert tracker to JSON
+        /// <summary>
+        /// Temporary method. Serialises current tracker data to JSON and saves in AppData\Roaming as save.lpt.
+        /// </summary>
         public void ToJSON()
         {
             string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "LeahsPlatinumTracker");
@@ -777,8 +852,18 @@ namespace LeahsPlatinumTracker
 
     }
 
+    /// <summary>
+    /// <see cref="TrackerManager"/> class.                                                   <br />
+    ///                                                                                       <br />
+    /// Used to create an instance of the <see cref="Tracker"/> from a given set of data.     <br />
+    /// </summary>
     public static class TrackerManager
     {
+        /// <summary>
+        /// Creates an instance of the tracker from a JSON string.
+        /// </summary>
+        /// <param name="json">The given tracker JSON string.</param>
+        /// <returns>An instance of the tracker with all data from the JSON string fully restored.</returns>
         public static Tracker FromJSON(string json)
         {
             Tracker tracker = new Tracker();
