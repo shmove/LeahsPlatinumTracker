@@ -401,7 +401,7 @@ namespace LeahsPlatinumTracker
             }, "Oreburgh Gate"));
             VisualMapSectors.Add(new VisualMapSector(this, "Pastoria", new List<MapSector>
             {
-                new MapSector("Pastoria", 8, new List<Condition>
+                new MapSector("Pastoria", 9, new List<Condition>
                 {
                     new Condition("212"),
                     new Condition("Pastoria Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))
@@ -410,12 +410,16 @@ namespace LeahsPlatinumTracker
             }));
             VisualMapSectors.Add(new VisualMapSector(this, "PokeLeague", new List<MapSector>
             {
-                new MapSector("PokeLeague Ext S", 2, new Condition("Sunyshore A", new Checks(144))), // can surf here from sunyshore and waterfall up
+                new MapSector("PokeLeague Ext S", 2, new List<Condition>
+                {
+                    new Condition("Sunyshore A", new Checks(144)), // can surf here from sunyshore and waterfall up
+                    new Condition("PokeLeague Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))
+                }), 
                 new MapSector("PokeLeague Ext N A", 1, new Condition("PokeLeague Ext N B", new Checks(144))), // caveside, can surf down from league exit
                 new MapSector("PokeLeague Ext N B", 1, new List<Condition> // entrance to league, can surf up from caveside
                 {
                     new Condition("PokeLeague Ext N A", new Checks(144)),
-                    new Condition("PokeLeague Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))
+                    new Condition("PokeLeague Int", new Checks(Checks.CheckFlags.HasTeleport))
                 }), 
                 new MapSector("PokeLeague Int", 4), // self contained
                 new MapSector("PokeLeague Pokecentre", 3)
@@ -435,7 +439,7 @@ namespace LeahsPlatinumTracker
             {
                 new MapSector("Sandgem", 4, new List<Condition>
                 {
-                    new Condition("Jubilife"),
+                    new Condition("Jubilife A"),
                     new Condition("VerityLake Ext"),
                     new Condition("221", new Checks(16))
                 }, true),
