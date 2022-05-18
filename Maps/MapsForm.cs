@@ -90,8 +90,8 @@ namespace LeahsPlatinumTracker
         public void CreateRouteConnectorButton(MapsForm form, Tracker Player, string sectorName, Point location)
         {
             RouteConnectorButton button = new RouteConnectorButton(form, Player, sectorName, location);
-            button.MouseClick -= new MouseEventHandler(RouteConnector_Click);
-            button.MouseClick += new MouseEventHandler(RouteConnector_Click);
+            button.MouseDown -= new MouseEventHandler(RouteConnector_Click);
+            button.MouseDown += new MouseEventHandler(RouteConnector_Click);
             form.Controls.Add(button);
         }
 
@@ -132,6 +132,14 @@ namespace LeahsPlatinumTracker
                 else warpButton.associatedWarp.VisualMarkers = 1;
                 warpButton.updateAppearance();
             }
+            else if (me.Button == MouseButtons.Middle)
+            {
+                // Load associated map
+                if (warpButton.associatedWarp.Destination.WarpID >= 0)
+                {
+                    parent.LoadMapPanel(warpButton.associatedWarp.DestinationVisualMapSector.VisualMapID);
+                }
+            }
         }
 
         /*
@@ -144,8 +152,11 @@ namespace LeahsPlatinumTracker
 
         private void RouteConnector_Click(object sender, MouseEventArgs me)
         {
-            RouteConnectorButton button = (RouteConnectorButton)sender;
-            parent.LoadMapPanel(button.associatedVisualMapSector.VisualMapID);
+            if (me.Button == MouseButtons.Left || me.Button == MouseButtons.Middle)
+            {
+                RouteConnectorButton button = (RouteConnectorButton)sender;
+                parent.LoadMapPanel(button.associatedVisualMapSector.VisualMapID);
+            }
         }
 
     }
