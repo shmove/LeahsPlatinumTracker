@@ -14,7 +14,7 @@ namespace LeahsPlatinumTracker
         private Point position;
         private MarkerPictureBox? Marker;
         private MapsForm? parent;
-        public bool selected = false;
+        public bool selected { get; set; } = false;
 
         public WarpButton()
         {
@@ -102,16 +102,18 @@ namespace LeahsPlatinumTracker
             }
             else
             {
-                Marker = new MarkerPictureBox();
+                Marker = new MarkerPictureBox(this);
                 Marker.Size = new Size(32, 32);
                 if (associatedWarp.Destination.WarpID < 0)
                 {
                     this.Hide();
-                    Marker.Location = new Point(position.X + 38, position.Y - 4);
+                    Marker.Location = new Point(position.X + 38 - ((selected ? 1 : 0) * 2), position.Y - 4 - ((selected ? 1 : 0) * 2));
                 }
                 else
                 {
-                    Marker.Location = new Point(position.X + 38, position.Y + 20);
+                    Text = associatedWarp.DestinationVisualMapSector.DisplayName;
+                    Font = new Font("Nirmala UI", (float)8.25, FontStyle.Regular);
+                    Marker.Location = new Point(position.X + 38 - ((selected ? 1 : 0) * 2), position.Y + 20 - ((selected ? 1 : 0) * 2));
                 }
 
                 switch (associatedWarp.VisualMarkers)
@@ -122,9 +124,53 @@ namespace LeahsPlatinumTracker
                     case 2:
                         Marker.Image = Properties.MarkerResources.arrow;
                         break;
+                    case 3:
+                        Marker.Image = Properties.MarkerResources.bike;
+                        break;
+                    case 4:
+                        Marker.Image = Properties.MarkerResources.trainer;
+                        break;
+                    case 5:
+                        Marker.Image = Properties.MarkerResources.CoalBadge;
+                        break;
+                    case 6:
+                        Marker.Image = Properties.MarkerResources.ForestBadge;
+                        break;
+                    case 7:
+                        Marker.Image = Properties.MarkerResources.RelicBadge;
+                        break;
+                    case 8:
+                        Marker.Image = Properties.MarkerResources.CobbleBadge;
+                        break;
+                    case 9:
+                        Marker.Image = Properties.MarkerResources.FenBadge;
+                        break;
+                    case 10:
+                        Marker.Image = Properties.MarkerResources.MineBadge;
+                        break;
+                    case 11:
+                        Marker.Image = Properties.MarkerResources.IcicleBadge;
+                        break;
+                    case 12:
+                        Marker.Image = Properties.MarkerResources.BeaconBadge;
+                        break;
+                    case 13:
+                        Marker.Image = Properties.MarkerResources.Aaron;
+                        break;
+                    case 14:
+                        Marker.Image = Properties.MarkerResources.Bertha;
+                        break;
+                    case 15:
+                        Marker.Image = Properties.MarkerResources.Flint;
+                        break;
+                    case 16:
+                        Marker.Image = Properties.MarkerResources.Lucian;
+                        break;
+                    case 17:
+                        Marker.Image = Properties.MarkerResources.Cynthia;
+                        break;
                 }
 
-                Marker.parent = this;
                 Marker.MouseDown += new MouseEventHandler(parent.Warp_Click);
                 parent.Controls.Add(Marker);
                 parent.parent.updateMapSelectorButtons();
@@ -138,6 +184,13 @@ namespace LeahsPlatinumTracker
     internal class MarkerPictureBox : ClickablePictureBox
     {
         public WarpButton parent;
+
+        public MarkerPictureBox(WarpButton _parent) : base()
+        {
+            parent = _parent;
+            ToggleSelected(parent.selected);
+        }
+
 
         public void RemoveFrom(MapsForm form)
         {

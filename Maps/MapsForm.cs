@@ -46,6 +46,15 @@ namespace LeahsPlatinumTracker
                         button.selected = false;
                     }
                 }
+                else if (item.GetType().Name == "MarkerPictureBox")
+                {
+                    MarkerPictureBox pictureBox = (MarkerPictureBox)item;
+                    if (parent.warp1 != pictureBox.parent.associatedWarp)
+                    {
+                        lastSelectedWarp = null;
+                        pictureBox.ToggleSelected(false);
+                    }
+                }
             }
         }
 
@@ -81,8 +90,10 @@ namespace LeahsPlatinumTracker
         internal void Warp_Click(object sender, MouseEventArgs me)
         {
             WarpButton warpButton;
+            bool hasPictureBox = false;
             if (sender.GetType().Name == "MarkerPictureBox")
             {
+                hasPictureBox = true;
                 MarkerPictureBox pictureBox = (MarkerPictureBox)sender;
                 warpButton = pictureBox.parent;
             }
@@ -96,16 +107,18 @@ namespace LeahsPlatinumTracker
                 if (lastSelectedWarp != null)
                 {
                     lastSelectedWarp.selected = false;
+                    if (hasPictureBox) ((MarkerPictureBox)sender).ToggleSelected(false);
                     lastSelectedWarp.updateAppearance();
                 }
 
                 if (!parent.setLinkWarps(warpButton.associatedWarp))
                 {
                     warpButton.selected = true;
+                    if (hasPictureBox) ((MarkerPictureBox)sender).ToggleSelected(true);
                     warpButton.updateAppearance();
                     lastSelectedWarp = warpButton;
                 };
-                
+
             }
             else if (me.Button == MouseButtons.Right)
             {
@@ -123,14 +136,6 @@ namespace LeahsPlatinumTracker
                 }
             }
         }
-
-        /*
-        private void Warp_DoubleClick()
-        {
-            if (lastClickedButton.associatedWarp.Destination.WarpID >= 0)
-                parent.LoadMapPanel(Player.GetVisualMapSector(lastClickedButton.associatedWarp.Destination.MapID).VisualMapID);
-        }
-        */
 
         private void RouteConnector_Click(object sender, MouseEventArgs me)
         {

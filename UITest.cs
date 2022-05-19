@@ -56,17 +56,21 @@ namespace LeahsPlatinumTracker
                 button.Click += new EventHandler(MapSelectorButton_Click);
                 button.updateAppearance();
             }
-            else if (control.GetType().Name == "Panel")
-            {
-                // recursion for panels
-                foreach(Control subControl in control.Controls)
-                {
-                    initialiseControls(subControl);
-                }
-            }
             else if (control.GetType().Name.EndsWith("FlagsButton"))
             {
                 ((ChecksButton)control).Initialise(control);
+            }
+            else if (control.GetType().Name == "MarkerSelector")
+            {
+                ((MarkerSelector)control).Initialise(this);
+            }
+            else if (control.GetType().Name == "Panel")
+            {
+                // recursion for panels
+                foreach (Control subControl in control.Controls)
+                {
+                    initialiseControls(subControl);
+                }
             }
         }
 
@@ -175,7 +179,7 @@ namespace LeahsPlatinumTracker
             activePanel.UpdateWarpAppearances();
         }
 
-        private void ApplyMarker(int markerNum)
+        public void ApplyMarker(int markerNum)
         {
             if (activePanel.lastSelectedWarp != null)
             {
@@ -183,16 +187,6 @@ namespace LeahsPlatinumTracker
                 else activePanel.lastSelectedWarp.associatedWarp.VisualMarkers = markerNum;
                 activePanel.lastSelectedWarp.updateAppearance();
             }
-        }
-
-        private void MarkerSelector1_Click(object sender, EventArgs e)
-        {
-            ApplyMarker(1);
-        }
-
-        private void MarkerSelector2_Click(object sender, EventArgs e)
-        {
-            ApplyMarker(2);
         }
     }
 }
