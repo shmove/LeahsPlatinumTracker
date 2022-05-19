@@ -644,8 +644,9 @@ namespace LeahsPlatinumTracker
         /// </summary>
         /// <param name="warp1">A tuple used as a reference to the first given <see cref="Warp"/> to link.</param>
         /// <param name="warp2">A tuple used as a reference to the second given <see cref="Warp"/> to link.</param>
+        /// <param name="preserveVisualMarkers">A boolean used to make it so that set VisualMarkers are preserved on warp destination overwrite.</param>
         /// <returns>A boolean pertaining to whether both of the warps have successfully been linked to each other.</returns>
-        public bool LinkWarps((string MapID, int WarpID) warp1, (string MapID, int WarpID) warp2)
+        public bool LinkWarps((string MapID, int WarpID) warp1, (string MapID, int WarpID) warp2, bool preserveVisualMarkers = false)
         {
             bool linked1 = false;
             bool linked2 = false;
@@ -659,7 +660,7 @@ namespace LeahsPlatinumTracker
                         if (!MapSector.IsMapAccessible()) RevertMap(MapSector.MapID);
                     }
 
-                    if (MapSector.Link(warp1.WarpID, warp2))
+                    if (MapSector.Link(warp1.WarpID, warp2, preserveVisualMarkers))
                     {
                         System.Diagnostics.Debug.WriteLine("1: Created link from " + warp1.MapID + " to " + warp2.MapID);
                         UpdateMap(warp1.MapID);
@@ -675,7 +676,7 @@ namespace LeahsPlatinumTracker
                         if (!MapSector.IsMapAccessible()) RevertMap(MapSector.MapID);
                     }
 
-                    if (MapSector.Link(warp2.WarpID, warp1))
+                    if (MapSector.Link(warp2.WarpID, warp1, preserveVisualMarkers))
                     {
                         System.Diagnostics.Debug.WriteLine("2: Created link from " + warp2.MapID + " to " + warp1.MapID);
                         UpdateMap(warp2.MapID);
@@ -693,7 +694,8 @@ namespace LeahsPlatinumTracker
         /// Given the <see cref="MapSector.MapID"/> and <see cref="Warp.WarpID"/> of a <see cref="Warp"/>, resets its' destination and resets the destination of the warp it was originally linked to; unlinking the warps from each other.
         /// </summary>
         /// <param name="warp">A tuple used as a reference to the given warp to unlink.</param>
-        public void UnlinkWarp((string MapID, int WarpID) warp)
+        /// <param name="preserveVisualMarkers">A boolean used to make it so that set VisualMarkers are preserved on warp destination overwrite.</param>
+        public void UnlinkWarp((string MapID, int WarpID) warp, bool preserveVisualMarkers = false)
         {
             // loop to find initial warp to unlink
             foreach (MapSector MapSector1 in MapSectors)
@@ -707,7 +709,7 @@ namespace LeahsPlatinumTracker
                     System.Diagnostics.Debug.WriteLine("Removed link between " + warp.MapID + " and " + destinationMap);
 
                     // Unlink warp, and if this isolates the MapSector then update map
-                    if (!MapSector1.Unlink(warp.WarpID))
+                    if (!MapSector1.Unlink(warp.WarpID, preserveVisualMarkers))
                     {
                         if (!MapSector1.IsMapAccessible()) RevertMap(MapSector1.MapID);
                     };
@@ -717,7 +719,7 @@ namespace LeahsPlatinumTracker
                         if (destinationMap == MapSector2.MapID)
                         {   
                             // Unlink warp, and if this isolates the MapSector then update map
-                            if (!MapSector2.Unlink(destinationID))
+                            if (!MapSector2.Unlink(destinationID, preserveVisualMarkers))
                             {
                                 if (!MapSector2.IsMapAccessible()) RevertMap(MapSector2.MapID);
                             };

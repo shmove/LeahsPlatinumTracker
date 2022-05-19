@@ -33,6 +33,7 @@ namespace LeahsPlatinumTracker
         {
             parent = (MapsForm)Parent;
             associatedWarp = parent.Player.GetMapSector(MapID).Warps[WarpID];
+            if (associatedWarp == null) throw new Exception("WarpButton was provided invalid Warp identifers.");
             position = Location;
             if (!fromUpdate) updateAppearance();
         }

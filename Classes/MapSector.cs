@@ -266,14 +266,15 @@ namespace LeahsPlatinumTracker
         /// </summary>
         /// <param name="WarpID">The unique identifier of the <see cref="Warp"/> to set the destination of.</param>
         /// <param name="Destination">A tuple representing the intended destination of this <see cref="Warp"/>.</param>
+        /// <param name="preserveVisualMarkers">A boolean used to make it so that set VisualMarkers are preserved on warp destination overwrite.</param>
         /// <returns>A boolean pertaining to whether the destination of the matching <see cref="Warp"/> was successfully set.</returns>
-        public bool Link(int WarpID, (string MapID, int WarpID) Destination)
+        public bool Link(int WarpID, (string MapID, int WarpID) Destination, bool preserveVisualMarkers = false)
         {
             foreach(Warp warp in Warps)
             {
                 if (warp.WarpID == WarpID)
                 {
-                    warp.Set(Destination.MapID, Destination.WarpID);
+                    warp.Set(Destination.MapID, Destination.WarpID, preserveVisualMarkers);
                     IsUnlocked = true;
                     return true;
                 }
@@ -285,14 +286,15 @@ namespace LeahsPlatinumTracker
         /// Unsets the destination of one of this instance's <see cref="Warp"/>s matching a given <paramref name="WarpID"/>.
         /// </summary>
         /// <param name="WarpID">The <paramref name="WarpID"/> of the <see cref="Warp"/> to reset the destination of.</param>
+        /// <param name="preserveVisualMarkers">A boolean used to make it so that set VisualMarkers are preserved on warp destination overwrite.</param>
         /// <returns>A boolean pertaining to whether any of the <see cref="Warp"/>s in this instance has a set destination.</returns>
-        public bool Unlink(int WarpID)
+        public bool Unlink(int WarpID, bool preserveVisualMarkers = false)
         {
             foreach(Warp warp in Warps)
             {
                 if (warp.WarpID == WarpID)
                 {
-                    warp.Clear();
+                    warp.Clear(preserveVisualMarkers);
                     return IsLinked();
                 }
             }
@@ -593,23 +595,38 @@ namespace LeahsPlatinumTracker
         }
 
         /// <summary>
+        /// <see cref="Warp"/> constructor. Takes a given Warp and clones its data into a new instance.
+        /// </summary>
+        /// <param name="warpClone">The existing <see cref="Warp"/> instance to copy from.</param>
+        public Warp(Warp warpClone)
+        {
+            MapID = warpClone.MapID;
+            WarpID = warpClone.WarpID;
+            ParentMapSector = warpClone.ParentMapSector;
+            Destination = warpClone.Destination;
+            VisualMarkers = warpClone.VisualMarkers;
+        }
+
+        /// <summary>
         /// Sets the <see cref="Destination"/> of this instance.
         /// </summary>
         /// <param name="_MapID">The <see cref="MapSector.MapID"/> of the destination warp.</param>
         /// <param name="_WarpID">The <see cref="WarpID"/> of the destination warp.</param>
-        public void Set(string _MapID, int _WarpID)
+        /// <param name="preserveVisualMarkers">A boolean used to make it so that set VisualMarkers are preserved on warp destination overwrite.</param>
+        public void Set(string _MapID, int _WarpID, bool preserveVisualMarkers = false)
         {
             Destination = (_MapID, _WarpID);
-            VisualMarkers = 0;
+            if (!preserveVisualMarkers) VisualMarkers = 0;
         }
 
         /// <summary>
         /// Clears the <see cref="Destination"/> of this instance.
         /// </summary>
-        public void Clear()
+        /// <param name="preserveVisualMarkers">A boolean used to make it so that set VisualMarkers are preserved on warp destination overwrite.</param>
+        public void Clear(bool preserveVisualMarkers = false)
         {
             Destination = ("Not set", -1);
-            VisualMarkers = 0;
+            if (!preserveVisualMarkers) VisualMarkers = 0;
         }
 
         // References

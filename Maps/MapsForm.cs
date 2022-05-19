@@ -152,7 +152,6 @@ namespace LeahsPlatinumTracker
                 parent.LoadMapPanel(button.associatedVisualMapSector.VisualMapID);
             }
         }
-
     }
 
     public class MapImages
