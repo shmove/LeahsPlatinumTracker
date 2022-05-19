@@ -136,6 +136,11 @@ namespace LeahsPlatinumTracker
                 activePanel.lastSelectedWarp = null;
                 updateAllAppearances();
             }
+            else if (warp1 != null && warp1.VisualMarkers > 0 && !linking)
+            {
+                warp1.VisualMarkers = 0;
+                updateAllAppearances();
+            }
         }
 
         internal bool setLinkWarps(Warp warp)

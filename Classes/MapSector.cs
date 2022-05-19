@@ -55,7 +55,10 @@ namespace LeahsPlatinumTracker
                     {
                         foreach (Warp warp in sector.Warps)
                         {
-                            if (warp.Destination.WarpID < 0 && warp.VisualMarkers != 1) return false;  // if warp is unset or dead-end
+                            if (warp.Destination.WarpID < 0 && 
+                                warp.VisualMarkers != 1 &&
+                                (warp.VisualMarkers < 5 || warp.VisualMarkers > 17) )
+                                return false;  // if warp is unset or matches any marker associated w a checked area/dead end
                         }
                     }
                 }
