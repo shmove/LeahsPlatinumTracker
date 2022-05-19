@@ -114,6 +114,7 @@ namespace LeahsPlatinumTracker
                     Text = associatedWarp.DestinationVisualMapSector.DisplayName;
                     Font = new Font("Nirmala UI", (float)8.25, FontStyle.Regular);
                     Marker.Location = new Point(position.X + 38 - ((selected ? 1 : 0) * 2), position.Y + 20 - ((selected ? 1 : 0) * 2));
+                    FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
                 }
 
                 switch (associatedWarp.VisualMarkers)
