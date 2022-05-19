@@ -679,7 +679,7 @@ namespace LeahsPlatinumTracker
                     {
                         System.Diagnostics.Debug.WriteLine("2: Created link from " + warp2.MapID + " to " + warp1.MapID);
                         UpdateMap(warp2.MapID);
-                        linked2 = false;
+                        linked2 = true;
                     }
                 }
 

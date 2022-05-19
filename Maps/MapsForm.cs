@@ -76,6 +76,13 @@ namespace LeahsPlatinumTracker
                     button.MouseDown += new MouseEventHandler(Warp_Click);
                     button.updateAppearance();
                 }
+                else if (item.GetType().Name == "MarkerPictureBox")
+                {
+                    WarpButton button = ((MarkerPictureBox)item).parent;
+                    button.MouseDown -= new MouseEventHandler(Warp_Click);
+                    button.MouseDown += new MouseEventHandler(Warp_Click);
+                    button.updateAppearance();
+                }
                 else if (item.GetType().Name == "RouteConnectorButton")
                 {
                     RouteConnectorButton button = (RouteConnectorButton)item;

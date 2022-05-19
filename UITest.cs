@@ -121,14 +121,15 @@ namespace LeahsPlatinumTracker
                 if (linking && warp != warp1)
                 {
                     warp2 = warp;
-                    System.Diagnostics.Debug.WriteLine("linking " + warp1.MapID + warp1.WarpID + " to " + warp2.MapID + warp2.WarpID);
-                    Player.LinkWarps((warp1.MapID, warp1.WarpID), (warp2.MapID, warp2.WarpID));
-                    warp1 = null;
-                    warp2 = null;
-                    linking = false;
-                    button62.FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
-                    activePanel.UpdateWarpAppearances();
-                    updateMapSelectorButtons();
+                    if (Player.LinkWarps((warp1.MapID, warp1.WarpID), (warp2.MapID, warp2.WarpID)))
+                    {
+                        warp1 = null;
+                        warp2 = null;
+                        linking = false;
+                        button62.FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
+                        activePanel.UpdateWarpAppearances();
+                        updateMapSelectorButtons();
+                    };
                 }
                 else
                 {
