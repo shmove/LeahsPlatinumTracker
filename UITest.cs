@@ -81,21 +81,26 @@ namespace LeahsPlatinumTracker
             }
         }
 
-        public void updateMapSelectorButtons()
+        public void updateMapSelectorButtons(Control control)
         {
-            foreach (Control control in this.Controls)
+            foreach (Control subControl in control.Controls)
             {
-                if (control.GetType().Name == "MapSelectorButton")
+                if (subControl.GetType().Name == "MapSelectorButton")
                 {
-                    MapSelectorButton button = (MapSelectorButton)control;
+                    MapSelectorButton button = (MapSelectorButton)subControl;
                     button.updateAppearance();
+                }
+                else if (subControl.GetType().Name == "Panel")
+                {
+                    // recursion for panels
+                    updateMapSelectorButtons(subControl);
                 }
             }
         }
 
         public void updateAllAppearances()
         {
-            updateMapSelectorButtons();
+            updateMapSelectorButtons(this);
             activePanel.UpdateWarpAppearances();
             UpdateLinkHistoryButtons();
         }

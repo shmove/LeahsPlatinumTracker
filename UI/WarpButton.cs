@@ -175,7 +175,7 @@ namespace LeahsPlatinumTracker
 
                 Marker.MouseDown += new MouseEventHandler(parent.Warp_Click);
                 parent.Controls.Add(Marker);
-                parent.parent.updateMapSelectorButtons();
+                parent.parent.updateMapSelectorButtons(parent.parent);
                 Marker.BringToFront();
                 parent.MapImages.SendToBack();
             }
