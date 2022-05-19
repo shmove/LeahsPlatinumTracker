@@ -163,6 +163,26 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CynthiaWide {
+            get {
+                object obj = ResourceManager.GetObject("CynthiaWide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CynthiaWide_Locked {
+            get {
+                object obj = ResourceManager.GetObject("CynthiaWide-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DefeatedWindworks {
             get {
                 object obj = ResourceManager.GetObject("DefeatedWindworks", resourceCulture);
