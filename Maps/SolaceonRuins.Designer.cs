@@ -77,6 +77,7 @@
             this.warpButton1.Location = new System.Drawing.Point(64, 168);
             this.warpButton1.MapID = "SolaceonRuins 1F";
             this.warpButton1.Name = "warpButton1";
+            this.warpButton1.selected = false;
             this.warpButton1.Size = new System.Drawing.Size(107, 23);
             this.warpButton1.TabIndex = 1;
             this.warpButton1.Text = "warpButton1";
@@ -95,6 +96,7 @@
             this.warpButton2.Location = new System.Drawing.Point(101, 131);
             this.warpButton2.MapID = "SolaceonRuins 1F";
             this.warpButton2.Name = "warpButton2";
+            this.warpButton2.selected = false;
             this.warpButton2.Size = new System.Drawing.Size(107, 23);
             this.warpButton2.TabIndex = 2;
             this.warpButton2.Text = "warpButton2";
@@ -113,6 +115,7 @@
             this.warpButton3.Location = new System.Drawing.Point(31, 56);
             this.warpButton3.MapID = "SolaceonRuins 1F";
             this.warpButton3.Name = "warpButton3";
+            this.warpButton3.selected = false;
             this.warpButton3.Size = new System.Drawing.Size(107, 23);
             this.warpButton3.TabIndex = 3;
             this.warpButton3.Text = "warpButton3";
@@ -131,6 +134,7 @@
             this.warpButton4.Location = new System.Drawing.Point(100, 30);
             this.warpButton4.MapID = "SolaceonRuins 1F";
             this.warpButton4.Name = "warpButton4";
+            this.warpButton4.selected = false;
             this.warpButton4.Size = new System.Drawing.Size(107, 23);
             this.warpButton4.TabIndex = 4;
             this.warpButton4.Text = "warpButton4";
@@ -149,6 +153,7 @@
             this.warpButton5.Location = new System.Drawing.Point(391, 144);
             this.warpButton5.MapID = "SolaceonRuins B1F";
             this.warpButton5.Name = "warpButton5";
+            this.warpButton5.selected = false;
             this.warpButton5.Size = new System.Drawing.Size(107, 23);
             this.warpButton5.TabIndex = 5;
             this.warpButton5.Text = "warpButton5";
@@ -167,6 +172,7 @@
             this.warpButton6.Location = new System.Drawing.Point(474, 118);
             this.warpButton6.MapID = "SolaceonRuins B1F";
             this.warpButton6.Name = "warpButton6";
+            this.warpButton6.selected = false;
             this.warpButton6.Size = new System.Drawing.Size(107, 23);
             this.warpButton6.TabIndex = 6;
             this.warpButton6.Text = "warpButton6";
@@ -185,6 +191,7 @@
             this.warpButton7.Location = new System.Drawing.Point(391, 56);
             this.warpButton7.MapID = "SolaceonRuins B1F";
             this.warpButton7.Name = "warpButton7";
+            this.warpButton7.selected = false;
             this.warpButton7.Size = new System.Drawing.Size(107, 23);
             this.warpButton7.TabIndex = 7;
             this.warpButton7.Text = "warpButton7";
@@ -203,6 +210,7 @@
             this.warpButton8.Location = new System.Drawing.Point(474, 30);
             this.warpButton8.MapID = "SolaceonRuins B1F";
             this.warpButton8.Name = "warpButton8";
+            this.warpButton8.selected = false;
             this.warpButton8.Size = new System.Drawing.Size(107, 23);
             this.warpButton8.TabIndex = 8;
             this.warpButton8.Text = "warpButton8";
@@ -221,6 +229,7 @@
             this.warpButton9.Location = new System.Drawing.Point(215, 144);
             this.warpButton9.MapID = "SolaceonRuins B2F";
             this.warpButton9.Name = "warpButton9";
+            this.warpButton9.selected = false;
             this.warpButton9.Size = new System.Drawing.Size(107, 23);
             this.warpButton9.TabIndex = 9;
             this.warpButton9.Text = "warpButton9";
@@ -239,12 +248,13 @@
             this.warpButton10.Location = new System.Drawing.Point(282, 118);
             this.warpButton10.MapID = "SolaceonRuins B2F";
             this.warpButton10.Name = "warpButton10";
+            this.warpButton10.selected = false;
             this.warpButton10.Size = new System.Drawing.Size(107, 23);
             this.warpButton10.TabIndex = 10;
             this.warpButton10.Text = "warpButton10";
             this.warpButton10.UseCompatibleTextRendering = true;
             this.warpButton10.UseVisualStyleBackColor = false;
-            this.warpButton10.WarpID = 0;
+            this.warpButton10.WarpID = 1;
             // 
             // warpButton11
             // 
@@ -257,6 +267,7 @@
             this.warpButton11.Location = new System.Drawing.Point(213, 56);
             this.warpButton11.MapID = "SolaceonRuins B2F";
             this.warpButton11.Name = "warpButton11";
+            this.warpButton11.selected = false;
             this.warpButton11.Size = new System.Drawing.Size(107, 23);
             this.warpButton11.TabIndex = 11;
             this.warpButton11.Text = "warpButton11";
@@ -275,6 +286,7 @@
             this.warpButton12.Location = new System.Drawing.Point(283, 30);
             this.warpButton12.MapID = "SolaceonRuins B2F";
             this.warpButton12.Name = "warpButton12";
+            this.warpButton12.selected = false;
             this.warpButton12.Size = new System.Drawing.Size(107, 23);
             this.warpButton12.TabIndex = 12;
             this.warpButton12.Text = "warpButton12";
@@ -293,6 +305,7 @@
             this.warpButton13.Location = new System.Drawing.Point(31, 324);
             this.warpButton13.MapID = "SolaceonRuins B3F A";
             this.warpButton13.Name = "warpButton13";
+            this.warpButton13.selected = false;
             this.warpButton13.Size = new System.Drawing.Size(107, 23);
             this.warpButton13.TabIndex = 13;
             this.warpButton13.Text = "warpButton13";
@@ -311,6 +324,7 @@
             this.warpButton14.Location = new System.Drawing.Point(99, 298);
             this.warpButton14.MapID = "SolaceonRuins B3F A";
             this.warpButton14.Name = "warpButton14";
+            this.warpButton14.selected = false;
             this.warpButton14.Size = new System.Drawing.Size(107, 23);
             this.warpButton14.TabIndex = 14;
             this.warpButton14.Text = "warpButton14";
@@ -329,6 +343,7 @@
             this.warpButton15.Location = new System.Drawing.Point(31, 237);
             this.warpButton15.MapID = "SolaceonRuins B3F A";
             this.warpButton15.Name = "warpButton15";
+            this.warpButton15.selected = false;
             this.warpButton15.Size = new System.Drawing.Size(107, 23);
             this.warpButton15.TabIndex = 15;
             this.warpButton15.Text = "warpButton15";
@@ -347,6 +362,7 @@
             this.warpButton16.Location = new System.Drawing.Point(99, 211);
             this.warpButton16.MapID = "SolaceonRuins B3F A";
             this.warpButton16.Name = "warpButton16";
+            this.warpButton16.selected = false;
             this.warpButton16.Size = new System.Drawing.Size(107, 23);
             this.warpButton16.TabIndex = 16;
             this.warpButton16.Text = "warpButton16";
@@ -365,6 +381,7 @@
             this.warpButton17.Location = new System.Drawing.Point(213, 324);
             this.warpButton17.MapID = "SolaceonRuins B3F B";
             this.warpButton17.Name = "warpButton17";
+            this.warpButton17.selected = false;
             this.warpButton17.Size = new System.Drawing.Size(107, 23);
             this.warpButton17.TabIndex = 17;
             this.warpButton17.Text = "warpButton17";
@@ -383,6 +400,7 @@
             this.warpButton18.Location = new System.Drawing.Point(283, 298);
             this.warpButton18.MapID = "SolaceonRuins B3F B";
             this.warpButton18.Name = "warpButton18";
+            this.warpButton18.selected = false;
             this.warpButton18.Size = new System.Drawing.Size(107, 23);
             this.warpButton18.TabIndex = 18;
             this.warpButton18.Text = "warpButton18";
@@ -401,6 +419,7 @@
             this.warpButton19.Location = new System.Drawing.Point(213, 237);
             this.warpButton19.MapID = "SolaceonRuins B3F B";
             this.warpButton19.Name = "warpButton19";
+            this.warpButton19.selected = false;
             this.warpButton19.Size = new System.Drawing.Size(107, 23);
             this.warpButton19.TabIndex = 19;
             this.warpButton19.Text = "warpButton19";
@@ -419,6 +438,7 @@
             this.warpButton20.Location = new System.Drawing.Point(362, 324);
             this.warpButton20.MapID = "SolaceonRuins B4F";
             this.warpButton20.Name = "warpButton20";
+            this.warpButton20.selected = false;
             this.warpButton20.Size = new System.Drawing.Size(107, 23);
             this.warpButton20.TabIndex = 20;
             this.warpButton20.Text = "warpButton20";
@@ -437,6 +457,7 @@
             this.warpButton21.Location = new System.Drawing.Point(467, 298);
             this.warpButton21.MapID = "SolaceonRuins B4F";
             this.warpButton21.Name = "warpButton21";
+            this.warpButton21.selected = false;
             this.warpButton21.Size = new System.Drawing.Size(107, 23);
             this.warpButton21.TabIndex = 21;
             this.warpButton21.Text = "warpButton21";
@@ -455,6 +476,7 @@
             this.warpButton22.Location = new System.Drawing.Point(362, 237);
             this.warpButton22.MapID = "SolaceonRuins B4F";
             this.warpButton22.Name = "warpButton22";
+            this.warpButton22.selected = false;
             this.warpButton22.Size = new System.Drawing.Size(107, 23);
             this.warpButton22.TabIndex = 22;
             this.warpButton22.Text = "warpButton22";
@@ -473,6 +495,7 @@
             this.warpButton23.Location = new System.Drawing.Point(467, 211);
             this.warpButton23.MapID = "SolaceonRuins B4F";
             this.warpButton23.Name = "warpButton23";
+            this.warpButton23.selected = false;
             this.warpButton23.Size = new System.Drawing.Size(107, 23);
             this.warpButton23.TabIndex = 23;
             this.warpButton23.Text = "warpButton23";
