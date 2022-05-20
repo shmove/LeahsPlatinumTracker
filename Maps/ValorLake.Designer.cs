@@ -41,6 +41,7 @@
             this.warpButton8 = new LeahsPlatinumTracker.WarpButton();
             this.warpButton3 = new LeahsPlatinumTracker.WarpButton();
             this.warpButton9 = new LeahsPlatinumTracker.WarpButton();
+            this.warpButton10 = new LeahsPlatinumTracker.WarpButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -283,12 +284,32 @@
             this.warpButton9.UseVisualStyleBackColor = false;
             this.warpButton9.WarpID = 0;
             // 
+            // warpButton10
+            // 
+            this.warpButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.warpButton10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.warpButton10.FlatAppearance.BorderSize = 2;
+            this.warpButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.warpButton10.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.warpButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.warpButton10.Location = new System.Drawing.Point(506, 654);
+            this.warpButton10.MapID = "ValorLake Ext A";
+            this.warpButton10.Name = "warpButton10";
+            this.warpButton10.selected = false;
+            this.warpButton10.Size = new System.Drawing.Size(107, 23);
+            this.warpButton10.TabIndex = 41;
+            this.warpButton10.Text = "warpButton10";
+            this.warpButton10.UseCompatibleTextRendering = true;
+            this.warpButton10.UseVisualStyleBackColor = false;
+            this.warpButton10.WarpID = 6;
+            // 
             // ValorLake
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(996, 802);
+            this.Controls.Add(this.warpButton10);
             this.Controls.Add(this.warpButton9);
             this.Controls.Add(this.warpButton3);
             this.Controls.Add(this.warpButton7);
@@ -326,5 +347,6 @@
         private WarpButton warpButton8;
         private WarpButton warpButton3;
         private WarpButton warpButton9;
+        private WarpButton warpButton10;
     }
 }

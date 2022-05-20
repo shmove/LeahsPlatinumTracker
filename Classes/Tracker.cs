@@ -508,7 +508,7 @@ namespace LeahsPlatinumTracker
             VisualMapSectors.Add(new VisualMapSector(this, new MapSector("ValleyWindworks", 1, new Condition("205 S", new Checks(Checks.CheckFlags.HasWorksKey))), "Valley Windworks"));
             VisualMapSectors.Add(new VisualMapSector(this, "ValorLake", new List<MapSector>
             {
-                new MapSector("ValorLake Ext A", 6, new List<Condition> // main valor lakefront
+                new MapSector("ValorLake Ext A", 7, new List<Condition> // main valor lakefront
                 {
                     new Condition("214"),
                     new Condition("222"),
