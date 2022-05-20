@@ -140,7 +140,6 @@ namespace LeahsPlatinumTracker
         /// <summary>
         /// The checks and/or maps required for this MapSector to become unlocked.
         /// </summary>
-        [JsonIgnore]
         public List<Condition> Conditions { get; set; }
 
         /// <summary>
@@ -485,11 +484,13 @@ namespace LeahsPlatinumTracker
         /// <summary>
         /// The <see cref="MapSector.MapID"/> of the <see cref="MapSector"/> that is required to be unlocked for this instance to become MapAccessible.
         /// </summary>
+        [JsonIgnore]
         public string AccessMap { get; set; }
 
         /// <summary>
         /// The <see cref="Checks"/> that are required for this instance to become unlocked, provided it is MapAccessible.
         /// </summary>
+        [JsonIgnore]
         public Checks RequiredChecks { get; set; }
 
         /// <summary>

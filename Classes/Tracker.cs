@@ -898,6 +898,10 @@ namespace LeahsPlatinumTracker
                         thisWarp.Destination = (thisWarpDestinationMapID, thisWarpDestinationWarpID);
                         thisWarp.VisualMarkers = JSONWarp.VisualMarkers;
                     }
+                    for (int i=0; i<JSONMapSector.Conditions.Count; i++)
+                    {
+                        thisMapSector.Conditions[i].MapAccessible = (bool)JSONMapSector.Conditions[i].MapAccessible;
+                    }
                     thisMapSector.IsUnlocked = (bool)JSONMapSector.IsUnlocked;
                 }
             }
