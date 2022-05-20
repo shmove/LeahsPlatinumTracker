@@ -31,6 +31,7 @@ namespace LeahsPlatinumTracker
                     pictureBox.SendToBack();
                 }
             }
+            UpdateWarpAppearances();
         }
 
         public void Reload()
