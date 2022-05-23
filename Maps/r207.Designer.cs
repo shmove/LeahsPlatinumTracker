@@ -31,6 +31,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.routeConnectorButton1 = new LeahsPlatinumTracker.RouteConnectorButton();
             this.routeConnectorButton2 = new LeahsPlatinumTracker.RouteConnectorButton();
+            this.warpButton1 = new LeahsPlatinumTracker.WarpButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,12 +84,32 @@
             this.routeConnectorButton2.UseCompatibleTextRendering = true;
             this.routeConnectorButton2.UseVisualStyleBackColor = false;
             // 
+            // warpButton1
+            // 
+            this.warpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.warpButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.warpButton1.FlatAppearance.BorderSize = 2;
+            this.warpButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.warpButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.warpButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.warpButton1.Location = new System.Drawing.Point(791, 92);
+            this.warpButton1.MapID = "207 N";
+            this.warpButton1.Name = "warpButton1";
+            this.warpButton1.selected = false;
+            this.warpButton1.Size = new System.Drawing.Size(107, 23);
+            this.warpButton1.TabIndex = 30;
+            this.warpButton1.Text = "warpButton1";
+            this.warpButton1.UseCompatibleTextRendering = true;
+            this.warpButton1.UseVisualStyleBackColor = false;
+            this.warpButton1.WarpID = 0;
+            // 
             // r207
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(996, 802);
+            this.Controls.Add(this.warpButton1);
             this.Controls.Add(this.routeConnectorButton2);
             this.Controls.Add(this.routeConnectorButton1);
             this.Controls.Add(this.pictureBox1);
@@ -106,5 +127,6 @@
         private PictureBox pictureBox1;
         private RouteConnectorButton routeConnectorButton1;
         private RouteConnectorButton routeConnectorButton2;
+        private WarpButton warpButton1;
     }
 }
