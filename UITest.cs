@@ -234,6 +234,7 @@ namespace LeahsPlatinumTracker
                 if (activePanel.lastSelectedWarp.associatedWarp.VisualMarkers == markerNum) activePanel.lastSelectedWarp.associatedWarp.VisualMarkers = 0;
                 else activePanel.lastSelectedWarp.associatedWarp.VisualMarkers = markerNum;
                 activePanel.lastSelectedWarp.updateAppearance();
+                updateMapSelectorButtons(this);
             }
         }
 

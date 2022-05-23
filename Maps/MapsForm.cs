@@ -134,6 +134,7 @@ namespace LeahsPlatinumTracker
                 if (warpButton.associatedWarp.VisualMarkers == 1) warpButton.associatedWarp.VisualMarkers = 0;
                 else warpButton.associatedWarp.VisualMarkers = 1;
                 warpButton.updateAppearance();
+                parent.updateMapSelectorButtons(parent);
             }
             else if (me.Button == MouseButtons.Middle)
             {
