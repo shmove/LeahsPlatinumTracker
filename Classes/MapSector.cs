@@ -390,15 +390,16 @@ namespace LeahsPlatinumTracker
         /// <returns>A boolean pertaining to whether this instance has changed state to become locked.</returns>
         public bool AttemptLock(Checks currentChecks)
         {
-            if (!IsUnlocked || IsLinked()) return false; // if the map is linked via warp, assume it should remain unlocked
-
+            bool wasUnlocked = IsUnlocked; // if map was initially unlocked
             bool stillUnlocked = false; // keeps track of whether ANY condition flags as remaining unlocked
-            foreach(Condition Condition in Conditions)
+            bool unlockOverride = DefaultUnlocked || IsLinked(); // special cases where the map will remain unlocked despite no conditions matching
+
+            foreach (Condition Condition in Conditions)
             {
-                if (Condition.MapAccessible && Condition.RequiredChecks.meetsRequirements(currentChecks)) { stillUnlocked = true; break; };
+                if (!unlockOverride && Condition.RequiredChecks.meetsRequirements(currentChecks) && Condition.MapAccessible) stillUnlocked = true;
             }
 
-            if (!stillUnlocked)
+            if (wasUnlocked && !stillUnlocked && !unlockOverride)
             {
                 IsUnlocked = false;
                 return true;
@@ -438,9 +439,10 @@ namespace LeahsPlatinumTracker
         /// <returns>A boolean pertaining to whether this instance has changed state to become locked.</returns>
         public bool AttemptLock(string LockedMap, Checks currentChecks)
         {
-            if (!IsUnlocked || IsLinked()) return false; // if the map is linked via warp, assume it should remain unlocked
+            bool wasUnlocked = IsUnlocked; // if map was initially unlocked
+            bool stillUnlocked = false; // keeps track of whether ANY condition flags stay unlocked
+            bool unlockOverride = DefaultUnlocked || IsLinked(); // special cases where the map will remain unlocked despite no conditions matching
 
-            bool stillUnlocked = false; // keeps track of whether ANY condition flags as remaining unlocked
             foreach (Condition Condition in Conditions)
             {
                 if (Condition.AccessMap == LockedMap)
@@ -449,10 +451,10 @@ namespace LeahsPlatinumTracker
                 }
 
                 // if condition still meets checks and is still map accessible then this map remains unlocked
-                if (Condition.RequiredChecks.meetsRequirements(currentChecks) && Condition.MapAccessible) { stillUnlocked = true; break; }
+                if (!unlockOverride && Condition.RequiredChecks.meetsRequirements(currentChecks) && Condition.MapAccessible) stillUnlocked = true;
             }
 
-            if (!stillUnlocked)
+            if (wasUnlocked && !stillUnlocked && !unlockOverride)
             {
                 IsUnlocked = false;
                 return true;
