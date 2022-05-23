@@ -228,11 +228,13 @@ namespace LeahsPlatinumTracker
             VisualMapSectors.Add(new VisualMapSector(this, new MapSector("BacklotMansion", 6), "Backlot Mansion"));
             VisualMapSectors.Add(new VisualMapSector(this, "Canalave", new List<MapSector>
             {
-                new MapSector("Canalave", 10, new List<Condition>
+                new MapSector("Canalave", 9, new List<Condition>
                 {
+                    new Condition("Canalave H"),
                     new Condition("IronIsland Ext A"),
                     new Condition("Canalave Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))
                 }),
+                new MapSector("Canalave H", 1), // Darkrai house (always unlocked unless we track the key)
                 new MapSector("Canalave Pokecentre", 3)
             }));
             VisualMapSectors.Add(new VisualMapSector(this, "Celestic", new List<MapSector>
@@ -500,9 +502,11 @@ namespace LeahsPlatinumTracker
                 {
                     new Condition("225"),
                     new Condition("226 W"),
+                    new Condition("SurvivalArea H"),
                     new Condition("SurvivalArea Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))
                 }),
                 new MapSector("SurvivalArea B", 1, new Condition("226 W", new Checks(64))), // house above SurvivalArea, only accessible via RC from adjacent route
+                new MapSector("SurvivalArea H", 1), // battlegrounds house inacessible unless tracking postgame content
                 new MapSector("SurvivalArea Pokecentre", 3)
             }, "Survival Area"));
             VisualMapSectors.Add(new VisualMapSector(this, new MapSector("ValleyWindworks", 1, new Condition("205 S", new Checks(Checks.CheckFlags.HasWorksKey))), "Valley Windworks"));

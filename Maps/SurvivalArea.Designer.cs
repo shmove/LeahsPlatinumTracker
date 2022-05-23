@@ -106,6 +106,7 @@
             // 
             // warpButton3
             // 
+            this.warpButton3.associatedWarp = null;
             this.warpButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton3.FlatAppearance.BorderSize = 2;
@@ -125,6 +126,7 @@
             // 
             // warpButton2
             // 
+            this.warpButton2.associatedWarp = null;
             this.warpButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton2.FlatAppearance.BorderSize = 2;
@@ -144,6 +146,7 @@
             // 
             // warpButton1
             // 
+            this.warpButton1.associatedWarp = null;
             this.warpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton1.FlatAppearance.BorderSize = 2;
@@ -163,6 +166,7 @@
             // 
             // warpButton4
             // 
+            this.warpButton4.associatedWarp = null;
             this.warpButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton4.FlatAppearance.BorderSize = 2;
@@ -182,6 +186,7 @@
             // 
             // warpButton5
             // 
+            this.warpButton5.associatedWarp = null;
             this.warpButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton5.FlatAppearance.BorderSize = 2;
@@ -189,7 +194,7 @@
             this.warpButton5.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
             this.warpButton5.Location = new System.Drawing.Point(177, 275);
-            this.warpButton5.MapID = "SurvivalArea A";
+            this.warpButton5.MapID = "SurvivalArea H";
             this.warpButton5.Name = "warpButton5";
             this.warpButton5.selected = false;
             this.warpButton5.Size = new System.Drawing.Size(107, 23);
@@ -197,10 +202,11 @@
             this.warpButton5.Text = "warpButton5";
             this.warpButton5.UseCompatibleTextRendering = true;
             this.warpButton5.UseVisualStyleBackColor = false;
-            this.warpButton5.WarpID = 1;
+            this.warpButton5.WarpID = 0;
             // 
             // warpButton6
             // 
+            this.warpButton6.associatedWarp = null;
             this.warpButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton6.FlatAppearance.BorderSize = 2;
@@ -216,10 +222,11 @@
             this.warpButton6.Text = "warpButton6";
             this.warpButton6.UseCompatibleTextRendering = true;
             this.warpButton6.UseVisualStyleBackColor = false;
-            this.warpButton6.WarpID = 2;
+            this.warpButton6.WarpID = 1;
             // 
             // warpButton7
             // 
+            this.warpButton7.associatedWarp = null;
             this.warpButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton7.FlatAppearance.BorderSize = 2;
@@ -235,10 +242,11 @@
             this.warpButton7.Text = "warpButton7";
             this.warpButton7.UseCompatibleTextRendering = true;
             this.warpButton7.UseVisualStyleBackColor = false;
-            this.warpButton7.WarpID = 3;
+            this.warpButton7.WarpID = 2;
             // 
             // warpButton8
             // 
+            this.warpButton8.associatedWarp = null;
             this.warpButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton8.FlatAppearance.BorderSize = 2;
