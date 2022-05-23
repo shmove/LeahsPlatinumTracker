@@ -18,6 +18,7 @@ namespace LeahsPlatinumTracker
             Player = null;
             parent = null;
             MapImages = new MapImages();
+            AutoScroll = false;
         }
 
         internal void Form_Load(object sender, EventArgs e)

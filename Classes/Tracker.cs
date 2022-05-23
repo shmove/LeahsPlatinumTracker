@@ -664,9 +664,12 @@ namespace LeahsPlatinumTracker
                         if (!MapSector.IsMapAccessible()) RevertMap(MapSector.MapID);
                     }
 
+                    bool wasUnlocked = MapSector.IsUnlocked;
+
                     if (MapSector.Link(warp1.WarpID, warp2, preserveVisualMarkers))
                     {
-                        System.Diagnostics.Debug.WriteLine("1: Created link from " + warp1.MapID + " to " + warp2.MapID);
+                        //System.Diagnostics.Debug.WriteLine("1: Created link from " + warp1.MapID + " to " + warp2.MapID);
+                        if (!wasUnlocked) System.Diagnostics.Debug.WriteLine("Unlocked map: " + MapSector.MapID);
                         UpdateMap(warp1.MapID);
                         linked1 = true;
                     };
@@ -680,9 +683,12 @@ namespace LeahsPlatinumTracker
                         if (!MapSector.IsMapAccessible()) RevertMap(MapSector.MapID);
                     }
 
+                    bool wasUnlocked = MapSector.IsUnlocked;
+
                     if (MapSector.Link(warp2.WarpID, warp1, preserveVisualMarkers))
                     {
-                        System.Diagnostics.Debug.WriteLine("2: Created link from " + warp2.MapID + " to " + warp1.MapID);
+                        //System.Diagnostics.Debug.WriteLine("2: Created link from " + warp2.MapID + " to " + warp1.MapID);
+                        if (!wasUnlocked) System.Diagnostics.Debug.WriteLine("Unlocked map: " + MapSector.MapID);
                         UpdateMap(warp2.MapID);
                         linked2 = true;
                     }
@@ -710,7 +716,7 @@ namespace LeahsPlatinumTracker
                     string destinationMap = preWarp.Destination.MapID;
                     int destinationID = preWarp.Destination.WarpID;
 
-                    System.Diagnostics.Debug.WriteLine("Removed link between " + warp.MapID + " and " + destinationMap);
+                    //System.Diagnostics.Debug.WriteLine("Removed link between " + warp.MapID + " and " + destinationMap);
 
                     // Unlink warp, and if this isolates the MapSector then update map
                     if (!MapSector1.Unlink(warp.WarpID, preserveVisualMarkers))
