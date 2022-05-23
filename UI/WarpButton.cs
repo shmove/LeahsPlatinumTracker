@@ -10,7 +10,7 @@ namespace LeahsPlatinumTracker
     {
         public string MapID { get; set; }
         public int WarpID { get; set; }
-        public Warp associatedWarp;
+        public Warp associatedWarp { get; set; }
         private Point position;
         private MarkerPictureBox? Marker;
         private MapsForm? parent;
@@ -33,7 +33,7 @@ namespace LeahsPlatinumTracker
         {
             parent = (MapsForm)Parent;
             associatedWarp = parent.Player.GetMapSector(MapID).Warps[WarpID];
-            if (associatedWarp == null) throw new Exception("WarpButton was provided invalid Warp identifers.");
+            //if (associatedWarp == null) throw new Exception("WarpButton was provided invalid Warp identifers.");
             position = Location;
             if (!fromUpdate) updateAppearance();
         }
@@ -54,47 +54,47 @@ namespace LeahsPlatinumTracker
         {
             if (associatedWarp.Destination.MapID != "Not set")
             {
-                this.Size = new(107, 23);
-                this.Location = position;
-                this.Text = associatedWarp.DestinationVisualMapSector.DisplayName;
-                this.Font = new Font("Nirmala UI", (float)8.25, FontStyle.Regular);
+                Location = position;
+                Size = new(107, 23);
+                Text = associatedWarp.DestinationVisualMapSector.DisplayName;
+                Font = new Font("Nirmala UI", (float)8.25, FontStyle.Regular);
 
                 if (associatedWarp.Destination.MapID.Contains("Pokecentre") == true || associatedWarp.Destination.MapID == "PokeLeague Int")
                 {
-                    this.ForeColor = Color.FromArgb(255, 238, 238, 238);
-                    this.BackColor = Color.FromArgb(255, 243, 109, 116);
-                    this.FlatAppearance.BorderColor = Color.FromArgb(255, 239, 63, 71);
+                    ForeColor = Color.FromArgb(255, 238, 238, 238);
+                    BackColor = Color.FromArgb(255, 243, 109, 116);
+                    FlatAppearance.BorderColor = Color.FromArgb(255, 239, 63, 71);
                 }
                 // check if one-way somehow?
                 else
                 {
-                    this.ForeColor = Color.FromArgb(255, 54, 82, 129);
-                    this.BackColor = Color.FromArgb(255, 160, 183, 214);
-                    this.FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
+                    ForeColor = Color.FromArgb(255, 54, 82, 129);
+                    BackColor = Color.FromArgb(255, 160, 183, 214);
+                    FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
                 }
             }
             else
             {
-                this.Size = new(43, 23);
-                this.Location = new Point(position.X + 32, position.Y);
-                this.Text = "?";
-                this.Font = new Font("Power Clear", 9, FontStyle.Bold);
+                Location = new Point(position.X + 32, position.Y);
+                Size = new(43, 23);
+                Text = "?";
+                Font = new Font("Power Clear", 9, FontStyle.Bold);
                 if (associatedWarp.ParentMapSector.IsUnlocked)
                 {
-                    this.ForeColor = Color.FromArgb(255, 238, 238, 238);
-                    this.BackColor = Color.FromArgb(255, 53, 53, 53);
-                    this.FlatAppearance.BorderColor = Color.FromName("Black");
+                    ForeColor = Color.FromArgb(255, 238, 238, 238);
+                    BackColor = Color.FromArgb(255, 53, 53, 53);
+                    FlatAppearance.BorderColor = Color.FromName("Black");
                 }
                 else
                 {
                     // not unlocked visuals
-                    this.ForeColor = Color.FromArgb(255, 155, 155, 155);
-                    this.BackColor = Color.FromArgb(255, 209, 209, 209);
-                    this.FlatAppearance.BorderColor = Color.FromArgb(255, 155, 155, 155);
+                    ForeColor = Color.FromArgb(255, 155, 155, 155);
+                    BackColor = Color.FromArgb(255, 209, 209, 209);
+                    FlatAppearance.BorderColor = Color.FromArgb(255, 155, 155, 155);
                 }
 
             }
-            if (selected) this.FlatAppearance.BorderColor = Color.White;
+            if (selected) FlatAppearance.BorderColor = Color.White;
         }
 
         public void updateAppearance()
