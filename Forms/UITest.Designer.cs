@@ -157,6 +157,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.MtCoronetPeak = new LeahsPlatinumTracker.MapSelectorButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector26)).BeginInit();
@@ -2091,6 +2092,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.r205);
             this.panel4.Controls.Add(this.r203);
@@ -2117,6 +2119,23 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(92, 802);
             this.panel4.TabIndex = 111;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.button5.FlatAppearance.BorderSize = 2;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.button5.Location = new System.Drawing.Point(8, 746);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(80, 23);
+            this.button5.TabIndex = 110;
+            this.button5.Text = "Save";
+            this.button5.UseCompatibleTextRendering = true;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // MtCoronetPeak
             // 
@@ -2186,7 +2205,7 @@
             this.MaximizeBox = false;
             this.Name = "UITest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UITest";
+            this.Text = "Leah\'s Platinum Tracker";
             this.Load += new System.EventHandler(this.UITest_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -2391,5 +2410,6 @@
         private MarkerSelector markerSelector26;
         private MarkerSelector markerSelector25;
         private MarkerSelector markerSelector24;
+        private Button button5;
     }
 }

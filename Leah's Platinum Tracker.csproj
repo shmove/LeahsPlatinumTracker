@@ -205,6 +205,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MarkerResources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\PictureResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PictureResources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -219,6 +224,10 @@
     <EmbeddedResource Update="Properties\MarkerResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MarkerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\PictureResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PictureResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

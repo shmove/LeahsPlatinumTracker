@@ -847,17 +847,26 @@ namespace LeahsPlatinumTracker
         }
 
         /// <summary>
-        /// Temporary method. Serialises current tracker data to JSON and saves in AppData\Roaming as save.lpt.
+        /// Temporary method. Serialises current tracker data to JSON and saves in a user defined location as an .lpt file.
         /// </summary>
         public void ToJSON()
         {
-            string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "LeahsPlatinumTracker");
+            SaveFileDialog fileDialog = new SaveFileDialog();
+
+            string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "LeahsPlatinumTracker");
             Directory.CreateDirectory(folder);
 
-            string filename = folder + "\\save.lpt";
+            fileDialog.InitialDirectory = folder;
+            fileDialog.Filter = "LPT save file (*.lpt)|*.lpt|JSON file (*.json)|*.json|All files (*.*)|*.*";
+            fileDialog.FilterIndex = 0;
+            fileDialog.RestoreDirectory = true;
 
-            string json = JsonConvert.SerializeObject(this, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
-            File.WriteAllText(filename, json);
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string json = JsonConvert.SerializeObject(this, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
+                File.WriteAllText(fileDialog.FileName, json);
+                MessageBox.Show("Successfully saved all data!");
+            }
         }
 
     }

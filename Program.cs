@@ -15,7 +15,7 @@ namespace LeahsPlatinumTracker
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new Form1());
+            Application.Run(new IndexTest());
         }
     }
 }

@@ -27,6 +27,8 @@ namespace LeahsPlatinumTracker
         public UITest()
         {
             InitializeComponent();
+            Player = new Tracker();
+            mapPanels = new List<System.Reflection.TypeInfo>();
             UndoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();
             RedoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();
         }
@@ -375,5 +377,9 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Player.ToJSON();
+        }
     }
 }
