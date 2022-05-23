@@ -77,12 +77,12 @@ namespace LeahsPlatinumTracker
             VisualMapSectors = new List<VisualMapSector>();
 
             // Routes
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("203", 1, true)));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("203", 1, true), "Route 203"));
             VisualMapSectors.Add(new VisualMapSector(this, "204", new List<MapSector>
             {
                 new MapSector("204 S", 1, true),
                 new MapSector("204 N", 1, "Floaroma")
-            }));
+            }, "Route 204"));
             VisualMapSectors.Add(new VisualMapSector(this, "205", new List<MapSector>
             {
                 new MapSector("205 S", 0, new List<Condition>
@@ -105,13 +105,13 @@ namespace LeahsPlatinumTracker
                     new Condition("Eterna"),
                     new Condition("205 C", new Checks(2)) // from the south, with cut
                 })
-            }));
+            }, "Route 205"));
             VisualMapSectors.Add(new VisualMapSector(this, "206", new List<MapSector>
             {
                 new MapSector("206 S A", 1, "207 N"),
                 new MapSector("206 S B", 2, new Condition("206 S A", new Checks(2)))
                 //new MapSector("206 N", 2) // basically a hallway but its on the same route
-            }));
+            }, "Route 206"));
             VisualMapSectors.Add(new VisualMapSector(this, "207", new List<MapSector>
             {
                 new MapSector("207 S", 0, new List<Condition> {
@@ -122,9 +122,9 @@ namespace LeahsPlatinumTracker
                     new Condition("207 S", new Checks(Checks.CheckFlags.HasBike)),
                     new Condition("206 S A")
                 })
-            }));
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("208", 3)));
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("209", 2, "Solaceon")));
+            }, "Route 207"));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("208", 3), "Route 208"));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("209", 2, "Solaceon"), "Route 209"));
             VisualMapSectors.Add(new VisualMapSector(this, "210", new List<MapSector>
             {
                 new MapSector("210 S", 1, new List<Condition> {
@@ -137,37 +137,37 @@ namespace LeahsPlatinumTracker
                     new Condition("210 H"),
                     new Condition("210 S", new Checks(Checks.CheckFlags.HasSecretPotion)) // Psyduck block the path until given medicine
                 }),
-                new MapSector("210 H", 2, new Condition("210 N", new Checks(64))) // House unreachable without rock climb
-            }));
+                new MapSector("210 H", 1, new Condition("210 N", new Checks(64))) // House unreachable without rock climb
+            }, "Route 210"));
             VisualMapSectors.Add(new VisualMapSector(this, "211", new List<MapSector>
             {
                 new MapSector("211 W", 1, "Eterna"),
                 new MapSector("211 E", 1, "Celestic")
-            }));
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("212", 3, "Pastoria")));
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("213", 3, new Condition("ValorLake Ext B", new Checks(80)))));
+            }, "Route 211"));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("212", 3, "Pastoria"), "Route 212"));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("213", 3, new Condition("ValorLake Ext B", new Checks(80))), "Route 213"));
             VisualMapSectors.Add(new VisualMapSector(this, new MapSector("214", 2, new List<Condition>
             {
                 new Condition("ValorLake Ext A"),
                 new Condition("SpringPath")
-            })));
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("215", 1, "210 S")));
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("216", 2, "217")));
+            }), "Route 214"));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("215", 1, "210 S"), "Route 215"));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("216", 2, "217"), "Route 216"));
             VisualMapSectors.Add(new VisualMapSector(this, new MapSector("217", 2, new List<Condition>
             {
                 new Condition("216"),
                 new Condition("AcuityLake Ext S") // AcuityLake Ext N is a rock climb check
-            })));
+            }), "Route 217"));
             // MapSectors.Add(new MapSector("218", 2)); // self contained // "corridor"
             // MapSectors.Add(new MapSector("219/220", 0, new Condition(new Checks(16)))); // ocean route, requires surf
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("221", 2, new Condition("Sandgem", new Checks(16), true)))); // via sandgem ocean route, requires surf
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("222", 3, "ValorLake Ext A")));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("221", 2, new Condition("Sandgem", new Checks(16), true)), "Route 221")); // via sandgem ocean route, requires surf
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("222", 3, "ValorLake Ext A"), "Route 222"));
             // MapSectors.Add(new MapSector("223", 0, new List<Condition> { // empty route
             //    new Condition("Sunyshore", new Checks(16)), // Sunyshore via Surf
             //    new Condition("PokeLeague S", new Checks(144)) // PokeLeague S via Surf + Waterfall
             // }));
             // MapSectors.Add(new MapSector("224", 1)); // dead end (unless oak's letter?)
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("225", 2, "SurvivalArea A")));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("225", 2, "SurvivalArea A"), "Route 225"));
             VisualMapSectors.Add(new VisualMapSector(this, "226", new List<MapSector>
             {
                 new MapSector("226 W", 0, new List<Condition> {
@@ -183,7 +183,7 @@ namespace LeahsPlatinumTracker
                     new Condition("226 H", new Checks(16)), // 226 H via surf
                     new Condition("227 S")
                 })
-            }));
+            }, "Route 226"));
             VisualMapSectors.Add(new VisualMapSector(this, "227", new List<MapSector>
             {
                 new MapSector("227 S", 0, new List<Condition> {
@@ -198,7 +198,7 @@ namespace LeahsPlatinumTracker
                     new Condition("StarkMtn"),
                     new Condition("227 C", new Checks(Checks.CheckFlags.HasBike))
                 })
-            }));
+            }, "Route 227"));
             VisualMapSectors.Add(new VisualMapSector(this, "228", new List<MapSector>
             {
                 new MapSector("228", 2, new List<Condition>
@@ -209,7 +209,7 @@ namespace LeahsPlatinumTracker
                 }),
                 new MapSector("228 SW", 1, new Condition("228", new Checks(Checks.CheckFlags.HasBike))), // southwesterly section
                 new MapSector("228 C", 1, new Condition("228")) // cave
-            }));
+            }, "Route 228"));
             // 230/229 is surf/corridor, treat resort area <-(surf)-> fight area
 
             // Named Locations
