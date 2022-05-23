@@ -295,7 +295,7 @@
             // markerSelector23
             // 
             this.markerSelector23.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.RockClimb;
-            this.markerSelector23.Location = new System.Drawing.Point(79, 79);
+            this.markerSelector23.Location = new System.Drawing.Point(41, 79);
             this.markerSelector23.MarkerID = 23;
             this.markerSelector23.Name = "markerSelector23";
             this.markerSelector23.Size = new System.Drawing.Size(32, 32);
@@ -306,7 +306,7 @@
             // markerSelector22
             // 
             this.markerSelector22.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Waterfall;
-            this.markerSelector22.Location = new System.Drawing.Point(41, 79);
+            this.markerSelector22.Location = new System.Drawing.Point(79, 79);
             this.markerSelector22.MarkerID = 22;
             this.markerSelector22.Name = "markerSelector22";
             this.markerSelector22.Size = new System.Drawing.Size(32, 32);
