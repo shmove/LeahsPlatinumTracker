@@ -175,6 +175,33 @@ namespace LeahsPlatinumTracker
                     case 17:
                         Marker.Image = Properties.MarkerResources.Cynthia;
                         break;
+                    case 18:
+                        Marker.Image = Properties.MarkerResources.RockSmash;
+                        break;
+                    case 19:
+                        Marker.Image = Properties.MarkerResources.Cut;
+                        break;
+                    case 20:
+                        Marker.Image = Properties.MarkerResources.Strength;
+                        break;
+                    case 21:
+                        Marker.Image = Properties.MarkerResources.Surf;
+                        break;
+                    case 22:
+                        Marker.Image = Properties.MarkerResources.Waterfall;
+                        break;
+                    case 23:
+                        Marker.Image = Properties.MarkerResources.RockClimb;
+                        break;
+                    case 24:
+                        Marker.Image = Properties.MarkerResources.MasterBall;
+                        break;
+                    case 25:
+                        Marker.Image = Properties.MarkerResources.Pokeball;
+                        break;
+                    case 26:
+                        Marker.Image = Properties.MarkerResources.Mart;
+                        break;
                 }
 
                 Marker.MouseDown += new MouseEventHandler(parent.Warp_Click);

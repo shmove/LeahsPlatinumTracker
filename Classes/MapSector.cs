@@ -55,9 +55,12 @@ namespace LeahsPlatinumTracker
                     {
                         foreach (Warp warp in sector.Warps)
                         {
-                            if (warp.Destination.WarpID < 0 && 
-                                warp.VisualMarkers != 1 &&
-                                (warp.VisualMarkers < 5 || warp.VisualMarkers > 17) )
+                            if (
+                                 warp.Destination.WarpID < 0 && 
+                                 warp.VisualMarkers != 1 &&
+                                (warp.VisualMarkers < 5  || warp.VisualMarkers > 17) &&
+                                (warp.VisualMarkers < 24 || warp.VisualMarkers > 26)
+                            )
                                 return false;  // if warp is unset or matches any marker associated w a checked area/dead end
                         }
                     }
@@ -580,6 +583,9 @@ namespace LeahsPlatinumTracker
          * 21: Surf
          * 22: Waterfall
          * 23: Rock Climb
+         * 24: Master Ball
+         * 25: Pokeball (item)
+         * 26: PokeMart
          * 
         */
        

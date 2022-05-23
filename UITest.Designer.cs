@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.markerSelector26 = new LeahsPlatinumTracker.MarkerSelector();
+            this.markerSelector25 = new LeahsPlatinumTracker.MarkerSelector();
+            this.markerSelector24 = new LeahsPlatinumTracker.MarkerSelector();
+            this.markerSelector23 = new LeahsPlatinumTracker.MarkerSelector();
+            this.markerSelector22 = new LeahsPlatinumTracker.MarkerSelector();
+            this.markerSelector21 = new LeahsPlatinumTracker.MarkerSelector();
+            this.markerSelector20 = new LeahsPlatinumTracker.MarkerSelector();
+            this.markerSelector19 = new LeahsPlatinumTracker.MarkerSelector();
+            this.markerSelector18 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector17 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector16 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector15 = new LeahsPlatinumTracker.MarkerSelector();
@@ -141,6 +150,7 @@
             this.r228 = new LeahsPlatinumTracker.MapSelectorButton();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -148,8 +158,16 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.MtCoronetPeak = new LeahsPlatinumTracker.MapSelectorButton();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector15)).BeginInit();
@@ -209,6 +227,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.markerSelector26);
+            this.panel1.Controls.Add(this.markerSelector25);
+            this.panel1.Controls.Add(this.markerSelector24);
+            this.panel1.Controls.Add(this.markerSelector23);
+            this.panel1.Controls.Add(this.markerSelector22);
+            this.panel1.Controls.Add(this.markerSelector21);
+            this.panel1.Controls.Add(this.markerSelector20);
+            this.panel1.Controls.Add(this.markerSelector19);
+            this.panel1.Controls.Add(this.markerSelector18);
             this.panel1.Controls.Add(this.markerSelector17);
             this.panel1.Controls.Add(this.markerSelector16);
             this.panel1.Controls.Add(this.markerSelector15);
@@ -228,13 +255,112 @@
             this.panel1.Controls.Add(this.markerSelector3);
             this.panel1.Location = new System.Drawing.Point(5, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(154, 206);
+            this.panel1.Size = new System.Drawing.Size(154, 317);
             this.panel1.TabIndex = 63;
+            // 
+            // markerSelector26
+            // 
+            this.markerSelector26.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Mart;
+            this.markerSelector26.Location = new System.Drawing.Point(60, 122);
+            this.markerSelector26.MarkerID = 26;
+            this.markerSelector26.Name = "markerSelector26";
+            this.markerSelector26.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector26.TabIndex = 134;
+            this.markerSelector26.TabStop = false;
+            // 
+            // markerSelector25
+            // 
+            this.markerSelector25.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Pokeball;
+            this.markerSelector25.Location = new System.Drawing.Point(98, 122);
+            this.markerSelector25.MarkerID = 25;
+            this.markerSelector25.Name = "markerSelector25";
+            this.markerSelector25.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector25.TabIndex = 133;
+            this.markerSelector25.TabStop = false;
+            // 
+            // markerSelector24
+            // 
+            this.markerSelector24.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.MasterBall;
+            this.markerSelector24.Location = new System.Drawing.Point(22, 122);
+            this.markerSelector24.MarkerID = 24;
+            this.markerSelector24.Name = "markerSelector24";
+            this.markerSelector24.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector24.TabIndex = 0;
+            this.markerSelector24.TabStop = false;
+            // 
+            // markerSelector23
+            // 
+            this.markerSelector23.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.RockClimb;
+            this.markerSelector23.Location = new System.Drawing.Point(79, 79);
+            this.markerSelector23.MarkerID = 23;
+            this.markerSelector23.Name = "markerSelector23";
+            this.markerSelector23.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector23.TabIndex = 132;
+            this.markerSelector23.TabStop = false;
+            // 
+            // markerSelector22
+            // 
+            this.markerSelector22.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Waterfall;
+            this.markerSelector22.Location = new System.Drawing.Point(41, 79);
+            this.markerSelector22.MarkerID = 22;
+            this.markerSelector22.Name = "markerSelector22";
+            this.markerSelector22.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector22.TabIndex = 131;
+            this.markerSelector22.TabStop = false;
+            // 
+            // markerSelector21
+            // 
+            this.markerSelector21.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Surf;
+            this.markerSelector21.Location = new System.Drawing.Point(117, 41);
+            this.markerSelector21.MarkerID = 21;
+            this.markerSelector21.Name = "markerSelector21";
+            this.markerSelector21.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector21.TabIndex = 130;
+            this.markerSelector21.TabStop = false;
+            // 
+            // markerSelector20
+            // 
+            this.markerSelector20.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Strength;
+            this.markerSelector20.Location = new System.Drawing.Point(79, 41);
+            this.markerSelector20.MarkerID = 20;
+            this.markerSelector20.Name = "markerSelector20";
+            this.markerSelector20.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector20.TabIndex = 129;
+            this.markerSelector20.TabStop = false;
+            // 
+            // markerSelector19
+            // 
+            this.markerSelector19.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Cut;
+            this.markerSelector19.Location = new System.Drawing.Point(41, 41);
+            this.markerSelector19.MarkerID = 19;
+            this.markerSelector19.Name = "markerSelector19";
+            this.markerSelector19.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector19.TabIndex = 128;
+            this.markerSelector19.TabStop = false;
+            // 
+            // markerSelector18
+            // 
+            this.markerSelector18.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.RockSmash;
+            this.markerSelector18.Location = new System.Drawing.Point(4, 41);
+            this.markerSelector18.MarkerID = 18;
+            this.markerSelector18.Name = "markerSelector18";
+            this.markerSelector18.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector18.TabIndex = 127;
+            this.markerSelector18.TabStop = false;
             // 
             // markerSelector17
             // 
             this.markerSelector17.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Cynthia;
-            this.markerSelector17.Location = new System.Drawing.Point(60, 155);
+            this.markerSelector17.Location = new System.Drawing.Point(61, 279);
             this.markerSelector17.MarkerID = 17;
             this.markerSelector17.Name = "markerSelector17";
             this.markerSelector17.Size = new System.Drawing.Size(32, 32);
@@ -245,7 +371,7 @@
             // markerSelector16
             // 
             this.markerSelector16.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Lucian;
-            this.markerSelector16.Location = new System.Drawing.Point(117, 117);
+            this.markerSelector16.Location = new System.Drawing.Point(118, 241);
             this.markerSelector16.MarkerID = 16;
             this.markerSelector16.Name = "markerSelector16";
             this.markerSelector16.Size = new System.Drawing.Size(32, 32);
@@ -256,7 +382,7 @@
             // markerSelector15
             // 
             this.markerSelector15.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Flint;
-            this.markerSelector15.Location = new System.Drawing.Point(79, 117);
+            this.markerSelector15.Location = new System.Drawing.Point(80, 241);
             this.markerSelector15.MarkerID = 15;
             this.markerSelector15.Name = "markerSelector15";
             this.markerSelector15.Size = new System.Drawing.Size(32, 32);
@@ -267,7 +393,7 @@
             // markerSelector14
             // 
             this.markerSelector14.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Bertha;
-            this.markerSelector14.Location = new System.Drawing.Point(41, 117);
+            this.markerSelector14.Location = new System.Drawing.Point(42, 241);
             this.markerSelector14.MarkerID = 14;
             this.markerSelector14.Name = "markerSelector14";
             this.markerSelector14.Size = new System.Drawing.Size(32, 32);
@@ -278,7 +404,7 @@
             // markerSelector13
             // 
             this.markerSelector13.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Aaron;
-            this.markerSelector13.Location = new System.Drawing.Point(3, 117);
+            this.markerSelector13.Location = new System.Drawing.Point(4, 241);
             this.markerSelector13.MarkerID = 13;
             this.markerSelector13.Name = "markerSelector13";
             this.markerSelector13.Size = new System.Drawing.Size(32, 32);
@@ -289,7 +415,7 @@
             // markerSelector12
             // 
             this.markerSelector12.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.BeaconBadge;
-            this.markerSelector12.Location = new System.Drawing.Point(117, 79);
+            this.markerSelector12.Location = new System.Drawing.Point(118, 203);
             this.markerSelector12.MarkerID = 12;
             this.markerSelector12.Name = "markerSelector12";
             this.markerSelector12.Size = new System.Drawing.Size(32, 32);
@@ -300,7 +426,7 @@
             // markerSelector11
             // 
             this.markerSelector11.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.IcicleBadge;
-            this.markerSelector11.Location = new System.Drawing.Point(79, 79);
+            this.markerSelector11.Location = new System.Drawing.Point(80, 203);
             this.markerSelector11.MarkerID = 11;
             this.markerSelector11.Name = "markerSelector11";
             this.markerSelector11.Size = new System.Drawing.Size(32, 32);
@@ -311,7 +437,7 @@
             // markerSelector10
             // 
             this.markerSelector10.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.MineBadge;
-            this.markerSelector10.Location = new System.Drawing.Point(41, 79);
+            this.markerSelector10.Location = new System.Drawing.Point(42, 203);
             this.markerSelector10.MarkerID = 10;
             this.markerSelector10.Name = "markerSelector10";
             this.markerSelector10.Size = new System.Drawing.Size(32, 32);
@@ -322,7 +448,7 @@
             // markerSelector9
             // 
             this.markerSelector9.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.FenBadge;
-            this.markerSelector9.Location = new System.Drawing.Point(3, 79);
+            this.markerSelector9.Location = new System.Drawing.Point(4, 203);
             this.markerSelector9.MarkerID = 9;
             this.markerSelector9.Name = "markerSelector9";
             this.markerSelector9.Size = new System.Drawing.Size(32, 32);
@@ -333,7 +459,7 @@
             // markerSelector8
             // 
             this.markerSelector8.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.CobbleBadge;
-            this.markerSelector8.Location = new System.Drawing.Point(117, 41);
+            this.markerSelector8.Location = new System.Drawing.Point(118, 165);
             this.markerSelector8.MarkerID = 8;
             this.markerSelector8.Name = "markerSelector8";
             this.markerSelector8.Size = new System.Drawing.Size(32, 32);
@@ -344,7 +470,7 @@
             // markerSelector7
             // 
             this.markerSelector7.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.RelicBadge;
-            this.markerSelector7.Location = new System.Drawing.Point(79, 41);
+            this.markerSelector7.Location = new System.Drawing.Point(80, 165);
             this.markerSelector7.MarkerID = 7;
             this.markerSelector7.Name = "markerSelector7";
             this.markerSelector7.Size = new System.Drawing.Size(32, 32);
@@ -355,7 +481,7 @@
             // markerSelector6
             // 
             this.markerSelector6.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.ForestBadge;
-            this.markerSelector6.Location = new System.Drawing.Point(41, 41);
+            this.markerSelector6.Location = new System.Drawing.Point(42, 165);
             this.markerSelector6.MarkerID = 6;
             this.markerSelector6.Name = "markerSelector6";
             this.markerSelector6.Size = new System.Drawing.Size(32, 32);
@@ -366,7 +492,7 @@
             // markerSelector5
             // 
             this.markerSelector5.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.CoalBadge;
-            this.markerSelector5.Location = new System.Drawing.Point(3, 41);
+            this.markerSelector5.Location = new System.Drawing.Point(4, 165);
             this.markerSelector5.MarkerID = 5;
             this.markerSelector5.Name = "markerSelector5";
             this.markerSelector5.Size = new System.Drawing.Size(32, 32);
@@ -838,9 +964,9 @@
             this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button62.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button62.Location = new System.Drawing.Point(5, 215);
+            this.button62.Location = new System.Drawing.Point(5, 326);
             this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(152, 31);
+            this.button62.Size = new System.Drawing.Size(154, 31);
             this.button62.TabIndex = 67;
             this.button62.Text = "LINK";
             this.button62.UseCompatibleTextRendering = true;
@@ -1834,13 +1960,13 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 6.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button1.Location = new System.Drawing.Point(5, 506);
+            this.button1.Location = new System.Drawing.Point(8, 775);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 31);
+            this.button1.Size = new System.Drawing.Size(80, 23);
             this.button1.TabIndex = 109;
-            this.button1.Text = "temp: update";
+            this.button1.Text = "debug update";
             this.button1.UseCompatibleTextRendering = true;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -1854,7 +1980,6 @@
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.button62);
@@ -1862,6 +1987,23 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(164, 802);
             this.panel3.TabIndex = 110;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.button4.FlatAppearance.BorderSize = 2;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Nirmala UI", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.button4.Location = new System.Drawing.Point(43, 363);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(78, 31);
+            this.button4.TabIndex = 115;
+            this.button4.Text = "UNLINK";
+            this.button4.UseCompatibleTextRendering = true;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -1871,7 +2013,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button3.Location = new System.Drawing.Point(125, 252);
+            this.button3.Location = new System.Drawing.Point(127, 363);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(32, 31);
             this.button3.TabIndex = 114;
@@ -1888,7 +2030,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button2.Location = new System.Drawing.Point(5, 252);
+            this.button2.Location = new System.Drawing.Point(5, 363);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(32, 31);
             this.button2.TabIndex = 113;
@@ -1925,7 +2067,7 @@
             this.panel6.Controls.Add(this.hmFlagsButton7);
             this.panel6.Controls.Add(this.hmFlagsButton5);
             this.panel6.Controls.Add(this.hmFlagsButton6);
-            this.panel6.Location = new System.Drawing.Point(5, 382);
+            this.panel6.Location = new System.Drawing.Point(5, 510);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(154, 118);
             this.panel6.TabIndex = 111;
@@ -1941,7 +2083,7 @@
             this.panel5.Controls.Add(this.checkFlagsButton7);
             this.panel5.Controls.Add(this.checkFlagsButton8);
             this.panel5.Controls.Add(this.checkFlagsButton9);
-            this.panel5.Location = new System.Drawing.Point(5, 296);
+            this.panel5.Location = new System.Drawing.Point(5, 424);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(154, 80);
             this.panel5.TabIndex = 110;
@@ -1949,6 +2091,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.r205);
             this.panel4.Controls.Add(this.r203);
             this.panel4.Controls.Add(this.r228);
@@ -1990,23 +2133,6 @@
             this.MtCoronetPeak.Text = "Mt. Coronet Peak";
             this.MtCoronetPeak.UseCompatibleTextRendering = true;
             this.MtCoronetPeak.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button4.FlatAppearance.BorderSize = 2;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button4.Location = new System.Drawing.Point(43, 252);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 31);
-            this.button4.TabIndex = 115;
-            this.button4.Text = "UNLINK";
-            this.button4.UseCompatibleTextRendering = true;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // UITest
             // 
@@ -2064,6 +2190,15 @@
             this.Load += new System.EventHandler(this.UITest_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector15)).EndInit();
@@ -2247,5 +2382,14 @@
         private Button button3;
         private Button button2;
         private Button button4;
+        private MarkerSelector markerSelector18;
+        private MarkerSelector markerSelector19;
+        private MarkerSelector markerSelector20;
+        private MarkerSelector markerSelector21;
+        private MarkerSelector markerSelector23;
+        private MarkerSelector markerSelector22;
+        private MarkerSelector markerSelector26;
+        private MarkerSelector markerSelector25;
+        private MarkerSelector markerSelector24;
     }
 }
