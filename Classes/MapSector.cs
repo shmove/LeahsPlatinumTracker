@@ -44,29 +44,37 @@ namespace LeahsPlatinumTracker
         /// A boolean pertaining to whether every accessible <see cref="Warp"/> in this instance has been checked.
         /// </summary>
         [JsonIgnore]
-        public bool IsCompleted
+        public bool IsCompleted { get { return CheckCompletion(); } }
+
+        /// <summary>
+        /// A boolean pertaining to whether every <see cref="Warp"/> (accessible or not) in this instance has been checked.
+        /// </summary>
+        [JsonIgnore]
+        public bool IsFullyCompleted { get { return CheckCompletion(true); } }
+
+        /// <summary>
+        /// Evaluates whether every <see cref="Warp"/> in this instance has been checked. If evaluated with <paramref name="strict"/>, it ignores whether the unchecked areas are accessible or not.
+        /// </summary>
+        /// <param name="strict">Boolean ascertaining whether inaccessible areas count as unchecked.</param>
+        /// <returns>A boolean pertaining to whether every <see cref="Warp"/> in this instance has been checked.</returns>
+        private bool CheckCompletion(bool strict = false)
         {
-            get
+            foreach (MapSector sector in MapSectors)
             {
-                foreach (MapSector sector in MapSectors)
+                // if the area is unlocked and a warp is unchecked, the area is not finished
+                if (sector.IsUnlocked || strict)
                 {
-                    // if the area is unlocked and a warp is unchecked, the area is not finished
-                    if (sector.IsUnlocked)
+                    foreach (Warp warp in sector.Warps)
                     {
-                        foreach (Warp warp in sector.Warps)
-                        {
-                            if (
-                                 warp.Destination.WarpID < 0 && 
-                                 warp.VisualMarkers != 1 &&
-                                (warp.VisualMarkers < 5  || warp.VisualMarkers > 17) &&
-                                (warp.VisualMarkers < 24 || warp.VisualMarkers > 26)
-                            )
+                        if ( warp.Destination.WarpID < 0 &&
+                             warp.VisualMarkers != 1 &&
+                            (warp.VisualMarkers < 5  || warp.VisualMarkers > 17) &&
+                            (warp.VisualMarkers < 24 || warp.VisualMarkers > 26) )
                                 return false;  // if warp is unset or matches any marker associated w a checked area/dead end
-                        }
                     }
                 }
-                return true;
             }
+            return true;
         }
 
         /// <summary>
