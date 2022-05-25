@@ -237,7 +237,7 @@ namespace LeahsPlatinumTracker
                 new MapSector("AcuityLake Ext N", 1, new Condition("AcuityLake Ext S", new Checks(64))),
                 new MapSector("AcuityLake Int A", 1, new Condition("AcuityLake Int B", new Checks(16))),
                 new MapSector("AcuityLake Int B", 1, new Condition("AcuityLake Int A", new Checks(16)))
-            }, "Lake Acuity"));
+            }, "Acuity Lake"));
             VisualMapSectors.Add(new VisualMapSector(this, new MapSector("BacklotMansion", 6), "Backlot Mansion"));
             VisualMapSectors.Add(new VisualMapSector(this, "Canalave", new List<MapSector>
             {
@@ -538,7 +538,7 @@ namespace LeahsPlatinumTracker
                 }),
                 new MapSector("ValorLake Int A", 1, new Condition("ValorLake Int B", new Checks(16))),
                 new MapSector("ValorLake Int B", 1, new Condition("ValorLake Int A", new Checks(16)))
-            }, "Lake Valor"));
+            }, "Valor Lake"));
             VisualMapSectors.Add(new VisualMapSector(this, "Veilstone", new List<MapSector> // self contained
             {
                 new MapSector("Veilstone", 15, new Condition("Veilstone Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))),
@@ -549,7 +549,7 @@ namespace LeahsPlatinumTracker
                 new MapSector("VerityLake Ext", 1, true),
                 new MapSector("VerityLake Int A", 1, new Condition("VerityLake Int B", new Checks(16))),
                 new MapSector("VerityLake Int B", 1, new Condition("VerityLake Int A", new Checks(16)))
-            }, "Lake Verity"));
+            }, "Verity Lake"));
             VisualMapSectors.Add(new VisualMapSector(this, "VictoryRoad", new List<MapSector>
             {
                 new MapSector("VictoryRoad B1F A", 1, new Condition("VictoryRoad B1F B", new Checks(16))), // Waterfall room, bottom entrance
