@@ -27,6 +27,11 @@ namespace LeahsPlatinumTracker
         public Checks Checks { get; set; }
 
         /// <summary>
+        /// A <see cref="LeahsPlatinumTracker.Checks"/> instance that keeps note of which checks the player has discovered.
+        /// </summary>
+        public Checks VisualChecks { get; set; }
+
+        /// <summary>
         /// A list of <see cref="VisualMapSector"/> instances that the map consists of.
         /// </summary>
         public List<VisualMapSector> VisualMapSectors { get; set; }
@@ -68,7 +73,9 @@ namespace LeahsPlatinumTracker
         public Tracker()
         {
 
-            Checks = new Checks(); // Creates Checks with nothing set
+            // Creates sets of Checks with nothing set
+            Checks = new Checks(); 
+            VisualChecks = new Checks();
 
             Game = "PokemonPlatinum";
             CreatedVersion = Program.Version;
@@ -871,7 +878,7 @@ namespace LeahsPlatinumTracker
             {
                 string json = JsonConvert.SerializeObject(this, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
                 File.WriteAllText(fileDialog.FileName, json);
-                MessageBox.Show("Successfully saved all data!");
+                MessageBox.Show("Successfully saved all data!", "Save File");
             }
         }
 
@@ -894,37 +901,49 @@ namespace LeahsPlatinumTracker
             Tracker tracker = new Tracker();
             dynamic? loadedTracker = JsonConvert.DeserializeObject<dynamic>(json);
 
-            tracker.Game = loadedTracker.Game;
-            tracker.CreatedVersion = loadedTracker.CreatedVersion;
-
-            tracker.Checks = new Checks();
-            tracker.Checks.ChecksMade = loadedTracker.Checks.ChecksMade;
-            tracker.Checks.Progress = loadedTracker.Checks.Progress;
-            tracker.Checks.HMs = loadedTracker.Checks.HMs;
-
-            foreach (var JSONVisualMapSector in loadedTracker.VisualMapSectors)
+            try
             {
-                foreach (var JSONMapSector in JSONVisualMapSector.MapSectors)
+                tracker.Game = loadedTracker.Game;
+                tracker.CreatedVersion = loadedTracker.CreatedVersion;
+
+                tracker.Checks = new Checks();
+                tracker.Checks.ChecksMade = loadedTracker.Checks.ChecksMade;
+                tracker.Checks.Progress = loadedTracker.Checks.Progress;
+                tracker.Checks.HMs = loadedTracker.Checks.HMs;
+
+                tracker.VisualChecks = new Checks();
+                tracker.VisualChecks.ChecksMade = loadedTracker.VisualChecks.ChecksMade;
+                tracker.VisualChecks.Progress = loadedTracker.VisualChecks.Progress;
+                tracker.VisualChecks.HMs = loadedTracker.VisualChecks.HMs;
+
+                foreach (var JSONVisualMapSector in loadedTracker.VisualMapSectors)
                 {
-                    string thisMapID = JSONMapSector.MapID;
-                    MapSector thisMapSector = tracker.GetMapSector(thisMapID);
-                    foreach(var JSONWarp in JSONMapSector.Warps)
+                    foreach (var JSONMapSector in JSONVisualMapSector.MapSectors)
                     {
-                        int thisWarpID = JSONWarp.WarpID;
-                        Warp thisWarp = thisMapSector.Warps[thisWarpID];
-                        string thisWarpDestinationMapID = JSONWarp.Destination.Item1;
-                        int thisWarpDestinationWarpID = JSONWarp.Destination.Item2;
-                        thisWarp.Destination = (thisWarpDestinationMapID, thisWarpDestinationWarpID);
-                        thisWarp.VisualMarkers = JSONWarp.VisualMarkers;
+                        string thisMapID = JSONMapSector.MapID;
+                        MapSector thisMapSector = tracker.GetMapSector(thisMapID);
+                        foreach (var JSONWarp in JSONMapSector.Warps)
+                        {
+                            int thisWarpID = JSONWarp.WarpID;
+                            Warp thisWarp = thisMapSector.Warps[thisWarpID];
+                            string thisWarpDestinationMapID = JSONWarp.Destination.Item1;
+                            int thisWarpDestinationWarpID = JSONWarp.Destination.Item2;
+                            thisWarp.Destination = (thisWarpDestinationMapID, thisWarpDestinationWarpID);
+                            thisWarp.VisualMarkers = JSONWarp.VisualMarkers;
+                        }
+                        for (int i = 0; i < JSONMapSector.Conditions.Count; i++)
+                        {
+                            thisMapSector.Conditions[i].MapAccessible = (bool)JSONMapSector.Conditions[i].MapAccessible;
+                        }
+                        thisMapSector.IsUnlocked = (bool)JSONMapSector.IsUnlocked;
                     }
-                    for (int i=0; i<JSONMapSector.Conditions.Count; i++)
-                    {
-                        thisMapSector.Conditions[i].MapAccessible = (bool)JSONMapSector.Conditions[i].MapAccessible;
-                    }
-                    thisMapSector.IsUnlocked = (bool)JSONMapSector.IsUnlocked;
                 }
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("The save could not be loaded. Either this file is invalid, or was generated by an incompatible version of Leah's Platinum Tracker.\n\nError details below:\n" + ex.ToString(), "Error loading save file!");
+            };
+            
             return tracker;
         }
     }

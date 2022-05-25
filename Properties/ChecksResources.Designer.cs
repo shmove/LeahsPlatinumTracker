@@ -83,6 +83,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Aaron_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Aaron-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bertha {
             get {
                 object obj = ResourceManager.GetObject("Bertha", resourceCulture);
@@ -96,6 +106,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Bertha_Locked {
             get {
                 object obj = ResourceManager.GetObject("Bertha-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bertha_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Bertha-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +143,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bike_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Bike-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cut {
             get {
                 object obj = ResourceManager.GetObject("Cut", resourceCulture);
@@ -136,6 +166,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Cut_Locked {
             get {
                 object obj = ResourceManager.GetObject("Cut-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cut_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Cut-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,19 +203,9 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CynthiaWide {
+        internal static System.Drawing.Bitmap Cynthia_VisualUnlocked {
             get {
-                object obj = ResourceManager.GetObject("CynthiaWide", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CynthiaWide_Locked {
-            get {
-                object obj = ResourceManager.GetObject("CynthiaWide-Locked", resourceCulture);
+                object obj = ResourceManager.GetObject("Cynthia-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +233,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DefeatedWindworks_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("DefeatedWindworks-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Defog {
             get {
                 object obj = ResourceManager.GetObject("Defog", resourceCulture);
@@ -216,6 +256,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Defog_Locked {
             get {
                 object obj = ResourceManager.GetObject("Defog-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Defog_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Defog-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,6 +293,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fantina_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Fantina-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Flint {
             get {
                 object obj = ResourceManager.GetObject("Flint", resourceCulture);
@@ -256,6 +316,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Flint_Locked {
             get {
                 object obj = ResourceManager.GetObject("Flint-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Flint_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Flint-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +353,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fly_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Fly-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GalacticKey {
             get {
                 object obj = ResourceManager.GetObject("GalacticKey", resourceCulture);
@@ -296,6 +376,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap GalacticKey_Locked {
             get {
                 object obj = ResourceManager.GetObject("GalacticKey-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GalacticKey_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("GalacticKey-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,6 +413,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gym1_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Gym1-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gym2 {
             get {
                 object obj = ResourceManager.GetObject("Gym2", resourceCulture);
@@ -336,6 +436,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Gym2_Locked {
             get {
                 object obj = ResourceManager.GetObject("Gym2-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gym2_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Gym2-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,6 +473,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gym3_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Gym3-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gym4 {
             get {
                 object obj = ResourceManager.GetObject("Gym4", resourceCulture);
@@ -376,6 +496,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Gym4_Locked {
             get {
                 object obj = ResourceManager.GetObject("Gym4-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gym4_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Gym4-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,6 +533,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gym5_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Gym5-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gym6 {
             get {
                 object obj = ResourceManager.GetObject("Gym6", resourceCulture);
@@ -416,6 +556,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Gym6_Locked {
             get {
                 object obj = ResourceManager.GetObject("Gym6-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gym6_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Gym6-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,6 +593,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gym7_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Gym7-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gym8 {
             get {
                 object obj = ResourceManager.GetObject("Gym8", resourceCulture);
@@ -456,6 +616,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Gym8_Locked {
             get {
                 object obj = ResourceManager.GetObject("Gym8-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gym8_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Gym8-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,6 +653,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lucian_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Lucian-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Roark {
             get {
                 object obj = ResourceManager.GetObject("Roark", resourceCulture);
@@ -496,6 +676,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Roark_Locked {
             get {
                 object obj = ResourceManager.GetObject("Roark-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Roark_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Roark-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,6 +713,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RockClimb_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("RockClimb-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RockSmash {
             get {
                 object obj = ResourceManager.GetObject("RockSmash", resourceCulture);
@@ -536,6 +736,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap RockSmash_Locked {
             get {
                 object obj = ResourceManager.GetObject("RockSmash-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RockSmash_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("RockSmash-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -563,6 +773,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SecretPotion_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("SecretPotion-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Strength {
             get {
                 object obj = ResourceManager.GetObject("Strength", resourceCulture);
@@ -576,6 +796,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Strength_Locked {
             get {
                 object obj = ResourceManager.GetObject("Strength-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Strength_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Strength-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -603,6 +833,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Surf_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Surf-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Teleport {
             get {
                 object obj = ResourceManager.GetObject("Teleport", resourceCulture);
@@ -616,6 +856,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap Teleport_Locked {
             get {
                 object obj = ResourceManager.GetObject("Teleport-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Teleport_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Teleport-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -643,6 +893,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Volkner_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Volkner-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Waterfall {
             get {
                 object obj = ResourceManager.GetObject("Waterfall", resourceCulture);
@@ -663,6 +923,16 @@ namespace LeahsPlatinumTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Waterfall_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("Waterfall-VisualUnlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WorksKey {
             get {
                 object obj = ResourceManager.GetObject("WorksKey", resourceCulture);
@@ -676,6 +946,16 @@ namespace LeahsPlatinumTracker.Properties {
         internal static System.Drawing.Bitmap WorksKey_Locked {
             get {
                 object obj = ResourceManager.GetObject("WorksKey-Locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WorksKey_VisualUnlocked {
+            get {
+                object obj = ResourceManager.GetObject("WorksKey-VisualUnlocked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

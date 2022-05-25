@@ -9,11 +9,13 @@ namespace LeahsPlatinumTracker
     public class ChecksButton : PictureBox
     {
         private UITest? ParentForm;
-        private Tracker? Player;
+        internal Tracker? Player;
         private static ToolTip tooltip;
         internal bool CheckState = false;
+        internal bool VisualCheckState = false;
 
         public Image? Image_Locked { get; set; }
+        public Image? Image_VisualUnlocked { get; set; }
         public Image? Image_Unlocked { get; set; }
 
         public ChecksButton()
@@ -43,20 +45,24 @@ namespace LeahsPlatinumTracker
             switch (sender.GetType().Name)
             {
                 case "CheckFlagsButton":
-                    CheckState = Checks.FlagsTool.IsSet(Player.Checks.ChecksMade, ((CheckFlagsButton)sender).Flag);
+                    CheckState = Player.Checks.ChecksMade.HasFlag(((CheckFlagsButton)sender).Flag);
+                    VisualCheckState = Player.VisualChecks.ChecksMade.HasFlag(((CheckFlagsButton)sender).Flag);
                     tooltip.SetToolTip(this, ((CheckFlagsButton)sender).Flag.ToString());
                     break;
                 case "ProgressFlagsButton":
-                    CheckState = Checks.FlagsTool.IsSet(Player.Checks.Progress, ((ProgressFlagsButton)sender).Flag);
+                    CheckState = Player.Checks.Progress.HasFlag(((ProgressFlagsButton)sender).Flag);
+                    VisualCheckState = Player.VisualChecks.Progress.HasFlag(((ProgressFlagsButton)sender).Flag);
                     tooltip.SetToolTip(this, ((ProgressFlagsButton)sender).Flag.ToString());
                     break;
                 case "HMFlagsButton":
-                    CheckState = Checks.FlagsTool.IsSet(Player.Checks.HMs, ((HMFlagsButton)sender).Flag);
+                    CheckState = Player.Checks.HMs.HasFlag(((HMFlagsButton)sender).Flag);
+                    VisualCheckState = Player.VisualChecks.HMs.HasFlag(((HMFlagsButton)sender).Flag);
                     tooltip.SetToolTip(this, ((HMFlagsButton)sender).Flag.ToString());
                     break;
             }
 
             if (CheckState) Image = Image_Unlocked;
+            else if (VisualCheckState) Image = Image_VisualUnlocked;
             else Image = Image_Locked;
 
             MouseHover -= Initialise;
@@ -72,12 +78,18 @@ namespace LeahsPlatinumTracker
             {
                 case "CheckFlagsButton":
                     toggleOutput = Player.Checks.Toggle(((CheckFlagsButton)sender).Flag);
+                    if (toggleOutput) Player.VisualChecks.Unlock(((CheckFlagsButton)sender).Flag);
+                    else              Player.VisualChecks.Lock(((CheckFlagsButton)sender).Flag);
                     break;
                 case "ProgressFlagsButton":
                     toggleOutput = Player.Checks.Toggle(((ProgressFlagsButton)sender).Flag);
+                    if (toggleOutput) Player.VisualChecks.Unlock(((ProgressFlagsButton)sender).Flag);
+                    else              Player.VisualChecks.Lock(((ProgressFlagsButton)sender).Flag);
                     break;
                 case "HMFlagsButton":
                     toggleOutput = Player.Checks.Toggle(((HMFlagsButton)sender).Flag);
+                    if (toggleOutput) Player.VisualChecks.Unlock(((HMFlagsButton)sender).Flag);
+                    else              Player.VisualChecks.Lock(((HMFlagsButton)sender).Flag);
                     break;
             }
 
@@ -86,6 +98,28 @@ namespace LeahsPlatinumTracker
             if (toggleOutput) Player.UpdateMap();
             else Player.RevertMap();
             ParentForm.updateAllAppearances();
+
+            return toggleOutput;
+        }
+
+        public bool HandleVisualCheckChange(object sender)
+        {
+            if (ParentForm == null) Initialise(sender);
+
+            bool toggleOutput = true;
+
+            switch(sender.GetType().Name)
+            {
+                case "CheckFlagsButton":
+                    toggleOutput = Player.VisualChecks.Toggle(((CheckFlagsButton)sender).Flag);
+                    break;
+                case "ProgressFlagsButton":
+                    toggleOutput = Player.VisualChecks.Toggle(((ProgressFlagsButton)sender).Flag);
+                    break;
+                case "HMFlagsButton":
+                    toggleOutput = Player.VisualChecks.Toggle(((HMFlagsButton)sender).Flag);
+                    break;
+            }
 
             return toggleOutput;
         }
@@ -103,9 +137,21 @@ namespace LeahsPlatinumTracker
 
         private void CheckFlagsButton_Click(object sender, EventArgs e)
         {
-            CheckState = HandleCheckChange(this);
-            if (CheckState) Image = Image_Unlocked;
-            else Image = Image_Locked;
+            MouseEventArgs me = (MouseEventArgs)e;
+
+            // if left click, or right click on flag that is actually unlocked
+            if (me.Button == MouseButtons.Left || (me.Button == MouseButtons.Right && CheckState) )
+            {
+                CheckState = HandleCheckChange(this);
+                if (CheckState) Image = Image_Unlocked;
+                else Image = Image_Locked;
+            }
+            else if (me.Button == MouseButtons.Right)
+            {
+                VisualCheckState = HandleVisualCheckChange(this);
+                if (VisualCheckState) Image = Image_VisualUnlocked;
+                else Image = Image_Locked;
+            }
         }
     }
 
@@ -120,9 +166,21 @@ namespace LeahsPlatinumTracker
 
         private void ProgressFlagsButton_Click(object sender, EventArgs e)
         {
-            CheckState = HandleCheckChange(this);
-            if (CheckState) Image = Image_Unlocked;
-            else Image = Image_Locked;
+            MouseEventArgs me = (MouseEventArgs)e;
+
+            // if left click, or right click on flag that is actually unlocked
+            if (me.Button == MouseButtons.Left || (me.Button == MouseButtons.Right && CheckState))
+            {
+                CheckState = HandleCheckChange(this);
+                if (CheckState) Image = Image_Unlocked;
+                else Image = Image_Locked;
+            }
+            else if (me.Button == MouseButtons.Right)
+            {
+                VisualCheckState = HandleVisualCheckChange(this);
+                if (VisualCheckState) Image = Image_VisualUnlocked;
+                else Image = Image_Locked;
+            }
         }
     }
 
@@ -137,9 +195,21 @@ namespace LeahsPlatinumTracker
 
         private void HMFlagsButton_Click(object sender, EventArgs e)
         {
-            CheckState = HandleCheckChange(this);
-            if (CheckState) Image = Image_Unlocked;
-            else Image = Image_Locked;
+            MouseEventArgs me = (MouseEventArgs)e;
+
+            // if left click, or right click on flag that is actually unlocked
+            if (me.Button == MouseButtons.Left || (me.Button == MouseButtons.Right && CheckState))
+            {
+                CheckState = HandleCheckChange(this);
+                if (CheckState) Image = Image_Unlocked;
+                else Image = Image_Locked;
+            }
+            else if (me.Button == MouseButtons.Right)
+            {
+                VisualCheckState = HandleVisualCheckChange(this);
+                if (VisualCheckState) Image = Image_VisualUnlocked;
+                else Image = Image_Locked;
+            }
         }
     }
 }
