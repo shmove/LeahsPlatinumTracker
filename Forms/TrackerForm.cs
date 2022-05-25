@@ -377,6 +377,7 @@ namespace LeahsPlatinumTracker
                     activePanel.Reload();
                     if (WarpID >= 0) activePanel.SelectWarp(MapID, WarpID);
                     activePanel.UpdateWarpAppearances();
+                    UpdateMapSelectorButtons(this); // updates MapSelectorButtons to display newly selected area
                     activePanel.Show();
                     loaded = true;
                 }
