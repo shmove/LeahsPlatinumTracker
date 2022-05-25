@@ -12,6 +12,8 @@ namespace LeahsPlatinumTracker
         internal TrackerForm? FormParent;
         internal VisualMapSector? associatedVisualMap;
 
+        private Font? InitialFont;
+
         public MapSelectorButton()
         {
             FlatStyle = FlatStyle.Flat;
@@ -27,7 +29,8 @@ namespace LeahsPlatinumTracker
 
         public void updateAppearance()
         {
-            Font = new Font(Font.FontFamily, Font.Size, FontStyle.Regular);
+            if (InitialFont == null) InitialFont = Font;
+            Font = new Font(InitialFont.FontFamily, InitialFont.Size, InitialFont.Style);
 
             if (associatedVisualMap.IsUnlocked)
             {
@@ -78,7 +81,7 @@ namespace LeahsPlatinumTracker
             }
 
             if (FormParent.activePanel != null)
-                if (FormParent.activePanel.GetType().Name == Name || (FormParent.activePanel.GetType().Name.StartsWith("2") && ("r" + FormParent.activePanel.GetType().Name) == Name)) Font = new Font(Font.FontFamily, Font.Size, FontStyle.Underline);
+                if (FormParent.activePanel.GetType().Name == Name || (FormParent.activePanel.GetType().Name.StartsWith("2") && ("r" + FormParent.activePanel.GetType().Name) == Name)) Font = new Font(InitialFont.FontFamily, InitialFont.Size, InitialFont.Style | FontStyle.Underline);
         }
     }
 }
