@@ -68,6 +68,11 @@ namespace LeahsPlatinumTracker
         public string CreatedVersion { get; set; }
 
         /// <summary>
+        /// Simple notes written by the user and saved alongside tracking information.
+        /// </summary>
+        public string UserNotes { get; set; }
+
+        /// <summary>
         /// Constructor. Initialises an empty set of <see cref="LeahsPlatinumTracker.Checks"/>, and creates a <see cref="Tracker"/> for Pokemon Platinum with all map areas and warps.
         /// </summary>
         public Tracker()
@@ -79,6 +84,7 @@ namespace LeahsPlatinumTracker
 
             Game = "PokemonPlatinum";
             CreatedVersion = Program.Version;
+            UserNotes = "";
 
             // Entire map
             VisualMapSectors = new List<VisualMapSector>();
@@ -905,6 +911,7 @@ namespace LeahsPlatinumTracker
             {
                 tracker.Game = loadedTracker.Game;
                 tracker.CreatedVersion = loadedTracker.CreatedVersion;
+                tracker.UserNotes = loadedTracker.UserNotes ?? "";
 
                 tracker.Checks = new Checks();
                 tracker.Checks.ChecksMade = loadedTracker.Checks.ChecksMade;

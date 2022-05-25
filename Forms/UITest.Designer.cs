@@ -159,6 +159,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.MtCoronetPeak = new LeahsPlatinumTracker.MapSelectorButton();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector25)).BeginInit();
@@ -2145,6 +2146,7 @@
             this.panel4.Controls.Add(this.r215);
             this.panel4.Controls.Add(this.r216);
             this.panel4.Controls.Add(this.r217);
+            this.panel4.Controls.Add(this.button6);
             this.panel4.Location = new System.Drawing.Point(1165, 128);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(92, 802);
@@ -2158,7 +2160,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button5.Location = new System.Drawing.Point(8, 746);
+            this.button5.Location = new System.Drawing.Point(8, 717);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 23);
             this.button5.TabIndex = 110;
@@ -2182,6 +2184,23 @@
             this.MtCoronetPeak.Text = "Mt. Coronet Peak";
             this.MtCoronetPeak.UseCompatibleTextRendering = true;
             this.MtCoronetPeak.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.button6.FlatAppearance.BorderSize = 2;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.button6.Location = new System.Drawing.Point(8, 746);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 23);
+            this.button6.TabIndex = 111;
+            this.button6.Text = "Notes";
+            this.button6.UseCompatibleTextRendering = true;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // UITest
             // 
@@ -2441,5 +2460,6 @@
         private MarkerSelector markerSelector25;
         private MarkerSelector markerSelector24;
         private Button button5;
+        private Button button6;
     }
 }

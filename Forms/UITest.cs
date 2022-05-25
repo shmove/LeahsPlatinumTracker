@@ -17,6 +17,8 @@ namespace LeahsPlatinumTracker
         private MapsForm? activePanel;
         private List<System.Reflection.TypeInfo> mapPanels;
 
+        private UserNotes? NotesForm;
+
         private List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))> UndoHistory;
         private List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))> RedoHistory;
 
@@ -380,6 +382,20 @@ namespace LeahsPlatinumTracker
         private void button5_Click(object sender, EventArgs e)
         {
             Player.ToJSON();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (NotesForm == null)
+            {
+                NotesForm = new(Player);
+                NotesForm.FormClosed += (s, e) => { NotesForm = null; };
+                NotesForm.Show();
+            }
+
+            else if (NotesForm.WindowState == FormWindowState.Minimized) NotesForm.WindowState = FormWindowState.Normal;
+
+            else NotesForm.Focus();
         }
     }
 }
