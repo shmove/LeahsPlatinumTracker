@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class BacklotMansion : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public BacklotMansion()
         {
             InitializeComponent();

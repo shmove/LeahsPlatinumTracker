@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class AcuityLake : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public AcuityLake()
         {
             InitializeComponent();

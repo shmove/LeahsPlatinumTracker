@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class Veilstone : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public Veilstone()
         {
             InitializeComponent();

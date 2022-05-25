@@ -10,6 +10,7 @@ namespace LeahsPlatinumTracker
     {
 
         public Tracker Player { get; set; }
+        internal string Game { get { return Player.Game; } }
         internal MapsForm? activePanel;
         internal List<System.Reflection.TypeInfo> mapPanels;
 
@@ -64,7 +65,25 @@ namespace LeahsPlatinumTracker
             }
 
             UpdateLinkHistoryButtons();
+            InitialiseMapPanels();
 
+        }
+
+        internal void InitialiseMapPanels()
+        {
+            var classType = typeof(MapsForm);
+            mapPanels = classType.Assembly.DefinedTypes
+                .Where(x => classType.IsAssignableFrom(x) && x != classType && (string)x.GetField("Game").GetValue(null) == Game)
+                .ToList();
+
+            switch (Game)
+            {
+                case "PokemonPlatinum":
+                    LoadMapPanel("Sandgem");
+                    break;
+            }
+
+            // https://stackoverflow.com/a/32795682
         }
 
         internal void InitialiseControls(Control control)

@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class Jubilife : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public Jubilife()
         {
             InitializeComponent();

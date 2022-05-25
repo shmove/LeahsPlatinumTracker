@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class DeptStore : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public DeptStore()
         {
             InitializeComponent();

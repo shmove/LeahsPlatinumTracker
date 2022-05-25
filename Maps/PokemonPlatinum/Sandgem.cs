@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class Sandgem : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public Sandgem()
         {
             InitializeComponent();

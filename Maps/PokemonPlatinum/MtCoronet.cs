@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class MtCoronet : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public MtCoronet()
         {
             InitializeComponent();

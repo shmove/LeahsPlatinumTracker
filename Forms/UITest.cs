@@ -37,22 +37,6 @@ namespace LeahsPlatinumTracker
             base.NotesButton = NotesButton;
         }
 
-        private void UITest_Load(object sender, EventArgs e)
-        {
-            base.TrackerForm_Load(sender, e);
-
-            // Map Sectors / Sub-forms
-
-            var classType = typeof(MapsForm);
-            mapPanels = classType.Assembly.DefinedTypes
-                .Where(x => classType.IsAssignableFrom(x) && x != classType)
-                .ToList();
-
-            LoadMapPanel("Sandgem");
-
-            // https://stackoverflow.com/a/32795682
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             UpdateAllAppearances();

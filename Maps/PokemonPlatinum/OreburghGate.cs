@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class OreburghGate : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public OreburghGate()
         {
             InitializeComponent();

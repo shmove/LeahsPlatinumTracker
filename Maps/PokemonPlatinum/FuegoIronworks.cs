@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class FuegoIronworks : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public FuegoIronworks()
         {
             InitializeComponent();

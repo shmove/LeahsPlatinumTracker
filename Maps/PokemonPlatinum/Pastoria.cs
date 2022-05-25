@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class Pastoria : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public Pastoria()
         {
             InitializeComponent();

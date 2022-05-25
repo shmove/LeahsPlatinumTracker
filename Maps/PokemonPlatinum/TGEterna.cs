@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class TGEterna : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public TGEterna()
         {
             InitializeComponent();

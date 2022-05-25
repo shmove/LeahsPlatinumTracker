@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class SendoffSpring : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public SendoffSpring()
         {
             InitializeComponent();

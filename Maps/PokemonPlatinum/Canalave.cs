@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class Canalave : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public Canalave()
         {
             InitializeComponent();

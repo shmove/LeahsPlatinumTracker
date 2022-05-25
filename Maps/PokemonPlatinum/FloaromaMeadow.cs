@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class FloaromaMeadow : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public FloaromaMeadow()
         {
             InitializeComponent();

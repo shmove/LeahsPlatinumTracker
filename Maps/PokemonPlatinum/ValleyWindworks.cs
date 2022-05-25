@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class ValleyWindworks : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public ValleyWindworks()
         {
             InitializeComponent();

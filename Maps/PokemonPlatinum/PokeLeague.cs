@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker.Maps
     public partial class PokeLeague : MapsForm
     {
 
+        public static string Game = "PokemonPlatinum";
+
         public PokeLeague()
         {
             InitializeComponent();

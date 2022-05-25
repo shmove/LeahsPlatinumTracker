@@ -2255,7 +2255,7 @@
             this.Name = "UITest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Leah\'s Platinum Tracker";
-            this.Load += new System.EventHandler(this.UITest_Load);
+            this.Load += new System.EventHandler(this.TrackerForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector26)).EndInit();
