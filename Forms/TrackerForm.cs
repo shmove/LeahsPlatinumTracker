@@ -420,7 +420,7 @@ namespace LeahsPlatinumTracker
             {
                 NotesForm = new(Player);
                 NotesForm.FormClosed += (s, e) => { NotesForm = null; };
-                FormClosed += (s, e) => { NotesForm.Close(); };
+                FormClosed += (s, e) => { if (NotesForm != null) NotesForm.Close(); };
                 NotesForm.Show();
             }
 
