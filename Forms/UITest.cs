@@ -25,7 +25,7 @@ namespace LeahsPlatinumTracker
             base.NotesButton = NotesButton;
         }
 
-        public UITest(Tracker _player) : base(_player)
+        public UITest(Tracker _player, string LoadedFile) : base(_player, LoadedFile)
         {
             InitializeComponent();
             base.MainPanel = MainPanel;

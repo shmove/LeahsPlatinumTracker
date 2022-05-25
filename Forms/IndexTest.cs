@@ -45,7 +45,7 @@ namespace LeahsPlatinumTracker
                 string json = File.ReadAllText(selectedFileName);
                 
                 Tracker Player = TrackerManager.FromJSON(json);
-                SubForm = new UITest(Player);
+                SubForm = new UITest(Player, selectedFileName);
                 Hide();
                 SubForm.ShowDialog();
                 Show();

@@ -13,6 +13,8 @@ namespace LeahsPlatinumTracker
         internal MapsForm? activePanel;
         internal List<System.Reflection.TypeInfo> mapPanels;
 
+        private string LoadedFile { get; set; } = string.Empty;
+
         internal UserNotes? NotesForm;
 
         internal Panel? MainPanel;
@@ -42,10 +44,11 @@ namespace LeahsPlatinumTracker
             RedoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();
         }
 
-        public TrackerForm(Tracker _player)
+        public TrackerForm(Tracker _player, string _LoadedFile)
         {
             Player = _player;
             mapPanels = new List<System.Reflection.TypeInfo>();
+            LoadedFile = _LoadedFile;
             UndoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();
             RedoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();
         }
@@ -314,7 +317,7 @@ namespace LeahsPlatinumTracker
             switch (MessageBox.Show("Do you want to save?", "Leah's Platinum Tracker", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
             {
                 case DialogResult.Yes:
-                    Player.ToJSON();
+                    Player.ToJSON(LoadedFile);
                     break;
                 case DialogResult.Cancel:
                     e.Cancel = true;

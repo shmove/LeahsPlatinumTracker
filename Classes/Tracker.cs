@@ -868,24 +868,34 @@ namespace LeahsPlatinumTracker
         /// <summary>
         /// Temporary method. Serialises current tracker data to JSON and saves in a user defined location as an .lpt file.
         /// </summary>
-        public void ToJSON()
+        public void ToJSON(string predeterminedFile = "")
         {
-            SaveFileDialog fileDialog = new SaveFileDialog();
+            string json = JsonConvert.SerializeObject(this, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
 
-            string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "LeahsPlatinumTracker");
-            Directory.CreateDirectory(folder);
-
-            fileDialog.InitialDirectory = folder;
-            fileDialog.Filter = "LPT save file (*.lpt)|*.lpt|JSON file (*.json)|*.json|All files (*.*)|*.*";
-            fileDialog.FilterIndex = 0;
-            fileDialog.RestoreDirectory = true;
-
-            if (fileDialog.ShowDialog() == DialogResult.OK)
+            if (predeterminedFile == "")
             {
-                string json = JsonConvert.SerializeObject(this, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
-                File.WriteAllText(fileDialog.FileName, json);
+                SaveFileDialog fileDialog = new SaveFileDialog();
+
+                string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "LeahsPlatinumTracker");
+                Directory.CreateDirectory(folder);
+
+                fileDialog.InitialDirectory = folder;
+                fileDialog.Filter = "LPT save file (*.lpt)|*.lpt|JSON file (*.json)|*.json|All files (*.*)|*.*";
+                fileDialog.FilterIndex = 0;
+                fileDialog.RestoreDirectory = true;
+
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllText(fileDialog.FileName, json);
+                    MessageBox.Show("Successfully saved all data!", "Save File");
+                }
+            }
+            else
+            {
+                File.WriteAllText(predeterminedFile, json);
                 MessageBox.Show("Successfully saved all data!", "Save File");
             }
+            
         }
 
     }
