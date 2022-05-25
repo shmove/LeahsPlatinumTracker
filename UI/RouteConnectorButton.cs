@@ -35,10 +35,10 @@ namespace LeahsPlatinumTracker
             AssociatedMapSector = Player.GetMapSector(DestinationMapSector);
             associatedVisualMapSector = AssociatedMapSector.ParentVisualMapSector;
             Text = associatedVisualMapSector.DisplayName;
-            updateAppearance();
+            UpdateAppearance();
         }
 
-        public void updateAppearance()
+        public void UpdateAppearance()
         {
             if (parent == null) Init();
             if (DestinationMapSector != null)

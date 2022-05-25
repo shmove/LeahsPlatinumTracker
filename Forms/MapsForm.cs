@@ -76,21 +76,21 @@ namespace LeahsPlatinumTracker
                     WarpButton button = (WarpButton)item;
                     button.MouseDown -= new MouseEventHandler(Warp_Click);
                     button.MouseDown += new MouseEventHandler(Warp_Click);
-                    button.updateAppearance();
+                    button.UpdateAppearance();
                 }
                 else if (item.GetType().Name == "MarkerPictureBox")
                 {
                     WarpButton button = ((MarkerPictureBox)item).parent;
                     button.MouseDown -= new MouseEventHandler(Warp_Click);
                     button.MouseDown += new MouseEventHandler(Warp_Click);
-                    button.updateAppearance();
+                    button.UpdateAppearance();
                 }
                 else if (item.GetType().Name == "RouteConnectorButton")
                 {
                     RouteConnectorButton button = (RouteConnectorButton)item;
                     button.MouseDown -= new MouseEventHandler(RouteConnector_Click);
                     button.MouseDown += new MouseEventHandler(RouteConnector_Click);
-                    button.updateAppearance();
+                    button.UpdateAppearance();
                 }
             }
         }
@@ -117,14 +117,14 @@ namespace LeahsPlatinumTracker
                 {
                     lastSelectedWarp.selected = false;
                     if (hasPictureBox) ((MarkerPictureBox)sender).ToggleSelected(false);
-                    lastSelectedWarp.updateAppearance();
+                    lastSelectedWarp.UpdateAppearance();
                 }
 
                 if (!parent.SetLinkWarps(warpButton.associatedWarp))
                 {
                     warpButton.selected = true;
                     if (hasPictureBox) ((MarkerPictureBox)sender).ToggleSelected(true);
-                    warpButton.updateAppearance();
+                    warpButton.UpdateAppearance();
                     lastSelectedWarp = warpButton;
                 };
 
@@ -134,7 +134,7 @@ namespace LeahsPlatinumTracker
                 // Apply dead end marker
                 if (warpButton.associatedWarp.VisualMarkers == 1) warpButton.associatedWarp.VisualMarkers = 0;
                 else warpButton.associatedWarp.VisualMarkers = 1;
-                warpButton.updateAppearance();
+                warpButton.UpdateAppearance();
                 parent.UpdateMapSelectorButtons(parent);
             }
             else if (me.Button == MouseButtons.Middle)

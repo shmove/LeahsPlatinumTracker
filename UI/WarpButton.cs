@@ -35,7 +35,7 @@ namespace LeahsPlatinumTracker
             associatedWarp = parent.Player.GetMapSector(MapID).Warps[WarpID];
             //if (associatedWarp == null) throw new Exception("WarpButton was provided invalid Warp identifers.");
             position = Location;
-            if (!fromUpdate) updateAppearance();
+            if (!fromUpdate) UpdateAppearance();
         }
 
         public WarpButton(MapsForm form, Warp warp, Point position)
@@ -47,7 +47,7 @@ namespace LeahsPlatinumTracker
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 2;
             this.UseCompatibleTextRendering = true;
-            updateAppearance();
+            UpdateAppearance();
         }
 
         private void UpdateButtonCosmetics()
@@ -97,7 +97,7 @@ namespace LeahsPlatinumTracker
             if (selected) FlatAppearance.BorderColor = Color.White;
         }
 
-        public void updateAppearance()
+        public void UpdateAppearance()
         {
             if (parent == null) Init(true);
             if (Marker != null) Marker.RemoveFrom(parent);
