@@ -9,9 +9,10 @@ namespace LeahsPlatinumTracker
     internal class MapSelectorButton : Button
     {
         internal Tracker? Player;
+        internal TrackerForm? FormParent;
         internal VisualMapSector? associatedVisualMap;
 
-        public MapSelectorButton() 
+        public MapSelectorButton()
         {
             FlatStyle = FlatStyle.Flat;
             FlatAppearance.BorderSize = 2;
@@ -22,12 +23,6 @@ namespace LeahsPlatinumTracker
             BackColor = Color.FromArgb(255, 160, 183, 214);
             FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
             UseCompatibleTextRendering = true;
-        }
-
-        public MapSelectorButton(Tracker tracker, VisualMapSector sector)
-        {
-            Player = tracker;
-            associatedVisualMap = sector;
         }
 
         public void updateAppearance()
@@ -67,7 +62,9 @@ namespace LeahsPlatinumTracker
                 //Font = new Font(Font.FontFamily, Font.Size, FontStyle.Regular);
                 FlatAppearance.BorderColor = Color.FromArgb(255, 155, 155, 155);
             }
-        }
 
+            if (FormParent.activePanel != null)
+                if (FormParent.activePanel.GetType().Name == Name || (FormParent.activePanel.GetType().Name.StartsWith("2") && ("r" + FormParent.activePanel.GetType().Name) == Name)) FlatAppearance.BorderColor = Color.White;
+        }
     }
 }

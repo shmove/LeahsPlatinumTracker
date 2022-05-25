@@ -66,6 +66,7 @@ namespace LeahsPlatinumTracker
 
             UpdateLinkHistoryButtons();
             InitialiseMapPanels();
+            UpdateMapSelectorButtons(this);
 
         }
 
@@ -92,6 +93,7 @@ namespace LeahsPlatinumTracker
             {
                 MapSelectorButton button = (MapSelectorButton)control;
                 button.Player = Player;
+                button.FormParent = this;
                 if (button.Name.StartsWith("r2")) button.associatedVisualMap = Player.GetVisualMapSector(button.Name.Substring(1));
                 else button.associatedVisualMap = Player.GetVisualMapSector(button.Name);
                 button.Click += new EventHandler(MapSelectorButton_Click);
@@ -323,6 +325,7 @@ namespace LeahsPlatinumTracker
         {
             MapSelectorButton button = (MapSelectorButton)sender;
             LoadMapPanel(button.Name);
+            UpdateMapSelectorButtons(this);
         }
 
         // Close override
