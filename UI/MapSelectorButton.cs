@@ -27,6 +27,8 @@ namespace LeahsPlatinumTracker
 
         public void updateAppearance()
         {
+            Font = new Font(Font.FontFamily, Font.Size, FontStyle.Regular);
+
             if (associatedVisualMap.IsUnlocked)
             {
                 /*
@@ -76,7 +78,7 @@ namespace LeahsPlatinumTracker
             }
 
             if (FormParent.activePanel != null)
-                if (FormParent.activePanel.GetType().Name == Name || (FormParent.activePanel.GetType().Name.StartsWith("2") && ("r" + FormParent.activePanel.GetType().Name) == Name)) FlatAppearance.BorderColor = Color.White;
+                if (FormParent.activePanel.GetType().Name == Name || (FormParent.activePanel.GetType().Name.StartsWith("2") && ("r" + FormParent.activePanel.GetType().Name) == Name)) Font = new Font(Font.FontFamily, Font.Size, FontStyle.Underline);
         }
     }
 }
