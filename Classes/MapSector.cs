@@ -78,6 +78,28 @@ namespace LeahsPlatinumTracker
         }
 
         /// <summary>
+        /// Evaluates whether every accessible <see cref="Warp"/> in this instance has been assigned a destination or marker.
+        /// </summary>
+        [JsonIgnore]
+        public bool IsFullyChecked
+        { 
+            get 
+            {
+                foreach(MapSector sector in MapSectors)
+                {
+                    if (sector.IsUnlocked)
+                    {
+                        foreach (Warp warp in sector.Warps)
+                        {
+                            if (!(warp.VisualMarkers > 0 || warp.Destination.WarpID >= 0)) return false;
+                        }
+                    }
+                }
+                return true;
+            } 
+        }
+
+        /// <summary>
         /// The <see cref="LeahsPlatinumTracker.Tracker"/> that this instance belongs to.
         /// </summary>
         [JsonIgnore]

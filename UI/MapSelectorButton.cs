@@ -29,12 +29,20 @@ namespace LeahsPlatinumTracker
         {
             if (associatedVisualMap.IsUnlocked)
             {
+                /*
+                if (associatedVisualMap.IsCompleteDeadEnd)
+                {
+                    // completely useless area visuals
+                    ForeColor = Color.FromArgb(255, 160, 61, 27);
+                    BackColor = Color.FromArgb(255, 225, 181, 166);
+                    FlatAppearance.BorderColor = Color.FromArgb(255, 160, 61, 27);
+                }
+                */
                 if (associatedVisualMap.IsFullyCompleted)
                 {
                     // fully completed visuals
                     ForeColor = Color.White;
                     BackColor = Color.FromArgb(255, 73, 180, 111);
-                    //Font = new Font(Font.FontFamily, Font.Size, FontStyle.Underline);
                     FlatAppearance.BorderColor = Color.FromArgb(255, 23, 115, 55);
                 }
                 else if (associatedVisualMap.IsCompleted)
@@ -42,15 +50,20 @@ namespace LeahsPlatinumTracker
                     // completed visuals
                     ForeColor = Color.FromArgb(255, 34, 153, 76);
                     BackColor = Color.FromArgb(255, 169, 222, 187);
-                    //Font = new Font(Font.FontFamily, Font.Size, FontStyle.Regular);
                     FlatAppearance.BorderColor = Color.FromArgb(255, 34, 153, 76);
+                }
+                else if (associatedVisualMap.IsFullyChecked)
+                {
+                    // user assigned obstacle visuals
+                    ForeColor = Color.FromArgb(255, 155, 132, 32);
+                    BackColor = Color.FromArgb(255, 220, 224, 167);
+                    FlatAppearance.BorderColor = Color.FromArgb(255, 155, 132, 32);
                 }
                 else
                 {
                     // unlocked visuals
                     ForeColor = Color.FromArgb(255, 54, 82, 129);
                     BackColor = Color.FromArgb(255, 160, 183, 214);
-                    //Font = new Font(Font.FontFamily, Font.Size, FontStyle.Regular);
                     FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
                 }
             }
@@ -59,7 +72,6 @@ namespace LeahsPlatinumTracker
                 // locked visuals
                 ForeColor = Color.FromArgb(255, 155, 155, 155);
                 BackColor = Color.FromArgb(255, 209, 209, 209);
-                //Font = new Font(Font.FontFamily, Font.Size, FontStyle.Regular);
                 FlatAppearance.BorderColor = Color.FromArgb(255, 155, 155, 155);
             }
 
