@@ -262,7 +262,7 @@
             // 
             // markerSelector26
             // 
-            this.markerSelector26.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Mart;
+            this.markerSelector26.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Mart;
             this.markerSelector26.Location = new System.Drawing.Point(60, 122);
             this.markerSelector26.MarkerID = 26;
             this.markerSelector26.Name = "markerSelector26";
@@ -273,7 +273,7 @@
             // 
             // markerSelector25
             // 
-            this.markerSelector25.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Pokeball;
+            this.markerSelector25.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Pokeball;
             this.markerSelector25.Location = new System.Drawing.Point(98, 122);
             this.markerSelector25.MarkerID = 25;
             this.markerSelector25.Name = "markerSelector25";
@@ -284,7 +284,7 @@
             // 
             // markerSelector24
             // 
-            this.markerSelector24.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.MasterBall;
+            this.markerSelector24.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.MasterBall;
             this.markerSelector24.Location = new System.Drawing.Point(22, 122);
             this.markerSelector24.MarkerID = 24;
             this.markerSelector24.Name = "markerSelector24";
@@ -295,7 +295,7 @@
             // 
             // markerSelector23
             // 
-            this.markerSelector23.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.RockClimb;
+            this.markerSelector23.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.RockClimb;
             this.markerSelector23.Location = new System.Drawing.Point(41, 79);
             this.markerSelector23.MarkerID = 23;
             this.markerSelector23.Name = "markerSelector23";
@@ -306,7 +306,7 @@
             // 
             // markerSelector22
             // 
-            this.markerSelector22.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Waterfall;
+            this.markerSelector22.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Waterfall;
             this.markerSelector22.Location = new System.Drawing.Point(79, 79);
             this.markerSelector22.MarkerID = 22;
             this.markerSelector22.Name = "markerSelector22";
@@ -317,7 +317,7 @@
             // 
             // markerSelector21
             // 
-            this.markerSelector21.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Surf;
+            this.markerSelector21.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Surf;
             this.markerSelector21.Location = new System.Drawing.Point(117, 41);
             this.markerSelector21.MarkerID = 21;
             this.markerSelector21.Name = "markerSelector21";
@@ -328,7 +328,7 @@
             // 
             // markerSelector20
             // 
-            this.markerSelector20.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Strength;
+            this.markerSelector20.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Strength;
             this.markerSelector20.Location = new System.Drawing.Point(79, 41);
             this.markerSelector20.MarkerID = 20;
             this.markerSelector20.Name = "markerSelector20";
@@ -339,7 +339,7 @@
             // 
             // markerSelector19
             // 
-            this.markerSelector19.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Cut;
+            this.markerSelector19.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Cut;
             this.markerSelector19.Location = new System.Drawing.Point(41, 41);
             this.markerSelector19.MarkerID = 19;
             this.markerSelector19.Name = "markerSelector19";
@@ -350,7 +350,7 @@
             // 
             // markerSelector18
             // 
-            this.markerSelector18.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.RockSmash;
+            this.markerSelector18.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.RockSmash;
             this.markerSelector18.Location = new System.Drawing.Point(4, 41);
             this.markerSelector18.MarkerID = 18;
             this.markerSelector18.Name = "markerSelector18";
@@ -361,7 +361,7 @@
             // 
             // markerSelector17
             // 
-            this.markerSelector17.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Cynthia;
+            this.markerSelector17.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Cynthia;
             this.markerSelector17.Location = new System.Drawing.Point(61, 279);
             this.markerSelector17.MarkerID = 17;
             this.markerSelector17.Name = "markerSelector17";
@@ -372,7 +372,7 @@
             // 
             // markerSelector16
             // 
-            this.markerSelector16.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Lucian;
+            this.markerSelector16.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Lucian;
             this.markerSelector16.Location = new System.Drawing.Point(118, 241);
             this.markerSelector16.MarkerID = 16;
             this.markerSelector16.Name = "markerSelector16";
@@ -383,7 +383,7 @@
             // 
             // markerSelector15
             // 
-            this.markerSelector15.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Flint;
+            this.markerSelector15.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Flint;
             this.markerSelector15.Location = new System.Drawing.Point(80, 241);
             this.markerSelector15.MarkerID = 15;
             this.markerSelector15.Name = "markerSelector15";
@@ -394,7 +394,7 @@
             // 
             // markerSelector14
             // 
-            this.markerSelector14.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Bertha;
+            this.markerSelector14.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Bertha;
             this.markerSelector14.Location = new System.Drawing.Point(42, 241);
             this.markerSelector14.MarkerID = 14;
             this.markerSelector14.Name = "markerSelector14";
@@ -405,7 +405,7 @@
             // 
             // markerSelector13
             // 
-            this.markerSelector13.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.Aaron;
+            this.markerSelector13.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Aaron;
             this.markerSelector13.Location = new System.Drawing.Point(4, 241);
             this.markerSelector13.MarkerID = 13;
             this.markerSelector13.Name = "markerSelector13";
@@ -416,7 +416,7 @@
             // 
             // markerSelector12
             // 
-            this.markerSelector12.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.BeaconBadge;
+            this.markerSelector12.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.BeaconBadge;
             this.markerSelector12.Location = new System.Drawing.Point(118, 203);
             this.markerSelector12.MarkerID = 12;
             this.markerSelector12.Name = "markerSelector12";
@@ -427,7 +427,7 @@
             // 
             // markerSelector11
             // 
-            this.markerSelector11.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.IcicleBadge;
+            this.markerSelector11.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.IcicleBadge;
             this.markerSelector11.Location = new System.Drawing.Point(80, 203);
             this.markerSelector11.MarkerID = 11;
             this.markerSelector11.Name = "markerSelector11";
@@ -438,7 +438,7 @@
             // 
             // markerSelector10
             // 
-            this.markerSelector10.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.MineBadge;
+            this.markerSelector10.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.MineBadge;
             this.markerSelector10.Location = new System.Drawing.Point(42, 203);
             this.markerSelector10.MarkerID = 10;
             this.markerSelector10.Name = "markerSelector10";
@@ -449,7 +449,7 @@
             // 
             // markerSelector9
             // 
-            this.markerSelector9.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.FenBadge;
+            this.markerSelector9.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.FenBadge;
             this.markerSelector9.Location = new System.Drawing.Point(4, 203);
             this.markerSelector9.MarkerID = 9;
             this.markerSelector9.Name = "markerSelector9";
@@ -460,7 +460,7 @@
             // 
             // markerSelector8
             // 
-            this.markerSelector8.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.CobbleBadge;
+            this.markerSelector8.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.CobbleBadge;
             this.markerSelector8.Location = new System.Drawing.Point(118, 165);
             this.markerSelector8.MarkerID = 8;
             this.markerSelector8.Name = "markerSelector8";
@@ -471,7 +471,7 @@
             // 
             // markerSelector7
             // 
-            this.markerSelector7.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.RelicBadge;
+            this.markerSelector7.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.RelicBadge;
             this.markerSelector7.Location = new System.Drawing.Point(80, 165);
             this.markerSelector7.MarkerID = 7;
             this.markerSelector7.Name = "markerSelector7";
@@ -482,7 +482,7 @@
             // 
             // markerSelector6
             // 
-            this.markerSelector6.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.ForestBadge;
+            this.markerSelector6.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.ForestBadge;
             this.markerSelector6.Location = new System.Drawing.Point(42, 165);
             this.markerSelector6.MarkerID = 6;
             this.markerSelector6.Name = "markerSelector6";
@@ -493,7 +493,7 @@
             // 
             // markerSelector5
             // 
-            this.markerSelector5.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.CoalBadge;
+            this.markerSelector5.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.CoalBadge;
             this.markerSelector5.Location = new System.Drawing.Point(4, 165);
             this.markerSelector5.MarkerID = 5;
             this.markerSelector5.Name = "markerSelector5";
@@ -504,7 +504,7 @@
             // 
             // markerSelector4
             // 
-            this.markerSelector4.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.trainer;
+            this.markerSelector4.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.trainer;
             this.markerSelector4.Location = new System.Drawing.Point(117, 3);
             this.markerSelector4.MarkerID = 4;
             this.markerSelector4.Name = "markerSelector4";
@@ -515,7 +515,7 @@
             // 
             // markerSelector2
             // 
-            this.markerSelector2.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.bike;
+            this.markerSelector2.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.bike;
             this.markerSelector2.Location = new System.Drawing.Point(79, 3);
             this.markerSelector2.MarkerID = 3;
             this.markerSelector2.Name = "markerSelector2";
@@ -526,7 +526,7 @@
             // 
             // markerSelector1
             // 
-            this.markerSelector1.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.arrow;
+            this.markerSelector1.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.arrow;
             this.markerSelector1.Location = new System.Drawing.Point(41, 3);
             this.markerSelector1.MarkerID = 2;
             this.markerSelector1.Name = "markerSelector1";
@@ -537,7 +537,7 @@
             // 
             // markerSelector3
             // 
-            this.markerSelector3.Image = global::LeahsPlatinumTracker.Properties.MarkerResources.dead_end;
+            this.markerSelector3.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.dead_end;
             this.markerSelector3.Location = new System.Drawing.Point(3, 3);
             this.markerSelector3.MarkerID = 1;
             this.markerSelector3.Name = "markerSelector3";
@@ -563,10 +563,10 @@
             // progressFlagsButton14
             // 
             this.progressFlagsButton14.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCynthia;
-            this.progressFlagsButton14.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Cynthia;
-            this.progressFlagsButton14.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cynthia_Locked;
-            this.progressFlagsButton14.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cynthia;
-            this.progressFlagsButton14.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cynthia_VisualUnlocked;
+            this.progressFlagsButton14.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Cynthia;
+            this.progressFlagsButton14.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Cynthia_Locked;
+            this.progressFlagsButton14.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Cynthia;
+            this.progressFlagsButton14.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Cynthia_VisualUnlocked;
             this.progressFlagsButton14.Location = new System.Drawing.Point(3, 41);
             this.progressFlagsButton14.Name = "progressFlagsButton14";
             this.progressFlagsButton14.Size = new System.Drawing.Size(147, 32);
@@ -577,10 +577,10 @@
             // progressFlagsButton9
             // 
             this.progressFlagsButton9.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasAaron;
-            this.progressFlagsButton9.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Aaron;
-            this.progressFlagsButton9.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Aaron_Locked;
-            this.progressFlagsButton9.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Aaron;
-            this.progressFlagsButton9.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Aaron_VisualUnlocked;
+            this.progressFlagsButton9.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Aaron;
+            this.progressFlagsButton9.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Aaron_Locked;
+            this.progressFlagsButton9.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Aaron;
+            this.progressFlagsButton9.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Aaron_VisualUnlocked;
             this.progressFlagsButton9.Location = new System.Drawing.Point(3, 3);
             this.progressFlagsButton9.Name = "progressFlagsButton9";
             this.progressFlagsButton9.Size = new System.Drawing.Size(32, 32);
@@ -591,10 +591,10 @@
             // progressFlagsButton10
             // 
             this.progressFlagsButton10.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasBertha;
-            this.progressFlagsButton10.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Bertha;
-            this.progressFlagsButton10.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bertha_Locked;
-            this.progressFlagsButton10.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bertha;
-            this.progressFlagsButton10.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bertha_VisualUnlocked;
+            this.progressFlagsButton10.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Bertha;
+            this.progressFlagsButton10.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Bertha_Locked;
+            this.progressFlagsButton10.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Bertha;
+            this.progressFlagsButton10.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Bertha_VisualUnlocked;
             this.progressFlagsButton10.Location = new System.Drawing.Point(41, 3);
             this.progressFlagsButton10.Name = "progressFlagsButton10";
             this.progressFlagsButton10.Size = new System.Drawing.Size(32, 32);
@@ -605,10 +605,10 @@
             // progressFlagsButton11
             // 
             this.progressFlagsButton11.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasFlint;
-            this.progressFlagsButton11.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Flint;
-            this.progressFlagsButton11.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Flint_Locked;
-            this.progressFlagsButton11.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Flint;
-            this.progressFlagsButton11.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Flint_VisualUnlocked;
+            this.progressFlagsButton11.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Flint;
+            this.progressFlagsButton11.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Flint_Locked;
+            this.progressFlagsButton11.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Flint;
+            this.progressFlagsButton11.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Flint_VisualUnlocked;
             this.progressFlagsButton11.Location = new System.Drawing.Point(79, 3);
             this.progressFlagsButton11.Name = "progressFlagsButton11";
             this.progressFlagsButton11.Size = new System.Drawing.Size(32, 32);
@@ -619,10 +619,10 @@
             // progressFlagsButton12
             // 
             this.progressFlagsButton12.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasLucian;
-            this.progressFlagsButton12.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Lucian;
-            this.progressFlagsButton12.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Lucian_Locked;
-            this.progressFlagsButton12.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Lucian;
-            this.progressFlagsButton12.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Lucian_VisualUnlocked;
+            this.progressFlagsButton12.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Lucian;
+            this.progressFlagsButton12.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Lucian_Locked;
+            this.progressFlagsButton12.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Lucian;
+            this.progressFlagsButton12.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Lucian_VisualUnlocked;
             this.progressFlagsButton12.Location = new System.Drawing.Point(117, 3);
             this.progressFlagsButton12.Name = "progressFlagsButton12";
             this.progressFlagsButton12.Size = new System.Drawing.Size(32, 32);
@@ -633,10 +633,10 @@
             // progressFlagsButton8
             // 
             this.progressFlagsButton8.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasBeaconBadge;
-            this.progressFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym8;
-            this.progressFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym8_Locked;
-            this.progressFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym8;
-            this.progressFlagsButton8.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym8_VisualUnlocked;
+            this.progressFlagsButton8.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym8;
+            this.progressFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym8_Locked;
+            this.progressFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym8;
+            this.progressFlagsButton8.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym8_VisualUnlocked;
             this.progressFlagsButton8.Location = new System.Drawing.Point(117, 41);
             this.progressFlagsButton8.Name = "progressFlagsButton8";
             this.progressFlagsButton8.Size = new System.Drawing.Size(32, 32);
@@ -647,10 +647,10 @@
             // progressFlagsButton7
             // 
             this.progressFlagsButton7.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasIcicleBadge;
-            this.progressFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym7;
-            this.progressFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym7_Locked;
-            this.progressFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym7;
-            this.progressFlagsButton7.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym7_VisualUnlocked;
+            this.progressFlagsButton7.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym7;
+            this.progressFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym7_Locked;
+            this.progressFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym7;
+            this.progressFlagsButton7.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym7_VisualUnlocked;
             this.progressFlagsButton7.Location = new System.Drawing.Point(79, 41);
             this.progressFlagsButton7.Name = "progressFlagsButton7";
             this.progressFlagsButton7.Size = new System.Drawing.Size(32, 32);
@@ -661,10 +661,10 @@
             // progressFlagsNotesButton
             // 
             this.progressFlagsNotesButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasMineBadge;
-            this.progressFlagsNotesButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6;
-            this.progressFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6_Locked;
-            this.progressFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6;
-            this.progressFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6_VisualUnlocked;
+            this.progressFlagsNotesButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym6;
+            this.progressFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym6_Locked;
+            this.progressFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym6;
+            this.progressFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym6_VisualUnlocked;
             this.progressFlagsNotesButton.Location = new System.Drawing.Point(41, 41);
             this.progressFlagsNotesButton.Name = "progressFlagsNotesButton";
             this.progressFlagsNotesButton.Size = new System.Drawing.Size(32, 32);
@@ -675,10 +675,10 @@
             // progressFlagsSaveButton
             // 
             this.progressFlagsSaveButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasFenBadge;
-            this.progressFlagsSaveButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5;
-            this.progressFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5_Locked;
-            this.progressFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5;
-            this.progressFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5_VisualUnlocked;
+            this.progressFlagsSaveButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym5;
+            this.progressFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym5_Locked;
+            this.progressFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym5;
+            this.progressFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym5_VisualUnlocked;
             this.progressFlagsSaveButton.Location = new System.Drawing.Point(3, 41);
             this.progressFlagsSaveButton.Name = "progressFlagsSaveButton";
             this.progressFlagsSaveButton.Size = new System.Drawing.Size(32, 32);
@@ -689,10 +689,10 @@
             // progressFlagsUnlinkButton
             // 
             this.progressFlagsUnlinkButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCobbleBadge;
-            this.progressFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4;
-            this.progressFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4_Locked;
-            this.progressFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4;
-            this.progressFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4_VisualUnlocked;
+            this.progressFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym4;
+            this.progressFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym4_Locked;
+            this.progressFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym4;
+            this.progressFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym4_VisualUnlocked;
             this.progressFlagsUnlinkButton.Location = new System.Drawing.Point(117, 3);
             this.progressFlagsUnlinkButton.Name = "progressFlagsUnlinkButton";
             this.progressFlagsUnlinkButton.Size = new System.Drawing.Size(32, 32);
@@ -703,10 +703,10 @@
             // progressFlagsRedoButton
             // 
             this.progressFlagsRedoButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasRelicBadge;
-            this.progressFlagsRedoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3;
-            this.progressFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3_Locked;
-            this.progressFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3;
-            this.progressFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3_VisualUnlocked;
+            this.progressFlagsRedoButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym3;
+            this.progressFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym3_Locked;
+            this.progressFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym3;
+            this.progressFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym3_VisualUnlocked;
             this.progressFlagsRedoButton.Location = new System.Drawing.Point(79, 3);
             this.progressFlagsRedoButton.Name = "progressFlagsRedoButton";
             this.progressFlagsRedoButton.Size = new System.Drawing.Size(32, 32);
@@ -717,10 +717,10 @@
             // progressFlagsUndoButton
             // 
             this.progressFlagsUndoButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasForestBadge;
-            this.progressFlagsUndoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2;
-            this.progressFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2_Locked;
-            this.progressFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2;
-            this.progressFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2_VisualUnlocked;
+            this.progressFlagsUndoButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym2;
+            this.progressFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym2_Locked;
+            this.progressFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym2;
+            this.progressFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym2_VisualUnlocked;
             this.progressFlagsUndoButton.Location = new System.Drawing.Point(41, 3);
             this.progressFlagsUndoButton.Name = "progressFlagsUndoButton";
             this.progressFlagsUndoButton.Size = new System.Drawing.Size(32, 32);
@@ -731,10 +731,10 @@
             // progressFlagsButton1
             // 
             this.progressFlagsButton1.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCoalBadge;
-            this.progressFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym1;
-            this.progressFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym1_Locked;
-            this.progressFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym1;
-            this.progressFlagsButton1.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym1_VisualUnlocked;
+            this.progressFlagsButton1.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym1;
+            this.progressFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym1_Locked;
+            this.progressFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym1;
+            this.progressFlagsButton1.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Gym1_VisualUnlocked;
             this.progressFlagsButton1.Location = new System.Drawing.Point(3, 3);
             this.progressFlagsButton1.Name = "progressFlagsButton1";
             this.progressFlagsButton1.Size = new System.Drawing.Size(32, 32);
@@ -745,10 +745,10 @@
             // hmFlagsButton8
             // 
             this.hmFlagsButton8.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM07;
-            this.hmFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Waterfall;
-            this.hmFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Waterfall_Locked;
-            this.hmFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Waterfall;
-            this.hmFlagsButton8.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Waterfall_VisualUnlocked;
+            this.hmFlagsButton8.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Waterfall;
+            this.hmFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Waterfall_Locked;
+            this.hmFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Waterfall;
+            this.hmFlagsButton8.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Waterfall_VisualUnlocked;
             this.hmFlagsButton8.Location = new System.Drawing.Point(118, 41);
             this.hmFlagsButton8.Name = "hmFlagsButton8";
             this.hmFlagsButton8.Size = new System.Drawing.Size(32, 32);
@@ -759,10 +759,10 @@
             // hmFlagsButton7
             // 
             this.hmFlagsButton7.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM08;
-            this.hmFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.RockClimb;
-            this.hmFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockClimb_Locked;
-            this.hmFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockClimb;
-            this.hmFlagsButton7.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockClimb_VisualUnlocked;
+            this.hmFlagsButton7.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.RockClimb;
+            this.hmFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.RockClimb_Locked;
+            this.hmFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.RockClimb;
+            this.hmFlagsButton7.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.RockClimb_VisualUnlocked;
             this.hmFlagsButton7.Location = new System.Drawing.Point(80, 41);
             this.hmFlagsButton7.Name = "hmFlagsButton7";
             this.hmFlagsButton7.Size = new System.Drawing.Size(32, 32);
@@ -773,10 +773,10 @@
             // hmFlagsNotesButton
             // 
             this.hmFlagsNotesButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM04;
-            this.hmFlagsNotesButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength;
-            this.hmFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength_Locked;
-            this.hmFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength;
-            this.hmFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength_VisualUnlocked;
+            this.hmFlagsNotesButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Strength;
+            this.hmFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Strength_Locked;
+            this.hmFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Strength;
+            this.hmFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Strength_VisualUnlocked;
             this.hmFlagsNotesButton.Location = new System.Drawing.Point(43, 41);
             this.hmFlagsNotesButton.Name = "hmFlagsNotesButton";
             this.hmFlagsNotesButton.Size = new System.Drawing.Size(32, 32);
@@ -787,10 +787,10 @@
             // hmFlagsSaveButton
             // 
             this.hmFlagsSaveButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM03;
-            this.hmFlagsSaveButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf;
-            this.hmFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf_Locked;
-            this.hmFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf;
-            this.hmFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf_VisualUnlocked;
+            this.hmFlagsSaveButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Surf;
+            this.hmFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Surf_Locked;
+            this.hmFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Surf;
+            this.hmFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Surf_VisualUnlocked;
             this.hmFlagsSaveButton.Location = new System.Drawing.Point(4, 41);
             this.hmFlagsSaveButton.Name = "hmFlagsSaveButton";
             this.hmFlagsSaveButton.Size = new System.Drawing.Size(32, 32);
@@ -801,10 +801,10 @@
             // hmFlagsUnlinkButton
             // 
             this.hmFlagsUnlinkButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM02;
-            this.hmFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly;
-            this.hmFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly_Locked;
-            this.hmFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly;
-            this.hmFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly_VisualUnlocked;
+            this.hmFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Fly;
+            this.hmFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Fly_Locked;
+            this.hmFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Fly;
+            this.hmFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Fly_VisualUnlocked;
             this.hmFlagsUnlinkButton.Location = new System.Drawing.Point(118, 3);
             this.hmFlagsUnlinkButton.Name = "hmFlagsUnlinkButton";
             this.hmFlagsUnlinkButton.Size = new System.Drawing.Size(32, 32);
@@ -815,10 +815,10 @@
             // hmFlagsRedoButton
             // 
             this.hmFlagsRedoButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM05;
-            this.hmFlagsRedoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog;
-            this.hmFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog_Locked;
-            this.hmFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog;
-            this.hmFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog_VisualUnlocked;
+            this.hmFlagsRedoButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Defog;
+            this.hmFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Defog_Locked;
+            this.hmFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Defog;
+            this.hmFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Defog_VisualUnlocked;
             this.hmFlagsRedoButton.Location = new System.Drawing.Point(80, 3);
             this.hmFlagsRedoButton.Name = "hmFlagsRedoButton";
             this.hmFlagsRedoButton.Size = new System.Drawing.Size(32, 32);
@@ -829,10 +829,10 @@
             // hmFlagsUndoButton
             // 
             this.hmFlagsUndoButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM01;
-            this.hmFlagsUndoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut;
-            this.hmFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut_Locked;
-            this.hmFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut;
-            this.hmFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut_VisualUnlocked;
+            this.hmFlagsUndoButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Cut;
+            this.hmFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Cut_Locked;
+            this.hmFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Cut;
+            this.hmFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Cut_VisualUnlocked;
             this.hmFlagsUndoButton.Location = new System.Drawing.Point(43, 3);
             this.hmFlagsUndoButton.Name = "hmFlagsUndoButton";
             this.hmFlagsUndoButton.Size = new System.Drawing.Size(32, 32);
@@ -843,10 +843,10 @@
             // hmFlagsButton1
             // 
             this.hmFlagsButton1.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM06;
-            this.hmFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.RockSmash;
-            this.hmFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockSmash_Locked;
-            this.hmFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockSmash;
-            this.hmFlagsButton1.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.RockSmash_VisualUnlocked;
+            this.hmFlagsButton1.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.RockSmash;
+            this.hmFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.RockSmash_Locked;
+            this.hmFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.RockSmash;
+            this.hmFlagsButton1.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.RockSmash_VisualUnlocked;
             this.hmFlagsButton1.Location = new System.Drawing.Point(4, 3);
             this.hmFlagsButton1.Name = "hmFlagsButton1";
             this.hmFlagsButton1.Size = new System.Drawing.Size(32, 32);
@@ -857,10 +857,10 @@
             // checkFlagsButton9
             // 
             this.checkFlagsButton9.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSecretPotion;
-            this.checkFlagsButton9.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.SecretPotion;
-            this.checkFlagsButton9.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.SecretPotion_Locked;
-            this.checkFlagsButton9.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.SecretPotion;
-            this.checkFlagsButton9.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.SecretPotion_VisualUnlocked;
+            this.checkFlagsButton9.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.SecretPotion;
+            this.checkFlagsButton9.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.SecretPotion_Locked;
+            this.checkFlagsButton9.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.SecretPotion;
+            this.checkFlagsButton9.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.SecretPotion_VisualUnlocked;
             this.checkFlagsButton9.Location = new System.Drawing.Point(117, 3);
             this.checkFlagsButton9.Name = "checkFlagsButton9";
             this.checkFlagsButton9.Size = new System.Drawing.Size(32, 32);
@@ -871,10 +871,10 @@
             // checkFlagsButton8
             // 
             this.checkFlagsButton8.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasDefeatedWindworks;
-            this.checkFlagsButton8.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.DefeatedWindworks;
-            this.checkFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.DefeatedWindworks_Locked;
-            this.checkFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.DefeatedWindworks;
-            this.checkFlagsButton8.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.DefeatedWindworks_VisualUnlocked;
+            this.checkFlagsButton8.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.DefeatedWindworks;
+            this.checkFlagsButton8.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.DefeatedWindworks_Locked;
+            this.checkFlagsButton8.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.DefeatedWindworks;
+            this.checkFlagsButton8.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.DefeatedWindworks_VisualUnlocked;
             this.checkFlagsButton8.Location = new System.Drawing.Point(117, 41);
             this.checkFlagsButton8.Name = "checkFlagsButton8";
             this.checkFlagsButton8.Size = new System.Drawing.Size(32, 32);
@@ -885,10 +885,10 @@
             // checkFlagsButton7
             // 
             this.checkFlagsButton7.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenVolkner;
-            this.checkFlagsButton7.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Volkner;
-            this.checkFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Volkner_Locked;
-            this.checkFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Volkner;
-            this.checkFlagsButton7.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Volkner_VisualUnlocked;
+            this.checkFlagsButton7.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Volkner;
+            this.checkFlagsButton7.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Volkner_Locked;
+            this.checkFlagsButton7.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Volkner;
+            this.checkFlagsButton7.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Volkner_VisualUnlocked;
             this.checkFlagsButton7.Location = new System.Drawing.Point(79, 41);
             this.checkFlagsButton7.Name = "checkFlagsButton7";
             this.checkFlagsButton7.Size = new System.Drawing.Size(32, 32);
@@ -899,10 +899,10 @@
             // checkFlagsNotesButton
             // 
             this.checkFlagsNotesButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenFantina;
-            this.checkFlagsNotesButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina;
-            this.checkFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina_Locked;
-            this.checkFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina;
-            this.checkFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina_VisualUnlocked;
+            this.checkFlagsNotesButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Fantina;
+            this.checkFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Fantina_Locked;
+            this.checkFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Fantina;
+            this.checkFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Fantina_VisualUnlocked;
             this.checkFlagsNotesButton.Location = new System.Drawing.Point(41, 41);
             this.checkFlagsNotesButton.Name = "checkFlagsNotesButton";
             this.checkFlagsNotesButton.Size = new System.Drawing.Size(32, 32);
@@ -913,10 +913,10 @@
             // checkFlagsSaveButton
             // 
             this.checkFlagsSaveButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenRoark;
-            this.checkFlagsSaveButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark;
-            this.checkFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark_Locked;
-            this.checkFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark;
-            this.checkFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark_VisualUnlocked;
+            this.checkFlagsSaveButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Roark;
+            this.checkFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Roark_Locked;
+            this.checkFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Roark;
+            this.checkFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Roark_VisualUnlocked;
             this.checkFlagsSaveButton.Location = new System.Drawing.Point(3, 41);
             this.checkFlagsSaveButton.Name = "checkFlagsSaveButton";
             this.checkFlagsSaveButton.Size = new System.Drawing.Size(32, 32);
@@ -927,10 +927,10 @@
             // checkFlagsUnlinkButton
             // 
             this.checkFlagsUnlinkButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasBike;
-            this.checkFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike;
-            this.checkFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike_Locked;
-            this.checkFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike;
-            this.checkFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike_VisualUnlocked;
+            this.checkFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Bike;
+            this.checkFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Bike_Locked;
+            this.checkFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Bike;
+            this.checkFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Bike_VisualUnlocked;
             this.checkFlagsUnlinkButton.Location = new System.Drawing.Point(79, 3);
             this.checkFlagsUnlinkButton.Name = "checkFlagsUnlinkButton";
             this.checkFlagsUnlinkButton.Size = new System.Drawing.Size(32, 32);
@@ -941,10 +941,10 @@
             // checkFlagsRedoButton
             // 
             this.checkFlagsRedoButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasTeleport;
-            this.checkFlagsRedoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport;
-            this.checkFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport_Locked;
-            this.checkFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport;
-            this.checkFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport_VisualUnlocked;
+            this.checkFlagsRedoButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.Teleport;
+            this.checkFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.Teleport_Locked;
+            this.checkFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Teleport;
+            this.checkFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.Teleport_VisualUnlocked;
             this.checkFlagsRedoButton.Location = new System.Drawing.Point(60, 79);
             this.checkFlagsRedoButton.Name = "checkFlagsRedoButton";
             this.checkFlagsRedoButton.Size = new System.Drawing.Size(32, 32);
@@ -955,10 +955,10 @@
             // checkFlagsUndoButton
             // 
             this.checkFlagsUndoButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasWorksKey;
-            this.checkFlagsUndoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey;
-            this.checkFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey_Locked;
-            this.checkFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey;
-            this.checkFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey_VisualUnlocked;
+            this.checkFlagsUndoButton.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.WorksKey;
+            this.checkFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.WorksKey_Locked;
+            this.checkFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.WorksKey;
+            this.checkFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.WorksKey_VisualUnlocked;
             this.checkFlagsUndoButton.Location = new System.Drawing.Point(3, 3);
             this.checkFlagsUndoButton.Name = "checkFlagsUndoButton";
             this.checkFlagsUndoButton.Size = new System.Drawing.Size(32, 32);
@@ -969,10 +969,10 @@
             // checkFlagsButton1
             // 
             this.checkFlagsButton1.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasGalacticKey;
-            this.checkFlagsButton1.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_Locked;
-            this.checkFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey;
-            this.checkFlagsButton1.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.GalacticKey_VisualUnlocked;
+            this.checkFlagsButton1.Image = global::LeahsPlatinumTracker.Resources.ChecksResources.GalacticKey;
+            this.checkFlagsButton1.Image_Locked = global::LeahsPlatinumTracker.Resources.ChecksResources.GalacticKey_Locked;
+            this.checkFlagsButton1.Image_Unlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.GalacticKey;
+            this.checkFlagsButton1.Image_VisualUnlocked = global::LeahsPlatinumTracker.Resources.ChecksResources.GalacticKey_VisualUnlocked;
             this.checkFlagsButton1.Location = new System.Drawing.Point(41, 3);
             this.checkFlagsButton1.Name = "checkFlagsButton1";
             this.checkFlagsButton1.Size = new System.Drawing.Size(32, 32);

@@ -125,82 +125,82 @@ namespace LeahsPlatinumTracker
                 switch (associatedWarp.VisualMarkers)
                 {
                     case 1:
-                        Marker.Image = Properties.MarkerResources.dead_end;
+                        Marker.Image = Resources.MarkerResources.dead_end;
                         break;
                     case 2:
-                        Marker.Image = Properties.MarkerResources.arrow;
+                        Marker.Image = Resources.MarkerResources.arrow;
                         break;
                     case 3:
-                        Marker.Image = Properties.MarkerResources.bike;
+                        Marker.Image = Resources.MarkerResources.bike;
                         break;
                     case 4:
-                        Marker.Image = Properties.MarkerResources.trainer;
+                        Marker.Image = Resources.MarkerResources.trainer;
                         break;
                     case 5:
-                        Marker.Image = Properties.MarkerResources.CoalBadge;
+                        Marker.Image = Resources.MarkerResources.CoalBadge;
                         break;
                     case 6:
-                        Marker.Image = Properties.MarkerResources.ForestBadge;
+                        Marker.Image = Resources.MarkerResources.ForestBadge;
                         break;
                     case 7:
-                        Marker.Image = Properties.MarkerResources.RelicBadge;
+                        Marker.Image = Resources.MarkerResources.RelicBadge;
                         break;
                     case 8:
-                        Marker.Image = Properties.MarkerResources.CobbleBadge;
+                        Marker.Image = Resources.MarkerResources.CobbleBadge;
                         break;
                     case 9:
-                        Marker.Image = Properties.MarkerResources.FenBadge;
+                        Marker.Image = Resources.MarkerResources.FenBadge;
                         break;
                     case 10:
-                        Marker.Image = Properties.MarkerResources.MineBadge;
+                        Marker.Image = Resources.MarkerResources.MineBadge;
                         break;
                     case 11:
-                        Marker.Image = Properties.MarkerResources.IcicleBadge;
+                        Marker.Image = Resources.MarkerResources.IcicleBadge;
                         break;
                     case 12:
-                        Marker.Image = Properties.MarkerResources.BeaconBadge;
+                        Marker.Image = Resources.MarkerResources.BeaconBadge;
                         break;
                     case 13:
-                        Marker.Image = Properties.MarkerResources.Aaron;
+                        Marker.Image = Resources.MarkerResources.Aaron;
                         break;
                     case 14:
-                        Marker.Image = Properties.MarkerResources.Bertha;
+                        Marker.Image = Resources.MarkerResources.Bertha;
                         break;
                     case 15:
-                        Marker.Image = Properties.MarkerResources.Flint;
+                        Marker.Image = Resources.MarkerResources.Flint;
                         break;
                     case 16:
-                        Marker.Image = Properties.MarkerResources.Lucian;
+                        Marker.Image = Resources.MarkerResources.Lucian;
                         break;
                     case 17:
-                        Marker.Image = Properties.MarkerResources.Cynthia;
+                        Marker.Image = Resources.MarkerResources.Cynthia;
                         break;
                     case 18:
-                        Marker.Image = Properties.MarkerResources.RockSmash;
+                        Marker.Image = Resources.MarkerResources.RockSmash;
                         break;
                     case 19:
-                        Marker.Image = Properties.MarkerResources.Cut;
+                        Marker.Image = Resources.MarkerResources.Cut;
                         break;
                     case 20:
-                        Marker.Image = Properties.MarkerResources.Strength;
+                        Marker.Image = Resources.MarkerResources.Strength;
                         break;
                     case 21:
-                        Marker.Image = Properties.MarkerResources.Surf;
+                        Marker.Image = Resources.MarkerResources.Surf;
                         break;
                     case 22:
-                        Marker.Image = Properties.MarkerResources.Waterfall;
+                        Marker.Image = Resources.MarkerResources.Waterfall;
                         break;
                     case 23:
-                        Marker.Image = Properties.MarkerResources.RockClimb;
+                        Marker.Image = Resources.MarkerResources.RockClimb;
                         break;
                     case 24:
-                        Marker.Image = Properties.MarkerResources.MasterBall;
+                        Marker.Image = Resources.MarkerResources.MasterBall;
                         break;
                     case 25:
-                        Marker.Image = Properties.MarkerResources.Pokeball;
+                        Marker.Image = Resources.MarkerResources.Pokeball;
                         break;
                     case 26:
-                        Marker.Image = Properties.MarkerResources.Mart;
+                        Marker.Image = Resources.MarkerResources.Mart;
                         break;
                 }
 

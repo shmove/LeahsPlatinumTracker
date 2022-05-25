@@ -35,7 +35,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.pictureBox1.Image = global::LeahsPlatinumTracker.Properties.MapResources.Floaroma;
+            this.pictureBox1.Image = global::LeahsPlatinumTracker.Resources.MapResources.Floaroma;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(529, 419);
@@ -51,8 +51,8 @@
             this.ClientSize = new System.Drawing.Size(996, 802);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Template";
-            this.Text = "Floaroma";
+            this.Name = "MapPanel";
+            this.Text = "MapPanel";
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
