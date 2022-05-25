@@ -346,13 +346,16 @@ namespace LeahsPlatinumTracker
 
         // Methods
 
-        public void LoadMapPanel(string MapName)
+        public void LoadMapPanel(string MapID, int WarpID = -1)
         {
             bool loaded = false;
 
             foreach (var panelClass in mapPanels)
             {
-                if (panelClass.Name == MapName || MapName.StartsWith("2") && panelClass.Name == ("r" + MapName))
+                if (MapID.StartsWith("r2")) MapID = MapID[1..];
+                string VisualMapID = Player.GetVisualMapSector(MapID).VisualMapID;
+
+                if (panelClass.Name == VisualMapID || VisualMapID.StartsWith("2") && panelClass.Name == ("r" + VisualMapID))
                 {
                     MapsForm panel = (MapsForm)Activator.CreateInstance(panelClass);
                     panel.Player = Player;
@@ -369,6 +372,7 @@ namespace LeahsPlatinumTracker
                     activePanel = panel;
                     MainPanel.Controls.Add(activePanel);
                     activePanel.Reload();
+                    if (WarpID >= 0) activePanel.SelectWarp(MapID, WarpID);
                     activePanel.UpdateWarpAppearances();
                     activePanel.Show();
                     loaded = true;

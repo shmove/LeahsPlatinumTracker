@@ -38,18 +38,6 @@ namespace LeahsPlatinumTracker
             if (!fromUpdate) UpdateAppearance();
         }
 
-        public WarpButton(MapsForm form, Warp warp, Point position)
-        {
-            associatedWarp = warp;
-            parent = form;
-            this.position = position;
-
-            this.FlatStyle = FlatStyle.Flat;
-            this.FlatAppearance.BorderSize = 2;
-            this.UseCompatibleTextRendering = true;
-            UpdateAppearance();
-        }
-
         private void UpdateButtonCosmetics()
         {
             if (associatedWarp.Destination.MapID != "Not set")

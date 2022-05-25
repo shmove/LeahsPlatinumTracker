@@ -95,6 +95,36 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        public void SelectWarp(string MapID, int WarpID)
+        {
+            foreach (Control control in Controls)
+            {
+                if (control.GetType() == typeof(WarpButton))
+                {
+                    WarpButton button = (WarpButton)control;
+                    if (button.MapID == MapID && button.WarpID == WarpID)
+                    {
+                        button.selected = true;
+                        lastSelectedWarp = button;
+                        button.UpdateAppearance();
+                    }
+                }
+                else if (control.GetType() == typeof(MarkerPictureBox))
+                {
+                    MarkerPictureBox pictureBox = (MarkerPictureBox)control;
+                    WarpButton button = pictureBox.parent;
+                    if (button.MapID == MapID && button.WarpID == WarpID)
+                    {
+                        pictureBox.ToggleSelected();
+                        button.selected = true;
+                        lastSelectedWarp = button;
+                        button.UpdateAppearance();
+                    }
+                        
+                }
+            }
+        }
+
         // Mouse Events
         internal void Warp_Click(object sender, MouseEventArgs me)
         {
@@ -142,7 +172,7 @@ namespace LeahsPlatinumTracker
                 // Load associated map
                 if (warpButton.associatedWarp.Destination.WarpID >= 0)
                 {
-                    parent.LoadMapPanel(warpButton.associatedWarp.DestinationVisualMapSector.VisualMapID);
+                    parent.LoadMapPanel(warpButton.associatedWarp.DestinationMapSector.MapID, warpButton.associatedWarp.Destination.WarpID);
                 }
             }
         }
