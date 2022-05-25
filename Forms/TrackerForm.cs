@@ -348,6 +348,8 @@ namespace LeahsPlatinumTracker
 
         public void LoadMapPanel(string MapName)
         {
+            bool loaded = false;
+
             foreach (var panelClass in mapPanels)
             {
                 if (panelClass.Name == MapName || MapName.StartsWith("2") && panelClass.Name == ("r" + MapName))
@@ -369,9 +371,11 @@ namespace LeahsPlatinumTracker
                     activePanel.Reload();
                     activePanel.UpdateWarpAppearances();
                     activePanel.Show();
+                    loaded = true;
                 }
-                // https://stackoverflow.com/a/32795682
             }
+
+            if (!loaded) MessageBox.Show("Attempted to load an invalid panel.", "Error loading panel", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         internal bool SetLinkWarps(Warp warp)
