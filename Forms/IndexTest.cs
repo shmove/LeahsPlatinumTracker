@@ -12,13 +12,11 @@ namespace LeahsPlatinumTracker
 {
     public partial class IndexTest : Form
     {
-        public Tracker Player { get; set; }
         private UITest? SubForm { get; set; }
 
         public IndexTest()
         {
             InitializeComponent();
-            Player = new Tracker();
         }
 
         private void button62_Click(object sender, EventArgs e)
@@ -46,9 +44,8 @@ namespace LeahsPlatinumTracker
                 string selectedFileName = fileDialog.FileName;
                 string json = File.ReadAllText(selectedFileName);
                 
-                Player = TrackerManager.FromJSON(json);
-                SubForm = new UITest();
-                SubForm.Player = Player;
+                Tracker Player = TrackerManager.FromJSON(json);
+                SubForm = new UITest(Player);
                 Hide();
                 SubForm.ShowDialog();
                 Show();

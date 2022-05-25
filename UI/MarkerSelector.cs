@@ -9,7 +9,7 @@ namespace LeahsPlatinumTracker
     public class MarkerSelector : ClickablePictureBox
     {
         public int MarkerID { get; set; }
-        internal UITest? ParentForm { get; set; }
+        internal TrackerForm? ParentForm { get; set; }
 
         public MarkerSelector()
         {
@@ -18,7 +18,7 @@ namespace LeahsPlatinumTracker
             MouseDown += MarkerSelector_MouseDown;
         }
 
-        public void Initialise(UITest form)
+        public void Initialise(TrackerForm form)
         {
             ParentForm = form;
         }

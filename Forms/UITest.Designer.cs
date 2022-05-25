@@ -63,31 +63,31 @@
             this.progressFlagsButton12 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton8 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton7 = new LeahsPlatinumTracker.ProgressFlagsButton();
-            this.progressFlagsButton6 = new LeahsPlatinumTracker.ProgressFlagsButton();
-            this.progressFlagsButton5 = new LeahsPlatinumTracker.ProgressFlagsButton();
-            this.progressFlagsButton4 = new LeahsPlatinumTracker.ProgressFlagsButton();
-            this.progressFlagsButton3 = new LeahsPlatinumTracker.ProgressFlagsButton();
-            this.progressFlagsButton2 = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsNotesButton = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsSaveButton = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsUnlinkButton = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsRedoButton = new LeahsPlatinumTracker.ProgressFlagsButton();
+            this.progressFlagsUndoButton = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.progressFlagsButton1 = new LeahsPlatinumTracker.ProgressFlagsButton();
             this.hmFlagsButton8 = new LeahsPlatinumTracker.HMFlagsButton();
             this.hmFlagsButton7 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton6 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton5 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton4 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton3 = new LeahsPlatinumTracker.HMFlagsButton();
-            this.hmFlagsButton2 = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsNotesButton = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsSaveButton = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsUnlinkButton = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsRedoButton = new LeahsPlatinumTracker.HMFlagsButton();
+            this.hmFlagsUndoButton = new LeahsPlatinumTracker.HMFlagsButton();
             this.hmFlagsButton1 = new LeahsPlatinumTracker.HMFlagsButton();
             this.checkFlagsButton9 = new LeahsPlatinumTracker.CheckFlagsButton();
             this.checkFlagsButton8 = new LeahsPlatinumTracker.CheckFlagsButton();
             this.checkFlagsButton7 = new LeahsPlatinumTracker.CheckFlagsButton();
-            this.checkFlagsButton6 = new LeahsPlatinumTracker.CheckFlagsButton();
-            this.checkFlagsButton5 = new LeahsPlatinumTracker.CheckFlagsButton();
-            this.checkFlagsButton4 = new LeahsPlatinumTracker.CheckFlagsButton();
-            this.checkFlagsButton3 = new LeahsPlatinumTracker.CheckFlagsButton();
-            this.checkFlagsButton2 = new LeahsPlatinumTracker.CheckFlagsButton();
+            this.checkFlagsNotesButton = new LeahsPlatinumTracker.CheckFlagsButton();
+            this.checkFlagsSaveButton = new LeahsPlatinumTracker.CheckFlagsButton();
+            this.checkFlagsUnlinkButton = new LeahsPlatinumTracker.CheckFlagsButton();
+            this.checkFlagsRedoButton = new LeahsPlatinumTracker.CheckFlagsButton();
+            this.checkFlagsUndoButton = new LeahsPlatinumTracker.CheckFlagsButton();
             this.checkFlagsButton1 = new LeahsPlatinumTracker.CheckFlagsButton();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.button62 = new System.Windows.Forms.Button();
+            this.LinkButton = new System.Windows.Forms.Button();
             this.BacklotMansion = new LeahsPlatinumTracker.MapSelectorButton();
             this.Canalave = new LeahsPlatinumTracker.MapSelectorButton();
             this.Celestic = new LeahsPlatinumTracker.MapSelectorButton();
@@ -150,16 +150,16 @@
             this.r228 = new LeahsPlatinumTracker.MapSelectorButton();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.UnlinkButton = new System.Windows.Forms.Button();
+            this.RedoButton = new System.Windows.Forms.Button();
+            this.UndoButton = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
             this.MtCoronetPeak = new LeahsPlatinumTracker.MapSelectorButton();
-            this.button6 = new System.Windows.Forms.Button();
+            this.NotesButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector25)).BeginInit();
@@ -195,28 +195,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsNotesButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsSaveButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsUnlinkButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsRedoButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsUndoButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsNotesButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsSaveButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsUnlinkButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsRedoButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsUndoButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsNotesButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsSaveButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsUnlinkButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsRedoButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsUndoButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -658,75 +658,75 @@
             this.progressFlagsButton7.TabIndex = 125;
             this.progressFlagsButton7.TabStop = false;
             // 
-            // progressFlagsButton6
+            // progressFlagsNotesButton
             // 
-            this.progressFlagsButton6.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasMineBadge;
-            this.progressFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6;
-            this.progressFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6_Locked;
-            this.progressFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6;
-            this.progressFlagsButton6.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6_VisualUnlocked;
-            this.progressFlagsButton6.Location = new System.Drawing.Point(41, 41);
-            this.progressFlagsButton6.Name = "progressFlagsButton6";
-            this.progressFlagsButton6.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton6.TabIndex = 124;
-            this.progressFlagsButton6.TabStop = false;
+            this.progressFlagsNotesButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasMineBadge;
+            this.progressFlagsNotesButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6;
+            this.progressFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6_Locked;
+            this.progressFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6;
+            this.progressFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym6_VisualUnlocked;
+            this.progressFlagsNotesButton.Location = new System.Drawing.Point(41, 41);
+            this.progressFlagsNotesButton.Name = "progressFlagsNotesButton";
+            this.progressFlagsNotesButton.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsNotesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsNotesButton.TabIndex = 124;
+            this.progressFlagsNotesButton.TabStop = false;
             // 
-            // progressFlagsButton5
+            // progressFlagsSaveButton
             // 
-            this.progressFlagsButton5.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasFenBadge;
-            this.progressFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5;
-            this.progressFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5_Locked;
-            this.progressFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5;
-            this.progressFlagsButton5.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5_VisualUnlocked;
-            this.progressFlagsButton5.Location = new System.Drawing.Point(3, 41);
-            this.progressFlagsButton5.Name = "progressFlagsButton5";
-            this.progressFlagsButton5.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton5.TabIndex = 123;
-            this.progressFlagsButton5.TabStop = false;
+            this.progressFlagsSaveButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasFenBadge;
+            this.progressFlagsSaveButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5;
+            this.progressFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5_Locked;
+            this.progressFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5;
+            this.progressFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym5_VisualUnlocked;
+            this.progressFlagsSaveButton.Location = new System.Drawing.Point(3, 41);
+            this.progressFlagsSaveButton.Name = "progressFlagsSaveButton";
+            this.progressFlagsSaveButton.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsSaveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsSaveButton.TabIndex = 123;
+            this.progressFlagsSaveButton.TabStop = false;
             // 
-            // progressFlagsButton4
+            // progressFlagsUnlinkButton
             // 
-            this.progressFlagsButton4.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCobbleBadge;
-            this.progressFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4;
-            this.progressFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4_Locked;
-            this.progressFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4;
-            this.progressFlagsButton4.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4_VisualUnlocked;
-            this.progressFlagsButton4.Location = new System.Drawing.Point(117, 3);
-            this.progressFlagsButton4.Name = "progressFlagsButton4";
-            this.progressFlagsButton4.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton4.TabIndex = 122;
-            this.progressFlagsButton4.TabStop = false;
+            this.progressFlagsUnlinkButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasCobbleBadge;
+            this.progressFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4;
+            this.progressFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4_Locked;
+            this.progressFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4;
+            this.progressFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym4_VisualUnlocked;
+            this.progressFlagsUnlinkButton.Location = new System.Drawing.Point(117, 3);
+            this.progressFlagsUnlinkButton.Name = "progressFlagsUnlinkButton";
+            this.progressFlagsUnlinkButton.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsUnlinkButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsUnlinkButton.TabIndex = 122;
+            this.progressFlagsUnlinkButton.TabStop = false;
             // 
-            // progressFlagsButton3
+            // progressFlagsRedoButton
             // 
-            this.progressFlagsButton3.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasRelicBadge;
-            this.progressFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3;
-            this.progressFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3_Locked;
-            this.progressFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3;
-            this.progressFlagsButton3.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3_VisualUnlocked;
-            this.progressFlagsButton3.Location = new System.Drawing.Point(79, 3);
-            this.progressFlagsButton3.Name = "progressFlagsButton3";
-            this.progressFlagsButton3.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton3.TabIndex = 121;
-            this.progressFlagsButton3.TabStop = false;
+            this.progressFlagsRedoButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasRelicBadge;
+            this.progressFlagsRedoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3;
+            this.progressFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3_Locked;
+            this.progressFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3;
+            this.progressFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym3_VisualUnlocked;
+            this.progressFlagsRedoButton.Location = new System.Drawing.Point(79, 3);
+            this.progressFlagsRedoButton.Name = "progressFlagsRedoButton";
+            this.progressFlagsRedoButton.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsRedoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsRedoButton.TabIndex = 121;
+            this.progressFlagsRedoButton.TabStop = false;
             // 
-            // progressFlagsButton2
+            // progressFlagsUndoButton
             // 
-            this.progressFlagsButton2.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasForestBadge;
-            this.progressFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2;
-            this.progressFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2_Locked;
-            this.progressFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2;
-            this.progressFlagsButton2.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2_VisualUnlocked;
-            this.progressFlagsButton2.Location = new System.Drawing.Point(41, 3);
-            this.progressFlagsButton2.Name = "progressFlagsButton2";
-            this.progressFlagsButton2.Size = new System.Drawing.Size(32, 32);
-            this.progressFlagsButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.progressFlagsButton2.TabIndex = 120;
-            this.progressFlagsButton2.TabStop = false;
+            this.progressFlagsUndoButton.Flag = LeahsPlatinumTracker.Checks.ProgressFlags.HasForestBadge;
+            this.progressFlagsUndoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2;
+            this.progressFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2_Locked;
+            this.progressFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2;
+            this.progressFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Gym2_VisualUnlocked;
+            this.progressFlagsUndoButton.Location = new System.Drawing.Point(41, 3);
+            this.progressFlagsUndoButton.Name = "progressFlagsUndoButton";
+            this.progressFlagsUndoButton.Size = new System.Drawing.Size(32, 32);
+            this.progressFlagsUndoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.progressFlagsUndoButton.TabIndex = 120;
+            this.progressFlagsUndoButton.TabStop = false;
             // 
             // progressFlagsButton1
             // 
@@ -770,75 +770,75 @@
             this.hmFlagsButton7.TabIndex = 137;
             this.hmFlagsButton7.TabStop = false;
             // 
-            // hmFlagsButton6
+            // hmFlagsNotesButton
             // 
-            this.hmFlagsButton6.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM04;
-            this.hmFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength;
-            this.hmFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength_Locked;
-            this.hmFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength;
-            this.hmFlagsButton6.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength_VisualUnlocked;
-            this.hmFlagsButton6.Location = new System.Drawing.Point(43, 41);
-            this.hmFlagsButton6.Name = "hmFlagsButton6";
-            this.hmFlagsButton6.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton6.TabIndex = 136;
-            this.hmFlagsButton6.TabStop = false;
+            this.hmFlagsNotesButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM04;
+            this.hmFlagsNotesButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength;
+            this.hmFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength_Locked;
+            this.hmFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength;
+            this.hmFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Strength_VisualUnlocked;
+            this.hmFlagsNotesButton.Location = new System.Drawing.Point(43, 41);
+            this.hmFlagsNotesButton.Name = "hmFlagsNotesButton";
+            this.hmFlagsNotesButton.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsNotesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsNotesButton.TabIndex = 136;
+            this.hmFlagsNotesButton.TabStop = false;
             // 
-            // hmFlagsButton5
+            // hmFlagsSaveButton
             // 
-            this.hmFlagsButton5.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM03;
-            this.hmFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf;
-            this.hmFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf_Locked;
-            this.hmFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf;
-            this.hmFlagsButton5.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf_VisualUnlocked;
-            this.hmFlagsButton5.Location = new System.Drawing.Point(4, 41);
-            this.hmFlagsButton5.Name = "hmFlagsButton5";
-            this.hmFlagsButton5.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton5.TabIndex = 135;
-            this.hmFlagsButton5.TabStop = false;
+            this.hmFlagsSaveButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM03;
+            this.hmFlagsSaveButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf;
+            this.hmFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf_Locked;
+            this.hmFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf;
+            this.hmFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Surf_VisualUnlocked;
+            this.hmFlagsSaveButton.Location = new System.Drawing.Point(4, 41);
+            this.hmFlagsSaveButton.Name = "hmFlagsSaveButton";
+            this.hmFlagsSaveButton.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsSaveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsSaveButton.TabIndex = 135;
+            this.hmFlagsSaveButton.TabStop = false;
             // 
-            // hmFlagsButton4
+            // hmFlagsUnlinkButton
             // 
-            this.hmFlagsButton4.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM02;
-            this.hmFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly;
-            this.hmFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly_Locked;
-            this.hmFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly;
-            this.hmFlagsButton4.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly_VisualUnlocked;
-            this.hmFlagsButton4.Location = new System.Drawing.Point(118, 3);
-            this.hmFlagsButton4.Name = "hmFlagsButton4";
-            this.hmFlagsButton4.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton4.TabIndex = 134;
-            this.hmFlagsButton4.TabStop = false;
+            this.hmFlagsUnlinkButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM02;
+            this.hmFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly;
+            this.hmFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly_Locked;
+            this.hmFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly;
+            this.hmFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fly_VisualUnlocked;
+            this.hmFlagsUnlinkButton.Location = new System.Drawing.Point(118, 3);
+            this.hmFlagsUnlinkButton.Name = "hmFlagsUnlinkButton";
+            this.hmFlagsUnlinkButton.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsUnlinkButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsUnlinkButton.TabIndex = 134;
+            this.hmFlagsUnlinkButton.TabStop = false;
             // 
-            // hmFlagsButton3
+            // hmFlagsRedoButton
             // 
-            this.hmFlagsButton3.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM05;
-            this.hmFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog;
-            this.hmFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog_Locked;
-            this.hmFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog;
-            this.hmFlagsButton3.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog_VisualUnlocked;
-            this.hmFlagsButton3.Location = new System.Drawing.Point(80, 3);
-            this.hmFlagsButton3.Name = "hmFlagsButton3";
-            this.hmFlagsButton3.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton3.TabIndex = 133;
-            this.hmFlagsButton3.TabStop = false;
+            this.hmFlagsRedoButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM05;
+            this.hmFlagsRedoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog;
+            this.hmFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog_Locked;
+            this.hmFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog;
+            this.hmFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Defog_VisualUnlocked;
+            this.hmFlagsRedoButton.Location = new System.Drawing.Point(80, 3);
+            this.hmFlagsRedoButton.Name = "hmFlagsRedoButton";
+            this.hmFlagsRedoButton.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsRedoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsRedoButton.TabIndex = 133;
+            this.hmFlagsRedoButton.TabStop = false;
             // 
-            // hmFlagsButton2
+            // hmFlagsUndoButton
             // 
-            this.hmFlagsButton2.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM01;
-            this.hmFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut;
-            this.hmFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut_Locked;
-            this.hmFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut;
-            this.hmFlagsButton2.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut_VisualUnlocked;
-            this.hmFlagsButton2.Location = new System.Drawing.Point(43, 3);
-            this.hmFlagsButton2.Name = "hmFlagsButton2";
-            this.hmFlagsButton2.Size = new System.Drawing.Size(32, 32);
-            this.hmFlagsButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.hmFlagsButton2.TabIndex = 132;
-            this.hmFlagsButton2.TabStop = false;
+            this.hmFlagsUndoButton.Flag = LeahsPlatinumTracker.Checks.HMFlags.HM01;
+            this.hmFlagsUndoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut;
+            this.hmFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut_Locked;
+            this.hmFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut;
+            this.hmFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Cut_VisualUnlocked;
+            this.hmFlagsUndoButton.Location = new System.Drawing.Point(43, 3);
+            this.hmFlagsUndoButton.Name = "hmFlagsUndoButton";
+            this.hmFlagsUndoButton.Size = new System.Drawing.Size(32, 32);
+            this.hmFlagsUndoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.hmFlagsUndoButton.TabIndex = 132;
+            this.hmFlagsUndoButton.TabStop = false;
             // 
             // hmFlagsButton1
             // 
@@ -896,75 +896,75 @@
             this.checkFlagsButton7.TabIndex = 116;
             this.checkFlagsButton7.TabStop = false;
             // 
-            // checkFlagsButton6
+            // checkFlagsNotesButton
             // 
-            this.checkFlagsButton6.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenFantina;
-            this.checkFlagsButton6.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina;
-            this.checkFlagsButton6.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina_Locked;
-            this.checkFlagsButton6.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina;
-            this.checkFlagsButton6.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina_VisualUnlocked;
-            this.checkFlagsButton6.Location = new System.Drawing.Point(41, 41);
-            this.checkFlagsButton6.Name = "checkFlagsButton6";
-            this.checkFlagsButton6.Size = new System.Drawing.Size(32, 32);
-            this.checkFlagsButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.checkFlagsButton6.TabIndex = 115;
-            this.checkFlagsButton6.TabStop = false;
+            this.checkFlagsNotesButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenFantina;
+            this.checkFlagsNotesButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina;
+            this.checkFlagsNotesButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina_Locked;
+            this.checkFlagsNotesButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina;
+            this.checkFlagsNotesButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Fantina_VisualUnlocked;
+            this.checkFlagsNotesButton.Location = new System.Drawing.Point(41, 41);
+            this.checkFlagsNotesButton.Name = "checkFlagsNotesButton";
+            this.checkFlagsNotesButton.Size = new System.Drawing.Size(32, 32);
+            this.checkFlagsNotesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.checkFlagsNotesButton.TabIndex = 115;
+            this.checkFlagsNotesButton.TabStop = false;
             // 
-            // checkFlagsButton5
+            // checkFlagsSaveButton
             // 
-            this.checkFlagsButton5.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenRoark;
-            this.checkFlagsButton5.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark;
-            this.checkFlagsButton5.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark_Locked;
-            this.checkFlagsButton5.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark;
-            this.checkFlagsButton5.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark_VisualUnlocked;
-            this.checkFlagsButton5.Location = new System.Drawing.Point(3, 41);
-            this.checkFlagsButton5.Name = "checkFlagsButton5";
-            this.checkFlagsButton5.Size = new System.Drawing.Size(32, 32);
-            this.checkFlagsButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.checkFlagsButton5.TabIndex = 114;
-            this.checkFlagsButton5.TabStop = false;
+            this.checkFlagsSaveButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasSpokenRoark;
+            this.checkFlagsSaveButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark;
+            this.checkFlagsSaveButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark_Locked;
+            this.checkFlagsSaveButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark;
+            this.checkFlagsSaveButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Roark_VisualUnlocked;
+            this.checkFlagsSaveButton.Location = new System.Drawing.Point(3, 41);
+            this.checkFlagsSaveButton.Name = "checkFlagsSaveButton";
+            this.checkFlagsSaveButton.Size = new System.Drawing.Size(32, 32);
+            this.checkFlagsSaveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.checkFlagsSaveButton.TabIndex = 114;
+            this.checkFlagsSaveButton.TabStop = false;
             // 
-            // checkFlagsButton4
+            // checkFlagsUnlinkButton
             // 
-            this.checkFlagsButton4.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasBike;
-            this.checkFlagsButton4.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike;
-            this.checkFlagsButton4.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike_Locked;
-            this.checkFlagsButton4.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike;
-            this.checkFlagsButton4.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike_VisualUnlocked;
-            this.checkFlagsButton4.Location = new System.Drawing.Point(79, 3);
-            this.checkFlagsButton4.Name = "checkFlagsButton4";
-            this.checkFlagsButton4.Size = new System.Drawing.Size(32, 32);
-            this.checkFlagsButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.checkFlagsButton4.TabIndex = 113;
-            this.checkFlagsButton4.TabStop = false;
+            this.checkFlagsUnlinkButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasBike;
+            this.checkFlagsUnlinkButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike;
+            this.checkFlagsUnlinkButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike_Locked;
+            this.checkFlagsUnlinkButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike;
+            this.checkFlagsUnlinkButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Bike_VisualUnlocked;
+            this.checkFlagsUnlinkButton.Location = new System.Drawing.Point(79, 3);
+            this.checkFlagsUnlinkButton.Name = "checkFlagsUnlinkButton";
+            this.checkFlagsUnlinkButton.Size = new System.Drawing.Size(32, 32);
+            this.checkFlagsUnlinkButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.checkFlagsUnlinkButton.TabIndex = 113;
+            this.checkFlagsUnlinkButton.TabStop = false;
             // 
-            // checkFlagsButton3
+            // checkFlagsRedoButton
             // 
-            this.checkFlagsButton3.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasTeleport;
-            this.checkFlagsButton3.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport;
-            this.checkFlagsButton3.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport_Locked;
-            this.checkFlagsButton3.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport;
-            this.checkFlagsButton3.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport_VisualUnlocked;
-            this.checkFlagsButton3.Location = new System.Drawing.Point(60, 79);
-            this.checkFlagsButton3.Name = "checkFlagsButton3";
-            this.checkFlagsButton3.Size = new System.Drawing.Size(32, 32);
-            this.checkFlagsButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.checkFlagsButton3.TabIndex = 112;
-            this.checkFlagsButton3.TabStop = false;
+            this.checkFlagsRedoButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasTeleport;
+            this.checkFlagsRedoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport;
+            this.checkFlagsRedoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport_Locked;
+            this.checkFlagsRedoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport;
+            this.checkFlagsRedoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.Teleport_VisualUnlocked;
+            this.checkFlagsRedoButton.Location = new System.Drawing.Point(60, 79);
+            this.checkFlagsRedoButton.Name = "checkFlagsRedoButton";
+            this.checkFlagsRedoButton.Size = new System.Drawing.Size(32, 32);
+            this.checkFlagsRedoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.checkFlagsRedoButton.TabIndex = 112;
+            this.checkFlagsRedoButton.TabStop = false;
             // 
-            // checkFlagsButton2
+            // checkFlagsUndoButton
             // 
-            this.checkFlagsButton2.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasWorksKey;
-            this.checkFlagsButton2.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey;
-            this.checkFlagsButton2.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey_Locked;
-            this.checkFlagsButton2.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey;
-            this.checkFlagsButton2.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey_VisualUnlocked;
-            this.checkFlagsButton2.Location = new System.Drawing.Point(3, 3);
-            this.checkFlagsButton2.Name = "checkFlagsButton2";
-            this.checkFlagsButton2.Size = new System.Drawing.Size(32, 32);
-            this.checkFlagsButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.checkFlagsButton2.TabIndex = 111;
-            this.checkFlagsButton2.TabStop = false;
+            this.checkFlagsUndoButton.Flag = LeahsPlatinumTracker.Checks.CheckFlags.HasWorksKey;
+            this.checkFlagsUndoButton.Image = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey;
+            this.checkFlagsUndoButton.Image_Locked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey_Locked;
+            this.checkFlagsUndoButton.Image_Unlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey;
+            this.checkFlagsUndoButton.Image_VisualUnlocked = global::LeahsPlatinumTracker.Properties.ChecksResources.WorksKey_VisualUnlocked;
+            this.checkFlagsUndoButton.Location = new System.Drawing.Point(3, 3);
+            this.checkFlagsUndoButton.Name = "checkFlagsUndoButton";
+            this.checkFlagsUndoButton.Size = new System.Drawing.Size(32, 32);
+            this.checkFlagsUndoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.checkFlagsUndoButton.TabIndex = 111;
+            this.checkFlagsUndoButton.TabStop = false;
             // 
             // checkFlagsButton1
             // 
@@ -988,22 +988,22 @@
             this.MainPanel.Size = new System.Drawing.Size(996, 802);
             this.MainPanel.TabIndex = 66;
             // 
-            // button62
+            // LinkButton
             // 
-            this.button62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button62.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button62.FlatAppearance.BorderSize = 2;
-            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button62.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button62.Location = new System.Drawing.Point(5, 326);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(154, 31);
-            this.button62.TabIndex = 67;
-            this.button62.Text = "LINK";
-            this.button62.UseCompatibleTextRendering = true;
-            this.button62.UseVisualStyleBackColor = false;
-            this.button62.Click += new System.EventHandler(this.button62_Click);
+            this.LinkButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.LinkButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.LinkButton.FlatAppearance.BorderSize = 2;
+            this.LinkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LinkButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LinkButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.LinkButton.Location = new System.Drawing.Point(5, 326);
+            this.LinkButton.Name = "LinkButton";
+            this.LinkButton.Size = new System.Drawing.Size(154, 31);
+            this.LinkButton.TabIndex = 67;
+            this.LinkButton.Text = "LINK";
+            this.LinkButton.UseCompatibleTextRendering = true;
+            this.LinkButton.UseVisualStyleBackColor = false;
+            this.LinkButton.Click += new System.EventHandler(this.LinkButton_Click);
             // 
             // BacklotMansion
             // 
@@ -2006,81 +2006,81 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.UnlinkButton);
+            this.panel3.Controls.Add(this.RedoButton);
+            this.panel3.Controls.Add(this.UndoButton);
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.button62);
+            this.panel3.Controls.Add(this.LinkButton);
             this.panel3.Location = new System.Drawing.Point(8, 128);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(164, 802);
             this.panel3.TabIndex = 110;
             // 
-            // button4
+            // UnlinkButton
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button4.FlatAppearance.BorderSize = 2;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button4.Location = new System.Drawing.Point(43, 363);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(78, 31);
-            this.button4.TabIndex = 115;
-            this.button4.Text = "UNLINK";
-            this.button4.UseCompatibleTextRendering = true;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.UnlinkButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.UnlinkButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.UnlinkButton.FlatAppearance.BorderSize = 2;
+            this.UnlinkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UnlinkButton.Font = new System.Drawing.Font("Nirmala UI", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UnlinkButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.UnlinkButton.Location = new System.Drawing.Point(43, 363);
+            this.UnlinkButton.Name = "UnlinkButton";
+            this.UnlinkButton.Size = new System.Drawing.Size(78, 31);
+            this.UnlinkButton.TabIndex = 115;
+            this.UnlinkButton.Text = "UNLINK";
+            this.UnlinkButton.UseCompatibleTextRendering = true;
+            this.UnlinkButton.UseVisualStyleBackColor = false;
+            this.UnlinkButton.Click += new System.EventHandler(this.UnlinkButton_Click);
             // 
-            // button3
+            // RedoButton
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button3.Location = new System.Drawing.Point(127, 363);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(32, 31);
-            this.button3.TabIndex = 114;
-            this.button3.Text = "↪";
-            this.button3.UseCompatibleTextRendering = true;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.RedoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.RedoButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.RedoButton.FlatAppearance.BorderSize = 2;
+            this.RedoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RedoButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RedoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.RedoButton.Location = new System.Drawing.Point(127, 363);
+            this.RedoButton.Name = "RedoButton";
+            this.RedoButton.Size = new System.Drawing.Size(32, 31);
+            this.RedoButton.TabIndex = 114;
+            this.RedoButton.Text = "↪";
+            this.RedoButton.UseCompatibleTextRendering = true;
+            this.RedoButton.UseVisualStyleBackColor = false;
+            this.RedoButton.Click += new System.EventHandler(this.RedoButton_Click);
             // 
-            // button2
+            // UndoButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button2.Location = new System.Drawing.Point(5, 363);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 31);
-            this.button2.TabIndex = 113;
-            this.button2.Text = "↩";
-            this.button2.UseCompatibleTextRendering = true;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.UndoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.UndoButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.UndoButton.FlatAppearance.BorderSize = 2;
+            this.UndoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UndoButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UndoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.UndoButton.Location = new System.Drawing.Point(5, 363);
+            this.UndoButton.Name = "UndoButton";
+            this.UndoButton.Size = new System.Drawing.Size(32, 31);
+            this.UndoButton.TabIndex = 113;
+            this.UndoButton.Text = "↩";
+            this.UndoButton.UseCompatibleTextRendering = true;
+            this.UndoButton.UseVisualStyleBackColor = false;
+            this.UndoButton.Click += new System.EventHandler(this.UndoButton_Click);
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.progressFlagsButton1);
-            this.panel7.Controls.Add(this.progressFlagsButton2);
-            this.panel7.Controls.Add(this.progressFlagsButton3);
-            this.panel7.Controls.Add(this.progressFlagsButton4);
-            this.panel7.Controls.Add(this.progressFlagsButton5);
+            this.panel7.Controls.Add(this.progressFlagsUndoButton);
+            this.panel7.Controls.Add(this.progressFlagsRedoButton);
+            this.panel7.Controls.Add(this.progressFlagsUnlinkButton);
+            this.panel7.Controls.Add(this.progressFlagsSaveButton);
             this.panel7.Controls.Add(this.progressFlagsButton8);
-            this.panel7.Controls.Add(this.progressFlagsButton6);
+            this.panel7.Controls.Add(this.progressFlagsNotesButton);
             this.panel7.Controls.Add(this.progressFlagsButton7);
             this.panel7.Location = new System.Drawing.Point(5, 634);
             this.panel7.Name = "panel7";
@@ -2091,14 +2091,14 @@
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.hmFlagsButton1);
-            this.panel6.Controls.Add(this.hmFlagsButton2);
-            this.panel6.Controls.Add(this.checkFlagsButton3);
+            this.panel6.Controls.Add(this.hmFlagsUndoButton);
+            this.panel6.Controls.Add(this.checkFlagsRedoButton);
             this.panel6.Controls.Add(this.hmFlagsButton8);
-            this.panel6.Controls.Add(this.hmFlagsButton3);
-            this.panel6.Controls.Add(this.hmFlagsButton4);
+            this.panel6.Controls.Add(this.hmFlagsRedoButton);
+            this.panel6.Controls.Add(this.hmFlagsUnlinkButton);
             this.panel6.Controls.Add(this.hmFlagsButton7);
-            this.panel6.Controls.Add(this.hmFlagsButton5);
-            this.panel6.Controls.Add(this.hmFlagsButton6);
+            this.panel6.Controls.Add(this.hmFlagsSaveButton);
+            this.panel6.Controls.Add(this.hmFlagsNotesButton);
             this.panel6.Location = new System.Drawing.Point(5, 510);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(154, 118);
@@ -2107,11 +2107,11 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.checkFlagsButton2);
+            this.panel5.Controls.Add(this.checkFlagsUndoButton);
             this.panel5.Controls.Add(this.checkFlagsButton1);
-            this.panel5.Controls.Add(this.checkFlagsButton4);
-            this.panel5.Controls.Add(this.checkFlagsButton5);
-            this.panel5.Controls.Add(this.checkFlagsButton6);
+            this.panel5.Controls.Add(this.checkFlagsUnlinkButton);
+            this.panel5.Controls.Add(this.checkFlagsSaveButton);
+            this.panel5.Controls.Add(this.checkFlagsNotesButton);
             this.panel5.Controls.Add(this.checkFlagsButton7);
             this.panel5.Controls.Add(this.checkFlagsButton8);
             this.panel5.Controls.Add(this.checkFlagsButton9);
@@ -2123,7 +2123,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
-            this.panel4.Controls.Add(this.button5);
+            this.panel4.Controls.Add(this.SaveButton);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.r205);
             this.panel4.Controls.Add(this.r203);
@@ -2146,28 +2146,28 @@
             this.panel4.Controls.Add(this.r215);
             this.panel4.Controls.Add(this.r216);
             this.panel4.Controls.Add(this.r217);
-            this.panel4.Controls.Add(this.button6);
+            this.panel4.Controls.Add(this.NotesButton);
             this.panel4.Location = new System.Drawing.Point(1165, 128);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(92, 802);
             this.panel4.TabIndex = 111;
             // 
-            // button5
+            // SaveButton
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button5.FlatAppearance.BorderSize = 2;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button5.Location = new System.Drawing.Point(8, 717);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 23);
-            this.button5.TabIndex = 110;
-            this.button5.Text = "Save";
-            this.button5.UseCompatibleTextRendering = true;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.SaveButton.FlatAppearance.BorderSize = 2;
+            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveButton.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.SaveButton.Location = new System.Drawing.Point(8, 717);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(80, 23);
+            this.SaveButton.TabIndex = 110;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseCompatibleTextRendering = true;
+            this.SaveButton.UseVisualStyleBackColor = false;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // MtCoronetPeak
             // 
@@ -2185,22 +2185,22 @@
             this.MtCoronetPeak.UseCompatibleTextRendering = true;
             this.MtCoronetPeak.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // NotesButton
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button6.FlatAppearance.BorderSize = 2;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button6.Location = new System.Drawing.Point(8, 746);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 23);
-            this.button6.TabIndex = 111;
-            this.button6.Text = "Notes";
-            this.button6.UseCompatibleTextRendering = true;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.NotesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.NotesButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.NotesButton.FlatAppearance.BorderSize = 2;
+            this.NotesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NotesButton.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.NotesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.NotesButton.Location = new System.Drawing.Point(8, 746);
+            this.NotesButton.Name = "NotesButton";
+            this.NotesButton.Size = new System.Drawing.Size(80, 23);
+            this.NotesButton.TabIndex = 111;
+            this.NotesButton.Text = "Notes";
+            this.NotesButton.UseCompatibleTextRendering = true;
+            this.NotesButton.UseVisualStyleBackColor = false;
+            this.NotesButton.Click += new System.EventHandler(this.NotesButton_Click);
             // 
             // UITest
             // 
@@ -2293,28 +2293,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsNotesButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsSaveButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsUnlinkButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsRedoButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressFlagsUndoButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressFlagsButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsNotesButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsSaveButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsUnlinkButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsRedoButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hmFlagsUndoButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hmFlagsButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsNotesButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsSaveButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsUnlinkButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsRedoButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkFlagsUndoButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -2332,7 +2332,7 @@
         private Panel panel1;
         private Panel panel2;
         private Panel MainPanel;
-        private Button button62;
+        private Button LinkButton;
         private MapSelectorButton BacklotMansion;
         private MapSelectorButton Canalave;
         private MapSelectorButton Celestic;
@@ -2398,33 +2398,33 @@
         private Panel panel4;
         private MapSelectorButton MtCoronetPeak;
         private CheckFlagsButton checkFlagsButton1;
-        private CheckFlagsButton checkFlagsButton4;
-        private CheckFlagsButton checkFlagsButton3;
-        private CheckFlagsButton checkFlagsButton2;
+        private CheckFlagsButton checkFlagsUnlinkButton;
+        private CheckFlagsButton checkFlagsRedoButton;
+        private CheckFlagsButton checkFlagsUndoButton;
         private CheckFlagsButton checkFlagsButton9;
         private CheckFlagsButton checkFlagsButton8;
         private CheckFlagsButton checkFlagsButton7;
-        private CheckFlagsButton checkFlagsButton6;
-        private CheckFlagsButton checkFlagsButton5;
+        private CheckFlagsButton checkFlagsNotesButton;
+        private CheckFlagsButton checkFlagsSaveButton;
         private ProgressFlagsButton progressFlagsButton12;
         private ProgressFlagsButton progressFlagsButton11;
         private ProgressFlagsButton progressFlagsButton10;
         private ProgressFlagsButton progressFlagsButton9;
         private ProgressFlagsButton progressFlagsButton8;
         private ProgressFlagsButton progressFlagsButton7;
-        private ProgressFlagsButton progressFlagsButton6;
-        private ProgressFlagsButton progressFlagsButton5;
-        private ProgressFlagsButton progressFlagsButton4;
-        private ProgressFlagsButton progressFlagsButton3;
-        private ProgressFlagsButton progressFlagsButton2;
+        private ProgressFlagsButton progressFlagsNotesButton;
+        private ProgressFlagsButton progressFlagsSaveButton;
+        private ProgressFlagsButton progressFlagsUnlinkButton;
+        private ProgressFlagsButton progressFlagsRedoButton;
+        private ProgressFlagsButton progressFlagsUndoButton;
         private ProgressFlagsButton progressFlagsButton1;
         private HMFlagsButton hmFlagsButton8;
         private HMFlagsButton hmFlagsButton7;
-        private HMFlagsButton hmFlagsButton6;
-        private HMFlagsButton hmFlagsButton5;
-        private HMFlagsButton hmFlagsButton4;
-        private HMFlagsButton hmFlagsButton3;
-        private HMFlagsButton hmFlagsButton2;
+        private HMFlagsButton hmFlagsNotesButton;
+        private HMFlagsButton hmFlagsSaveButton;
+        private HMFlagsButton hmFlagsUnlinkButton;
+        private HMFlagsButton hmFlagsRedoButton;
+        private HMFlagsButton hmFlagsUndoButton;
         private HMFlagsButton hmFlagsButton1;
         private Panel panel6;
         private Panel panel5;
@@ -2447,9 +2447,9 @@
         private MarkerSelector markerSelector15;
         private MarkerSelector markerSelector14;
         private MarkerSelector markerSelector13;
-        private Button button3;
-        private Button button2;
-        private Button button4;
+        private Button RedoButton;
+        private Button UndoButton;
+        private Button UnlinkButton;
         private MarkerSelector markerSelector18;
         private MarkerSelector markerSelector19;
         private MarkerSelector markerSelector20;
@@ -2459,7 +2459,7 @@
         private MarkerSelector markerSelector26;
         private MarkerSelector markerSelector25;
         private MarkerSelector markerSelector24;
-        private Button button5;
-        private Button button6;
+        private Button SaveButton;
+        private Button NotesButton;
     }
 }

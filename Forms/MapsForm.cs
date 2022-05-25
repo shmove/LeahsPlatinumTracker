@@ -9,7 +9,7 @@ namespace LeahsPlatinumTracker
     public partial class MapsForm : Form
     {
         public Tracker? Player { get; set; }
-        public UITest? parent { get; set; }
+        public TrackerForm? parent { get; set; }
         public MapImages MapImages { get; set; }
         public WarpButton? lastSelectedWarp { get; set; }
 
@@ -120,7 +120,7 @@ namespace LeahsPlatinumTracker
                     lastSelectedWarp.updateAppearance();
                 }
 
-                if (!parent.setLinkWarps(warpButton.associatedWarp))
+                if (!parent.SetLinkWarps(warpButton.associatedWarp))
                 {
                     warpButton.selected = true;
                     if (hasPictureBox) ((MarkerPictureBox)sender).ToggleSelected(true);
@@ -135,7 +135,7 @@ namespace LeahsPlatinumTracker
                 if (warpButton.associatedWarp.VisualMarkers == 1) warpButton.associatedWarp.VisualMarkers = 0;
                 else warpButton.associatedWarp.VisualMarkers = 1;
                 warpButton.updateAppearance();
-                parent.updateMapSelectorButtons(parent);
+                parent.UpdateMapSelectorButtons(parent);
             }
             else if (me.Button == MouseButtons.Middle)
             {

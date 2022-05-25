@@ -8,7 +8,7 @@ namespace LeahsPlatinumTracker
 {
     public class ChecksButton : PictureBox
     {
-        private UITest? ParentForm;
+        private TrackerForm? ParentForm;
         internal Tracker? Player;
         private static ToolTip tooltip;
         internal bool CheckState = false;
@@ -97,7 +97,7 @@ namespace LeahsPlatinumTracker
             // update map accordingly
             if (toggleOutput) Player.UpdateMap();
             else Player.RevertMap();
-            ParentForm.updateAllAppearances();
+            ParentForm.UpdateAllAppearances();
 
             return toggleOutput;
         }
