@@ -442,6 +442,7 @@ namespace LeahsPlatinumTracker
         internal void SaveButton_Click(object sender, EventArgs e)
         {
             Player.ToJSON();
+            HasUpdated = false; // stop save popup after manual saving
         }
 
         internal void NotesButton_Click(object sender, EventArgs e)
