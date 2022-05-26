@@ -674,7 +674,7 @@ namespace LeahsPlatinumTracker
                     if (MapSector.IsLinked(warp1.WarpID))
                     {
                         UnlinkWarp((warp1.MapID, warp1.WarpID));
-                        if (!MapSector.IsMapAccessible()) RevertMap(MapSector.MapID);
+                        if (!MapSector.IsAccessible(Checks)) RevertMap(MapSector.MapID);
                     }
 
                     bool wasUnlocked = MapSector.IsUnlocked;
@@ -693,7 +693,7 @@ namespace LeahsPlatinumTracker
                     if (MapSector.IsLinked(warp2.WarpID))
                     {
                         UnlinkWarp((warp2.MapID, warp2.WarpID));
-                        if (!MapSector.IsMapAccessible()) RevertMap(MapSector.MapID);
+                        if (!MapSector.IsAccessible(Checks)) RevertMap(MapSector.MapID);
                     }
 
                     bool wasUnlocked = MapSector.IsUnlocked;
@@ -734,7 +734,7 @@ namespace LeahsPlatinumTracker
                     // Unlink warp, and if this isolates the MapSector then update map
                     if (!MapSector1.Unlink(warp.WarpID, preserveVisualMarkers))
                     {
-                        if (!MapSector1.IsMapAccessible()) RevertMap(MapSector1.MapID);
+                        if (!MapSector1.IsAccessible(Checks)) RevertMap(MapSector1.MapID);
                     };
                     // loop to find destination and unlink
                     foreach (MapSector MapSector2 in MapSectors)
@@ -744,7 +744,7 @@ namespace LeahsPlatinumTracker
                             // Unlink warp, and if this isolates the MapSector then update map
                             if (!MapSector2.Unlink(destinationID, preserveVisualMarkers))
                             {
-                                if (!MapSector2.IsMapAccessible()) RevertMap(MapSector2.MapID);
+                                if (!MapSector2.IsAccessible(Checks)) RevertMap(MapSector2.MapID);
                             };
                             break;
                         }

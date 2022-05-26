@@ -385,12 +385,13 @@ namespace LeahsPlatinumTracker
         /// <summary>
         /// Evaluates if this instance is accessible from a physical connection.
         /// </summary>
+        /// <param name="currentChecks">The current state of the tracker's unlocked <see cref="Checks"/>.</param>
         /// <returns>A boolean pertaining to whether this instance is accessible from a physical connection, or whether it is unlocked by default.</returns>
-        public bool IsMapAccessible()
+        public bool IsAccessible(Checks currentChecks)
         {
             foreach (Condition condition in Conditions)
             {
-                if (condition.MapAccessible) return true;
+                if (condition.MapAccessible && condition.RequiredChecks.meetsRequirements(currentChecks)) return true;
             }
             return DefaultUnlocked;
         }
