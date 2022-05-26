@@ -124,14 +124,11 @@
   <data name="dead_end" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\dead_end.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Markers\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Flint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Markers\Flint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Aaron" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Markers\Aaron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Markers\trainer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lucian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Markers\Lucian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Waterfall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\Waterfall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -144,6 +141,9 @@
   </data>
   <data name="FenBadge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\FenBadge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Markers\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MasterBall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\MasterBall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,23 +169,20 @@
   <data name="exclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Markers\exclamation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Flint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Markers\Flint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IcicleBadge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\IcicleBadge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CoalBadge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\CoalBadge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pokeball" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Markers\Pokeball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Bertha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\Bertha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Surf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\Surf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Markers\trainer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RockClimb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\RockClimb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,10 +193,13 @@
   <data name="BeaconBadge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Markers\BeaconBadge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lucian" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Markers\Lucian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Aaron" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Markers\Aaron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GalacticKey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Markers\GalacticKey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pokeball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Markers\Pokeball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
