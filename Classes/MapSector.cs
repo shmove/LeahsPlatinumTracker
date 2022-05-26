@@ -69,7 +69,8 @@ namespace LeahsPlatinumTracker
                         if ( warp.Destination.WarpID < 0 &&
                              warp.VisualMarkers != 1 &&
                             (warp.VisualMarkers < 5  || warp.VisualMarkers > 17) &&
-                            (warp.VisualMarkers < 24 || warp.VisualMarkers > 26) )
+                             warp.VisualMarkers != 24 &&
+                            (warp.VisualMarkers < 26 || warp.VisualMarkers > 27) )
                                 return false;  // if warp is unset or matches any marker associated w a checked area/dead end
                     }
                 }
@@ -589,36 +590,39 @@ namespace LeahsPlatinumTracker
         public int VisualMarkers { get; set; }
 
         /*
-         * Supported values for VisualMarkers
+         * Supported values for VisualMarkers:
          * 
          *  0: None
-         *  1: Dead End
+         *  1: Dead End             /
          *  2: Arrow
          *  3: Bike
          *  4: Trainer
-         *  5: Coal Badge
-         *  6: Forest Badge
-         *  7: Relic Badge
-         *  8: Cobble Badge
-         *  9: Fen Badge
-         * 10: Mine Badge
-         * 11: Icicle Badge
-         * 12: Beacon Badge
-         * 13: Aaron
-         * 14: Bertha
-         * 15: Flint
-         * 16: Lucian
-         * 17: Cynthia
+         *  5: Coal Badge           /
+         *  6: Forest Badge         /
+         *  7: Relic Badge          /
+         *  8: Cobble Badge         /
+         *  9: Fen Badge            /
+         * 10: Mine Badge           /
+         * 11: Icicle Badge         /
+         * 12: Beacon Badge         /
+         * 13: Aaron                /
+         * 14: Bertha               /
+         * 15: Flint                /
+         * 16: Lucian               /
+         * 17: Cynthia              /
          * 18: Rock Smash
          * 19: Cut
          * 20: Strength
          * 21: Surf
          * 22: Waterfall
          * 23: Rock Climb
-         * 24: Master Ball
-         * 25: Pokeball (item)
-         * 26: PokeMart
+         * 24: Master Ball          /
+         * 25: Pokeball (item)  
+         * 26: PokeMart             /
+         * 27: Exclamation Point    /
+         * 28: Galactic Key
          * 
+         * Values marked with a (/) are considered to be checked.
         */
        
         /// <summary>

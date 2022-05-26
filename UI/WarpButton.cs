@@ -190,6 +190,12 @@ namespace LeahsPlatinumTracker
                     case 26:
                         Marker.Image = Resources.MarkerResources.Mart;
                         break;
+                    case 27:
+                        Marker.Image = Resources.MarkerResources.exclamation;
+                        break;
+                    case 28:
+                        Marker.Image = Resources.MarkerResources.GalacticKey;
+                        break;
                 }
 
                 Marker.MouseDown += new MouseEventHandler(parent.Warp_Click);

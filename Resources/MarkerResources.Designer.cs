@@ -163,6 +163,16 @@ namespace LeahsPlatinumTracker.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exclamation {
+            get {
+                object obj = ResourceManager.GetObject("exclamation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FenBadge {
             get {
                 object obj = ResourceManager.GetObject("FenBadge", resourceCulture);
@@ -186,6 +196,16 @@ namespace LeahsPlatinumTracker.Resources {
         internal static System.Drawing.Bitmap ForestBadge {
             get {
                 object obj = ResourceManager.GetObject("ForestBadge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GalacticKey {
+            get {
+                object obj = ResourceManager.GetObject("GalacticKey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
