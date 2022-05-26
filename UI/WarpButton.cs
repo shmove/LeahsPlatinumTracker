@@ -39,15 +39,31 @@ namespace LeahsPlatinumTracker
         }
 
         private void UpdateButtonCosmetics()
-        {
+        { 
             if (associatedWarp.Destination.MapID != "Not set")
             {
+                Warp relevantWarp = associatedWarp;
+
                 Location = position;
                 Size = new(107, 23);
-                Text = associatedWarp.DestinationVisualMapSector.DisplayName;
                 Font = new Font("Nirmala UI", (float)8.25, FontStyle.Regular);
 
-                if (associatedWarp.Destination.MapID.Contains("Pokecentre") == true || associatedWarp.Destination.MapID == "PokeLeague Int")
+                // Check if pseudo corridor, then act as if the warp is linked directly if true
+                if (associatedWarp.DestinationMapSector.IsPseudoCorridor)
+                {
+                    foreach(Warp warp in associatedWarp.DestinationMapSector.Warps)
+                    {
+                        if (warp.Destination.MapID == associatedWarp.MapID) continue;
+                        if (warp.Destination.WarpID < 0) continue;
+
+                        relevantWarp = warp;
+                        Text = warp.DestinationVisualMapSector.DisplayName + "*";
+                        break;
+                    }
+                }
+                else Text = associatedWarp.DestinationVisualMapSector.DisplayName;
+
+                if (relevantWarp.Destination.MapID.Contains("Pokecentre") == true || relevantWarp.Destination.MapID == "PokeLeague Int")
                 {
                     ForeColor = Color.FromArgb(255, 238, 238, 238);
                     BackColor = Color.FromArgb(255, 243, 109, 116);

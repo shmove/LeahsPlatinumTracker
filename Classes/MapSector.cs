@@ -66,12 +66,7 @@ namespace LeahsPlatinumTracker
                 {
                     foreach (Warp warp in sector.Warps)
                     {
-                        if ( warp.Destination.WarpID < 0 &&
-                             warp.VisualMarkers != 1 &&
-                            (warp.VisualMarkers < 5  || warp.VisualMarkers > 17) &&
-                             warp.VisualMarkers != 24 &&
-                            (warp.VisualMarkers < 26 || warp.VisualMarkers > 27) )
-                                return false;  // if warp is unset or matches any marker associated w a checked area/dead end
+                        if ( warp.Destination.WarpID < 0 && !warp.VisualMarkerChecked) return false;
                     }
                 }
             }
@@ -79,7 +74,9 @@ namespace LeahsPlatinumTracker
         }
 
         /// <summary>
-        /// Evaluates whether every accessible <see cref="Warp"/> in this instance has been assigned a destination or marker.
+        /// Evaluates whether every accessible <see cref="Warp"/> in this instance has been assigned a destination or marker.   <br />
+        ///                                                                                                                     <br />
+        /// Can be used to determine if an instance is fully checked and is only incomplete because of player defined markers.  <br />
         /// </summary>
         [JsonIgnore]
         public bool IsFullyChecked
@@ -202,6 +199,24 @@ namespace LeahsPlatinumTracker
             get
             {
                 return ParentVisualMapSector.Tracker;
+            }
+        }
+
+        [JsonIgnore]
+        public bool IsPseudoCorridor
+        {
+            get
+            {
+                int linkedWarps = 0;
+                foreach(Warp warp in Warps)
+                {
+                    if (warp.Destination.WarpID < 0 && warp.VisualMarkers != 1) return false;
+                    if (warp.Destination.WarpID >= 0 || (warp.VisualMarkerChecked && warp.VisualMarkers != 1)) linkedWarps++;
+                    if (linkedWarps > 2) break;
+                }
+
+                if (linkedWarps == 2 && !CanAccess()) return true;
+                else return false;
             }
         }
 
@@ -508,6 +523,22 @@ namespace LeahsPlatinumTracker
             return false;
         }
 
+        /// <summary>
+        /// Evaluates if this <see cref="MapSector"/> can be used as a physical connection to other MapSectors.
+        /// </summary>
+        /// <returns>A boolean pertaining to whether this instance can be used as a physical connection to other MapSectors.</returns>
+        public bool CanAccess()
+        {
+            foreach(MapSector sector in Tracker.MapSectors)
+            {
+                foreach(Condition condition in sector.Conditions)
+                {
+                    if (condition.AccessMap == MapID) return true;
+                }    
+            }
+            return false;
+        }
+
     }
 
     /// <summary>
@@ -624,6 +655,21 @@ namespace LeahsPlatinumTracker
          * 
          * Values marked with a (/) are considered to be checked.
         */
+
+        /// <summary>
+        /// Evaluates if this Warp is considered checked without being linked.
+        /// </summary>
+        public bool VisualMarkerChecked
+        { 
+            get
+            {
+                if (VisualMarkers == 1)                         return true;
+                if (VisualMarkers >=5 && VisualMarkers <= 17)   return true;
+                if (VisualMarkers == 24)                        return true;
+                if (VisualMarkers >= 26 && VisualMarkers <= 27) return true;
+                return false;
+            }
+        }
        
         /// <summary>
         /// <see cref="Warp"/> constructor.
