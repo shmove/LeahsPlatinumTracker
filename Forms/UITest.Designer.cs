@@ -1886,7 +1886,7 @@
             // markerSelector27
             // 
             this.markerSelector27.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.exclamation;
-            this.markerSelector27.Location = new System.Drawing.Point(117, 3);
+            this.markerSelector27.Location = new System.Drawing.Point(41, 3);
             this.markerSelector27.MarkerID = 27;
             this.markerSelector27.Name = "markerSelector27";
             this.markerSelector27.Size = new System.Drawing.Size(32, 32);
@@ -1897,7 +1897,7 @@
             // markerSelector26
             // 
             this.markerSelector26.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Mart;
-            this.markerSelector26.Location = new System.Drawing.Point(41, 3);
+            this.markerSelector26.Location = new System.Drawing.Point(117, 3);
             this.markerSelector26.MarkerID = 26;
             this.markerSelector26.Name = "markerSelector26";
             this.markerSelector26.Size = new System.Drawing.Size(32, 32);
