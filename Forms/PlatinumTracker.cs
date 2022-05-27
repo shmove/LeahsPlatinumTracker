@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace LeahsPlatinumTracker
 {
-    public partial class UITest : TrackerForm
+    public partial class PlatinumTracker : TrackerForm
     {
 
-        public UITest() : base()
+        public PlatinumTracker() : base()
         {
             InitializeComponent();
             base.MainPanel = MainPanel;
@@ -25,7 +25,7 @@ namespace LeahsPlatinumTracker
             base.NotesButton = NotesButton;
         }
 
-        public UITest(Tracker _player, string LoadedFile) : base(_player, LoadedFile)
+        public PlatinumTracker(Tracker _player, string LoadedFile) : base(_player, LoadedFile)
         {
             InitializeComponent();
             base.MainPanel = MainPanel;

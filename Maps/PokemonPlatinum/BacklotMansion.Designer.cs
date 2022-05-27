@@ -50,15 +50,17 @@
             // 
             // warpButton1
             // 
+            this.warpButton1.associatedWarp = null;
             this.warpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton1.FlatAppearance.BorderSize = 2;
             this.warpButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton1.Location = new System.Drawing.Point(22, 40);
+            this.warpButton1.Location = new System.Drawing.Point(22, 90);
             this.warpButton1.MapID = "BacklotMansion";
             this.warpButton1.Name = "warpButton1";
+            this.warpButton1.selected = false;
             this.warpButton1.Size = new System.Drawing.Size(107, 23);
             this.warpButton1.TabIndex = 1;
             this.warpButton1.Text = "warpButton1";
@@ -68,15 +70,17 @@
             // 
             // warpButton2
             // 
+            this.warpButton2.associatedWarp = null;
             this.warpButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton2.FlatAppearance.BorderSize = 2;
             this.warpButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton2.Location = new System.Drawing.Point(150, 40);
+            this.warpButton2.Location = new System.Drawing.Point(150, 90);
             this.warpButton2.MapID = "BacklotMansion";
             this.warpButton2.Name = "warpButton2";
+            this.warpButton2.selected = false;
             this.warpButton2.Size = new System.Drawing.Size(107, 23);
             this.warpButton2.TabIndex = 2;
             this.warpButton2.Text = "warpButton2";
@@ -86,15 +90,17 @@
             // 
             // warpButton3
             // 
+            this.warpButton3.associatedWarp = null;
             this.warpButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton3.FlatAppearance.BorderSize = 2;
             this.warpButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton3.Location = new System.Drawing.Point(279, 40);
+            this.warpButton3.Location = new System.Drawing.Point(279, 90);
             this.warpButton3.MapID = "BacklotMansion";
             this.warpButton3.Name = "warpButton3";
+            this.warpButton3.selected = false;
             this.warpButton3.Size = new System.Drawing.Size(107, 23);
             this.warpButton3.TabIndex = 3;
             this.warpButton3.Text = "warpButton3";
@@ -104,15 +110,17 @@
             // 
             // warpButton4
             // 
+            this.warpButton4.associatedWarp = null;
             this.warpButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton4.FlatAppearance.BorderSize = 2;
             this.warpButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton4.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton4.Location = new System.Drawing.Point(470, 2);
+            this.warpButton4.Location = new System.Drawing.Point(470, 52);
             this.warpButton4.MapID = "BacklotMansion";
             this.warpButton4.Name = "warpButton4";
+            this.warpButton4.selected = false;
             this.warpButton4.Size = new System.Drawing.Size(107, 23);
             this.warpButton4.TabIndex = 4;
             this.warpButton4.Text = "warpButton4";
@@ -122,15 +130,17 @@
             // 
             // warpButton5
             // 
+            this.warpButton5.associatedWarp = null;
             this.warpButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton5.FlatAppearance.BorderSize = 2;
             this.warpButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton5.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton5.Location = new System.Drawing.Point(710, 40);
+            this.warpButton5.Location = new System.Drawing.Point(710, 90);
             this.warpButton5.MapID = "BacklotMansion";
             this.warpButton5.Name = "warpButton5";
+            this.warpButton5.selected = false;
             this.warpButton5.Size = new System.Drawing.Size(107, 23);
             this.warpButton5.TabIndex = 5;
             this.warpButton5.Text = "warpButton5";
@@ -140,15 +150,17 @@
             // 
             // warpButton6
             // 
+            this.warpButton6.associatedWarp = null;
             this.warpButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton6.FlatAppearance.BorderSize = 2;
             this.warpButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton6.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton6.Location = new System.Drawing.Point(470, 182);
+            this.warpButton6.Location = new System.Drawing.Point(470, 232);
             this.warpButton6.MapID = "BacklotMansion";
             this.warpButton6.Name = "warpButton6";
+            this.warpButton6.selected = false;
             this.warpButton6.Size = new System.Drawing.Size(107, 23);
             this.warpButton6.TabIndex = 6;
             this.warpButton6.Text = "warpButton6";
@@ -158,7 +170,7 @@
             // 
             // BacklotMansion
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));

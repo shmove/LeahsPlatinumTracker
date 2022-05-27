@@ -69,6 +69,7 @@
             // 
             // warpButton1
             // 
+            this.warpButton1.associatedWarp = null;
             this.warpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton1.FlatAppearance.BorderSize = 2;
@@ -78,6 +79,7 @@
             this.warpButton1.Location = new System.Drawing.Point(67, 179);
             this.warpButton1.MapID = "GalacticHQ 1F A";
             this.warpButton1.Name = "warpButton1";
+            this.warpButton1.selected = false;
             this.warpButton1.Size = new System.Drawing.Size(107, 23);
             this.warpButton1.TabIndex = 1;
             this.warpButton1.Text = "warpButton1";
@@ -87,6 +89,7 @@
             // 
             // warpButton2
             // 
+            this.warpButton2.associatedWarp = null;
             this.warpButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton2.FlatAppearance.BorderSize = 2;
@@ -96,6 +99,7 @@
             this.warpButton2.Location = new System.Drawing.Point(404, 179);
             this.warpButton2.MapID = "GalacticHQ 1F A";
             this.warpButton2.Name = "warpButton2";
+            this.warpButton2.selected = false;
             this.warpButton2.Size = new System.Drawing.Size(107, 23);
             this.warpButton2.TabIndex = 2;
             this.warpButton2.Text = "warpButton2";
@@ -105,15 +109,17 @@
             // 
             // warpButton3
             // 
+            this.warpButton3.associatedWarp = null;
             this.warpButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton3.FlatAppearance.BorderSize = 2;
             this.warpButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton3.Location = new System.Drawing.Point(237, 70);
+            this.warpButton3.Location = new System.Drawing.Point(221, 77);
             this.warpButton3.MapID = "GalacticHQ 1F B";
             this.warpButton3.Name = "warpButton3";
+            this.warpButton3.selected = false;
             this.warpButton3.Size = new System.Drawing.Size(107, 23);
             this.warpButton3.TabIndex = 3;
             this.warpButton3.Text = "warpButton3";
@@ -123,6 +129,7 @@
             // 
             // warpButton4
             // 
+            this.warpButton4.associatedWarp = null;
             this.warpButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton4.FlatAppearance.BorderSize = 2;
@@ -132,6 +139,7 @@
             this.warpButton4.Location = new System.Drawing.Point(547, 14);
             this.warpButton4.MapID = "GalacticHQ 1F C";
             this.warpButton4.Name = "warpButton4";
+            this.warpButton4.selected = false;
             this.warpButton4.Size = new System.Drawing.Size(107, 23);
             this.warpButton4.TabIndex = 4;
             this.warpButton4.Text = "warpButton4";
@@ -141,6 +149,7 @@
             // 
             // warpButton5
             // 
+            this.warpButton5.associatedWarp = null;
             this.warpButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton5.FlatAppearance.BorderSize = 2;
@@ -150,6 +159,7 @@
             this.warpButton5.Location = new System.Drawing.Point(580, 40);
             this.warpButton5.MapID = "GalacticHQ 1F C";
             this.warpButton5.Name = "warpButton5";
+            this.warpButton5.selected = false;
             this.warpButton5.Size = new System.Drawing.Size(107, 23);
             this.warpButton5.TabIndex = 5;
             this.warpButton5.Text = "warpButton5";
@@ -159,6 +169,7 @@
             // 
             // warpButton6
             // 
+            this.warpButton6.associatedWarp = null;
             this.warpButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton6.FlatAppearance.BorderSize = 2;
@@ -168,6 +179,7 @@
             this.warpButton6.Location = new System.Drawing.Point(659, 14);
             this.warpButton6.MapID = "GalacticHQ 1F C";
             this.warpButton6.Name = "warpButton6";
+            this.warpButton6.selected = false;
             this.warpButton6.Size = new System.Drawing.Size(107, 23);
             this.warpButton6.TabIndex = 6;
             this.warpButton6.Text = "warpButton6";
@@ -177,6 +189,7 @@
             // 
             // warpButton7
             // 
+            this.warpButton7.associatedWarp = null;
             this.warpButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton7.FlatAppearance.BorderSize = 2;
@@ -186,6 +199,7 @@
             this.warpButton7.Location = new System.Drawing.Point(277, 249);
             this.warpButton7.MapID = "GalacticHQ 2F A";
             this.warpButton7.Name = "warpButton7";
+            this.warpButton7.selected = false;
             this.warpButton7.Size = new System.Drawing.Size(107, 23);
             this.warpButton7.TabIndex = 7;
             this.warpButton7.Text = "warpButton7";
@@ -195,6 +209,7 @@
             // 
             // warpButton8
             // 
+            this.warpButton8.associatedWarp = null;
             this.warpButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton8.FlatAppearance.BorderSize = 2;
@@ -204,6 +219,7 @@
             this.warpButton8.Location = new System.Drawing.Point(561, 273);
             this.warpButton8.MapID = "GalacticHQ 2F A";
             this.warpButton8.Name = "warpButton8";
+            this.warpButton8.selected = false;
             this.warpButton8.Size = new System.Drawing.Size(107, 23);
             this.warpButton8.TabIndex = 8;
             this.warpButton8.Text = "warpButton8";
@@ -213,6 +229,7 @@
             // 
             // warpButton9
             // 
+            this.warpButton9.associatedWarp = null;
             this.warpButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton9.FlatAppearance.BorderSize = 2;
@@ -222,6 +239,7 @@
             this.warpButton9.Location = new System.Drawing.Point(816, 260);
             this.warpButton9.MapID = "GalacticHQ 2F A";
             this.warpButton9.Name = "warpButton9";
+            this.warpButton9.selected = false;
             this.warpButton9.Size = new System.Drawing.Size(107, 23);
             this.warpButton9.TabIndex = 9;
             this.warpButton9.Text = "warpButton9";
@@ -231,6 +249,7 @@
             // 
             // warpButton10
             // 
+            this.warpButton10.associatedWarp = null;
             this.warpButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton10.FlatAppearance.BorderSize = 2;
@@ -240,6 +259,7 @@
             this.warpButton10.Location = new System.Drawing.Point(816, 383);
             this.warpButton10.MapID = "GalacticHQ 2F A";
             this.warpButton10.Name = "warpButton10";
+            this.warpButton10.selected = false;
             this.warpButton10.Size = new System.Drawing.Size(107, 23);
             this.warpButton10.TabIndex = 10;
             this.warpButton10.Text = "warpButton10";
@@ -249,6 +269,7 @@
             // 
             // warpButton11
             // 
+            this.warpButton11.associatedWarp = null;
             this.warpButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton11.FlatAppearance.BorderSize = 2;
@@ -258,6 +279,7 @@
             this.warpButton11.Location = new System.Drawing.Point(200, 369);
             this.warpButton11.MapID = "GalacticHQ 2F B";
             this.warpButton11.Name = "warpButton11";
+            this.warpButton11.selected = false;
             this.warpButton11.Size = new System.Drawing.Size(107, 23);
             this.warpButton11.TabIndex = 11;
             this.warpButton11.Text = "warpButton11";
@@ -267,6 +289,7 @@
             // 
             // warpButton12
             // 
+            this.warpButton12.associatedWarp = null;
             this.warpButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton12.FlatAppearance.BorderSize = 2;
@@ -276,6 +299,7 @@
             this.warpButton12.Location = new System.Drawing.Point(277, 340);
             this.warpButton12.MapID = "GalacticHQ 2F B";
             this.warpButton12.Name = "warpButton12";
+            this.warpButton12.selected = false;
             this.warpButton12.Size = new System.Drawing.Size(107, 23);
             this.warpButton12.TabIndex = 12;
             this.warpButton12.Text = "warpButton12";
@@ -285,6 +309,7 @@
             // 
             // warpButton13
             // 
+            this.warpButton13.associatedWarp = null;
             this.warpButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton13.FlatAppearance.BorderSize = 2;
@@ -294,6 +319,7 @@
             this.warpButton13.Location = new System.Drawing.Point(396, 340);
             this.warpButton13.MapID = "GalacticHQ 2F B";
             this.warpButton13.Name = "warpButton13";
+            this.warpButton13.selected = false;
             this.warpButton13.Size = new System.Drawing.Size(107, 23);
             this.warpButton13.TabIndex = 13;
             this.warpButton13.Text = "warpButton13";
@@ -303,6 +329,7 @@
             // 
             // warpButton14
             // 
+            this.warpButton14.associatedWarp = null;
             this.warpButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton14.FlatAppearance.BorderSize = 2;
@@ -312,6 +339,7 @@
             this.warpButton14.Location = new System.Drawing.Point(770, 451);
             this.warpButton14.MapID = "GalacticHQ 3F";
             this.warpButton14.Name = "warpButton14";
+            this.warpButton14.selected = false;
             this.warpButton14.Size = new System.Drawing.Size(107, 23);
             this.warpButton14.TabIndex = 14;
             this.warpButton14.Text = "warpButton14";
@@ -321,6 +349,7 @@
             // 
             // warpButton15
             // 
+            this.warpButton15.associatedWarp = null;
             this.warpButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton15.FlatAppearance.BorderSize = 2;
@@ -330,6 +359,7 @@
             this.warpButton15.Location = new System.Drawing.Point(430, 576);
             this.warpButton15.MapID = "GalacticHQ 3F";
             this.warpButton15.Name = "warpButton15";
+            this.warpButton15.selected = false;
             this.warpButton15.Size = new System.Drawing.Size(107, 23);
             this.warpButton15.TabIndex = 15;
             this.warpButton15.Text = "warpButton15";
@@ -339,6 +369,7 @@
             // 
             // warpButton16
             // 
+            this.warpButton16.associatedWarp = null;
             this.warpButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton16.FlatAppearance.BorderSize = 2;
@@ -348,6 +379,7 @@
             this.warpButton16.Location = new System.Drawing.Point(463, 550);
             this.warpButton16.MapID = "GalacticHQ 3F";
             this.warpButton16.Name = "warpButton16";
+            this.warpButton16.selected = false;
             this.warpButton16.Size = new System.Drawing.Size(107, 23);
             this.warpButton16.TabIndex = 16;
             this.warpButton16.Text = "warpButton16";
@@ -357,6 +389,7 @@
             // 
             // warpButton17
             // 
+            this.warpButton17.associatedWarp = null;
             this.warpButton17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton17.FlatAppearance.BorderSize = 2;
@@ -366,6 +399,7 @@
             this.warpButton17.Location = new System.Drawing.Point(401, 603);
             this.warpButton17.MapID = "GalacticHQ 3F";
             this.warpButton17.Name = "warpButton17";
+            this.warpButton17.selected = false;
             this.warpButton17.Size = new System.Drawing.Size(107, 23);
             this.warpButton17.TabIndex = 17;
             this.warpButton17.Text = "warpButton17";
@@ -375,6 +409,7 @@
             // 
             // warpButton18
             // 
+            this.warpButton18.associatedWarp = null;
             this.warpButton18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton18.FlatAppearance.BorderSize = 2;
@@ -384,6 +419,7 @@
             this.warpButton18.Location = new System.Drawing.Point(29, 609);
             this.warpButton18.MapID = "GalacticHQ 4F A";
             this.warpButton18.Name = "warpButton18";
+            this.warpButton18.selected = false;
             this.warpButton18.Size = new System.Drawing.Size(107, 23);
             this.warpButton18.TabIndex = 18;
             this.warpButton18.Text = "warpButton18";
@@ -393,6 +429,7 @@
             // 
             // warpButton19
             // 
+            this.warpButton19.associatedWarp = null;
             this.warpButton19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton19.FlatAppearance.BorderSize = 2;
@@ -402,6 +439,7 @@
             this.warpButton19.Location = new System.Drawing.Point(120, 455);
             this.warpButton19.MapID = "GalacticHQ 4F B";
             this.warpButton19.Name = "warpButton19";
+            this.warpButton19.selected = false;
             this.warpButton19.Size = new System.Drawing.Size(107, 23);
             this.warpButton19.TabIndex = 19;
             this.warpButton19.Text = "warpButton19";
@@ -411,6 +449,7 @@
             // 
             // warpButton20
             // 
+            this.warpButton20.associatedWarp = null;
             this.warpButton20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton20.FlatAppearance.BorderSize = 2;
@@ -420,6 +459,7 @@
             this.warpButton20.Location = new System.Drawing.Point(343, 455);
             this.warpButton20.MapID = "GalacticHQ 4F B";
             this.warpButton20.Name = "warpButton20";
+            this.warpButton20.selected = false;
             this.warpButton20.Size = new System.Drawing.Size(107, 23);
             this.warpButton20.TabIndex = 20;
             this.warpButton20.Text = "warpButton20";
@@ -429,6 +469,7 @@
             // 
             // warpButton21
             // 
+            this.warpButton21.associatedWarp = null;
             this.warpButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton21.FlatAppearance.BorderSize = 2;
@@ -438,6 +479,7 @@
             this.warpButton21.Location = new System.Drawing.Point(327, 655);
             this.warpButton21.MapID = "GalacticHQ 4F B";
             this.warpButton21.Name = "warpButton21";
+            this.warpButton21.selected = false;
             this.warpButton21.Size = new System.Drawing.Size(107, 23);
             this.warpButton21.TabIndex = 21;
             this.warpButton21.Text = "warpButton21";
@@ -447,6 +489,7 @@
             // 
             // warpButton22
             // 
+            this.warpButton22.associatedWarp = null;
             this.warpButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton22.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton22.FlatAppearance.BorderSize = 2;
@@ -456,6 +499,7 @@
             this.warpButton22.Location = new System.Drawing.Point(584, 634);
             this.warpButton22.MapID = "GalacticHQ Warehouse B2F A";
             this.warpButton22.Name = "warpButton22";
+            this.warpButton22.selected = false;
             this.warpButton22.Size = new System.Drawing.Size(107, 23);
             this.warpButton22.TabIndex = 22;
             this.warpButton22.Text = "warpButton22";
@@ -465,6 +509,7 @@
             // 
             // warpButton23
             // 
+            this.warpButton23.associatedWarp = null;
             this.warpButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton23.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton23.FlatAppearance.BorderSize = 2;
@@ -474,6 +519,7 @@
             this.warpButton23.Location = new System.Drawing.Point(812, 611);
             this.warpButton23.MapID = "GalacticHQ Warehouse B2F A";
             this.warpButton23.Name = "warpButton23";
+            this.warpButton23.selected = false;
             this.warpButton23.Size = new System.Drawing.Size(107, 23);
             this.warpButton23.TabIndex = 23;
             this.warpButton23.Text = "warpButton23";
@@ -483,6 +529,7 @@
             // 
             // warpButton24
             // 
+            this.warpButton24.associatedWarp = null;
             this.warpButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton24.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton24.FlatAppearance.BorderSize = 2;
@@ -492,6 +539,7 @@
             this.warpButton24.Location = new System.Drawing.Point(723, 564);
             this.warpButton24.MapID = "GalacticHQ Warehouse B2F B";
             this.warpButton24.Name = "warpButton24";
+            this.warpButton24.selected = false;
             this.warpButton24.Size = new System.Drawing.Size(107, 23);
             this.warpButton24.TabIndex = 24;
             this.warpButton24.Text = "warpButton24";

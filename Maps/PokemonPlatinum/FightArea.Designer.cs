@@ -50,22 +50,24 @@
             this.pictureBox1.Image = global::LeahsPlatinumTracker.Resources.MapResources.FightArea;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(950, 386);
+            this.pictureBox1.Size = new System.Drawing.Size(996, 400);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // warpButton3
             // 
+            this.warpButton3.associatedWarp = null;
             this.warpButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton3.FlatAppearance.BorderSize = 2;
             this.warpButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton3.Location = new System.Drawing.Point(194, 505);
+            this.warpButton3.Location = new System.Drawing.Point(193, 514);
             this.warpButton3.MapID = "FightArea Pokecentre";
             this.warpButton3.Name = "warpButton3";
+            this.warpButton3.selected = false;
             this.warpButton3.Size = new System.Drawing.Size(107, 23);
             this.warpButton3.TabIndex = 45;
             this.warpButton3.Text = "2";
@@ -75,15 +77,17 @@
             // 
             // warpButton2
             // 
+            this.warpButton2.associatedWarp = null;
             this.warpButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton2.FlatAppearance.BorderSize = 2;
             this.warpButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton2.Location = new System.Drawing.Point(108, 531);
+            this.warpButton2.Location = new System.Drawing.Point(107, 540);
             this.warpButton2.MapID = "FightArea Pokecentre";
             this.warpButton2.Name = "warpButton2";
+            this.warpButton2.selected = false;
             this.warpButton2.Size = new System.Drawing.Size(107, 23);
             this.warpButton2.TabIndex = 44;
             this.warpButton2.Text = "1";
@@ -93,15 +97,17 @@
             // 
             // warpButton1
             // 
+            this.warpButton1.associatedWarp = null;
             this.warpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton1.FlatAppearance.BorderSize = 2;
             this.warpButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton1.Location = new System.Drawing.Point(22, 505);
+            this.warpButton1.Location = new System.Drawing.Point(21, 514);
             this.warpButton1.MapID = "FightArea Pokecentre";
             this.warpButton1.Name = "warpButton1";
+            this.warpButton1.selected = false;
             this.warpButton1.Size = new System.Drawing.Size(107, 23);
             this.warpButton1.TabIndex = 43;
             this.warpButton1.Text = "0";
@@ -112,7 +118,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::LeahsPlatinumTracker.Resources.MapResources.Pokecentre;
-            this.pictureBox4.Location = new System.Drawing.Point(49, 392);
+            this.pictureBox4.Location = new System.Drawing.Point(48, 401);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(224, 176);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -121,6 +127,7 @@
             // 
             // warpButton4
             // 
+            this.warpButton4.associatedWarp = null;
             this.warpButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton4.FlatAppearance.BorderSize = 2;
@@ -130,6 +137,7 @@
             this.warpButton4.Location = new System.Drawing.Point(251, 40);
             this.warpButton4.MapID = "FightArea";
             this.warpButton4.Name = "warpButton4";
+            this.warpButton4.selected = false;
             this.warpButton4.Size = new System.Drawing.Size(107, 23);
             this.warpButton4.TabIndex = 46;
             this.warpButton4.Text = "warpButton4";
@@ -139,6 +147,7 @@
             // 
             // warpButton5
             // 
+            this.warpButton5.associatedWarp = null;
             this.warpButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton5.FlatAppearance.BorderSize = 2;
@@ -148,6 +157,7 @@
             this.warpButton5.Location = new System.Drawing.Point(513, 131);
             this.warpButton5.MapID = "FightArea";
             this.warpButton5.Name = "warpButton5";
+            this.warpButton5.selected = false;
             this.warpButton5.Size = new System.Drawing.Size(107, 23);
             this.warpButton5.TabIndex = 47;
             this.warpButton5.Text = "warpButton5";
@@ -157,6 +167,7 @@
             // 
             // warpButton6
             // 
+            this.warpButton6.associatedWarp = null;
             this.warpButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton6.FlatAppearance.BorderSize = 2;
@@ -166,6 +177,7 @@
             this.warpButton6.Location = new System.Drawing.Point(729, 131);
             this.warpButton6.MapID = "FightArea";
             this.warpButton6.Name = "warpButton6";
+            this.warpButton6.selected = false;
             this.warpButton6.Size = new System.Drawing.Size(107, 23);
             this.warpButton6.TabIndex = 48;
             this.warpButton6.Text = "warpButton6";
@@ -175,6 +187,7 @@
             // 
             // warpButton7
             // 
+            this.warpButton7.associatedWarp = null;
             this.warpButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton7.FlatAppearance.BorderSize = 2;
@@ -184,6 +197,7 @@
             this.warpButton7.Location = new System.Drawing.Point(637, 244);
             this.warpButton7.MapID = "FightArea";
             this.warpButton7.Name = "warpButton7";
+            this.warpButton7.selected = false;
             this.warpButton7.Size = new System.Drawing.Size(107, 23);
             this.warpButton7.TabIndex = 49;
             this.warpButton7.Text = "warpButton7";
@@ -193,6 +207,7 @@
             // 
             // warpButton8
             // 
+            this.warpButton8.associatedWarp = null;
             this.warpButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton8.FlatAppearance.BorderSize = 2;
@@ -202,6 +217,7 @@
             this.warpButton8.Location = new System.Drawing.Point(637, 318);
             this.warpButton8.MapID = "FightArea";
             this.warpButton8.Name = "warpButton8";
+            this.warpButton8.selected = false;
             this.warpButton8.Size = new System.Drawing.Size(107, 23);
             this.warpButton8.TabIndex = 50;
             this.warpButton8.Text = "warpButton8";

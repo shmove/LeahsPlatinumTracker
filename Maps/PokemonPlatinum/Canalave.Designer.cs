@@ -45,9 +45,11 @@
             this.warpButton12 = new LeahsPlatinumTracker.WarpButton();
             this.warpButton13 = new LeahsPlatinumTracker.WarpButton();
             this.routeConnectorButton1 = new LeahsPlatinumTracker.RouteConnectorButton();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -56,7 +58,7 @@
             this.pictureBox1.Image = global::LeahsPlatinumTracker.Resources.MapResources.Canalave;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(384, 600);
+            this.pictureBox1.Size = new System.Drawing.Size(496, 800);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -64,7 +66,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::LeahsPlatinumTracker.Resources.MapResources.Pokecentre;
-            this.pictureBox2.Location = new System.Drawing.Point(392, 185);
+            this.pictureBox2.Location = new System.Drawing.Point(502, 309);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(224, 176);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -74,7 +76,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::LeahsPlatinumTracker.Resources.MapResources.Canalave2;
-            this.pictureBox3.Location = new System.Drawing.Point(392, 367);
+            this.pictureBox3.Location = new System.Drawing.Point(502, 491);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(180, 174);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -90,7 +92,7 @@
             this.warpButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton1.Location = new System.Drawing.Point(365, 298);
+            this.warpButton1.Location = new System.Drawing.Point(475, 422);
             this.warpButton1.MapID = "Canalave Pokecentre";
             this.warpButton1.Name = "warpButton1";
             this.warpButton1.selected = false;
@@ -110,7 +112,7 @@
             this.warpButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton2.Location = new System.Drawing.Point(451, 324);
+            this.warpButton2.Location = new System.Drawing.Point(561, 448);
             this.warpButton2.MapID = "Canalave Pokecentre";
             this.warpButton2.Name = "warpButton2";
             this.warpButton2.selected = false;
@@ -130,7 +132,7 @@
             this.warpButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton3.Location = new System.Drawing.Point(537, 298);
+            this.warpButton3.Location = new System.Drawing.Point(647, 422);
             this.warpButton3.MapID = "Canalave Pokecentre";
             this.warpButton3.Name = "warpButton3";
             this.warpButton3.selected = false;
@@ -150,7 +152,7 @@
             this.warpButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton4.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton4.Location = new System.Drawing.Point(21, 88);
+            this.warpButton4.Location = new System.Drawing.Point(43, 123);
             this.warpButton4.MapID = "Canalave";
             this.warpButton4.Name = "warpButton4";
             this.warpButton4.selected = false;
@@ -170,7 +172,7 @@
             this.warpButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton5.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton5.Location = new System.Drawing.Point(286, 41);
+            this.warpButton5.Location = new System.Drawing.Point(387, 61);
             this.warpButton5.MapID = "Canalave H";
             this.warpButton5.Name = "warpButton5";
             this.warpButton5.selected = false;
@@ -190,7 +192,7 @@
             this.warpButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton6.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton6.Location = new System.Drawing.Point(281, 121);
+            this.warpButton6.Location = new System.Drawing.Point(379, 166);
             this.warpButton6.MapID = "Canalave";
             this.warpButton6.Name = "warpButton6";
             this.warpButton6.selected = false;
@@ -210,7 +212,7 @@
             this.warpButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton7.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton7.Location = new System.Drawing.Point(45, 206);
+            this.warpButton7.Location = new System.Drawing.Point(74, 278);
             this.warpButton7.MapID = "Canalave";
             this.warpButton7.Name = "warpButton7";
             this.warpButton7.selected = false;
@@ -230,7 +232,7 @@
             this.warpButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton8.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton8.Location = new System.Drawing.Point(225, 221);
+            this.warpButton8.Location = new System.Drawing.Point(306, 296);
             this.warpButton8.MapID = "Canalave";
             this.warpButton8.Name = "warpButton8";
             this.warpButton8.selected = false;
@@ -250,7 +252,7 @@
             this.warpButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton9.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton9.Location = new System.Drawing.Point(38, 296);
+            this.warpButton9.Location = new System.Drawing.Point(67, 395);
             this.warpButton9.MapID = "Canalave";
             this.warpButton9.Name = "warpButton9";
             this.warpButton9.selected = false;
@@ -270,7 +272,7 @@
             this.warpButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton10.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton10.Location = new System.Drawing.Point(225, 296);
+            this.warpButton10.Location = new System.Drawing.Point(306, 395);
             this.warpButton10.MapID = "Canalave";
             this.warpButton10.Name = "warpButton10";
             this.warpButton10.selected = false;
@@ -290,7 +292,7 @@
             this.warpButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton11.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton11.Location = new System.Drawing.Point(50, 371);
+            this.warpButton11.Location = new System.Drawing.Point(83, 493);
             this.warpButton11.MapID = "Canalave";
             this.warpButton11.Name = "warpButton11";
             this.warpButton11.selected = false;
@@ -310,7 +312,7 @@
             this.warpButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton12.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton12.Location = new System.Drawing.Point(237, 371);
+            this.warpButton12.Location = new System.Drawing.Point(323, 493);
             this.warpButton12.MapID = "Canalave";
             this.warpButton12.Name = "warpButton12";
             this.warpButton12.selected = false;
@@ -330,7 +332,7 @@
             this.warpButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton13.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton13.Location = new System.Drawing.Point(440, 452);
+            this.warpButton13.Location = new System.Drawing.Point(550, 576);
             this.warpButton13.MapID = "Canalave";
             this.warpButton13.Name = "warpButton13";
             this.warpButton13.selected = false;
@@ -352,7 +354,7 @@
             this.routeConnectorButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.routeConnectorButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.routeConnectorButton1.ForeColor = System.Drawing.Color.White;
-            this.routeConnectorButton1.Location = new System.Drawing.Point(144, 410);
+            this.routeConnectorButton1.Location = new System.Drawing.Point(203, 529);
             this.routeConnectorButton1.Name = "routeConnectorButton1";
             this.routeConnectorButton1.Size = new System.Drawing.Size(107, 23);
             this.routeConnectorButton1.TabIndex = 44;
@@ -360,12 +362,23 @@
             this.routeConnectorButton1.UseCompatibleTextRendering = true;
             this.routeConnectorButton1.UseVisualStyleBackColor = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::LeahsPlatinumTracker.Resources.MapResources.CanalaveSign;
+            this.pictureBox4.Location = new System.Drawing.Point(726, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(270, 84);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 45;
+            this.pictureBox4.TabStop = false;
+            // 
             // Canalave
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(996, 802);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.routeConnectorButton1);
             this.Controls.Add(this.warpButton13);
             this.Controls.Add(this.warpButton12);
@@ -390,6 +403,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,5 +427,6 @@
         private WarpButton warpButton12;
         private WarpButton warpButton13;
         private RouteConnectorButton routeConnectorButton1;
+        private PictureBox pictureBox4;
     }
 }

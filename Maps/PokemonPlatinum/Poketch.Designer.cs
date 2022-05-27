@@ -39,15 +39,16 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.pictureBox1.Image = global::LeahsPlatinumTracker.Resources.MapResources.Poketch;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(304, 181);
+            this.pictureBox1.Size = new System.Drawing.Size(996, 181);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // warpButton1
             // 
+            this.warpButton1.associatedWarp = null;
             this.warpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton1.FlatAppearance.BorderSize = 2;
@@ -57,6 +58,7 @@
             this.warpButton1.Location = new System.Drawing.Point(2, 133);
             this.warpButton1.MapID = "Poketch";
             this.warpButton1.Name = "warpButton1";
+            this.warpButton1.selected = false;
             this.warpButton1.Size = new System.Drawing.Size(107, 23);
             this.warpButton1.TabIndex = 1;
             this.warpButton1.Text = "warpButton1";
@@ -66,6 +68,7 @@
             // 
             // warpButton2
             // 
+            this.warpButton2.associatedWarp = null;
             this.warpButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton2.FlatAppearance.BorderSize = 2;
@@ -75,6 +78,7 @@
             this.warpButton2.Location = new System.Drawing.Point(210, 133);
             this.warpButton2.MapID = "Poketch";
             this.warpButton2.Name = "warpButton2";
+            this.warpButton2.selected = false;
             this.warpButton2.Size = new System.Drawing.Size(107, 23);
             this.warpButton2.TabIndex = 2;
             this.warpButton2.Text = "warpButton2";
@@ -84,6 +88,7 @@
             // 
             // warpButton3
             // 
+            this.warpButton3.associatedWarp = null;
             this.warpButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton3.FlatAppearance.BorderSize = 2;
@@ -93,6 +98,7 @@
             this.warpButton3.Location = new System.Drawing.Point(63, 12);
             this.warpButton3.MapID = "Poketch";
             this.warpButton3.Name = "warpButton3";
+            this.warpButton3.selected = false;
             this.warpButton3.Size = new System.Drawing.Size(107, 23);
             this.warpButton3.TabIndex = 3;
             this.warpButton3.Text = "warpButton3";

@@ -80,8 +80,6 @@ namespace LeahsPlatinumTracker
                 FlatAppearance.BorderColor = Color.FromArgb(255, 155, 155, 155);
             }
 
-            if (FormParent.activePanel != null)
-                if (FormParent.activePanel.GetType().Name == Name || (FormParent.activePanel.GetType().Name.StartsWith("2") && ("r" + FormParent.activePanel.GetType().Name) == Name)) Font = new Font(InitialFont.FontFamily, InitialFont.Size, InitialFont.Style | FontStyle.Underline);
         }
     }
 }

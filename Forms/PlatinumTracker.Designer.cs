@@ -1,6 +1,6 @@
 ﻿namespace LeahsPlatinumTracker
 {
-    partial class UITest
+    partial class PlatinumTracker
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlatinumTracker));
             this.panel1 = new System.Windows.Forms.Panel();
             this.markerSelector28 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector23 = new LeahsPlatinumTracker.MarkerSelector();
@@ -159,6 +160,8 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.MarkersLabel = new System.Windows.Forms.Label();
+            this.ChecksLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.SaveButton = new System.Windows.Forms.Button();
             this.NotesButton = new System.Windows.Forms.Button();
@@ -246,7 +249,7 @@
             this.panel1.Controls.Add(this.markerSelector4);
             this.panel1.Controls.Add(this.markerSelector2);
             this.panel1.Controls.Add(this.markerSelector1);
-            this.panel1.Location = new System.Drawing.Point(5, 3);
+            this.panel1.Location = new System.Drawing.Point(5, 15);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(154, 118);
             this.panel1.TabIndex = 63;
@@ -833,7 +836,7 @@
             this.LinkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LinkButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LinkButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.LinkButton.Location = new System.Drawing.Point(5, 326);
+            this.LinkButton.Location = new System.Drawing.Point(5, 338);
             this.LinkButton.Name = "LinkButton";
             this.LinkButton.Size = new System.Drawing.Size(154, 31);
             this.LinkButton.TabIndex = 67;
@@ -1853,6 +1856,8 @@
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.LinkButton);
+            this.panel3.Controls.Add(this.MarkersLabel);
+            this.panel3.Controls.Add(this.ChecksLabel);
             this.panel3.Location = new System.Drawing.Point(8, 128);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(164, 802);
@@ -1878,7 +1883,7 @@
             this.panel8.Controls.Add(this.markerSelector7);
             this.panel8.Controls.Add(this.markerSelector6);
             this.panel8.Controls.Add(this.markerSelector5);
-            this.panel8.Location = new System.Drawing.Point(5, 127);
+            this.panel8.Location = new System.Drawing.Point(5, 139);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(154, 193);
             this.panel8.TabIndex = 116;
@@ -2067,7 +2072,7 @@
             this.UnlinkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UnlinkButton.Font = new System.Drawing.Font("Nirmala UI", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UnlinkButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.UnlinkButton.Location = new System.Drawing.Point(43, 363);
+            this.UnlinkButton.Location = new System.Drawing.Point(43, 375);
             this.UnlinkButton.Name = "UnlinkButton";
             this.UnlinkButton.Size = new System.Drawing.Size(78, 31);
             this.UnlinkButton.TabIndex = 115;
@@ -2084,7 +2089,7 @@
             this.RedoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RedoButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RedoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.RedoButton.Location = new System.Drawing.Point(127, 363);
+            this.RedoButton.Location = new System.Drawing.Point(127, 375);
             this.RedoButton.Name = "RedoButton";
             this.RedoButton.Size = new System.Drawing.Size(32, 31);
             this.RedoButton.TabIndex = 114;
@@ -2101,7 +2106,7 @@
             this.UndoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UndoButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.UndoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.UndoButton.Location = new System.Drawing.Point(5, 363);
+            this.UndoButton.Location = new System.Drawing.Point(5, 375);
             this.UndoButton.Name = "UndoButton";
             this.UndoButton.Size = new System.Drawing.Size(32, 31);
             this.UndoButton.TabIndex = 113;
@@ -2158,6 +2163,30 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(154, 80);
             this.panel5.TabIndex = 110;
+            // 
+            // MarkersLabel
+            // 
+            this.MarkersLabel.AutoSize = true;
+            this.MarkersLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.MarkersLabel.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MarkersLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.MarkersLabel.Location = new System.Drawing.Point(5, 1);
+            this.MarkersLabel.Name = "MarkersLabel";
+            this.MarkersLabel.Size = new System.Drawing.Size(49, 13);
+            this.MarkersLabel.TabIndex = 117;
+            this.MarkersLabel.Text = "Markers";
+            // 
+            // ChecksLabel
+            // 
+            this.ChecksLabel.AutoSize = true;
+            this.ChecksLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.ChecksLabel.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ChecksLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.ChecksLabel.Location = new System.Drawing.Point(5, 410);
+            this.ChecksLabel.Name = "ChecksLabel";
+            this.ChecksLabel.Size = new System.Drawing.Size(43, 13);
+            this.ChecksLabel.TabIndex = 113;
+            this.ChecksLabel.Text = "Checks";
             // 
             // panel4
             // 
@@ -2241,7 +2270,7 @@
             this.MtCoronetPeak.UseCompatibleTextRendering = true;
             this.MtCoronetPeak.UseVisualStyleBackColor = false;
             // 
-            // UITest
+            // PlatinumTracker
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
@@ -2290,8 +2319,9 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "UITest";
+            this.Name = "PlatinumTracker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Leah\'s Platinum Tracker";
             this.Load += new System.EventHandler(this.TrackerForm_Load);
@@ -2342,6 +2372,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsUndoButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton1)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector27)).EndInit();
@@ -2507,5 +2538,7 @@
         private MarkerSelector markerSelector5;
         private MarkerSelector markerSelector27;
         private MarkerSelector markerSelector28;
+        private Label ChecksLabel;
+        private Label MarkersLabel;
     }
 }

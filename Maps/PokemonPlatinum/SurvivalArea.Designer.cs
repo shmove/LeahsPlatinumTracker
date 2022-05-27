@@ -40,8 +40,10 @@
             this.warpButton6 = new LeahsPlatinumTracker.WarpButton();
             this.warpButton7 = new LeahsPlatinumTracker.WarpButton();
             this.warpButton8 = new LeahsPlatinumTracker.WarpButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -59,7 +61,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.pictureBox2.Image = global::LeahsPlatinumTracker.Resources.MapResources.Pokecentre1;
-            this.pictureBox2.Location = new System.Drawing.Point(605, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(595, 91);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(224, 176);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -113,7 +115,7 @@
             this.warpButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton3.Location = new System.Drawing.Point(750, 125);
+            this.warpButton3.Location = new System.Drawing.Point(740, 204);
             this.warpButton3.MapID = "SurvivalArea Pokecentre";
             this.warpButton3.Name = "warpButton3";
             this.warpButton3.selected = false;
@@ -133,7 +135,7 @@
             this.warpButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton2.Location = new System.Drawing.Point(664, 151);
+            this.warpButton2.Location = new System.Drawing.Point(654, 230);
             this.warpButton2.MapID = "SurvivalArea Pokecentre";
             this.warpButton2.Name = "warpButton2";
             this.warpButton2.selected = false;
@@ -153,7 +155,7 @@
             this.warpButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton1.Location = new System.Drawing.Point(578, 125);
+            this.warpButton1.Location = new System.Drawing.Point(568, 204);
             this.warpButton1.MapID = "SurvivalArea Pokecentre";
             this.warpButton1.Name = "warpButton1";
             this.warpButton1.selected = false;
@@ -264,12 +266,24 @@
             this.warpButton8.UseVisualStyleBackColor = false;
             this.warpButton8.WarpID = 0;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.pictureBox3.Image = global::LeahsPlatinumTracker.Resources.MapResources.SurvivalAreaSign;
+            this.pictureBox3.Location = new System.Drawing.Point(712, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(284, 90);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 79;
+            this.pictureBox3.TabStop = false;
+            // 
             // SurvivalArea
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(996, 802);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.warpButton8);
             this.Controls.Add(this.warpButton7);
             this.Controls.Add(this.warpButton6);
@@ -288,6 +302,7 @@
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +321,6 @@
         private WarpButton warpButton6;
         private WarpButton warpButton7;
         private WarpButton warpButton8;
+        private PictureBox pictureBox3;
     }
 }

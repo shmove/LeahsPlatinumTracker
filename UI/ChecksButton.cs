@@ -28,13 +28,13 @@ namespace LeahsPlatinumTracker
             };
         }
 
-        private UITest getMainParent(Control control)
+        private TrackerForm getMainParent(Control control)
         {
-            if (control.Parent.GetType().Name != "UITest")
+            if (!control.Parent.GetType().IsSubclassOf(typeof(TrackerForm)))
             {
                 return getMainParent(control.Parent);
             }
-            else return (UITest)control.Parent;
+            else return (TrackerForm)control.Parent;
         }
 
         public void Initialise(object sender, EventArgs? e = null)

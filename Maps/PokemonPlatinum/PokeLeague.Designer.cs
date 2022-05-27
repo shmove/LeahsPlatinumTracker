@@ -63,9 +63,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.pictureBox2.Image = global::LeahsPlatinumTracker.Resources.MapResources.PokeLeague2;
-            this.pictureBox2.Location = new System.Drawing.Point(511, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(511, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(320, 325);
+            this.pictureBox2.Size = new System.Drawing.Size(485, 337);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
@@ -91,6 +91,7 @@
             // 
             // warpButton3
             // 
+            this.warpButton3.associatedWarp = null;
             this.warpButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton3.FlatAppearance.BorderSize = 2;
@@ -100,6 +101,7 @@
             this.warpButton3.Location = new System.Drawing.Point(656, 727);
             this.warpButton3.MapID = "PokeLeague Pokecentre";
             this.warpButton3.Name = "warpButton3";
+            this.warpButton3.selected = false;
             this.warpButton3.Size = new System.Drawing.Size(107, 23);
             this.warpButton3.TabIndex = 57;
             this.warpButton3.Text = "2";
@@ -109,6 +111,7 @@
             // 
             // warpButton2
             // 
+            this.warpButton2.associatedWarp = null;
             this.warpButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton2.FlatAppearance.BorderSize = 2;
@@ -118,6 +121,7 @@
             this.warpButton2.Location = new System.Drawing.Point(570, 753);
             this.warpButton2.MapID = "PokeLeague Pokecentre";
             this.warpButton2.Name = "warpButton2";
+            this.warpButton2.selected = false;
             this.warpButton2.Size = new System.Drawing.Size(107, 23);
             this.warpButton2.TabIndex = 56;
             this.warpButton2.Text = "1";
@@ -127,6 +131,7 @@
             // 
             // warpButton1
             // 
+            this.warpButton1.associatedWarp = null;
             this.warpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton1.FlatAppearance.BorderSize = 2;
@@ -136,6 +141,7 @@
             this.warpButton1.Location = new System.Drawing.Point(484, 727);
             this.warpButton1.MapID = "PokeLeague Pokecentre";
             this.warpButton1.Name = "warpButton1";
+            this.warpButton1.selected = false;
             this.warpButton1.Size = new System.Drawing.Size(107, 23);
             this.warpButton1.TabIndex = 55;
             this.warpButton1.Text = "0";
@@ -155,6 +161,7 @@
             // 
             // warpButton4
             // 
+            this.warpButton4.associatedWarp = null;
             this.warpButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton4.FlatAppearance.BorderSize = 2;
@@ -164,6 +171,7 @@
             this.warpButton4.Location = new System.Drawing.Point(115, 702);
             this.warpButton4.MapID = "PokeLeague Ext S";
             this.warpButton4.Name = "warpButton4";
+            this.warpButton4.selected = false;
             this.warpButton4.Size = new System.Drawing.Size(107, 23);
             this.warpButton4.TabIndex = 58;
             this.warpButton4.Text = "warpButton4";
@@ -173,6 +181,7 @@
             // 
             // warpButton5
             // 
+            this.warpButton5.associatedWarp = null;
             this.warpButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton5.FlatAppearance.BorderSize = 2;
@@ -182,6 +191,7 @@
             this.warpButton5.Location = new System.Drawing.Point(258, 702);
             this.warpButton5.MapID = "PokeLeague Ext S";
             this.warpButton5.Name = "warpButton5";
+            this.warpButton5.selected = false;
             this.warpButton5.Size = new System.Drawing.Size(107, 23);
             this.warpButton5.TabIndex = 59;
             this.warpButton5.Text = "warpButton5";
@@ -191,6 +201,7 @@
             // 
             // warpButton6
             // 
+            this.warpButton6.associatedWarp = null;
             this.warpButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton6.FlatAppearance.BorderSize = 2;
@@ -200,6 +211,7 @@
             this.warpButton6.Location = new System.Drawing.Point(312, 518);
             this.warpButton6.MapID = "PokeLeague Ext N A";
             this.warpButton6.Name = "warpButton6";
+            this.warpButton6.selected = false;
             this.warpButton6.Size = new System.Drawing.Size(107, 23);
             this.warpButton6.TabIndex = 60;
             this.warpButton6.Text = "warpButton6";
@@ -209,6 +221,7 @@
             // 
             // warpButton7
             // 
+            this.warpButton7.associatedWarp = null;
             this.warpButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton7.FlatAppearance.BorderSize = 2;
@@ -218,6 +231,7 @@
             this.warpButton7.Location = new System.Drawing.Point(195, 85);
             this.warpButton7.MapID = "PokeLeague Ext N B";
             this.warpButton7.Name = "warpButton7";
+            this.warpButton7.selected = false;
             this.warpButton7.Size = new System.Drawing.Size(107, 23);
             this.warpButton7.TabIndex = 61;
             this.warpButton7.Text = "warpButton7";
@@ -227,6 +241,7 @@
             // 
             // warpButton8
             // 
+            this.warpButton8.associatedWarp = null;
             this.warpButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton8.FlatAppearance.BorderSize = 2;
@@ -236,6 +251,7 @@
             this.warpButton8.Location = new System.Drawing.Point(472, 240);
             this.warpButton8.MapID = "PokeLeague Int";
             this.warpButton8.Name = "warpButton8";
+            this.warpButton8.selected = false;
             this.warpButton8.Size = new System.Drawing.Size(107, 23);
             this.warpButton8.TabIndex = 62;
             this.warpButton8.Text = "warpButton8";
@@ -245,6 +261,7 @@
             // 
             // warpButton9
             // 
+            this.warpButton9.associatedWarp = null;
             this.warpButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton9.FlatAppearance.BorderSize = 2;
@@ -254,6 +271,7 @@
             this.warpButton9.Location = new System.Drawing.Point(551, 269);
             this.warpButton9.MapID = "PokeLeague Int";
             this.warpButton9.Name = "warpButton9";
+            this.warpButton9.selected = false;
             this.warpButton9.Size = new System.Drawing.Size(107, 23);
             this.warpButton9.TabIndex = 63;
             this.warpButton9.Text = "warpButton9";
@@ -263,6 +281,7 @@
             // 
             // warpButton10
             // 
+            this.warpButton10.associatedWarp = null;
             this.warpButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton10.FlatAppearance.BorderSize = 2;
@@ -272,6 +291,7 @@
             this.warpButton10.Location = new System.Drawing.Point(626, 234);
             this.warpButton10.MapID = "PokeLeague Int";
             this.warpButton10.Name = "warpButton10";
+            this.warpButton10.selected = false;
             this.warpButton10.Size = new System.Drawing.Size(107, 23);
             this.warpButton10.TabIndex = 64;
             this.warpButton10.Text = "warpButton10";
@@ -281,6 +301,7 @@
             // 
             // warpButton11
             // 
+            this.warpButton11.associatedWarp = null;
             this.warpButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton11.FlatAppearance.BorderSize = 2;
@@ -290,6 +311,7 @@
             this.warpButton11.Location = new System.Drawing.Point(626, 114);
             this.warpButton11.MapID = "PokeLeague Int";
             this.warpButton11.Name = "warpButton11";
+            this.warpButton11.selected = false;
             this.warpButton11.Size = new System.Drawing.Size(107, 23);
             this.warpButton11.TabIndex = 65;
             this.warpButton11.Text = "warpButton11";

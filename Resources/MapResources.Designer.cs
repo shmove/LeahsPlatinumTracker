@@ -103,9 +103,29 @@ namespace LeahsPlatinumTracker.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CanalaveSign {
+            get {
+                object obj = ResourceManager.GetObject("CanalaveSign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Celestic {
             get {
                 object obj = ResourceManager.GetObject("Celestic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CelesticSign {
+            get {
+                object obj = ResourceManager.GetObject("CelesticSign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +183,16 @@ namespace LeahsPlatinumTracker.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EternaForestSign {
+            get {
+                object obj = ResourceManager.GetObject("EternaForestSign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FightArea {
             get {
                 object obj = ResourceManager.GetObject("FightArea", resourceCulture);
@@ -186,6 +216,16 @@ namespace LeahsPlatinumTracker.Resources {
         internal static System.Drawing.Bitmap FloaromaMeadow {
             get {
                 object obj = ResourceManager.GetObject("FloaromaMeadow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FloaromaSign {
+            get {
+                object obj = ResourceManager.GetObject("FloaromaSign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +416,16 @@ namespace LeahsPlatinumTracker.Resources {
         internal static System.Drawing.Bitmap ResortArea {
             get {
                 object obj = ResourceManager.GetObject("ResortArea", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ResortAreaSign {
+            get {
+                object obj = ResourceManager.GetObject("ResortAreaSign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -603,6 +653,16 @@ namespace LeahsPlatinumTracker.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SandgemSign {
+            get {
+                object obj = ResourceManager.GetObject("SandgemSign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SendoffSpring {
             get {
                 object obj = ResourceManager.GetObject("SendoffSpring", resourceCulture);
@@ -616,6 +676,16 @@ namespace LeahsPlatinumTracker.Resources {
         internal static System.Drawing.Bitmap Snowpoint {
             get {
                 object obj = ResourceManager.GetObject("Snowpoint", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SnowpointSign {
+            get {
+                object obj = ResourceManager.GetObject("SnowpointSign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -666,6 +736,16 @@ namespace LeahsPlatinumTracker.Resources {
         internal static System.Drawing.Bitmap SurvivalArea {
             get {
                 object obj = ResourceManager.GetObject("SurvivalArea", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SurvivalAreaSign {
+            get {
+                object obj = ResourceManager.GetObject("SurvivalAreaSign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

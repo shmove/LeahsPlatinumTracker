@@ -46,9 +46,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.pictureBox1.Image = global::LeahsPlatinumTracker.Resources.MapResources.TGEterna;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(732, 389);
+            this.pictureBox1.Size = new System.Drawing.Size(996, 389);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -142,7 +142,7 @@
             this.warpButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton5.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton5.Location = new System.Drawing.Point(477, 72);
+            this.warpButton5.Location = new System.Drawing.Point(477, 76);
             this.warpButton5.MapID = "TGEterna 2F";
             this.warpButton5.Name = "warpButton5";
             this.warpButton5.selected = false;
@@ -182,7 +182,7 @@
             this.warpButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.warpButton7.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.warpButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.warpButton7.Location = new System.Drawing.Point(628, 72);
+            this.warpButton7.Location = new System.Drawing.Point(628, 76);
             this.warpButton7.MapID = "TGEterna 2F";
             this.warpButton7.Name = "warpButton7";
             this.warpButton7.selected = false;

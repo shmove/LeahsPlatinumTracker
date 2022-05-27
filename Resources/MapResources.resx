@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!--
-    Microsoft ResX Schema
-
+  <!-- 
+    Microsoft ResX Schema 
+    
     Version 2.0
-
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
     associated with the data types.
-
+    
     Example:
-
+    
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-
-    There are any number of "resheader" rows that contain simple
+                
+    There are any number of "resheader" rows that contain simple 
     name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
     mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
     read any of the formats listed below.
-
+    
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-
+    
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
+    value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -145,20 +145,20 @@
   <data name="BacklotMansion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\BacklotMansion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MtCoronet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\MtCoronet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Snowpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\Snowpoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route211" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Snowpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\Snowpoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="VerityLake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\VerityLake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sunyshore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\Sunyshore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ResortAreaSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\ResortAreaSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SandgemSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\SandgemSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route203" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,14 +169,14 @@
   <data name="SurvivalArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\SurvivalArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FloaromaSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\FloaromaSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Canalave2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Canalave2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route228" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route228.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Route217" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\Route217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route225" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route225.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +196,14 @@
   <data name="Pokecentre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Pokecentre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="EternaForestSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\EternaForestSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FightArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\FightArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jubilife" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\Jubilife.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pokecentre1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Pokecentre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,14 +220,20 @@
   <data name="ValleyWindworks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\ValleyWindworks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FloaromaMeadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\FloaromaMeadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Route217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\Route217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TGEterna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\TGEterna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route210" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route210.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnowpointSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\SnowpointSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sunyshore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\Sunyshore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route227" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route227.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +247,14 @@
   <data name="Route209" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FloaromaMeadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\FloaromaMeadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MtCoronetPeak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\MtCoronetPeak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Canalave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\Canalave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Solaceon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Solaceon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,23 +292,26 @@
   <data name="Oreburgh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Oreburgh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CanalaveSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\CanalaveSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Route208" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route208.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GalacticHQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\GalacticHQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Route212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\Route212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Route213" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route213.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ResortArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\ResortArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="StarkMountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\StarkMountain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Route212" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\Route212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ResortArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\ResortArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Celestic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Celestic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,25 +319,28 @@
   <data name="Eterna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Eterna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MtCoronet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\MtCoronet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PokeLeague2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\PokeLeague2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Floaroma" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\Floaroma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Eterna2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Eterna2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CelesticSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\CelesticSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Pastoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Pastoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Canalave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\Canalave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Floaroma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\Floaroma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Route214" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Maps\PokemonPlatinum\Images\Route214.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Jubilife" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Maps\PokemonPlatinum\Images\Jubilife.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SurvivalAreaSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Maps\PokemonPlatinum\Images\SurvivalAreaSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
