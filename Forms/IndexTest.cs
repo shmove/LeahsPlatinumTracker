@@ -45,10 +45,13 @@ namespace LeahsPlatinumTracker
                 string json = File.ReadAllText(selectedFileName);
                 
                 Tracker Player = TrackerManager.FromJSON(json);
-                SubForm = new PlatinumTracker(Player, selectedFileName);
-                Hide();
-                SubForm.ShowDialog();
-                Show();
+                if (Player != null)
+                {
+                    SubForm = new PlatinumTracker(Player, selectedFileName);
+                    Hide();
+                    SubForm.ShowDialog();
+                    Show();
+                }
             }
         }
 
