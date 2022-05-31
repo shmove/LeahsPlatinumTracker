@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace LeahsPlatinumTracker
 {
     /// <summary>
-    /// <see cref="Tracker"/> class. This is version 0.1.0 of Leah's Platinum Tracker.  <br/>
+    /// <see cref="Tracker"/> class. This is version 0.1.1 of Leah's Platinum Tracker.  <br/>
     ///                                                                                 <br/>
     /// This version supports:                                                          <br/>
     ///     - Pokemon Platinum.                                                         <br/>
@@ -383,7 +383,7 @@ namespace LeahsPlatinumTracker
                 new MapSector("MtCoronet Upper 1F 1 D", 1, new Condition("MtCoronet Upper 1F 1 C", new Checks(32))),
                 new MapSector("MtCoronet Upper 1F 2", 3), // self contained room with two cave exits and a set of stairs
                 new MapSector("MtCoronet 2F A", 2, new Condition("MtCoronet 2F B", new Checks(32))), // broken boards cave room, leftmost warps
-                new MapSector("MtCoronet 2F B", 2, new Condition("MtCoronet 2F A")), // broken boards cave room rightmost stairs
+                new MapSector("MtCoronet 2F B", 1, new Condition("MtCoronet 2F A")), // broken boards cave room rightmost stairs
                 new MapSector("MtCoronet 3F", 3), // self contained room with cave entrance and two set of stairs down
                 new MapSector("MtCoronet 4F 1 A", 1, new Condition("MtCoronet 4F 1 C", new Checks(64))), // MtCoronet room with a waterfall - leftmost entrance, only connected via rock climb
                 new MapSector("MtCoronet 4F 1 B", 1, new Condition("MtCoronet 4F 1 D", new Checks(144))), // bottomright entrance, only connected via waterfall + surf
@@ -515,7 +515,7 @@ namespace LeahsPlatinumTracker
             }));
             VisualMapSectors.Add(new VisualMapSector(this, "SurvivalArea", new List<MapSector>
             {
-                new MapSector("SurvivalArea A", 4, new List<Condition>
+                new MapSector("SurvivalArea A", 3, new List<Condition>
                 {
                     new Condition("225"),
                     new Condition("226 W"),
@@ -946,6 +946,11 @@ namespace LeahsPlatinumTracker
                         foreach (var JSONWarp in JSONMapSector.Warps)
                         {
                             int thisWarpID = JSONWarp.WarpID;
+
+                            // Invalid warps from older versions
+                            if (tracker.CreatedVersion == "0.1.0" && (thisWarpID == 1 && thisMapID == "MtCoronet 2F B")) continue;
+                            if (tracker.CreatedVersion == "0.1.0" && (thisWarpID == 3 && thisMapID == "SurvivalArea A")) continue;
+
                             Warp thisWarp = thisMapSector.Warps[thisWarpID];
                             string thisWarpDestinationMapID = JSONWarp.Destination.Item1;
                             int thisWarpDestinationWarpID = JSONWarp.Destination.Item2;
