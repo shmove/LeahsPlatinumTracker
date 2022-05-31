@@ -121,7 +121,11 @@ namespace LeahsPlatinumTracker
             }, "Route 205"));
             VisualMapSectors.Add(new VisualMapSector(this, "206", new List<MapSector>
             {
-                new MapSector("206 S A", 1, "207 N"),
+                new MapSector("206 S A", 1, new List<Condition>
+                {
+                    new Condition("207 N"),
+                    new Condition("206 S B", new Checks(2))
+                }),
                 new MapSector("206 S B", 2, new Condition("206 S A", new Checks(2)))
                 //new MapSector("206 N", 2) // basically a hallway but its on the same route
             }, "Route 206"));
