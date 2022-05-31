@@ -25,13 +25,18 @@ namespace LeahsPlatinumTracker
         {
             foreach (Control control in Controls)
             {
-                if (control.GetType().Name == "PictureBox")
+                if (control.GetType() == typeof(WarpButton))
+                {
+                    (control as WarpButton).Init();
+                }
+                else if (control.GetType() == typeof(PictureBox))
                 {
                     PictureBox pictureBox = (PictureBox)control;
                     MapImages.Add(pictureBox);
                     pictureBox.SendToBack();
                 }
             }
+            
             UpdateWarpAppearances();
         }
 
@@ -39,7 +44,7 @@ namespace LeahsPlatinumTracker
         {
             foreach(var item in this.Controls)
             {
-                if (item.GetType().Name == "WarpButton")
+                if (item.GetType() == typeof(WarpButton))
                 {
                     WarpButton button = (WarpButton)item;
                     if (parent.warp1 != button.associatedWarp)
@@ -48,7 +53,7 @@ namespace LeahsPlatinumTracker
                         button.selected = false;
                     }
                 }
-                else if (item.GetType().Name == "MarkerPictureBox")
+                else if (item.GetType() == typeof(MarkerPictureBox))
                 {
                     MarkerPictureBox pictureBox = (MarkerPictureBox)item;
                     if (parent.warp1 != pictureBox.parent.associatedWarp)
@@ -58,36 +63,44 @@ namespace LeahsPlatinumTracker
                     }
                 }
             }
+
+            //UpdateWarpAppearances();
         }
 
         public new void Dispose()
         {
             MapImages.Dispose();
+            foreach(Control control in Controls) if (control.GetType() == typeof(WarpButton)) (control as WarpButton).Dispose();
             base.Dispose();
         }
 
         // Warp Buttons
         public void UpdateWarpAppearances()
         {
-            foreach (var item in this.Controls)
+            // copies the controls to an empty array, because for some god forsaken reason this collection wont sit still during loops.
+            // this fixes the issue where some warpbuttons were just skipped on updating, and remained appearing as their design time alternatives
+            Control[] controls = new Control[Controls.Count];
+            Controls.CopyTo(controls, 0);
+
+            foreach (Control control in controls)
             {
-                if (item.GetType().Name == "WarpButton")
+                if (control.GetType() == typeof(WarpButton))
                 {
-                    WarpButton button = (WarpButton)item;
+                    WarpButton button = (WarpButton)control;
                     button.MouseDown -= new MouseEventHandler(Warp_Click);
                     button.MouseDown += new MouseEventHandler(Warp_Click);
                     button.UpdateAppearance();
                 }
-                else if (item.GetType().Name == "MarkerPictureBox")
+                else if (control.GetType() == typeof(MarkerPictureBox))
                 {
-                    WarpButton button = ((MarkerPictureBox)item).parent;
+                    WarpButton button = ((MarkerPictureBox)control).parent;
                     button.MouseDown -= new MouseEventHandler(Warp_Click);
                     button.MouseDown += new MouseEventHandler(Warp_Click);
                     button.UpdateAppearance();
                 }
-                else if (item.GetType().Name == "RouteConnectorButton")
+                else if (control.GetType() == typeof(RouteConnectorButton))
                 {
-                    RouteConnectorButton button = (RouteConnectorButton)item;
+                    RouteConnectorButton button = (RouteConnectorButton)control;
                     button.MouseDown -= new MouseEventHandler(RouteConnector_Click);
                     button.MouseDown += new MouseEventHandler(RouteConnector_Click);
                     button.UpdateAppearance();
@@ -130,7 +143,7 @@ namespace LeahsPlatinumTracker
         {
             WarpButton warpButton;
             bool hasPictureBox = false;
-            if (sender.GetType().Name == "MarkerPictureBox")
+            if (sender.GetType() == typeof(MarkerPictureBox))
             {
                 hasPictureBox = true;
                 MarkerPictureBox pictureBox = (MarkerPictureBox)sender;

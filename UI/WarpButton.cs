@@ -38,6 +38,12 @@ namespace LeahsPlatinumTracker
             if (!fromUpdate) UpdateAppearance();
         }
 
+        public new void Dispose()
+        {
+            if (Marker != null && parent != null) Marker.RemoveFrom(parent);
+            base.Dispose();
+        }
+
         private void UpdateButtonCosmetics()
         { 
             if (associatedWarp.Destination.MapID != "Not set")
