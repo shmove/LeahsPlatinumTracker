@@ -90,10 +90,10 @@ namespace LeahsPlatinumTracker
             VisualMapSectors = new List<VisualMapSector>();
 
             // Routes
-            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("203", 1, true), "Route 203"));
+            VisualMapSectors.Add(new VisualMapSector(this, new MapSector("203", 1, new Condition("Jubilife A"), true), "Route 203"));
             VisualMapSectors.Add(new VisualMapSector(this, "204", new List<MapSector>
             {
-                new MapSector("204 S", 1, true),
+                new MapSector("204 S", 1, new Condition("Jubilife A"), true),
                 new MapSector("204 N", 1, "Floaroma")
             }, "Route 204"));
             VisualMapSectors.Add(new VisualMapSector(this, "205", new List<MapSector>
@@ -362,7 +362,12 @@ namespace LeahsPlatinumTracker
             }, "Iron Island"));
             VisualMapSectors.Add(new VisualMapSector(this, "Jubilife", new List<MapSector>
             {
-                new MapSector("Jubilife A", 8, true), // main jubilife
+                new MapSector("Jubilife A", 8, new List<Condition>
+                {
+                    new Condition("Sandgem"),
+                    new Condition("203"),
+                    new Condition("204 S")
+                }, true), // main jubilife
                 new MapSector("Jubilife B", 2, new Condition("Jubilife A", new Checks(Checks.ProgressFlags.HasCoalBadge), true)), // bottom left, accessible with 1st badge
                 new MapSector("Jubilife Pokecentre", 3)
             }));
@@ -550,7 +555,7 @@ namespace LeahsPlatinumTracker
             })); 
             VisualMapSectors.Add(new VisualMapSector(this, "VerityLake", new List<MapSector>
             {
-                new MapSector("VerityLake Ext", 1, true),
+                new MapSector("VerityLake Ext", 1, new Condition("Sandgem"), true),
                 new MapSector("VerityLake Int A", 1, new Condition("VerityLake Int B", new Checks(16))),
                 new MapSector("VerityLake Int B", 1, new Condition("VerityLake Int A", new Checks(16)))
             }, "Verity Lake"));
