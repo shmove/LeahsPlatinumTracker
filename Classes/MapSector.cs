@@ -202,6 +202,9 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// Evaluates a List of all <see cref="MapSector"/> instances that require this instance as one of their AccessMap conditions.
+        /// </summary>
         [JsonIgnore]
         public List<MapSector> AccessedMaps
         {
@@ -219,24 +222,71 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        /// <summary>
+        /// Evaluates a List of all <see cref="Warp"/> instances accessible from this instance via physical connections.
+        /// </summary>
+        [JsonIgnore]
+        public List<Warp> AccessibleWarps
+        {
+            get
+            {
+                List<Warp> WarpList = new List<Warp>();
+
+                // Recursive function, checks each sector from a root sector and returns all containing warps
+                (List<Warp> Warps, List<string> CheckedSectors) GetWarpsFromRootSector(MapSector sector, List<string>? CheckedSectors = null)
+                {
+                    if (CheckedSectors == null) CheckedSectors = new List<string>();
+                    List<Warp> InternalWarpList = new List<Warp>();
+
+                    if (CheckedSectors.Contains(sector.MapID)) return (InternalWarpList, CheckedSectors); // return if already checked
+                    CheckedSectors.Add(sector.MapID);
+
+                    foreach (Warp warp in sector.Warps)
+                    {
+                        InternalWarpList.Add(warp);
+                    }
+
+                    foreach (MapSector accessedSector in sector.AccessedMaps)
+                    {
+                        (List<Warp> Warps, List<string> CheckedSectors) accessedSectorInfo = GetWarpsFromRootSector(accessedSector, CheckedSectors);
+                        InternalWarpList.AddRange(accessedSectorInfo.Warps); // combine list of warps
+                        CheckedSectors = accessedSectorInfo.CheckedSectors; // update checked sectors
+                    }
+
+                    return (InternalWarpList, CheckedSectors);
+                }
+
+                (List<Warp> Warps, List<string> CheckedSectors) AccessedWarpInfo = GetWarpsFromRootSector(this);
+                return AccessedWarpInfo.Warps;
+            }
+        }
+
+        /// <summary>
+        /// Evaluates a boolean pertaining to whether this instance can be considered a <b>pseudo-corridor</b>.                                 <br />
+        ///                                                                                                                                     <br />
+        /// A pseudo-corridor is defined as a physical area which has no use, and should be considered a pathway to a more significant area.    <br />
+        /// </summary>
         [JsonIgnore]
         public bool IsPseudoCorridor
         {
             get
             {
                 int linkedWarps = 0;
-                foreach(Warp warp in Warps)
+                foreach(Warp warp in AccessibleWarps)
                 {
                     if (!warp.HasDestination && warp.VisualMarkers != 1) return false;
                     if (warp.HasDestination || (warp.VisualMarkerChecked && warp.VisualMarkers != 1)) linkedWarps++;
                     if (linkedWarps > 2) break;
                 }
 
-                if (linkedWarps == 2 && !CanAccess()) return true;
+                if (linkedWarps == 2) return true;
                 else return false;
             }
         }
 
+        /// <summary>
+        /// Evaluates the only two linked warps within this instance's physical reach.
+        /// </summary>
         [JsonIgnore]
         public (Warp Warp1, Warp Warp2) PseudoCorridorWarps
         {
@@ -244,7 +294,8 @@ namespace LeahsPlatinumTracker
             {
                 Warp warp1 = null;
                 Warp warp2 = null;
-                foreach(Warp warp in Warps)
+
+                foreach(Warp warp in AccessibleWarps)
                 {
                     if (warp.HasDestination)
                     {

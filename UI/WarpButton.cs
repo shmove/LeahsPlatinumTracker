@@ -57,9 +57,12 @@ namespace LeahsPlatinumTracker
                 // Check if pseudo corridor, then act as if the warp is linked directly if true
                 if (associatedWarp.DestinationMapSector.IsPseudoCorridor)
                 {
-                    (Warp Warp1, Warp Warp2) PseudoWarps = associatedWarp.DestinationMapSector.PseudoCorridorWarps;
-                    if (PseudoWarps.Warp1.Destination.MapID != associatedWarp.MapID) relevantWarp = PseudoWarps.Warp1;
-                    else relevantWarp = PseudoWarps.Warp2;
+                    while (relevantWarp.DestinationMapSector.IsPseudoCorridor)
+                    {
+                        (Warp Warp1, Warp Warp2) PseudoWarps = relevantWarp.DestinationMapSector.PseudoCorridorWarps;
+                        if (PseudoWarps.Warp1.Destination.MapID != relevantWarp.MapID) relevantWarp = PseudoWarps.Warp1;
+                        else relevantWarp = PseudoWarps.Warp2;
+                    }
 
                     Text = relevantWarp.DestinationVisualMapSector.DisplayName + "*";
                 }
