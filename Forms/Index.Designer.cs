@@ -131,6 +131,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Index";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Leah\'s Platinum Tracker";
             this.Load += new System.EventHandler(this.Index_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
