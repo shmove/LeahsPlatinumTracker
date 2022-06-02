@@ -183,7 +183,7 @@ namespace LeahsPlatinumTracker
             else if (me.Button == MouseButtons.Middle)
             {
                 // Load associated map
-                if (warpButton.associatedWarp.Destination.WarpID >= 0)
+                if (warpButton.associatedWarp.HasDestination)
                 {
                     parent.LoadMapPanel(warpButton.associatedWarp.DestinationMapSector.MapID, warpButton.associatedWarp.Destination.WarpID);
                 }

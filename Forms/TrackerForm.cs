@@ -193,7 +193,7 @@ namespace LeahsPlatinumTracker
 
         internal void UnlinkButton_Click(object sender, EventArgs e)
         {
-            if (warp1 != null && warp1.Destination.WarpID >= 0 && !linking)
+            if (warp1 != null && warp1.HasDestination && !linking)
             {
                 Warp warp1Prev = new Warp(warp1);
                 Warp warp2Prev = new Warp(warp1.DestinationMapSector.GetWarp(warp1.Destination.WarpID));
@@ -231,7 +231,7 @@ namespace LeahsPlatinumTracker
                     {
                         Warp warp1 = mapSector.GetWarp(UndoInstance.Item1.warp1Post.WarpID);
 
-                        if (UndoInstance.Item1.warp1Prev.Destination.WarpID >= 0)
+                        if (UndoInstance.Item1.warp1Prev.HasDestination)
                         {
                             Player.LinkWarps((UndoInstance.Item1.warp1Prev.MapID, UndoInstance.Item1.warp1Prev.WarpID), (UndoInstance.Item1.warp1Prev.Destination.MapID, UndoInstance.Item1.warp1Prev.Destination.WarpID), true);
                         }
@@ -247,7 +247,7 @@ namespace LeahsPlatinumTracker
                     {
                         Warp warp2 = mapSector.GetWarp(UndoInstance.Item2.warp2Post.WarpID);
 
-                        if (UndoInstance.Item2.warp2Prev.Destination.WarpID >= 0)
+                        if (UndoInstance.Item2.warp2Prev.HasDestination)
                         {
                             Player.LinkWarps((UndoInstance.Item2.warp2Prev.MapID, UndoInstance.Item2.warp2Prev.WarpID), (UndoInstance.Item2.warp2Prev.Destination.MapID, UndoInstance.Item2.warp2Prev.Destination.WarpID), true);
                         }
@@ -284,7 +284,7 @@ namespace LeahsPlatinumTracker
                     {
                         Warp warp1 = mapSector.GetWarp(RedoInstance.Item1.warp1Post.WarpID);
 
-                        if (RedoInstance.Item1.warp1Prev.Destination.WarpID >= 0)
+                        if (RedoInstance.Item1.warp1Prev.HasDestination)
                         {
                             Player.LinkWarps((RedoInstance.Item1.warp1Prev.MapID, RedoInstance.Item1.warp1Prev.WarpID), (RedoInstance.Item1.warp1Prev.Destination.MapID, RedoInstance.Item1.warp1Prev.Destination.WarpID), true);
                         }
@@ -300,7 +300,7 @@ namespace LeahsPlatinumTracker
                     {
                         Warp warp2 = mapSector.GetWarp(RedoInstance.Item2.warp2Post.WarpID);
 
-                        if (RedoInstance.Item2.warp2Prev.Destination.WarpID >= 0)
+                        if (RedoInstance.Item2.warp2Prev.HasDestination)
                         {
                             Player.LinkWarps((RedoInstance.Item2.warp2Prev.MapID, RedoInstance.Item2.warp2Prev.WarpID), (RedoInstance.Item2.warp2Prev.Destination.MapID, RedoInstance.Item2.warp2Prev.Destination.WarpID), true);
                         }

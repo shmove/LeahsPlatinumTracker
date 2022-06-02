@@ -66,7 +66,7 @@ namespace LeahsPlatinumTracker
                 {
                     foreach (Warp warp in sector.Warps)
                     {
-                        if ( warp.Destination.WarpID < 0 && !warp.VisualMarkerChecked) return false;
+                        if ( !warp.HasDestination && !warp.VisualMarkerChecked) return false;
                     }
                 }
             }
@@ -89,7 +89,7 @@ namespace LeahsPlatinumTracker
                     {
                         foreach (Warp warp in sector.Warps)
                         {
-                            if (!(warp.VisualMarkers > 0 || warp.Destination.WarpID >= 0)) return false;
+                            if (!(warp.VisualMarkers > 0 || warp.HasDestination)) return false;
                         }
                     }
                 }
@@ -203,6 +203,23 @@ namespace LeahsPlatinumTracker
         }
 
         [JsonIgnore]
+        public List<MapSector> AccessedMaps
+        {
+            get
+            {
+                List<MapSector> maps = new List<MapSector>();
+                foreach(MapSector sector in Tracker.MapSectors)
+                {
+                    foreach(Condition condition in sector.Conditions)
+                    {
+                        if (condition.AccessMap == MapID) maps.Add(sector);
+                    }
+                }
+                return maps;
+            }
+        }
+
+        [JsonIgnore]
         public bool IsPseudoCorridor
         {
             get
@@ -210,13 +227,33 @@ namespace LeahsPlatinumTracker
                 int linkedWarps = 0;
                 foreach(Warp warp in Warps)
                 {
-                    if (warp.Destination.WarpID < 0 && warp.VisualMarkers != 1) return false;
-                    if (warp.Destination.WarpID >= 0 || (warp.VisualMarkerChecked && warp.VisualMarkers != 1)) linkedWarps++;
+                    if (!warp.HasDestination && warp.VisualMarkers != 1) return false;
+                    if (warp.HasDestination || (warp.VisualMarkerChecked && warp.VisualMarkers != 1)) linkedWarps++;
                     if (linkedWarps > 2) break;
                 }
 
                 if (linkedWarps == 2 && !CanAccess()) return true;
                 else return false;
+            }
+        }
+
+        [JsonIgnore]
+        public (Warp Warp1, Warp Warp2) PseudoCorridorWarps
+        {
+            get
+            {
+                Warp warp1 = null;
+                Warp warp2 = null;
+                foreach(Warp warp in Warps)
+                {
+                    if (warp.HasDestination)
+                    {
+                        if (warp1 == null) warp1 = warp;
+                        else { warp2 = warp; break; }
+                    }
+                }
+                if (warp1 != null && warp2 != null) return (warp1, warp2);
+                else throw new Exception("Tried to get pseudo-corridor warps of a non-pseudo-corridor.");
             }
         }
 
@@ -360,7 +397,7 @@ namespace LeahsPlatinumTracker
         {
             foreach (Warp warp in Warps)
             {
-                if (warp.Destination.WarpID >= 0) return true;
+                if (warp.HasDestination) return true;
             }
             return DefaultUnlocked;
         }
@@ -376,7 +413,7 @@ namespace LeahsPlatinumTracker
             {
                 if (warp.WarpID == WarpID)
                 {
-                    return warp.Destination.WarpID >= 0;
+                    return warp.HasDestination;
                 }
             }
             return false;
@@ -777,5 +814,10 @@ namespace LeahsPlatinumTracker
                 }
             }
         }
+
+        /// <summary>
+        /// Evaluates if this <see cref="Warp"/> has a set <see cref="Warp.Destination"/>.
+        /// </summary>
+        public bool HasDestination { get { return Destination.WarpID >= 0; } }
     }
 }
