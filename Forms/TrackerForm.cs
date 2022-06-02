@@ -59,6 +59,7 @@ namespace LeahsPlatinumTracker
         internal void TrackerForm_Load(object sender, EventArgs e)
         {
 
+            // initialise controls
             foreach (Control control in this.Controls)
             {
                 InitialiseControls(control);

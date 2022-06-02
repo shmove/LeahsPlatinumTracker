@@ -823,6 +823,7 @@
             // 
             // MainPanel
             // 
+            this.MainPanel.AutoScroll = true;
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.MainPanel.Location = new System.Drawing.Point(171, 134);
             this.MainPanel.Name = "MainPanel";

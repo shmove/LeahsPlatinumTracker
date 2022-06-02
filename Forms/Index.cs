@@ -10,16 +10,24 @@ using System.Windows.Forms;
 
 namespace LeahsPlatinumTracker
 {
-    public partial class IndexTest : Form
+    public partial class Index : Form
     {
-        private PlatinumTracker? SubForm { get; set; }
+        /// <summary>
+        /// The currently loaded and active <see cref="TrackerForm"/>.
+        /// </summary>
+        private TrackerForm? SubForm { get; set; }
 
-        public IndexTest()
+        public Index()
         {
             InitializeComponent();
         }
 
-        private void button62_Click(object sender, EventArgs e)
+        private void Index_Load(object sender, EventArgs e)
+        {
+            VersionLabel.Text = "v" + Program.Version; // set version label
+        }
+
+        private void NewFileButton_Click(object sender, EventArgs e)
         {
             SubForm = new PlatinumTracker();
             Hide();
@@ -27,7 +35,7 @@ namespace LeahsPlatinumTracker
             Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LoadFileButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
 
@@ -43,7 +51,7 @@ namespace LeahsPlatinumTracker
             {
                 string selectedFileName = fileDialog.FileName;
                 string json = File.ReadAllText(selectedFileName);
-                
+
                 Tracker Player = TrackerManager.FromJSON(json);
                 if (Player != null)
                 {
@@ -53,11 +61,6 @@ namespace LeahsPlatinumTracker
                     Show();
                 }
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

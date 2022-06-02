@@ -57,7 +57,7 @@
             this.routeConnectorButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.routeConnectorButton1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.routeConnectorButton1.ForeColor = System.Drawing.Color.White;
-            this.routeConnectorButton1.Location = new System.Drawing.Point(729, 5);
+            this.routeConnectorButton1.Location = new System.Drawing.Point(729, 2);
             this.routeConnectorButton1.Name = "routeConnectorButton1";
             this.routeConnectorButton1.Size = new System.Drawing.Size(107, 23);
             this.routeConnectorButton1.TabIndex = 1;
@@ -67,6 +67,7 @@
             // 
             // warpButton1
             // 
+            this.warpButton1.associatedWarp = null;
             this.warpButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton1.FlatAppearance.BorderSize = 2;
@@ -86,6 +87,7 @@
             // 
             // warpButton2
             // 
+            this.warpButton2.associatedWarp = null;
             this.warpButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
             this.warpButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
             this.warpButton2.FlatAppearance.BorderSize = 2;

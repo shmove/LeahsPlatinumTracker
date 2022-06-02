@@ -3,6 +3,9 @@ namespace LeahsPlatinumTracker
     internal static class Program
     {
 
+        /// <summary>
+        /// The current version number of Leah's Platinum Tracker.
+        /// </summary>
         internal const string Version = "0.1.1";
 
         /// <summary>
@@ -13,7 +16,7 @@ namespace LeahsPlatinumTracker
         {
             ApplicationConfiguration.Initialize();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new IndexTest());
+            Application.Run(new Index());
         }
     }
 }
