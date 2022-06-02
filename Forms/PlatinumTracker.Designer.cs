@@ -135,7 +135,6 @@
             this.r226 = new LeahsPlatinumTracker.MapSelectorButton();
             this.r227 = new LeahsPlatinumTracker.MapSelectorButton();
             this.r228 = new LeahsPlatinumTracker.MapSelectorButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.markerSelector27 = new LeahsPlatinumTracker.MarkerSelector();
@@ -166,6 +165,8 @@
             this.SaveButton = new System.Windows.Forms.Button();
             this.NotesButton = new System.Windows.Forms.Button();
             this.MtCoronetPeak = new LeahsPlatinumTracker.MapSelectorButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector23)).BeginInit();
@@ -823,7 +824,7 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.MainPanel.Location = new System.Drawing.Point(171, 128);
+            this.MainPanel.Location = new System.Drawing.Point(171, 134);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(996, 802);
             this.MainPanel.TabIndex = 66;
@@ -853,7 +854,7 @@
             this.BacklotMansion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BacklotMansion.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BacklotMansion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.BacklotMansion.Location = new System.Drawing.Point(125, 12);
+            this.BacklotMansion.Location = new System.Drawing.Point(125, 18);
             this.BacklotMansion.Name = "BacklotMansion";
             this.BacklotMansion.Size = new System.Drawing.Size(107, 23);
             this.BacklotMansion.TabIndex = 68;
@@ -869,7 +870,7 @@
             this.Canalave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Canalave.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Canalave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Canalave.Location = new System.Drawing.Point(238, 12);
+            this.Canalave.Location = new System.Drawing.Point(238, 18);
             this.Canalave.Name = "Canalave";
             this.Canalave.Size = new System.Drawing.Size(107, 23);
             this.Canalave.TabIndex = 69;
@@ -885,7 +886,7 @@
             this.Celestic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Celestic.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Celestic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Celestic.Location = new System.Drawing.Point(351, 12);
+            this.Celestic.Location = new System.Drawing.Point(351, 18);
             this.Celestic.Name = "Celestic";
             this.Celestic.Size = new System.Drawing.Size(107, 23);
             this.Celestic.TabIndex = 70;
@@ -901,7 +902,7 @@
             this.DeptStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeptStore.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DeptStore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.DeptStore.Location = new System.Drawing.Point(464, 12);
+            this.DeptStore.Location = new System.Drawing.Point(464, 18);
             this.DeptStore.Name = "DeptStore";
             this.DeptStore.Size = new System.Drawing.Size(107, 23);
             this.DeptStore.TabIndex = 71;
@@ -917,7 +918,7 @@
             this.Eterna.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Eterna.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Eterna.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Eterna.Location = new System.Drawing.Point(577, 12);
+            this.Eterna.Location = new System.Drawing.Point(577, 18);
             this.Eterna.Name = "Eterna";
             this.Eterna.Size = new System.Drawing.Size(107, 23);
             this.Eterna.TabIndex = 72;
@@ -933,7 +934,7 @@
             this.EternaForest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EternaForest.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EternaForest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.EternaForest.Location = new System.Drawing.Point(690, 12);
+            this.EternaForest.Location = new System.Drawing.Point(690, 18);
             this.EternaForest.Name = "EternaForest";
             this.EternaForest.Size = new System.Drawing.Size(107, 23);
             this.EternaForest.TabIndex = 73;
@@ -949,7 +950,7 @@
             this.FightArea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FightArea.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FightArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.FightArea.Location = new System.Drawing.Point(803, 12);
+            this.FightArea.Location = new System.Drawing.Point(803, 18);
             this.FightArea.Name = "FightArea";
             this.FightArea.Size = new System.Drawing.Size(107, 23);
             this.FightArea.TabIndex = 74;
@@ -965,7 +966,7 @@
             this.Floaroma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Floaroma.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Floaroma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Floaroma.Location = new System.Drawing.Point(916, 12);
+            this.Floaroma.Location = new System.Drawing.Point(916, 18);
             this.Floaroma.Name = "Floaroma";
             this.Floaroma.Size = new System.Drawing.Size(107, 23);
             this.Floaroma.TabIndex = 75;
@@ -981,7 +982,7 @@
             this.FloaromaMeadow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FloaromaMeadow.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FloaromaMeadow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.FloaromaMeadow.Location = new System.Drawing.Point(1029, 12);
+            this.FloaromaMeadow.Location = new System.Drawing.Point(1029, 18);
             this.FloaromaMeadow.Name = "FloaromaMeadow";
             this.FloaromaMeadow.Size = new System.Drawing.Size(107, 23);
             this.FloaromaMeadow.TabIndex = 76;
@@ -997,7 +998,7 @@
             this.FuegoIronworks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FuegoIronworks.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FuegoIronworks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.FuegoIronworks.Location = new System.Drawing.Point(1142, 12);
+            this.FuegoIronworks.Location = new System.Drawing.Point(1142, 18);
             this.FuegoIronworks.Name = "FuegoIronworks";
             this.FuegoIronworks.Size = new System.Drawing.Size(107, 23);
             this.FuegoIronworks.TabIndex = 77;
@@ -1013,7 +1014,7 @@
             this.GalacticHQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GalacticHQ.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GalacticHQ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.GalacticHQ.Location = new System.Drawing.Point(12, 41);
+            this.GalacticHQ.Location = new System.Drawing.Point(12, 47);
             this.GalacticHQ.Name = "GalacticHQ";
             this.GalacticHQ.Size = new System.Drawing.Size(107, 23);
             this.GalacticHQ.TabIndex = 78;
@@ -1029,7 +1030,7 @@
             this.Sandgem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sandgem.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Sandgem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Sandgem.Location = new System.Drawing.Point(464, 70);
+            this.Sandgem.Location = new System.Drawing.Point(464, 76);
             this.Sandgem.Name = "Sandgem";
             this.Sandgem.Size = new System.Drawing.Size(107, 23);
             this.Sandgem.TabIndex = 79;
@@ -1045,7 +1046,7 @@
             this.Hearthome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Hearthome.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Hearthome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Hearthome.Location = new System.Drawing.Point(125, 41);
+            this.Hearthome.Location = new System.Drawing.Point(125, 47);
             this.Hearthome.Name = "Hearthome";
             this.Hearthome.Size = new System.Drawing.Size(107, 23);
             this.Hearthome.TabIndex = 80;
@@ -1061,7 +1062,7 @@
             this.IronIsland.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IronIsland.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IronIsland.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.IronIsland.Location = new System.Drawing.Point(238, 41);
+            this.IronIsland.Location = new System.Drawing.Point(238, 47);
             this.IronIsland.Name = "IronIsland";
             this.IronIsland.Size = new System.Drawing.Size(107, 23);
             this.IronIsland.TabIndex = 81;
@@ -1077,7 +1078,7 @@
             this.Jubilife.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Jubilife.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Jubilife.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Jubilife.Location = new System.Drawing.Point(351, 41);
+            this.Jubilife.Location = new System.Drawing.Point(351, 47);
             this.Jubilife.Name = "Jubilife";
             this.Jubilife.Size = new System.Drawing.Size(107, 23);
             this.Jubilife.TabIndex = 82;
@@ -1093,7 +1094,7 @@
             this.JubilifeGTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JubilifeGTS.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.JubilifeGTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.JubilifeGTS.Location = new System.Drawing.Point(464, 41);
+            this.JubilifeGTS.Location = new System.Drawing.Point(464, 47);
             this.JubilifeGTS.Name = "JubilifeGTS";
             this.JubilifeGTS.Size = new System.Drawing.Size(107, 23);
             this.JubilifeGTS.TabIndex = 83;
@@ -1109,7 +1110,7 @@
             this.JubilifeTV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JubilifeTV.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.JubilifeTV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.JubilifeTV.Location = new System.Drawing.Point(577, 41);
+            this.JubilifeTV.Location = new System.Drawing.Point(577, 47);
             this.JubilifeTV.Name = "JubilifeTV";
             this.JubilifeTV.Size = new System.Drawing.Size(107, 23);
             this.JubilifeTV.TabIndex = 84;
@@ -1125,7 +1126,7 @@
             this.AcuityLake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AcuityLake.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AcuityLake.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.AcuityLake.Location = new System.Drawing.Point(12, 12);
+            this.AcuityLake.Location = new System.Drawing.Point(12, 18);
             this.AcuityLake.Name = "AcuityLake";
             this.AcuityLake.Size = new System.Drawing.Size(107, 23);
             this.AcuityLake.TabIndex = 85;
@@ -1141,7 +1142,7 @@
             this.ValorLake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ValorLake.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ValorLake.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.ValorLake.Location = new System.Drawing.Point(238, 99);
+            this.ValorLake.Location = new System.Drawing.Point(238, 105);
             this.ValorLake.Name = "ValorLake";
             this.ValorLake.Size = new System.Drawing.Size(107, 23);
             this.ValorLake.TabIndex = 86;
@@ -1157,7 +1158,7 @@
             this.VerityLake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VerityLake.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.VerityLake.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.VerityLake.Location = new System.Drawing.Point(577, 99);
+            this.VerityLake.Location = new System.Drawing.Point(577, 105);
             this.VerityLake.Name = "VerityLake";
             this.VerityLake.Size = new System.Drawing.Size(107, 23);
             this.VerityLake.TabIndex = 87;
@@ -1173,7 +1174,7 @@
             this.MtCoronet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MtCoronet.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MtCoronet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.MtCoronet.Location = new System.Drawing.Point(690, 41);
+            this.MtCoronet.Location = new System.Drawing.Point(690, 47);
             this.MtCoronet.Name = "MtCoronet";
             this.MtCoronet.Size = new System.Drawing.Size(107, 23);
             this.MtCoronet.TabIndex = 88;
@@ -1189,7 +1190,7 @@
             this.OldChateau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OldChateau.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.OldChateau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.OldChateau.Location = new System.Drawing.Point(916, 41);
+            this.OldChateau.Location = new System.Drawing.Point(916, 47);
             this.OldChateau.Name = "OldChateau";
             this.OldChateau.Size = new System.Drawing.Size(107, 23);
             this.OldChateau.TabIndex = 89;
@@ -1205,7 +1206,7 @@
             this.Oreburgh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Oreburgh.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Oreburgh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Oreburgh.Location = new System.Drawing.Point(1029, 41);
+            this.Oreburgh.Location = new System.Drawing.Point(1029, 47);
             this.Oreburgh.Name = "Oreburgh";
             this.Oreburgh.Size = new System.Drawing.Size(107, 23);
             this.Oreburgh.TabIndex = 90;
@@ -1221,7 +1222,7 @@
             this.OreburghGate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OreburghGate.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.OreburghGate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.OreburghGate.Location = new System.Drawing.Point(1142, 41);
+            this.OreburghGate.Location = new System.Drawing.Point(1142, 47);
             this.OreburghGate.Name = "OreburghGate";
             this.OreburghGate.Size = new System.Drawing.Size(107, 23);
             this.OreburghGate.TabIndex = 91;
@@ -1237,7 +1238,7 @@
             this.Pastoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pastoria.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Pastoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Pastoria.Location = new System.Drawing.Point(12, 70);
+            this.Pastoria.Location = new System.Drawing.Point(12, 76);
             this.Pastoria.Name = "Pastoria";
             this.Pastoria.Size = new System.Drawing.Size(107, 23);
             this.Pastoria.TabIndex = 92;
@@ -1253,7 +1254,7 @@
             this.Poketch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Poketch.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Poketch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Poketch.Location = new System.Drawing.Point(238, 70);
+            this.Poketch.Location = new System.Drawing.Point(238, 76);
             this.Poketch.Name = "Poketch";
             this.Poketch.Size = new System.Drawing.Size(107, 23);
             this.Poketch.TabIndex = 93;
@@ -1269,7 +1270,7 @@
             this.PokeLeague.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PokeLeague.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PokeLeague.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.PokeLeague.Location = new System.Drawing.Point(125, 70);
+            this.PokeLeague.Location = new System.Drawing.Point(125, 76);
             this.PokeLeague.Name = "PokeLeague";
             this.PokeLeague.Size = new System.Drawing.Size(107, 23);
             this.PokeLeague.TabIndex = 94;
@@ -1285,7 +1286,7 @@
             this.ResortArea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ResortArea.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ResortArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.ResortArea.Location = new System.Drawing.Point(351, 70);
+            this.ResortArea.Location = new System.Drawing.Point(351, 76);
             this.ResortArea.Name = "ResortArea";
             this.ResortArea.Size = new System.Drawing.Size(107, 23);
             this.ResortArea.TabIndex = 95;
@@ -1301,7 +1302,7 @@
             this.SendoffSpring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SendoffSpring.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SendoffSpring.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.SendoffSpring.Location = new System.Drawing.Point(577, 70);
+            this.SendoffSpring.Location = new System.Drawing.Point(577, 76);
             this.SendoffSpring.Name = "SendoffSpring";
             this.SendoffSpring.Size = new System.Drawing.Size(107, 23);
             this.SendoffSpring.TabIndex = 96;
@@ -1317,7 +1318,7 @@
             this.Snowpoint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Snowpoint.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Snowpoint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Snowpoint.Location = new System.Drawing.Point(690, 70);
+            this.Snowpoint.Location = new System.Drawing.Point(690, 76);
             this.Snowpoint.Name = "Snowpoint";
             this.Snowpoint.Size = new System.Drawing.Size(107, 23);
             this.Snowpoint.TabIndex = 97;
@@ -1333,7 +1334,7 @@
             this.Solaceon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Solaceon.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Solaceon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Solaceon.Location = new System.Drawing.Point(803, 70);
+            this.Solaceon.Location = new System.Drawing.Point(803, 76);
             this.Solaceon.Name = "Solaceon";
             this.Solaceon.Size = new System.Drawing.Size(107, 23);
             this.Solaceon.TabIndex = 98;
@@ -1349,7 +1350,7 @@
             this.SolaceonRuins.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SolaceonRuins.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SolaceonRuins.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.SolaceonRuins.Location = new System.Drawing.Point(916, 70);
+            this.SolaceonRuins.Location = new System.Drawing.Point(916, 76);
             this.SolaceonRuins.Name = "SolaceonRuins";
             this.SolaceonRuins.Size = new System.Drawing.Size(107, 23);
             this.SolaceonRuins.TabIndex = 99;
@@ -1365,7 +1366,7 @@
             this.StarkMtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StarkMtn.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.StarkMtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.StarkMtn.Location = new System.Drawing.Point(1029, 70);
+            this.StarkMtn.Location = new System.Drawing.Point(1029, 76);
             this.StarkMtn.Name = "StarkMtn";
             this.StarkMtn.Size = new System.Drawing.Size(107, 23);
             this.StarkMtn.TabIndex = 100;
@@ -1381,7 +1382,7 @@
             this.Sunyshore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sunyshore.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Sunyshore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Sunyshore.Location = new System.Drawing.Point(1142, 70);
+            this.Sunyshore.Location = new System.Drawing.Point(1142, 76);
             this.Sunyshore.Name = "Sunyshore";
             this.Sunyshore.Size = new System.Drawing.Size(107, 23);
             this.Sunyshore.TabIndex = 101;
@@ -1397,7 +1398,7 @@
             this.SurvivalArea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SurvivalArea.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SurvivalArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.SurvivalArea.Location = new System.Drawing.Point(12, 99);
+            this.SurvivalArea.Location = new System.Drawing.Point(12, 105);
             this.SurvivalArea.Name = "SurvivalArea";
             this.SurvivalArea.Size = new System.Drawing.Size(107, 23);
             this.SurvivalArea.TabIndex = 102;
@@ -1413,7 +1414,7 @@
             this.TGEterna.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TGEterna.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TGEterna.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.TGEterna.Location = new System.Drawing.Point(125, 99);
+            this.TGEterna.Location = new System.Drawing.Point(125, 105);
             this.TGEterna.Name = "TGEterna";
             this.TGEterna.Size = new System.Drawing.Size(107, 23);
             this.TGEterna.TabIndex = 103;
@@ -1429,7 +1430,7 @@
             this.ValleyWindworks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ValleyWindworks.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ValleyWindworks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.ValleyWindworks.Location = new System.Drawing.Point(351, 99);
+            this.ValleyWindworks.Location = new System.Drawing.Point(351, 105);
             this.ValleyWindworks.Name = "ValleyWindworks";
             this.ValleyWindworks.Size = new System.Drawing.Size(107, 23);
             this.ValleyWindworks.TabIndex = 104;
@@ -1445,7 +1446,7 @@
             this.Veilstone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Veilstone.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Veilstone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.Veilstone.Location = new System.Drawing.Point(464, 99);
+            this.Veilstone.Location = new System.Drawing.Point(464, 105);
             this.Veilstone.Name = "Veilstone";
             this.Veilstone.Size = new System.Drawing.Size(107, 23);
             this.Veilstone.TabIndex = 105;
@@ -1461,7 +1462,7 @@
             this.VictoryRoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VictoryRoad.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.VictoryRoad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.VictoryRoad.Location = new System.Drawing.Point(690, 99);
+            this.VictoryRoad.Location = new System.Drawing.Point(690, 105);
             this.VictoryRoad.Name = "VictoryRoad";
             this.VictoryRoad.Size = new System.Drawing.Size(107, 23);
             this.VictoryRoad.TabIndex = 106;
@@ -1478,7 +1479,7 @@
             this.r203.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r203.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r203.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r203.Location = new System.Drawing.Point(8, 3);
+            this.r203.Location = new System.Drawing.Point(7, 3);
             this.r203.Name = "r203";
             this.r203.Size = new System.Drawing.Size(37, 23);
             this.r203.TabIndex = 107;
@@ -1495,7 +1496,7 @@
             this.r204.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r204.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r204.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r204.Location = new System.Drawing.Point(51, 3);
+            this.r204.Location = new System.Drawing.Point(50, 3);
             this.r204.Name = "r204";
             this.r204.Size = new System.Drawing.Size(37, 23);
             this.r204.TabIndex = 108;
@@ -1512,7 +1513,7 @@
             this.r205.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r205.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r205.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r205.Location = new System.Drawing.Point(8, 32);
+            this.r205.Location = new System.Drawing.Point(7, 32);
             this.r205.Name = "r205";
             this.r205.Size = new System.Drawing.Size(37, 23);
             this.r205.TabIndex = 108;
@@ -1529,7 +1530,7 @@
             this.r206.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r206.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r206.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r206.Location = new System.Drawing.Point(51, 32);
+            this.r206.Location = new System.Drawing.Point(50, 32);
             this.r206.Name = "r206";
             this.r206.Size = new System.Drawing.Size(37, 23);
             this.r206.TabIndex = 108;
@@ -1546,7 +1547,7 @@
             this.r207.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r207.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r207.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r207.Location = new System.Drawing.Point(8, 61);
+            this.r207.Location = new System.Drawing.Point(7, 61);
             this.r207.Name = "r207";
             this.r207.Size = new System.Drawing.Size(37, 23);
             this.r207.TabIndex = 108;
@@ -1563,7 +1564,7 @@
             this.r208.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r208.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r208.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r208.Location = new System.Drawing.Point(51, 61);
+            this.r208.Location = new System.Drawing.Point(50, 61);
             this.r208.Name = "r208";
             this.r208.Size = new System.Drawing.Size(37, 23);
             this.r208.TabIndex = 108;
@@ -1580,7 +1581,7 @@
             this.r209.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r209.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r209.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r209.Location = new System.Drawing.Point(8, 90);
+            this.r209.Location = new System.Drawing.Point(7, 90);
             this.r209.Name = "r209";
             this.r209.Size = new System.Drawing.Size(37, 23);
             this.r209.TabIndex = 108;
@@ -1597,7 +1598,7 @@
             this.r210.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r210.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r210.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r210.Location = new System.Drawing.Point(51, 90);
+            this.r210.Location = new System.Drawing.Point(50, 90);
             this.r210.Name = "r210";
             this.r210.Size = new System.Drawing.Size(37, 23);
             this.r210.TabIndex = 108;
@@ -1614,7 +1615,7 @@
             this.r211.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r211.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r211.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r211.Location = new System.Drawing.Point(8, 119);
+            this.r211.Location = new System.Drawing.Point(7, 119);
             this.r211.Name = "r211";
             this.r211.Size = new System.Drawing.Size(37, 23);
             this.r211.TabIndex = 108;
@@ -1631,7 +1632,7 @@
             this.r212.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r212.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r212.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r212.Location = new System.Drawing.Point(51, 119);
+            this.r212.Location = new System.Drawing.Point(50, 119);
             this.r212.Name = "r212";
             this.r212.Size = new System.Drawing.Size(37, 23);
             this.r212.TabIndex = 108;
@@ -1648,7 +1649,7 @@
             this.r213.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r213.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r213.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r213.Location = new System.Drawing.Point(8, 148);
+            this.r213.Location = new System.Drawing.Point(7, 148);
             this.r213.Name = "r213";
             this.r213.Size = new System.Drawing.Size(37, 23);
             this.r213.TabIndex = 108;
@@ -1665,7 +1666,7 @@
             this.r214.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r214.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r214.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r214.Location = new System.Drawing.Point(51, 148);
+            this.r214.Location = new System.Drawing.Point(50, 148);
             this.r214.Name = "r214";
             this.r214.Size = new System.Drawing.Size(37, 23);
             this.r214.TabIndex = 108;
@@ -1682,7 +1683,7 @@
             this.r215.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r215.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r215.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r215.Location = new System.Drawing.Point(8, 177);
+            this.r215.Location = new System.Drawing.Point(7, 177);
             this.r215.Name = "r215";
             this.r215.Size = new System.Drawing.Size(37, 23);
             this.r215.TabIndex = 108;
@@ -1699,7 +1700,7 @@
             this.r216.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r216.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r216.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r216.Location = new System.Drawing.Point(51, 177);
+            this.r216.Location = new System.Drawing.Point(50, 177);
             this.r216.Name = "r216";
             this.r216.Size = new System.Drawing.Size(37, 23);
             this.r216.TabIndex = 108;
@@ -1716,7 +1717,7 @@
             this.r217.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r217.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r217.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r217.Location = new System.Drawing.Point(8, 206);
+            this.r217.Location = new System.Drawing.Point(7, 206);
             this.r217.Name = "r217";
             this.r217.Size = new System.Drawing.Size(37, 23);
             this.r217.TabIndex = 108;
@@ -1733,7 +1734,7 @@
             this.r221.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r221.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r221.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r221.Location = new System.Drawing.Point(51, 206);
+            this.r221.Location = new System.Drawing.Point(50, 206);
             this.r221.Name = "r221";
             this.r221.Size = new System.Drawing.Size(37, 23);
             this.r221.TabIndex = 108;
@@ -1750,7 +1751,7 @@
             this.r222.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r222.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r222.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r222.Location = new System.Drawing.Point(8, 235);
+            this.r222.Location = new System.Drawing.Point(7, 235);
             this.r222.Name = "r222";
             this.r222.Size = new System.Drawing.Size(37, 23);
             this.r222.TabIndex = 108;
@@ -1767,7 +1768,7 @@
             this.r225.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r225.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r225.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r225.Location = new System.Drawing.Point(51, 235);
+            this.r225.Location = new System.Drawing.Point(50, 235);
             this.r225.Name = "r225";
             this.r225.Size = new System.Drawing.Size(37, 23);
             this.r225.TabIndex = 108;
@@ -1784,7 +1785,7 @@
             this.r226.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r226.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r226.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r226.Location = new System.Drawing.Point(8, 264);
+            this.r226.Location = new System.Drawing.Point(7, 264);
             this.r226.Name = "r226";
             this.r226.Size = new System.Drawing.Size(37, 23);
             this.r226.TabIndex = 108;
@@ -1801,7 +1802,7 @@
             this.r227.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r227.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r227.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r227.Location = new System.Drawing.Point(51, 264);
+            this.r227.Location = new System.Drawing.Point(50, 264);
             this.r227.Name = "r227";
             this.r227.Size = new System.Drawing.Size(37, 23);
             this.r227.TabIndex = 108;
@@ -1818,30 +1819,13 @@
             this.r228.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r228.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.r228.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.r228.Location = new System.Drawing.Point(8, 293);
+            this.r228.Location = new System.Drawing.Point(7, 293);
             this.r228.Name = "r228";
             this.r228.Size = new System.Drawing.Size(37, 23);
             this.r228.TabIndex = 108;
             this.r228.Text = "228";
             this.r228.UseCompatibleTextRendering = true;
             this.r228.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 6.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.button1.Location = new System.Drawing.Point(8, 775);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 23);
-            this.button1.TabIndex = 109;
-            this.button1.Text = "debug update";
-            this.button1.UseCompatibleTextRendering = true;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -1858,7 +1842,7 @@
             this.panel3.Controls.Add(this.LinkButton);
             this.panel3.Controls.Add(this.MarkersLabel);
             this.panel3.Controls.Add(this.ChecksLabel);
-            this.panel3.Location = new System.Drawing.Point(8, 128);
+            this.panel3.Location = new System.Drawing.Point(8, 134);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(164, 802);
             this.panel3.TabIndex = 110;
@@ -2192,7 +2176,6 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.panel4.Controls.Add(this.SaveButton);
-            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.r205);
             this.panel4.Controls.Add(this.r203);
             this.panel4.Controls.Add(this.r228);
@@ -2215,7 +2198,7 @@
             this.panel4.Controls.Add(this.r216);
             this.panel4.Controls.Add(this.r217);
             this.panel4.Controls.Add(this.NotesButton);
-            this.panel4.Location = new System.Drawing.Point(1165, 128);
+            this.panel4.Location = new System.Drawing.Point(1165, 134);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(92, 802);
             this.panel4.TabIndex = 111;
@@ -2228,7 +2211,7 @@
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.SaveButton.Location = new System.Drawing.Point(8, 717);
+            this.SaveButton.Location = new System.Drawing.Point(7, 745);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(80, 23);
             this.SaveButton.TabIndex = 110;
@@ -2245,7 +2228,7 @@
             this.NotesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NotesButton.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NotesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.NotesButton.Location = new System.Drawing.Point(8, 746);
+            this.NotesButton.Location = new System.Drawing.Point(7, 774);
             this.NotesButton.Name = "NotesButton";
             this.NotesButton.Size = new System.Drawing.Size(80, 23);
             this.NotesButton.TabIndex = 111;
@@ -2262,7 +2245,7 @@
             this.MtCoronetPeak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MtCoronetPeak.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MtCoronetPeak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
-            this.MtCoronetPeak.Location = new System.Drawing.Point(803, 41);
+            this.MtCoronetPeak.Location = new System.Drawing.Point(803, 47);
             this.MtCoronetPeak.Name = "MtCoronetPeak";
             this.MtCoronetPeak.Size = new System.Drawing.Size(107, 23);
             this.MtCoronetPeak.TabIndex = 112;
@@ -2270,11 +2253,35 @@
             this.MtCoronetPeak.UseCompatibleTextRendering = true;
             this.MtCoronetPeak.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.label1.Location = new System.Drawing.Point(11, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 118;
+            this.label1.Text = "Locations";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.label2.Location = new System.Drawing.Point(1170, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 119;
+            this.label2.Text = "Routes";
+            // 
             // PlatinumTracker
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(1269, 938);
+            this.ClientSize = new System.Drawing.Size(1269, 944);
             this.Controls.Add(this.MtCoronetPeak);
             this.Controls.Add(this.VictoryRoad);
             this.Controls.Add(this.Veilstone);
@@ -2318,6 +2325,8 @@
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -2399,6 +2408,7 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2467,7 +2477,6 @@
         private MapSelectorButton r226;
         private MapSelectorButton r227;
         private MapSelectorButton r228;
-        private Button button1;
         private Panel panel3;
         private Panel panel4;
         private MapSelectorButton MtCoronetPeak;
@@ -2540,5 +2549,7 @@
         private MarkerSelector markerSelector28;
         private Label ChecksLabel;
         private Label MarkersLabel;
+        private Label label1;
+        private Label label2;
     }
 }
