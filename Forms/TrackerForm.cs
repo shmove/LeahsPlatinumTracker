@@ -440,10 +440,22 @@ namespace LeahsPlatinumTracker
             }
         }
 
+        internal void UpdateWindowTitle()
+        {
+            string[] txt = LoadedFile.Split("\\");
+            Text = "Leah's Platinum Tracker — " + txt[txt.Length - 1]; // set window title with file name displayed
+        }
+
         internal void SaveButton_Click(object sender, EventArgs e)
         {
-            Player.ToJSON();
-            HasUpdated = false; // stop save popup after manual saving
+            string filename = Player.ToJSON();
+
+            if (filename != null)
+            {
+                LoadedFile = filename;
+                HasUpdated = false; // stop save popup after manual saving
+                UpdateWindowTitle();
+            }
         }
 
         internal void NotesButton_Click(object sender, EventArgs e)
@@ -461,5 +473,6 @@ namespace LeahsPlatinumTracker
 
             else NotesForm.Focus();
         }
+
     }
 }

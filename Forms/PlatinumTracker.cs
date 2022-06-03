@@ -35,6 +35,8 @@ namespace LeahsPlatinumTracker
             base.RedoButton = RedoButton;
             base.SaveButton = SaveButton;
             base.NotesButton = NotesButton;
+
+            base.UpdateWindowTitle();
         }
 
         private void button1_Click(object sender, EventArgs e)
