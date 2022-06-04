@@ -437,13 +437,15 @@ namespace LeahsPlatinumTracker
                 new MapSector("PokeLeague Ext S", 2, new List<Condition>
                 {
                     new Condition("Sunyshore A", new Checks(144)), // can surf here from sunyshore and waterfall up
-                    new Condition("PokeLeague Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))
+                    new Condition("PokeLeague Pokecentre", new Checks(Checks.CheckFlags.HasTeleport)),
+                    new Condition("PokeLeague Pokecentre", new Checks(8)) // can fly here after unlocking the pokecentre?? why only these two places
                 }), 
                 new MapSector("PokeLeague Ext N A", 1, new Condition("PokeLeague Ext N B", new Checks(144))), // caveside, can surf down from league exit
                 new MapSector("PokeLeague Ext N B", 1, new List<Condition> // entrance to league, can surf up from caveside
                 {
                     new Condition("PokeLeague Ext N A", new Checks(144)),
-                    new Condition("PokeLeague Int", new Checks(Checks.CheckFlags.HasTeleport))
+                    new Condition("PokeLeague Int", new Checks(Checks.CheckFlags.HasTeleport)),
+                    new Condition("PokeLeague Int", new Checks(8)) // can fly here after being inside?? why only these two places
                 }), 
                 new MapSector("PokeLeague Int", 4), // self contained
                 new MapSector("PokeLeague Pokecentre", 3)
