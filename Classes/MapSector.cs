@@ -741,6 +741,8 @@ namespace LeahsPlatinumTracker
          * 26: PokeMart             /
          * 27: Exclamation Point    /
          * 28: Galactic Key
+         * 29: Defog
+         * 30: Heal                 /
          * 
          * Values marked with a (/) are considered to be checked.
         */
@@ -756,6 +758,7 @@ namespace LeahsPlatinumTracker
                 if (VisualMarkers >=5 && VisualMarkers <= 17)   return true;
                 if (VisualMarkers == 24)                        return true;
                 if (VisualMarkers >= 26 && VisualMarkers <= 27) return true;
+                if (VisualMarkers == 30)                        return true;
                 return false;
             }
         }

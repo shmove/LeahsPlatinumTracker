@@ -163,6 +163,16 @@ namespace LeahsPlatinumTracker.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Defog {
+            get {
+                object obj = ResourceManager.GetObject("Defog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exclamation {
             get {
                 object obj = ResourceManager.GetObject("exclamation", resourceCulture);
@@ -206,6 +216,16 @@ namespace LeahsPlatinumTracker.Resources {
         internal static System.Drawing.Bitmap GalacticKey {
             get {
                 object obj = ResourceManager.GetObject("GalacticKey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Heal {
+            get {
+                object obj = ResourceManager.GetObject("Heal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

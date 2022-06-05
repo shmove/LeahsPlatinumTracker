@@ -217,6 +217,12 @@ namespace LeahsPlatinumTracker
                     case 28:
                         Marker.Image = Resources.MarkerResources.GalacticKey;
                         break;
+                    case 29:
+                        Marker.Image = Resources.MarkerResources.Defog;
+                        break;
+                    case 30:
+                        Marker.Image = Resources.MarkerResources.Heal;
+                        break;
                 }
 
                 Marker.MouseDown += new MouseEventHandler(parent.Warp_Click);
