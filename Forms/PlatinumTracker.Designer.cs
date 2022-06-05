@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlatinumTracker));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.markerSelector29 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector28 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector23 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector25 = new LeahsPlatinumTracker.MarkerSelector();
@@ -137,6 +138,7 @@
             this.r228 = new LeahsPlatinumTracker.MapSelectorButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.markerSelector30 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector27 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector26 = new LeahsPlatinumTracker.MarkerSelector();
             this.markerSelector24 = new LeahsPlatinumTracker.MarkerSelector();
@@ -167,9 +169,8 @@
             this.MtCoronetPeak = new LeahsPlatinumTracker.MapSelectorButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.markerSelector29 = new LeahsPlatinumTracker.MarkerSelector();
-            this.markerSelector30 = new LeahsPlatinumTracker.MarkerSelector();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector25)).BeginInit();
@@ -215,6 +216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkFlagsButton1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector24)).BeginInit();
@@ -235,8 +237,6 @@
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.markerSelector29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.markerSelector30)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -259,6 +259,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(154, 118);
             this.panel1.TabIndex = 63;
+            // 
+            // markerSelector29
+            // 
+            this.markerSelector29.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Defog;
+            this.markerSelector29.Location = new System.Drawing.Point(79, 41);
+            this.markerSelector29.MarkerID = 29;
+            this.markerSelector29.Name = "markerSelector29";
+            this.markerSelector29.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector29.TabIndex = 151;
+            this.markerSelector29.TabStop = false;
             // 
             // markerSelector28
             // 
@@ -419,6 +430,7 @@
             this.progressFlagsButton14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton14.TabIndex = 0;
             this.progressFlagsButton14.TabStop = false;
+            this.progressFlagsButton14.TooltipText = "Champion Cynthia";
             // 
             // progressFlagsButton9
             // 
@@ -433,6 +445,7 @@
             this.progressFlagsButton9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton9.TabIndex = 127;
             this.progressFlagsButton9.TabStop = false;
+            this.progressFlagsButton9.TooltipText = "Elite Four Aaron";
             // 
             // progressFlagsButton10
             // 
@@ -447,6 +460,7 @@
             this.progressFlagsButton10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton10.TabIndex = 128;
             this.progressFlagsButton10.TabStop = false;
+            this.progressFlagsButton10.TooltipText = "Elite Four Bertha";
             // 
             // progressFlagsButton11
             // 
@@ -461,6 +475,7 @@
             this.progressFlagsButton11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton11.TabIndex = 129;
             this.progressFlagsButton11.TabStop = false;
+            this.progressFlagsButton11.TooltipText = "Elite Four Flint";
             // 
             // progressFlagsButton12
             // 
@@ -475,6 +490,7 @@
             this.progressFlagsButton12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton12.TabIndex = 130;
             this.progressFlagsButton12.TabStop = false;
+            this.progressFlagsButton12.TooltipText = "Elite Four Lucian";
             // 
             // progressFlagsButton8
             // 
@@ -489,6 +505,7 @@
             this.progressFlagsButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton8.TabIndex = 126;
             this.progressFlagsButton8.TabStop = false;
+            this.progressFlagsButton8.TooltipText = "Beacon Badge";
             // 
             // progressFlagsButton7
             // 
@@ -503,6 +520,7 @@
             this.progressFlagsButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton7.TabIndex = 125;
             this.progressFlagsButton7.TabStop = false;
+            this.progressFlagsButton7.TooltipText = "Icicle Badge";
             // 
             // progressFlagsNotesButton
             // 
@@ -517,6 +535,7 @@
             this.progressFlagsNotesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsNotesButton.TabIndex = 124;
             this.progressFlagsNotesButton.TabStop = false;
+            this.progressFlagsNotesButton.TooltipText = "Mine Badge";
             // 
             // progressFlagsSaveButton
             // 
@@ -531,6 +550,7 @@
             this.progressFlagsSaveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsSaveButton.TabIndex = 123;
             this.progressFlagsSaveButton.TabStop = false;
+            this.progressFlagsSaveButton.TooltipText = "Fen Badge";
             // 
             // progressFlagsUnlinkButton
             // 
@@ -545,6 +565,7 @@
             this.progressFlagsUnlinkButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsUnlinkButton.TabIndex = 122;
             this.progressFlagsUnlinkButton.TabStop = false;
+            this.progressFlagsUnlinkButton.TooltipText = "Cobble Badge";
             // 
             // progressFlagsRedoButton
             // 
@@ -559,6 +580,7 @@
             this.progressFlagsRedoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsRedoButton.TabIndex = 121;
             this.progressFlagsRedoButton.TabStop = false;
+            this.progressFlagsRedoButton.TooltipText = "Relic Badge";
             // 
             // progressFlagsUndoButton
             // 
@@ -573,6 +595,7 @@
             this.progressFlagsUndoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsUndoButton.TabIndex = 120;
             this.progressFlagsUndoButton.TabStop = false;
+            this.progressFlagsUndoButton.TooltipText = "Forest Badge";
             // 
             // progressFlagsButton1
             // 
@@ -587,6 +610,7 @@
             this.progressFlagsButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.progressFlagsButton1.TabIndex = 119;
             this.progressFlagsButton1.TabStop = false;
+            this.progressFlagsButton1.TooltipText = "Coal Badge";
             // 
             // hmFlagsButton8
             // 
@@ -601,6 +625,7 @@
             this.hmFlagsButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.hmFlagsButton8.TabIndex = 138;
             this.hmFlagsButton8.TabStop = false;
+            this.hmFlagsButton8.TooltipText = "HM07 - Waterfall";
             // 
             // hmFlagsButton7
             // 
@@ -615,6 +640,7 @@
             this.hmFlagsButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.hmFlagsButton7.TabIndex = 137;
             this.hmFlagsButton7.TabStop = false;
+            this.hmFlagsButton7.TooltipText = "HM08 - Rock Climb";
             // 
             // hmFlagsNotesButton
             // 
@@ -629,6 +655,7 @@
             this.hmFlagsNotesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.hmFlagsNotesButton.TabIndex = 136;
             this.hmFlagsNotesButton.TabStop = false;
+            this.hmFlagsNotesButton.TooltipText = "HM04 - Strength";
             // 
             // hmFlagsSaveButton
             // 
@@ -643,6 +670,7 @@
             this.hmFlagsSaveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.hmFlagsSaveButton.TabIndex = 135;
             this.hmFlagsSaveButton.TabStop = false;
+            this.hmFlagsSaveButton.TooltipText = "HM03 - Surf";
             // 
             // hmFlagsUnlinkButton
             // 
@@ -657,6 +685,7 @@
             this.hmFlagsUnlinkButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.hmFlagsUnlinkButton.TabIndex = 134;
             this.hmFlagsUnlinkButton.TabStop = false;
+            this.hmFlagsUnlinkButton.TooltipText = "HM02 - Fly";
             // 
             // hmFlagsRedoButton
             // 
@@ -671,6 +700,7 @@
             this.hmFlagsRedoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.hmFlagsRedoButton.TabIndex = 133;
             this.hmFlagsRedoButton.TabStop = false;
+            this.hmFlagsRedoButton.TooltipText = "HM05 - Defog";
             // 
             // hmFlagsUndoButton
             // 
@@ -685,6 +715,7 @@
             this.hmFlagsUndoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.hmFlagsUndoButton.TabIndex = 132;
             this.hmFlagsUndoButton.TabStop = false;
+            this.hmFlagsUndoButton.TooltipText = "HM01 - Cut";
             // 
             // hmFlagsButton1
             // 
@@ -699,6 +730,7 @@
             this.hmFlagsButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.hmFlagsButton1.TabIndex = 113;
             this.hmFlagsButton1.TabStop = false;
+            this.hmFlagsButton1.TooltipText = "HM06 - Rock Smash";
             // 
             // checkFlagsButton9
             // 
@@ -713,6 +745,7 @@
             this.checkFlagsButton9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsButton9.TabIndex = 118;
             this.checkFlagsButton9.TabStop = false;
+            this.checkFlagsButton9.TooltipText = "SecretPotion";
             // 
             // checkFlagsButton8
             // 
@@ -727,6 +760,7 @@
             this.checkFlagsButton8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsButton8.TabIndex = 117;
             this.checkFlagsButton8.TabStop = false;
+            this.checkFlagsButton8.TooltipText = "Defeated Mars in Valley Windworks";
             // 
             // checkFlagsButton7
             // 
@@ -741,6 +775,7 @@
             this.checkFlagsButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsButton7.TabIndex = 116;
             this.checkFlagsButton7.TabStop = false;
+            this.checkFlagsButton7.TooltipText = "Spoken to Volkner in the Vista Lighthouse";
             // 
             // checkFlagsNotesButton
             // 
@@ -755,6 +790,7 @@
             this.checkFlagsNotesButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsNotesButton.TabIndex = 115;
             this.checkFlagsNotesButton.TabStop = false;
+            this.checkFlagsNotesButton.TooltipText = "Spoken to Fantina in the Super Contest Hall";
             // 
             // checkFlagsSaveButton
             // 
@@ -769,6 +805,7 @@
             this.checkFlagsSaveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsSaveButton.TabIndex = 114;
             this.checkFlagsSaveButton.TabStop = false;
+            this.checkFlagsSaveButton.TooltipText = "Spoken to Roark in Oreburgh Mine";
             // 
             // checkFlagsUnlinkButton
             // 
@@ -783,6 +820,7 @@
             this.checkFlagsUnlinkButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsUnlinkButton.TabIndex = 113;
             this.checkFlagsUnlinkButton.TabStop = false;
+            this.checkFlagsUnlinkButton.TooltipText = "Bike";
             // 
             // checkFlagsRedoButton
             // 
@@ -797,6 +835,7 @@
             this.checkFlagsRedoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsRedoButton.TabIndex = 112;
             this.checkFlagsRedoButton.TabStop = false;
+            this.checkFlagsRedoButton.TooltipText = "Teleport";
             // 
             // checkFlagsUndoButton
             // 
@@ -811,6 +850,7 @@
             this.checkFlagsUndoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsUndoButton.TabIndex = 111;
             this.checkFlagsUndoButton.TabStop = false;
+            this.checkFlagsUndoButton.TooltipText = "Works Key";
             // 
             // checkFlagsButton1
             // 
@@ -825,6 +865,7 @@
             this.checkFlagsButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.checkFlagsButton1.TabIndex = 110;
             this.checkFlagsButton1.TabStop = false;
+            this.checkFlagsButton1.TooltipText = "Galactic Key";
             // 
             // MainPanel
             // 
@@ -1879,6 +1920,17 @@
             this.panel8.Size = new System.Drawing.Size(154, 193);
             this.panel8.TabIndex = 116;
             // 
+            // markerSelector30
+            // 
+            this.markerSelector30.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Heal;
+            this.markerSelector30.Location = new System.Drawing.Point(79, 3);
+            this.markerSelector30.MarkerID = 30;
+            this.markerSelector30.Name = "markerSelector30";
+            this.markerSelector30.Size = new System.Drawing.Size(32, 32);
+            this.markerSelector30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.markerSelector30.TabIndex = 152;
+            this.markerSelector30.TabStop = false;
+            // 
             // markerSelector27
             // 
             this.markerSelector27.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.exclamation;
@@ -2284,28 +2336,6 @@
             this.label2.TabIndex = 119;
             this.label2.Text = "Routes";
             // 
-            // markerSelector29
-            // 
-            this.markerSelector29.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Defog;
-            this.markerSelector29.Location = new System.Drawing.Point(79, 41);
-            this.markerSelector29.MarkerID = 29;
-            this.markerSelector29.Name = "markerSelector29";
-            this.markerSelector29.Size = new System.Drawing.Size(32, 32);
-            this.markerSelector29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.markerSelector29.TabIndex = 151;
-            this.markerSelector29.TabStop = false;
-            // 
-            // markerSelector30
-            // 
-            this.markerSelector30.Image = global::LeahsPlatinumTracker.Resources.MarkerResources.Heal;
-            this.markerSelector30.Location = new System.Drawing.Point(79, 3);
-            this.markerSelector30.MarkerID = 30;
-            this.markerSelector30.Name = "markerSelector30";
-            this.markerSelector30.Size = new System.Drawing.Size(32, 32);
-            this.markerSelector30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.markerSelector30.TabIndex = 152;
-            this.markerSelector30.TabStop = false;
-            // 
             // PlatinumTracker
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2365,6 +2395,7 @@
             this.Load += new System.EventHandler(this.TrackerForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector25)).EndInit();
@@ -2413,6 +2444,7 @@
             this.panel3.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.markerSelector30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.markerSelector24)).EndInit();
@@ -2436,8 +2468,6 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.markerSelector29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.markerSelector30)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -17,6 +17,7 @@ namespace LeahsPlatinumTracker
         public Image? Image_Locked { get; set; }
         public Image? Image_VisualUnlocked { get; set; }
         public Image? Image_Unlocked { get; set; }
+        public string? TooltipText { get; set; }
 
         public ChecksButton()
         {
@@ -24,7 +25,7 @@ namespace LeahsPlatinumTracker
             MouseHover += Initialise;
             tooltip = new ToolTip
             {
-                InitialDelay = 300,
+                InitialDelay = 600,
             };
         }
 
@@ -47,17 +48,17 @@ namespace LeahsPlatinumTracker
                 case "CheckFlagsButton":
                     CheckState = Player.Checks.ChecksMade.HasFlag(((CheckFlagsButton)sender).Flag);
                     VisualCheckState = Player.VisualChecks.ChecksMade.HasFlag(((CheckFlagsButton)sender).Flag);
-                    tooltip.SetToolTip(this, ((CheckFlagsButton)sender).Flag.ToString());
+                    tooltip.SetToolTip(this, TooltipText ?? ((CheckFlagsButton)sender).Flag.ToString());
                     break;
                 case "ProgressFlagsButton":
                     CheckState = Player.Checks.Progress.HasFlag(((ProgressFlagsButton)sender).Flag);
                     VisualCheckState = Player.VisualChecks.Progress.HasFlag(((ProgressFlagsButton)sender).Flag);
-                    tooltip.SetToolTip(this, ((ProgressFlagsButton)sender).Flag.ToString());
+                    tooltip.SetToolTip(this, TooltipText ?? ((ProgressFlagsButton)sender).Flag.ToString());
                     break;
                 case "HMFlagsButton":
                     CheckState = Player.Checks.HMs.HasFlag(((HMFlagsButton)sender).Flag);
                     VisualCheckState = Player.VisualChecks.HMs.HasFlag(((HMFlagsButton)sender).Flag);
-                    tooltip.SetToolTip(this, ((HMFlagsButton)sender).Flag.ToString());
+                    tooltip.SetToolTip(this, TooltipText ?? ((HMFlagsButton)sender).Flag.ToString());
                     break;
             }
 
