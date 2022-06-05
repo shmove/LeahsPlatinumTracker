@@ -112,28 +112,31 @@ namespace LeahsPlatinumTracker
         {
             foreach (Control control in Controls)
             {
-                if (control.GetType() == typeof(WarpButton))
+                Control thisControl = control;
+                MarkerPictureBox? pictureBox = null;
+
+                if (thisControl.GetType() == typeof(MarkerPictureBox))
                 {
-                    WarpButton button = (WarpButton)control;
-                    if (button.MapID == MapID && button.WarpID == WarpID)
-                    {
-                        button.selected = true;
-                        lastSelectedWarp = button;
-                        button.UpdateAppearance();
-                    }
+                    pictureBox = (MarkerPictureBox)control;
+                    thisControl = pictureBox.parent;
                 }
-                else if (control.GetType() == typeof(MarkerPictureBox))
+
+                if (thisControl.GetType() == typeof(WarpButton))
                 {
-                    MarkerPictureBox pictureBox = (MarkerPictureBox)control;
-                    WarpButton button = pictureBox.parent;
+                    WarpButton button = (WarpButton)thisControl;
                     if (button.MapID == MapID && button.WarpID == WarpID)
                     {
-                        pictureBox.ToggleSelected();
+                        if (pictureBox != null) pictureBox.ToggleSelected();
                         button.selected = true;
                         lastSelectedWarp = button;
                         button.UpdateAppearance();
                     }
-                        
+                    else if (button.selected)
+                    {
+                        button.selected = false;
+                        if (pictureBox != null) pictureBox.ToggleSelected();
+                        button.UpdateAppearance();
+                    }
                 }
             }
         }

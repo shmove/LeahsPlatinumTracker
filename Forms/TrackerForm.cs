@@ -352,13 +352,22 @@ namespace LeahsPlatinumTracker
 
         public void LoadMapPanel(string MapID, int WarpID = -1)
         {
+            if (MapID.StartsWith("r2")) MapID = MapID[1..];
+            string VisualMapID = Player.GetVisualMapSector(MapID).VisualMapID;
+            
+            // if panel is already loaded
+            if (activePanel != null)
+            {
+                if (activePanel.Name == VisualMapID || VisualMapID.StartsWith("2") && activePanel.Name == ("r" + VisualMapID))
+                {
+                    if (WarpID >= 0) activePanel.SelectWarp(MapID, WarpID);
+                    return;
+                }
+            }
             bool loaded = false;
 
             foreach (var panelClass in mapPanels)
             {
-                if (MapID.StartsWith("r2")) MapID = MapID[1..];
-                string VisualMapID = Player.GetVisualMapSector(MapID).VisualMapID;
-
                 if (panelClass.Name == VisualMapID || VisualMapID.StartsWith("2") && panelClass.Name == ("r" + VisualMapID))
                 {
                     MapsForm panel = (MapsForm)Activator.CreateInstance(panelClass);
