@@ -17,5 +17,7 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("a409010d-81bd-47df-924a-8951e3a78c6e")]
 
-[assembly: AssemblyVersion("0.1.1")]
-[assembly: AssemblyFileVersion("0.1.1")]
+[assembly: AssemblyTitle("LeahsPlatinumTracker")]
+[assembly: AssemblyDescription("A tracker for Pokémon Map Randomisers.")]
+[assembly: AssemblyVersion("1.0.0")]
+[assembly: AssemblyFileVersion("1.0.0")]

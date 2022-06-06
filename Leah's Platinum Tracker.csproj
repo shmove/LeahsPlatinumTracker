@@ -9,7 +9,43 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
 	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	  <Description>A tracker for Pokémon Map Randomisers.</Description>
+	  <PackageProjectUrl>https://github.com/shmove/LeahsPlatinumTracker</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/shmove/LeahsPlatinumTracker</RepositoryUrl>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+	  <PackageId>LeahsPlatinumTracker</PackageId>
+	  <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+	  <Authors>shmove</Authors>
+	  <DocumentationFile>D:\Documents\LeahsPlatinumTracker\Leah's Platinum Tracker\Classes\doc.xml</DocumentationFile>
+	  <GenerateDocumentationFile>False</GenerateDocumentationFile>
+	  <SignAssembly>False</SignAssembly>
+	  <ApplicationIcon>Resources\Pictures\icon.ico</ApplicationIcon>
+	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Nirmala.ttf" />
+    <None Remove="Pokemon DPPt.ttf" />
+    <None Remove="PowerClear-Bold.ttf" />
+    <None Remove="PowerClear.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Nirmala.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pokemon DPPt.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PowerClear-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PowerClear.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Maps\PokemonPlatinum\BacklotMansion.cs" />
@@ -237,8 +273,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Clowd.Squirrel" Version="2.9.40" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="squirrel.windows" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Resources\Pictures\icon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Pictures\icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="UI\Fonts\Nirmala.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="UI\Fonts\Pokemon DPPt.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="UI\Fonts\PowerClear-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="UI\Fonts\PowerClear.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
