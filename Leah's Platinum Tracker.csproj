@@ -18,8 +18,6 @@
 	  <PackageId>LeahsPlatinumTracker</PackageId>
 	  <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
 	  <Authors>shmove</Authors>
-	  <DocumentationFile>D:\Documents\LeahsPlatinumTracker\Leah's Platinum Tracker\Classes\doc.xml</DocumentationFile>
-	  <GenerateDocumentationFile>False</GenerateDocumentationFile>
 	  <SignAssembly>False</SignAssembly>
 	  <ApplicationIcon>Resources\Pictures\icon.ico</ApplicationIcon>
 	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
@@ -282,22 +280,7 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Update="Resources\Pictures\icon.ico">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
     <None Update="Resources\Pictures\icon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="UI\Fonts\Nirmala.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="UI\Fonts\Pokemon DPPt.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="UI\Fonts\PowerClear-Bold.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="UI\Fonts\PowerClear.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

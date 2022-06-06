@@ -44,10 +44,7 @@ namespace LeahsPlatinumTracker
             }
             catch (Exception ex)
             {
-                string message = ex.Message + Environment.NewLine;
-                if (ex.InnerException != null)
-                    message += ex.InnerException.Message;
-                MessageBox.Show(message);
+                MessageBox.Show("There was an error checking for new updates. Is something blocking this program from accessing the internet?\nError: " + ex.InnerException?.Message, "Update error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

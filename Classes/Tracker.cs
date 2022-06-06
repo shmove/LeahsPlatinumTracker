@@ -366,7 +366,8 @@ namespace LeahsPlatinumTracker
                 {
                     new Condition("Sandgem"),
                     new Condition("203"),
-                    new Condition("204 S")
+                    new Condition("204 S"),
+                    new Condition("Jubilife B")
                 }, true), // main jubilife
                 new MapSector("Jubilife B", 2, new Condition("Jubilife A", new Checks(Checks.ProgressFlags.HasCoalBadge), true)), // bottom left, accessible with 1st badge
                 new MapSector("Jubilife Pokecentre", 3)
@@ -467,7 +468,8 @@ namespace LeahsPlatinumTracker
                 {
                     new Condition("Jubilife A"),
                     new Condition("VerityLake Ext"),
-                    new Condition("221", new Checks(16))
+                    new Condition("221", new Checks(16)),
+                    new Condition("Sandgem Pokecentre", new Checks(Checks.CheckFlags.HasTeleport))
                 }, true),
                 new MapSector("Sandgem Pokecentre", 3)
             }));

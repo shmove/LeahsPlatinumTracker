@@ -68,7 +68,7 @@ namespace LeahsPlatinumTracker
                 }
                 else Text = associatedWarp.DestinationVisualMapSector.DisplayName;
 
-                if (relevantWarp.Destination.MapID.Contains("Pokecentre") == true || relevantWarp.Destination.MapID == "PokeLeague Int")
+                if (relevantWarp.Destination.MapID.Contains("Pokecentre") || relevantWarp.Destination.MapID == "PokeLeague Int")
                 {
                     ForeColor = Color.FromArgb(255, 238, 238, 238);
                     BackColor = Color.FromArgb(255, 243, 109, 116);
