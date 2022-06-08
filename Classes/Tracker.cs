@@ -102,7 +102,7 @@ namespace LeahsPlatinumTracker
                 {
                     new Condition("Floaroma"),
                     new Condition("ValleyWindworks"),
-                    new Condition("205 C", new Checks(Checks.CheckFlags.HasDefeatedWindworks)), // Two Grunts block the path until Mars is defeated in ValleyWindworks
+                    new Condition("205 C"), // Grunts can be bypassed from above
                     new Condition("FuegoIronworks S", new Checks(16)) // river can be surfed across
                 }),
                 new MapSector("205 C", 2, new List<Condition>
@@ -802,85 +802,10 @@ namespace LeahsPlatinumTracker
         }
 
         /// <summary>
-        /// Debug method. Prints all tracker data to system console.
+        /// Save method. Serialises current tracker data to JSON and saves in a user defined location as an .lpt file.
         /// </summary>
-        public void log()
-        {
-            System.Diagnostics.Debug.WriteLine("");
-            System.Diagnostics.Debug.WriteLine("Logging all tracker data.");
-            System.Diagnostics.Debug.WriteLine("CURRENT CHECKS:");
-            System.Diagnostics.Debug.WriteLine(Checks.CheckString());
-            System.Diagnostics.Debug.WriteLine("");
-            System.Diagnostics.Debug.WriteLine("MAP DATA:");
-            foreach (var Sector in MapSectors)
-            {
-                System.Diagnostics.Debug.WriteLine(Sector.MapID);
-                System.Diagnostics.Debug.WriteLine("    isUnlocked: " + Sector.IsUnlocked);
-                System.Diagnostics.Debug.WriteLine("    Conditions: ");
-                foreach(var Condition in Sector.Conditions)
-                {
-                    System.Diagnostics.Debug.WriteLine("        - Access Map: " + Condition.AccessMap);
-                    System.Diagnostics.Debug.WriteLine("          Checks:");
-                    System.Diagnostics.Debug.WriteLine("            " + Condition.RequiredChecks.CheckString());
-
-                }
-                System.Diagnostics.Debug.WriteLine("    Warps: ");
-                foreach (var Warp in Sector.Warps)
-                {
-                    System.Diagnostics.Debug.WriteLine("        " + Warp.WarpID + ": " + Warp.Destination);
-                }
-            }
-            System.Diagnostics.Debug.WriteLine("");
-
-            foreach (MapSector Sector in MapSectors)
-            {
-                if (Sector.IsUnlocked && (Sector.Conditions.Count == 0))
-                {
-                    System.Diagnostics.Debug.WriteLine(Sector.MapID + " with " + Sector.Warps.Count + " warps: Starting area");
-                }
-                else
-                {
-                    bool accessible = false;
-                    bool accesses = false;
-                    foreach (MapSector mapSector in MapSectors)
-                    {
-                        if (mapSector.CanAccess(Sector.MapID))
-                        {
-                            accessible = true;
-                            bool wayBack = false;
-                            foreach (Condition condition in Sector.Conditions)
-                            {
-                                if (condition.AccessMap == mapSector.MapID) wayBack = true;
-                            }
-                            if (!wayBack) System.Diagnostics.Debug.WriteLine(Sector.MapID + " has a One-Way route to " + mapSector.MapID);
-                        }
-                    };
-                    foreach (Condition condition in Sector.Conditions)
-                    {
-                        bool thisAccesses = false;
-                        foreach (MapSector mapSector in MapSectors)
-                        {
-                            if (mapSector.MapID == condition.AccessMap)
-                            {
-                                accesses = true;
-                                thisAccesses = true;
-                            }
-                        }
-                        if (!thisAccesses) System.Diagnostics.Debug.WriteLine(Sector.MapID + " is accessed by " + condition.AccessMap + ", which is unknown");
-                    };
-                    if (accessible && accesses) System.Diagnostics.Debug.WriteLine(Sector.MapID + " with " + Sector.Warps.Count + " warps: In group of connected maps");
-                    else if (accessible) System.Diagnostics.Debug.WriteLine(Sector.MapID + " with " + Sector.Warps.Count + " warps: Exitable, but not accessible");
-                    else if (accesses) System.Diagnostics.Debug.WriteLine(Sector.MapID + " with " + Sector.Warps.Count + " warps: Accessible, but not exitable");
-                    else System.Diagnostics.Debug.WriteLine(Sector.MapID + " with " + Sector.Warps.Count + " warps: Self confined");
-                };
-            }
-
-            System.Diagnostics.Debug.WriteLine("");
-        }
-
-        /// <summary>
-        /// Temporary method. Serialises current tracker data to JSON and saves in a user defined location as an .lpt file.
-        /// </summary>
+        /// <param name="predeterminedFile">The optional filepath of the file to instantly save to, bypassing save file dialog.</param>
+        /// <returns>The chosen filepath the file was saved to, or <b>null</b> if dialog was exited early.</returns>
         public string ToJSON(string predeterminedFile = "")
         {
             string json = JsonConvert.SerializeObject(this, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
