@@ -16,16 +16,17 @@ namespace LeahsPlatinumTracker
         // https://github.com/Squirrel/Squirrel.Windows/blob/develop/docs/getting-started/2-packaging.md
         // https://www.youtube.com/watch?v=W8Qu4qMJyh4
 
+        // Main
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            RegisterFont("Nirmala.ttf");
-            RegisterFont("Pokemon DPPt.ttf");
-            RegisterFont("PowerClear.ttf");
-            RegisterFont("PowerClear-Bold.ttf");
+            AddFileFontToCollection("Pokemon DPPt.ttf", CustomFonts);
+            //AddFileFontToCollection("PowerClear.ttf", CustomFonts);
+            AddFileFontToCollection("PowerClearB.ttf", CustomFonts);
 
             ApplicationConfiguration.Initialize();
             Application.SetCompatibleTextRenderingDefault(true);
@@ -34,44 +35,27 @@ namespace LeahsPlatinumTracker
 
 
         // Fonts
-        [DllImport("gdi32", EntryPoint = "AddFontResource")]
-        public static extern int AddFontResourceA(string lpFileName);
-        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
-        private static extern int AddFontResource(string lpszFilename);
-        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
-        private static extern int CreateScalableFontResource(uint fdwHidden, string
-            lpszFontRes, string lpszFontFile, string lpszCurrentPath);
-        internal static bool HasInstalledNewFonts = false;
 
         /// <summary>
-        /// Installs font on the user's system and adds it to the registry so it's available on the next session
-        /// Your font must be included in your project with its build path set to 'Content' and its Copy property
-        /// set to 'Copy Always'.
-        /// From <see href="https://stackoverflow.com/a/29334492"/>.
+        /// Custom fonts used by Leah's Platinum Tracker.       </ br>
+        /// 0: Pokemon DPPt                                     </ br>
+        /// 1: Power Clear (/bold)                              </ br>
         /// </summary>
-        /// <param name="contentFontName">Your font to be passed as a resource (i.e. "myfont.tff")</param>
-        private static void RegisterFont(string contentFontName)
+        public static PrivateFontCollection CustomFonts = new();
+
+        /// Before build, replace every instance of X with Y, and vice versa for design.
+        /// 
+        ///  X:   Font("Pokemon DPPt"
+        ///  Y:   Font(Program.CustomFonts.Families[0]
+        ///
+        ///  X:   Font("Power Clear"
+        ///  Y:   Font(Program.CustomFonts.Families[1]
+        ///
+
+        private static void AddFileFontToCollection(string fontName, PrivateFontCollection collection)
         {
-            // Creates the full path where your font will be installed
-            var fontDestination = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Fonts), contentFontName);
-
-            if (!File.Exists(fontDestination))
-            {
-                // Copies font to destination
-                System.IO.File.Copy(Path.Combine(System.IO.Directory.GetCurrentDirectory(), contentFontName), fontDestination);
-
-                // Retrieves font name
-                // Makes sure you reference System.Drawing
-                PrivateFontCollection fontCol = new PrivateFontCollection();
-                fontCol.AddFontFile(fontDestination);
-                var actualFontName = fontCol.Families[0].Name;
-
-                //Add font
-                AddFontResource(fontDestination);
-                //Add registry entry   
-                Registry.SetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts", actualFontName, contentFontName, RegistryValueKind.String);
-                HasInstalledNewFonts = true;
-            }
+            string fontPath = Path.Combine(Directory.GetCurrentDirectory(), fontName);
+            collection.AddFontFile(fontPath);
         }
 
     }

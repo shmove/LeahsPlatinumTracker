@@ -25,7 +25,8 @@ namespace LeahsPlatinumTracker
             MouseHover += Initialise;
             tooltip = new ToolTip
             {
-                InitialDelay = 600,
+                InitialDelay = 400,
+                AutoPopDelay = 32000 // why is this even a thing?
             };
         }
 

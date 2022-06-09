@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.Logo = new System.Windows.Forms.PictureBox();
             this.LogoPanel = new System.Windows.Forms.Panel();
+            this.GitHubLink = new System.Windows.Forms.LinkLabel();
             this.VersionLabel = new System.Windows.Forms.Label();
             this.ButtonPanel = new System.Windows.Forms.Panel();
             this.LoadFileButton = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             // LogoPanel
             // 
             this.LogoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.LogoPanel.Controls.Add(this.GitHubLink);
             this.LogoPanel.Controls.Add(this.VersionLabel);
             this.LogoPanel.Controls.Add(this.Logo);
             this.LogoPanel.Location = new System.Drawing.Point(17, 17);
@@ -60,18 +62,36 @@
             this.LogoPanel.Size = new System.Drawing.Size(535, 328);
             this.LogoPanel.TabIndex = 1;
             // 
+            // GitHubLink
+            // 
+            this.GitHubLink.ActiveLinkColor = System.Drawing.Color.Firebrick;
+            this.GitHubLink.AutoSize = true;
+            this.GitHubLink.Font = new System.Drawing.Font("Pokemon DPPt", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GitHubLink.LinkArea = new System.Windows.Forms.LinkArea(0, 6);
+            this.GitHubLink.LinkColor = System.Drawing.SystemColors.MenuHighlight;
+            this.GitHubLink.Location = new System.Drawing.Point(10, 306);
+            this.GitHubLink.Name = "GitHubLink";
+            this.GitHubLink.Size = new System.Drawing.Size(40, 22);
+            this.GitHubLink.TabIndex = 4;
+            this.GitHubLink.TabStop = true;
+            this.GitHubLink.Text = "GitHub";
+            this.GitHubLink.UseCompatibleTextRendering = true;
+            this.GitHubLink.VisitedLinkColor = System.Drawing.SystemColors.Desktop;
+            this.GitHubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelLinkClicked);
+            // 
             // VersionLabel
             // 
             this.VersionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.VersionLabel.AutoSize = true;
             this.VersionLabel.Font = new System.Drawing.Font("Pokemon DPPt", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.VersionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.VersionLabel.Location = new System.Drawing.Point(464, 292);
+            this.VersionLabel.Location = new System.Drawing.Point(10, 282);
             this.VersionLabel.Name = "VersionLabel";
-            this.VersionLabel.Size = new System.Drawing.Size(55, 20);
+            this.VersionLabel.Size = new System.Drawing.Size(53, 24);
             this.VersionLabel.TabIndex = 3;
             this.VersionLabel.Text = "vN.N.N";
             this.VersionLabel.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.VersionLabel.UseCompatibleTextRendering = true;
             // 
             // ButtonPanel
             // 
@@ -150,5 +170,6 @@
         private Label VersionLabel;
         private Button LoadFileButton;
         private Button NewFileButton;
+        private LinkLabel GitHubLink;
     }
 }

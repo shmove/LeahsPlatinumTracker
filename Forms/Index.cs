@@ -23,12 +23,6 @@ namespace LeahsPlatinumTracker
         public Index()
         {
             InitializeComponent();
-            if (Program.HasInstalledNewFonts)
-            {
-                MessageBox.Show("New fonts installed! Restarting program...", "Required fonts installed");
-                Application.Restart();
-                Environment.Exit(0);
-            }
         }
 
         private async void Index_Load(object sender, EventArgs e)
@@ -44,14 +38,25 @@ namespace LeahsPlatinumTracker
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There was an error checking for new updates. Is something blocking this program from accessing the internet?\nError: " + ex.InnerException?.Message, "Update error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("There was an error checking for new updates. Is something blocking this program from accessing the internet?\n\nError: " + (ex.InnerException?.Message ?? ex.Message), "Update error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void LinkLabelLinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            GitHubLink.LinkVisited = true;
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("https://github.com/shmove/LeahsPlatinumTracker") { UseShellExecute = true });
         }
 
         private void NewFileButton_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             SubForm = new PlatinumTracker();
             Hide();
+
+            Cursor.Current = Cursors.Default;
+
             SubForm.ShowDialog();
             Show();
         }
@@ -70,6 +75,8 @@ namespace LeahsPlatinumTracker
 
             if (fileDialog.ShowDialog() == DialogResult.OK)
             {
+                Cursor.Current = Cursors.WaitCursor;
+
                 string selectedFileName = fileDialog.FileName;
                 string json = File.ReadAllText(selectedFileName);
 
@@ -78,6 +85,9 @@ namespace LeahsPlatinumTracker
                 {
                     SubForm = new PlatinumTracker(Player, selectedFileName);
                     Hide();
+
+                    Cursor.Current = Cursors.Default;
+
                     SubForm.ShowDialog();
                     Show();
                 }

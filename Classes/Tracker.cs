@@ -610,7 +610,7 @@ namespace LeahsPlatinumTracker
             {
                 if (sector.AttemptUnlock(unlockedArea, Checks))
                 {
-                    System.Diagnostics.Debug.WriteLine("Unlocked map: " + sector.MapID);
+                    //System.Diagnostics.Debug.WriteLine("Unlocked map: " + sector.MapID);
                     successfullyUpdated = true;
                     UpdateMap(sector.MapID);
                 };
@@ -629,7 +629,7 @@ namespace LeahsPlatinumTracker
             {
                 if (sector.AttemptLock(lockedArea, Checks))
                 {
-                    System.Diagnostics.Debug.WriteLine("Locked map: " + sector.MapID);
+                    //System.Diagnostics.Debug.WriteLine("Locked map: " + sector.MapID);
                     RevertMap(sector.MapID);
                 }
             }
@@ -646,7 +646,7 @@ namespace LeahsPlatinumTracker
             {
                 if (sector.AttemptUnlock(Checks))
                 {
-                    System.Diagnostics.Debug.WriteLine("Unlocked map: " + sector.MapID);
+                    //System.Diagnostics.Debug.WriteLine("Unlocked map: " + sector.MapID);
                     successfullyUpdated = true;
                     UpdateMap(sector.MapID);
                 }
@@ -663,7 +663,7 @@ namespace LeahsPlatinumTracker
             {
                 if(sector.AttemptLock(Checks))
                 {
-                    System.Diagnostics.Debug.WriteLine("Locked map: " + sector.MapID);
+                    //System.Diagnostics.Debug.WriteLine("Locked map: " + sector.MapID);
                     RevertMap(sector.MapID);
                 };
             }
@@ -694,8 +694,7 @@ namespace LeahsPlatinumTracker
 
                     if (MapSector.Link(warp1.WarpID, warp2, preserveVisualMarkers))
                     {
-                        //System.Diagnostics.Debug.WriteLine("1: Created link from " + warp1.MapID + " to " + warp2.MapID);
-                        if (!wasUnlocked) System.Diagnostics.Debug.WriteLine("Unlocked map: " + MapSector.MapID);
+                        //if (!wasUnlocked) System.Diagnostics.Debug.WriteLine("Unlocked map: " + MapSector.MapID);
                         UpdateMap(warp1.MapID);
                         linked1 = true;
                     };
@@ -713,8 +712,7 @@ namespace LeahsPlatinumTracker
 
                     if (MapSector.Link(warp2.WarpID, warp1, preserveVisualMarkers))
                     {
-                        //System.Diagnostics.Debug.WriteLine("2: Created link from " + warp2.MapID + " to " + warp1.MapID);
-                        if (!wasUnlocked) System.Diagnostics.Debug.WriteLine("Unlocked map: " + MapSector.MapID);
+                        //if (!wasUnlocked) System.Diagnostics.Debug.WriteLine("Unlocked map: " + MapSector.MapID);
                         UpdateMap(warp2.MapID);
                         linked2 = true;
                     }
@@ -808,7 +806,9 @@ namespace LeahsPlatinumTracker
         /// <returns>The chosen filepath the file was saved to, or <b>null</b> if dialog was exited early.</returns>
         public string ToJSON(string predeterminedFile = "")
         {
+            Cursor.Current = Cursors.WaitCursor;
             string json = JsonConvert.SerializeObject(this, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, Formatting = Formatting.Indented });
+            Cursor.Current = Cursors.Default;
 
             if (predeterminedFile == "")
             {

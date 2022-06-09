@@ -352,6 +352,8 @@ namespace LeahsPlatinumTracker
 
         public void LoadMapPanel(string MapID, int WarpID = -1)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             if (MapID.StartsWith("r2")) MapID = MapID[1..];
             string VisualMapID = Player.GetVisualMapSector(MapID).VisualMapID;
             
@@ -361,6 +363,7 @@ namespace LeahsPlatinumTracker
                 if (activePanel.Name == VisualMapID || VisualMapID.StartsWith("2") && activePanel.Name == ("r" + VisualMapID))
                 {
                     if (WarpID >= 0) activePanel.SelectWarp(MapID, WarpID);
+                    Cursor.Current = Cursors.Default;
                     return;
                 }
             }
@@ -393,6 +396,7 @@ namespace LeahsPlatinumTracker
                 }
             }
 
+            Cursor.Current = Cursors.Default;
             if (!loaded) MessageBox.Show("Attempted to load an invalid panel.", "Error loading panel", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 

@@ -20,27 +20,17 @@
 	  <Authors>shmove</Authors>
 	  <SignAssembly>False</SignAssembly>
 	  <ApplicationIcon>Resources\Pictures\icon.ico</ApplicationIcon>
-	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	  <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Nirmala.ttf" />
-    <None Remove="Pokemon DPPt.ttf" />
-    <None Remove="PowerClear-Bold.ttf" />
-    <None Remove="PowerClear.ttf" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Nirmala.ttf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Pokemon DPPt.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="PowerClear-Bold.ttf">
+    <Content Include="PowerClear.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="PowerClear.ttf">
+    <Content Include="PowerClearB.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -279,6 +269,7 @@
     <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Pictures\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
