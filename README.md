@@ -2,7 +2,7 @@
 <p align="center">My advanced tracker for Pokémon Platinum Map Randomisers.<br />Intended to be used with PointCrow's Universal Map Randomiser.</p>
 
 ## Downloading
-Download and run `Setup.exe` from the most recent release on the [Releases](https://github.com/shmove/LeahsPlatinumTracker/releases) page.
+Download and run `LPTSetup.exe` from the most recent release on the [Releases](https://github.com/shmove/LeahsPlatinumTracker/releases) page, then subsequently launch from the desktop icon.
 
 ## Features
 This tracker has the ability to:
