@@ -16,6 +16,8 @@ namespace LeahsPlatinumTracker
         public VisualMapSector associatedVisualMapSector { get; set; }
         private MapSector AssociatedMapSector { get; set; }
 
+        private ToolTip? ButtonToolTip { get; set; }
+
         public RouteConnectorButton()
         {
             FlatStyle = FlatStyle.Flat;
@@ -26,6 +28,8 @@ namespace LeahsPlatinumTracker
             ForeColor = Color.White;
             BackColor = Color.FromArgb(255, 73, 180, 111);
             FlatAppearance.BorderColor = ForeColor;
+
+            MouseHover += RouteConnectorButton_MouseHover;
         }
 
         public void Init()
@@ -38,32 +42,18 @@ namespace LeahsPlatinumTracker
             UpdateAppearance();
         }
 
+        private bool MeetsUnlockedCriteria()
+        {
+            return (
+                AssociatedMapSector.DefaultUnlocked && AssociatedMapSector.Conditions.Count == 0 ||
+                AssociatedMapSector.IsUnlocked && AssociatedMapSector.Conditions[ConditionIndex].RequiredChecks.meetsRequirements(Player.Checks)
+            );
+        }
+
         public void UpdateAppearance()
         {
             if (parent == null) Init();
-            if (DestinationMapSector != null)
-            {
-                if (
-                    AssociatedMapSector.DefaultUnlocked && AssociatedMapSector.Conditions.Count == 0 ||
-                    AssociatedMapSector.IsUnlocked      && AssociatedMapSector.Conditions[ConditionIndex].RequiredChecks.meetsRequirements(Player.Checks)
-                ){
-                    // regular visuals, unlocked
-                    ForeColor = Color.White;
-                    BackColor = Color.FromArgb(255, 73, 180, 111);
-                    FlatAppearance.BorderColor = ForeColor;
-                }
-                else
-                {
-                    // special case locked visuals (check locked set warps)
-                    ForeColor = Color.FromArgb(255, 155, 155, 155);
-                    BackColor = Color.FromArgb(255, 209, 209, 209);
-                    FlatAppearance.BorderColor = Color.FromArgb(255, 155, 155, 155);
-                }
-                return;
-            }
-
-            if (associatedVisualMapSector.IsUnlocked)
-            {
+            if (MeetsUnlockedCriteria()){
                 // regular visuals, unlocked
                 ForeColor = Color.White;
                 BackColor = Color.FromArgb(255, 73, 180, 111);
@@ -75,6 +65,29 @@ namespace LeahsPlatinumTracker
                 ForeColor = Color.FromArgb(255, 155, 155, 155);
                 BackColor = Color.FromArgb(255, 209, 209, 209);
                 FlatAppearance.BorderColor = Color.FromArgb(255, 155, 155, 155);
+            }
+            return;
+        }
+
+        private void RouteConnectorButton_MouseHover(object? sender, EventArgs e)
+        {
+            if (ButtonToolTip == null)
+            {
+                if (MeetsUnlockedCriteria()) return;
+                else
+                {
+                    ButtonToolTip = new ToolTip
+                    {
+                        InitialDelay = 600,
+                        AutoPopDelay = 32000 // why is this even a thing?
+                    };
+                    ButtonToolTip.SetToolTip(this, AssociatedMapSector.RequirementsString);
+                }
+            }
+            else
+            {
+                if (AssociatedMapSector.IsUnlocked) { ButtonToolTip.RemoveAll(); ButtonToolTip = null; return; }
+                ButtonToolTip.SetToolTip(this, AssociatedMapSector.RequirementsString);
             }
         }
     }

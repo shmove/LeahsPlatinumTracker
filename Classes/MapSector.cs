@@ -259,6 +259,7 @@ namespace LeahsPlatinumTracker
                 (List<Warp> Warps, List<string> CheckedSectors) AccessedWarpInfo = GetWarpsFromRootSector(this);
                 return AccessedWarpInfo.Warps;
             }
+
         }
 
         /// <summary>
@@ -305,6 +306,81 @@ namespace LeahsPlatinumTracker
                 }
                 if (warp1 != null && warp2 != null) return (warp1, warp2);
                 else throw new Exception("Tried to get pseudo-corridor warps of a non-pseudo-corridor.");
+            }
+        }
+
+        /// <summary>
+        /// A readable stringified version of the currently reasonable access requirements for this MapSector.
+        /// </summary>
+        [JsonIgnore]
+        public string RequirementsString { 
+            get 
+            {
+                // gets if any string in the given list is a substring of the given string
+                bool AnyStringIsSubstring(List<string> list, string str)
+                {
+                    foreach(string substr in list)
+                    {
+                        if (str.Contains(substr)) return true;
+                    }
+                    return false;
+                }
+
+                List<string> GetRequirementsFromRootSector(MapSector sector, List<string>? CurrentStack = null, List<string>? SectorChain = null)
+                {
+                    List<string> RequirementStacks = new();
+                    if (CurrentStack == null) CurrentStack = new();
+                    if (SectorChain == null) SectorChain = new();
+
+                    SectorChain.Add(sector.MapID);
+
+                    foreach(Condition condition in sector.Conditions)
+                    {
+                        List<string> thisChain = new(SectorChain);
+                        if (thisChain.Contains(condition.AccessMap)) continue; // exit early if already checked, to prevent infinite recursion
+                        thisChain.Add(condition.AccessMap);
+
+                        List<string> thisStack = new(CurrentStack); // clone current stack into this stack
+                        MapSector AccessingSector = Tracker.GetMapSector(condition.AccessMap);
+                        string conditionToString = condition.ToString();
+
+                        if (conditionToString != string.Empty)
+                        {
+                            foreach(string requirement in conditionToString.Split(", "))
+                            {
+                                if (!thisStack.Contains(requirement)) thisStack.Add(requirement);
+                            }
+                        }
+
+                        if (thisStack.Count > 0)
+                        {
+                            string stringifiedStack = "- Accessible after completing requirements: ";
+                            foreach(string requirement in thisStack)
+                            {
+                                stringifiedStack += "\n    - " + requirement;
+                            }
+
+                            if (AccessingSector.IsUnlocked)
+                            {
+                                if (!AnyStringIsSubstring(RequirementStacks, stringifiedStack)) RequirementStacks.Add(stringifiedStack);
+                            }
+                            else
+                            {
+                                RequirementStacks = RequirementStacks.Concat(GetRequirementsFromRootSector(AccessingSector, thisStack, thisChain)).ToList().Distinct().ToList();
+                            }
+                        }
+
+                        if (!AccessingSector.IsUnlocked) RequirementStacks = RequirementStacks.Concat(GetRequirementsFromRootSector(AccessingSector, thisStack, thisChain)).ToList().Distinct().ToList();
+                    }
+
+                    return RequirementStacks;
+
+                }
+
+                List<string> Requirements = GetRequirementsFromRootSector(this);
+                if (Requirements.Count == 0) return "Currently inaccessible.";
+
+                return string.Join("\n", Requirements);
             }
         }
 
@@ -599,20 +675,6 @@ namespace LeahsPlatinumTracker
         }
 
         /// <summary>
-        /// Debug method. Returns a boolean pertaining to whether this instance can be unlocked by a given <see cref="MapID"/>.
-        /// </summary>
-        /// <param name="MapName">The <see cref="MapID"/> to check this instance's conditions for.</param>
-        /// <returns>A boolean pertaining to whether this instance can be unlocked by the given <see cref="MapID"/>.</returns>
-        public bool CanAccess(string MapName) 
-        {
-            foreach (Condition Condition in Conditions)
-            {
-                if (Condition.AccessMap == MapName) return true;
-            }
-            return false;
-        }
-
-        /// <summary>
         /// Evaluates if this <see cref="MapSector"/> can be used as a physical connection to other MapSectors.
         /// </summary>
         /// <returns>A boolean pertaining to whether this instance can be used as a physical connection to other MapSectors.</returns>
@@ -676,6 +738,17 @@ namespace LeahsPlatinumTracker
             AccessMap = _AccessMap;
             RequiredChecks = _RequiredChecks;
             MapAccessible = _MapAccessible;
+        }
+
+        /// <summary>
+        /// Returns a readable stringified version of the requirements for this condition, if accessible.
+        /// See <see cref="Checks.toString"/>.
+        /// </summary>
+        public override string ToString()
+        {
+            string str = string.Join(", ", RequiredChecks.ToList());
+            if (str.Trim() == string.Empty) return string.Empty;
+            else return str;
         }
 
     }

@@ -16,6 +16,8 @@ namespace LeahsPlatinumTracker
         private MapsForm? parent;
         public bool selected { get; set; } = false;
 
+        private ToolTip? ButtonToolTip { get; set; }
+
         public WarpButton()
         {
             FlatStyle = FlatStyle.Flat;
@@ -27,6 +29,8 @@ namespace LeahsPlatinumTracker
             ForeColor = Color.FromArgb(255, 54, 82, 129);
             BackColor = Color.FromArgb(255, 160, 183, 214);
             FlatAppearance.BorderColor = Color.FromArgb(255, 112, 146, 190);
+
+            MouseHover += WarpButton_MouseHover;
         }
 
         public void Init(bool fromUpdate = false)
@@ -226,10 +230,33 @@ namespace LeahsPlatinumTracker
                 }
 
                 Marker.MouseDown += new MouseEventHandler(parent.Warp_Click);
+                Marker.MouseHover += WarpButton_MouseHover;
                 parent.Controls.Add(Marker);
                 parent.parent.UpdateMapSelectorButtons(parent.parent);
                 Marker.BringToFront();
                 parent.MapImages.SendToBack();
+            }
+        }
+
+        private void WarpButton_MouseHover(object? sender, EventArgs e)
+        {
+            if (ButtonToolTip == null)
+            {
+                if (associatedWarp.ParentMapSector.IsUnlocked) return;
+                else
+                {
+                    ButtonToolTip = new ToolTip
+                    {
+                        InitialDelay = 600,
+                        AutoPopDelay = 32000 // why is this even a thing?
+                    };
+                    ButtonToolTip.SetToolTip(this, associatedWarp.ParentMapSector.RequirementsString);
+                }
+            }
+            else
+            {
+                if (associatedWarp.ParentMapSector.IsUnlocked) { ButtonToolTip.RemoveAll(); ButtonToolTip = null; return; }
+                ButtonToolTip.SetToolTip(this, associatedWarp.ParentMapSector.RequirementsString);
             }
         }
     }

@@ -302,6 +302,7 @@ namespace LeahsPlatinumTracker
             }
 
             // Go through all checks and return false if a single one doesn't meet requirements
+            // (this really sucks, need to improve it)
             if (!MeetsRequiredFlags(ChecksMade, currentChecks.ChecksMade, CheckFlags.HasWorksKey))              return false;
             if (!MeetsRequiredFlags(ChecksMade, currentChecks.ChecksMade, CheckFlags.HasGalacticKey))           return false;
             if (!MeetsRequiredFlags(ChecksMade, currentChecks.ChecksMade, CheckFlags.HasTeleport))              return false;
@@ -336,39 +337,142 @@ namespace LeahsPlatinumTracker
         }
 
         /// <summary>
-        /// Debug method. Creates a string representing the flags set in this instance.
+        /// Returns readable stringified versions of the flags set in this instance.
         /// </summary>
-        /// <returns>A string representing the flags set in this instance.</returns>
-        public string CheckString()
+        public List<string> ToList()
         {
-            string output = "";
-            if (FlagsTool.IsSet(ChecksMade, CheckFlags.HasWorksKey)) output += "WorksKey ";
-            if (FlagsTool.IsSet(ChecksMade, CheckFlags.HasGalacticKey)) output += "GalacticKey ";
-            if (FlagsTool.IsSet(ChecksMade, CheckFlags.HasTeleport)) output += "Teleport ";
-            if (FlagsTool.IsSet(ChecksMade, CheckFlags.HasBike)) output += "Bike ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasCoalBadge)) output += "Badge1 ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasForestBadge)) output += "Badge2 ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasRelicBadge)) output += "Badge3 ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasCobbleBadge)) output += "Badge4 ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasFenBadge)) output += "Badge5 ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasMineBadge)) output += "Badge6 ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasIcicleBadge)) output += "Badge7 ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasBeaconBadge)) output += "Badge8 ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasAaron)) output += "Aaron ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasBertha)) output += "Bertha ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasFlint)) output += "Flint ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasLucian)) output += "Lucian ";
-            if (FlagsTool.IsSet(Progress, ProgressFlags.HasCynthia)) output += "Cynthia ";
-            if (FlagsTool.IsSet(HMs, HMFlags.HM01)) output += "Cut ";
-            if (FlagsTool.IsSet(HMs, HMFlags.HM02)) output += "Fly ";
-            if (FlagsTool.IsSet(HMs, HMFlags.HM03)) output += "Surf ";
-            if (FlagsTool.IsSet(HMs, HMFlags.HM04)) output += "Strength ";
-            if (FlagsTool.IsSet(HMs, HMFlags.HM05)) output += "Defog ";
-            if (FlagsTool.IsSet(HMs, HMFlags.HM06)) output += "Rock Smash ";
-            if (FlagsTool.IsSet(HMs, HMFlags.HM07)) output += "Waterfall ";
-            if (FlagsTool.IsSet(HMs, HMFlags.HM08)) output += "Rock Climb ";
-            if (output == "") output = "None";
-            return output;
+            List<string> Flags = new();
+
+            // CheckFlags
+            foreach(var Flag in Enum.GetValues(typeof(CheckFlags)).Cast<CheckFlags>())
+            {
+                if (ChecksMade.HasFlag(Flag))
+                {
+                    string? flagDesc = null;
+                    switch (Flag.ToString())
+                    {
+                        case "HasWorksKey":
+                            flagDesc = "Obtain the Works Key";
+                            break;
+                        case "HasGalacticKey":
+                            flagDesc = "Obtain the Galactic Key";
+                            break;
+                        case "HasTeleport":
+                            flagDesc = "Obtain a Pokémon with Teleport";
+                            break;
+                        case "HasBike":
+                            flagDesc = "Obtain a Bike";
+                            break;
+                        case "HasSpokenRoark":
+                            flagDesc = "Speak to Roark in Oreburgh Mine";
+                            break;
+                        case "HasSpokenFantina":
+                            flagDesc = "Speak to Fantina in the Super Contest Hall";
+                            break;
+                        case "HasSpokenVolkner":
+                            flagDesc = "Speak to Volkner in the Vista Lighthouse";
+                            break;
+                        case "HasDefeatedWindworks":
+                            flagDesc = "Defeat Mars in Valley Windworks";
+                            break;
+                        case "HasSecretPotion":
+                            flagDesc = "Obtain the SecretPotion from Cynthia";
+                            break;
+                    }
+                    if (flagDesc != null) Flags.Add(flagDesc);
+                }
+            }
+
+            // HMs
+            foreach (var Flag in Enum.GetValues(typeof(HMFlags)).Cast<HMFlags>())
+            {
+                if (HMs.HasFlag(Flag))
+                {
+                    string? flagDesc = null;
+                    switch (Flag.ToString())
+                    {
+                        case "HM01":
+                            flagDesc = "Obtain HM01 (Cut)";
+                            break;
+                        case "HM02":
+                            flagDesc = "Obtain HM02 (Fly)";
+                            break;
+                        case "HM03":
+                            flagDesc = "Obtain HM03 (Surf)";
+                            break;
+                        case "HM04":
+                            flagDesc = "Obtain HM04 (Strength)";
+                            break;
+                        case "HM05":
+                            flagDesc = "Obtain HM05 (Defog)";
+                            break;
+                        case "HM06":
+                            flagDesc = "Obtain HM06 (Rock Smash)";
+                            break;
+                        case "HM07":
+                            flagDesc = "Obtain HM07 (Waterfall)";
+                            break;
+                        case "HM08":
+                            flagDesc = "Obtain HM08 (Rock Climb)";
+                            break;
+                    }
+                    if (flagDesc != null) Flags.Add(flagDesc);
+                }
+            }
+
+            // Progress
+            foreach (var Flag in Enum.GetValues(typeof(ProgressFlags)).Cast<ProgressFlags>())
+            {
+                if (Progress.HasFlag(Flag))
+                {
+                    string? flagDesc = null;
+                    switch (Flag.ToString())
+                    {
+                        case "HasCoalBadge":
+                            if (!HMs.HasFlag((HMFlags)(int)Flag)) flagDesc = "Obtain the Coal Badge";
+                            break;
+                        case "HasForestBadge":
+                            if (!HMs.HasFlag((HMFlags)(int)Flag)) flagDesc = "Obtain the Forest Badge";
+                            break;
+                        case "HasRelicBadge":
+                            if (!HMs.HasFlag((HMFlags)(int)Flag)) flagDesc = "Obtain the Relic Badge";
+                            break;
+                        case "HasCobbleBadge":
+                            if (!HMs.HasFlag((HMFlags)(int)Flag)) flagDesc = "Obtain the Cobble Badge";
+                            break;
+                        case "HasFenBadge":
+                            if (!HMs.HasFlag((HMFlags)(int)Flag)) flagDesc = "Obtain the Fen Badge";
+                            break;
+                        case "HasMineBadge":
+                            if (!HMs.HasFlag((HMFlags)(int)Flag)) flagDesc = "Obtain the Mine Badge";
+                            break;
+                        case "HasIcicleBadge":
+                            if (!HMs.HasFlag((HMFlags)(int)Flag)) flagDesc = "Obtain the Icicle Badge";
+                            break;
+                        case "HasBeaconBadge":
+                            if (!HMs.HasFlag((HMFlags)(int)Flag)) flagDesc = "Obtain the Beacon Badge";
+                            break;
+                        case "HasAaron":
+                            flagDesc = "Defeat Elite Four Aaron";
+                            break;
+                        case "HasBertha":
+                            flagDesc = "Defeat Elite Four Bertha";
+                            break;
+                        case "HasFlint":
+                            flagDesc = "Defeat Elite Four Flint";
+                            break;
+                        case "HasLucian":
+                            flagDesc = "Defeat Elite Four Lucian";
+                            break;
+                        case "HasCynthia":
+                            flagDesc = "Become Champion";
+                            break;
+                    }
+                    if (flagDesc != null) Flags.Add(flagDesc);
+                }
+            }
+
+            return Flags;
         }
 
     }
