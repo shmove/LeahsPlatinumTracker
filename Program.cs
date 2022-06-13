@@ -11,10 +11,13 @@ namespace LeahsPlatinumTracker
         /// <summary>
         /// The current version number of Leah's Platinum Tracker.
         /// </summary>
-        internal const string Version = "1.0.0";
+        internal const string Version = "1.0.1";
         // Updating via Squirrel
         // https://github.com/Squirrel/Squirrel.Windows/blob/develop/docs/getting-started/2-packaging.md
         // https://www.youtube.com/watch?v=W8Qu4qMJyh4
+
+        // Language (not yet supported)
+        internal static string Language = "en";
 
         // Main
 

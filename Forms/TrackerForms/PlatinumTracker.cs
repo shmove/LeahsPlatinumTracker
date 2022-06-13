@@ -13,7 +13,7 @@ namespace LeahsPlatinumTracker
     public partial class PlatinumTracker : TrackerForm
     {
 
-        public PlatinumTracker() : base()
+        public PlatinumTracker() : base("PokemonPlatinum")
         {
             InitializeComponent();
             base.MainPanel = MainPanel;

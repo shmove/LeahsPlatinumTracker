@@ -46,7 +46,7 @@ namespace LeahsPlatinumTracker
         {
             return (
                 AssociatedMapSector.DefaultUnlocked && AssociatedMapSector.Conditions.Count == 0 ||
-                AssociatedMapSector.IsUnlocked && AssociatedMapSector.Conditions[ConditionIndex].RequiredChecks.meetsRequirements(Player.Checks)
+                AssociatedMapSector.IsUnlocked && AssociatedMapSector.Conditions[ConditionIndex].RequiredChecks.MeetsRequirements(Player.Checks)
             );
         }
 

@@ -344,7 +344,7 @@ namespace LeahsPlatinumTracker
                         MapSector AccessingSector = Tracker.GetMapSector(condition.AccessMap);
                         string conditionToString = condition.ToString();
 
-                        if (conditionToString != string.Empty)
+                        if (conditionToString != string.Empty && conditionToString != "LeahsPlatinumTracker.Checks") // empty string / ToString on abstract base class
                         {
                             foreach(string requirement in conditionToString.Split(", "))
                             {
@@ -555,7 +555,7 @@ namespace LeahsPlatinumTracker
         {
             foreach (Condition condition in Conditions)
             {
-                if (condition.MapAccessible && condition.RequiredChecks.meetsRequirements(currentChecks)) return true;
+                if (condition.MapAccessible && condition.RequiredChecks.MeetsRequirements(currentChecks)) return true;
             }
             return DefaultUnlocked;
         }
@@ -588,7 +588,7 @@ namespace LeahsPlatinumTracker
             foreach(Condition Condition in Conditions)
             {
                 if (!Condition.MapAccessible) continue;
-                if (Condition.RequiredChecks.meetsRequirements(currentChecks)) { IsUnlocked = true; break; };
+                if (Condition.RequiredChecks.MeetsRequirements(currentChecks)) { IsUnlocked = true; break; };
             }
             
             return IsUnlocked;
@@ -607,7 +607,7 @@ namespace LeahsPlatinumTracker
 
             foreach (Condition Condition in Conditions)
             {
-                if (!unlockOverride && Condition.RequiredChecks.meetsRequirements(currentChecks) && Condition.MapAccessible) stillUnlocked = true;
+                if (!unlockOverride && Condition.RequiredChecks.MeetsRequirements(currentChecks) && Condition.MapAccessible) stillUnlocked = true;
             }
 
             if (wasUnlocked && !stillUnlocked && !unlockOverride)
@@ -636,7 +636,7 @@ namespace LeahsPlatinumTracker
                 }
                 else continue;
 
-                if (Condition.RequiredChecks.meetsRequirements(currentChecks)) { IsUnlocked = true; break; };
+                if (Condition.RequiredChecks.MeetsRequirements(currentChecks)) { IsUnlocked = true; break; };
             }
 
             return IsUnlocked;
@@ -662,7 +662,7 @@ namespace LeahsPlatinumTracker
                 }
 
                 // if condition still meets checks and is still map accessible then this map remains unlocked
-                if (!unlockOverride && Condition.RequiredChecks.meetsRequirements(currentChecks) && Condition.MapAccessible) stillUnlocked = true;
+                if (!unlockOverride && Condition.RequiredChecks.MeetsRequirements(currentChecks) && Condition.MapAccessible) stillUnlocked = true;
             }
 
             if (wasUnlocked && !stillUnlocked && !unlockOverride)
@@ -746,7 +746,7 @@ namespace LeahsPlatinumTracker
         /// </summary>
         public override string ToString()
         {
-            string str = string.Join(", ", RequiredChecks.ToList());
+            string str = RequiredChecks.ToString();
             if (str.Trim() == string.Empty) return string.Empty;
             else return str;
         }

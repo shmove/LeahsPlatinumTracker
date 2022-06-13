@@ -51,8 +51,8 @@
             this.ClientSize = new System.Drawing.Size(996, 802);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MapPanel";
-            this.Text = "MapPanel";
+            this.Name = "Template";
+            this.Text = "MapsForm";
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

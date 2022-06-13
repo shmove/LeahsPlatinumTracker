@@ -36,183 +36,183 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Maps\PokemonPlatinum\BacklotMansion.cs" />
-    <Compile Update="Maps\PokemonPlatinum\Canalave.cs">
+    <Compile Update="Forms\MapForms\Template.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Celestic.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\BacklotMansion.cs" />
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Canalave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\DeptStore.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Celestic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Eterna.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\DeptStore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\EternaForest.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Eterna.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\FightArea.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\EternaForest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\FloaromaMeadow.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\FightArea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\GalacticHQ.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\FloaromaMeadow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\FuegoIronworks.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\GalacticHQ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Hearthome.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\FuegoIronworks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\IronIsland.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Hearthome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Jubilife.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\IronIsland.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\JubilifeGTS.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Jubilife.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\JubilifeTV.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\JubilifeGTS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\AcuityLake.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\JubilifeTV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\MtCoronet.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\AcuityLake.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\MtCoronetPeak.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\MtCoronet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\OldChateau.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\MtCoronetPeak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Oreburgh.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\OldChateau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\OreburghGate.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Oreburgh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Pastoria.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\OreburghGate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Poketch.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Pastoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\PokeLeague.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Poketch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\ResortArea.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\PokeLeague.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\SendoffSpring.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\ResortArea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Snowpoint.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\SendoffSpring.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Solaceon.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Snowpoint.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\SolaceonRuins.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Solaceon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\StarkMtn.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\SolaceonRuins.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Sunyshore.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\StarkMtn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\SurvivalArea.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Sunyshore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r203.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\SurvivalArea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r204.cs" />
-    <Compile Update="Maps\PokemonPlatinum\r205.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r203.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r206.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r204.cs" />
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r205.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r207.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r206.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r208.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r207.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r209.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r208.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r210.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r209.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r211.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r210.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r212.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r211.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r213.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r212.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r214.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r213.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r215.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r214.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r216.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r215.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r217.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r216.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r221.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r217.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r222.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r221.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r225.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r222.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r226.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r225.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r227.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r226.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\r228.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r227.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\VictoryRoad.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\r228.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Veilstone.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\VictoryRoad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\ValleyWindworks.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Veilstone.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\TGEterna.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\ValleyWindworks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\ValorLake.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\TGEterna.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\VerityLake.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\ValorLake.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\Template.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\VerityLake.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps\PokemonPlatinum\Floaroma.cs">
+    <Compile Update="Forms\MapForms\PokemonPlatinum\Floaroma.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Resources\ChecksResources.Designer.cs">
@@ -254,10 +254,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PictureResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Maps\PokemonPlatinum\Images\" />
   </ItemGroup>
 
   <ItemGroup>

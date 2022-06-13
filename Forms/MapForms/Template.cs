@@ -13,7 +13,7 @@ namespace LeahsPlatinumTracker.Maps
     public partial class Template : MapsForm
     {
 
-        public static string Game = "PokemonPlatinum";
+        public static string Game = "Template";
 
         public Template()
         {

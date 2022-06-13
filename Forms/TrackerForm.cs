@@ -39,7 +39,15 @@ namespace LeahsPlatinumTracker
 
         public TrackerForm()
         {
-            Player = new Tracker();
+            Player = new Tracker("PokemonPlatinum");
+            mapPanels = new List<System.Reflection.TypeInfo>();
+            UndoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();
+            RedoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();
+        }
+
+        public TrackerForm(string? Game = "PokemonPlatinum")
+        {
+            Player = new Tracker(Game);
             mapPanels = new List<System.Reflection.TypeInfo>();
             UndoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();
             RedoHistory = new List<((Warp warp1Prev, Warp warp1Post), (Warp warp2Prev, Warp warp2Post))>();

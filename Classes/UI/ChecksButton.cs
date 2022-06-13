@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeahsPlatinumTracker
+﻿namespace LeahsPlatinumTracker
 {
     public class ChecksButton : PictureBox
     {
@@ -47,18 +41,18 @@ namespace LeahsPlatinumTracker
             switch (sender.GetType().Name)
             {
                 case "CheckFlagsButton":
-                    CheckState = Player.Checks.ChecksMade.HasFlag(((CheckFlagsButton)sender).Flag);
-                    VisualCheckState = Player.VisualChecks.ChecksMade.HasFlag(((CheckFlagsButton)sender).Flag);
+                    CheckState = (Player.Checks.ChecksMade & ((CheckFlagsButton)sender).Flag) > 0;
+                    VisualCheckState = (Player.VisualChecks.ChecksMade & ((CheckFlagsButton)sender).Flag) > 0;
                     tooltip.SetToolTip(this, TooltipText ?? ((CheckFlagsButton)sender).Flag.ToString());
                     break;
                 case "ProgressFlagsButton":
-                    CheckState = Player.Checks.Progress.HasFlag(((ProgressFlagsButton)sender).Flag);
-                    VisualCheckState = Player.VisualChecks.Progress.HasFlag(((ProgressFlagsButton)sender).Flag);
+                    CheckState = (Player.Checks.Progress & ((ProgressFlagsButton)sender).Flag) > 0;
+                    VisualCheckState = (Player.VisualChecks.Progress & ((ProgressFlagsButton)sender).Flag) > 0;
                     tooltip.SetToolTip(this, TooltipText ?? ((ProgressFlagsButton)sender).Flag.ToString());
                     break;
                 case "HMFlagsButton":
-                    CheckState = Player.Checks.HMs.HasFlag(((HMFlagsButton)sender).Flag);
-                    VisualCheckState = Player.VisualChecks.HMs.HasFlag(((HMFlagsButton)sender).Flag);
+                    CheckState = (Player.Checks.HMs & ((HMFlagsButton)sender).Flag) > 0;
+                    VisualCheckState = (Player.VisualChecks.HMs & ((HMFlagsButton)sender).Flag) > 0;
                     tooltip.SetToolTip(this, TooltipText ?? ((HMFlagsButton)sender).Flag.ToString());
                     break;
             }
@@ -79,19 +73,19 @@ namespace LeahsPlatinumTracker
             switch (sender.GetType().Name)
             {
                 case "CheckFlagsButton":
-                    toggleOutput = Player.Checks.Toggle(((CheckFlagsButton)sender).Flag);
-                    if (toggleOutput) Player.VisualChecks.Unlock(((CheckFlagsButton)sender).Flag);
-                    else              Player.VisualChecks.Lock(((CheckFlagsButton)sender).Flag);
+                    toggleOutput = ((IChecks)Player.Checks).ToggleCheck(((CheckFlagsButton)sender).Flag);
+                    if (toggleOutput) ((IChecks)Player.VisualChecks).UnlockCheck(((CheckFlagsButton)sender).Flag);
+                    else ((IChecks)Player.VisualChecks).LockCheck(((CheckFlagsButton)sender).Flag);
                     break;
                 case "ProgressFlagsButton":
-                    toggleOutput = Player.Checks.Toggle(((ProgressFlagsButton)sender).Flag);
-                    if (toggleOutput) Player.VisualChecks.Unlock(((ProgressFlagsButton)sender).Flag);
-                    else              Player.VisualChecks.Lock(((ProgressFlagsButton)sender).Flag);
+                    toggleOutput = ((IChecks)Player.Checks).ToggleProgress(((ProgressFlagsButton)sender).Flag);
+                    if (toggleOutput) ((IChecks)Player.VisualChecks).UnlockProgress(((ProgressFlagsButton)sender).Flag);
+                    else ((IChecks)Player.VisualChecks).LockProgress(((ProgressFlagsButton)sender).Flag);
                     break;
                 case "HMFlagsButton":
-                    toggleOutput = Player.Checks.Toggle(((HMFlagsButton)sender).Flag);
-                    if (toggleOutput) Player.VisualChecks.Unlock(((HMFlagsButton)sender).Flag);
-                    else              Player.VisualChecks.Lock(((HMFlagsButton)sender).Flag);
+                    toggleOutput = ((IChecks)Player.Checks).ToggleHM(((HMFlagsButton)sender).Flag);
+                    if (toggleOutput) ((IChecks)Player.VisualChecks).UnlockHM(((HMFlagsButton)sender).Flag);
+                    else ((IChecks)Player.VisualChecks).LockHM(((HMFlagsButton)sender).Flag);
                     break;
             }
 
@@ -110,16 +104,16 @@ namespace LeahsPlatinumTracker
 
             bool toggleOutput = true;
 
-            switch(sender.GetType().Name)
+            switch (sender.GetType().Name)
             {
                 case "CheckFlagsButton":
-                    toggleOutput = Player.VisualChecks.Toggle(((CheckFlagsButton)sender).Flag);
+                    toggleOutput = ((IChecks)Player.VisualChecks).ToggleCheck(((CheckFlagsButton)sender).Flag);
                     break;
                 case "ProgressFlagsButton":
-                    toggleOutput = Player.VisualChecks.Toggle(((ProgressFlagsButton)sender).Flag);
+                    toggleOutput = ((IChecks)Player.VisualChecks).ToggleProgress(((ProgressFlagsButton)sender).Flag);
                     break;
                 case "HMFlagsButton":
-                    toggleOutput = Player.VisualChecks.Toggle(((HMFlagsButton)sender).Flag);
+                    toggleOutput = ((IChecks)Player.VisualChecks).ToggleHM(((HMFlagsButton)sender).Flag);
                     break;
             }
 
@@ -130,7 +124,7 @@ namespace LeahsPlatinumTracker
 
     public class CheckFlagsButton : ChecksButton
     {
-        public Checks.CheckFlags Flag { get; set; }
+        public int Flag { get; set; }
 
         public CheckFlagsButton() : base()
         {
@@ -142,7 +136,7 @@ namespace LeahsPlatinumTracker
             MouseEventArgs me = (MouseEventArgs)e;
 
             // if left click, or right click on flag that is actually unlocked
-            if (me.Button == MouseButtons.Left || (me.Button == MouseButtons.Right && CheckState) )
+            if (me.Button == MouseButtons.Left || (me.Button == MouseButtons.Right && CheckState))
             {
                 CheckState = HandleCheckChange(this);
                 if (CheckState) Image = Image_Unlocked;
@@ -159,7 +153,7 @@ namespace LeahsPlatinumTracker
 
     public class ProgressFlagsButton : ChecksButton
     {
-        public Checks.ProgressFlags Flag { get; set; }
+        public int Flag { get; set; }
 
         public ProgressFlagsButton() : base()
         {
@@ -188,7 +182,7 @@ namespace LeahsPlatinumTracker
 
     public class HMFlagsButton : ChecksButton
     {
-        public Checks.HMFlags Flag { get; set; }
+        public int Flag { get; set; }
 
         public HMFlagsButton() : base()
         {
