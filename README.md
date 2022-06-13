@@ -1,8 +1,8 @@
 <p align="center"><img src="https://github.com/shmove/LeahsPlatinumTracker/blob/master/Resources/Pictures/Logo.png" width="600"></p>
-<p align="center">My advanced tracker for Pokémon Platinum Map Randomisers.<br />Intended to be used with PointCrow's Universal Map Randomiser.</p>
+<p align="center">My advanced tracker for Pokémon Platinum Warp Randomisers.<br />Intended to be used with PointCrow's Universal Warp Randomiser.</p>
 
 ## Downloading
-Download and run `Setup.exe` from the most recent release on the [Releases](https://github.com/shmove/LeahsPlatinumTracker/releases) page.
+Download and run `LPTSetup.exe` from the most recent release on the [Releases](https://github.com/shmove/LeahsPlatinumTracker/releases) page, then subsequently launch from the desktop icon.
 
 ## Features
 This tracker has the ability to:
@@ -28,7 +28,7 @@ If you find any bugs or have any feature requests, please message me on Discord 
 ## Acknowledgements
 - [SaltContainer's Pokémon Platinum EmoTracker pack](https://github.com/SaltContainer/PokemonPlatinumMapRandoTracker)
 	- Inspired this project and provided some map images.
-- PointCrow's Universal Map Randomiser - AtSign, XLuma, Turtleisaac
+- PointCrow's Universal Warp Randomiser - AtSign, XLuma, Turtleisaac
 - Bulbapedia - Map images
 - Spriters Resource
 	- spaceemotion - NPC overworld sprites (Pt), Area Icons (Pt)
