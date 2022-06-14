@@ -362,13 +362,13 @@ namespace LeahsPlatinumTracker
         {
             Cursor.Current = Cursors.WaitCursor;
 
-            if (MapID.StartsWith("r2")) MapID = MapID[1..];
+            if (MapID.StartsWith("r")) MapID = MapID[1..];
             string VisualMapID = Player.GetVisualMapSector(MapID).VisualMapID;
             
             // if panel is already loaded
             if (activePanel != null)
             {
-                if (activePanel.Name == VisualMapID || VisualMapID.StartsWith("2") && activePanel.Name == ("r" + VisualMapID))
+                if (activePanel.Name == VisualMapID || activePanel.Name == ("r" + VisualMapID))
                 {
                     if (WarpID >= 0) activePanel.SelectWarp(MapID, WarpID);
                     Cursor.Current = Cursors.Default;
@@ -379,7 +379,7 @@ namespace LeahsPlatinumTracker
 
             foreach (var panelClass in mapPanels)
             {
-                if (panelClass.Name == VisualMapID || VisualMapID.StartsWith("2") && panelClass.Name == ("r" + VisualMapID))
+                if (panelClass.Name == VisualMapID || panelClass.Name == ("r" + VisualMapID))
                 {
                     MapsForm panel = (MapsForm)Activator.CreateInstance(panelClass);
                     panel.Player = Player;
