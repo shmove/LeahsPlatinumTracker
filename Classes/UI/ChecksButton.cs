@@ -91,10 +91,13 @@
 
             // toggleOutput will return true if check was UNLOCKED, and false is check was LOCKED;
             // update map accordingly
-            if (toggleOutput) Player.UpdateMap();
-            else Player.RevertMap();
-            ParentForm.UpdateAllAppearances();
+            if (Player.UsesLogic)
+            {
+                if (toggleOutput) Player.UpdateMap();
+                else Player.RevertMap();
+            }
 
+            ParentForm.UpdateAllAppearances();
             return toggleOutput;
         }
 

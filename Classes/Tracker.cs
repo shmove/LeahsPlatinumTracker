@@ -65,12 +65,17 @@ namespace LeahsPlatinumTracker
         /// <summary>
         /// The current version of the <see cref="Tracker"/> at the time of this instance's creation.
         /// </summary>
-        public string CreatedVersion { get; set; }
+        public Version CreatedVersion { get; set; }
 
         /// <summary>
         /// Simple notes written by the user and saved alongside tracking information.
         /// </summary>
         public string UserNotes { get; set; }
+
+        /// <summary>
+        /// Whether this <see cref="Tracker"/> uses logic, or assumes every area is always accessible.
+        /// </summary>
+        public bool UsesLogic { get; set; }
 
         /// <summary>
         /// Constructor. Initialises empty sets of <see cref="LeahsPlatinumTracker.Checks"/> and creates a <see cref="Tracker"/> for the specified game with all map areas and warps.
@@ -88,6 +93,8 @@ namespace LeahsPlatinumTracker
             switch (Game)
             {
                 case "PokemonPlatinum":
+
+                    UsesLogic = true;
 
                     // Creates sets of Checks with nothing set
                     Checks = new PlatinumChecks();
@@ -602,6 +609,14 @@ namespace LeahsPlatinumTracker
                 default:
                     throw new Exception($"Tried to create Tracker instance for unsupported game: \"{Game}\"");
             }
+
+            if (!UsesLogic)
+            {
+                foreach (MapSector sector in MapSectors)
+                {
+                    sector.IsUnlocked = true;
+                }
+            }
         }
 
         // Functions
@@ -696,7 +711,7 @@ namespace LeahsPlatinumTracker
                     if (MapSector.IsLinked(warp1.WarpID))
                     {
                         UnlinkWarp((warp1.MapID, warp1.WarpID));
-                        if (!MapSector.IsAccessible(Checks)) RevertMap(MapSector.MapID);
+                        if (!MapSector.IsAccessible(Checks) && UsesLogic) RevertMap(MapSector.MapID);
                     }
 
                     bool wasUnlocked = MapSector.IsUnlocked;
@@ -704,7 +719,7 @@ namespace LeahsPlatinumTracker
                     if (MapSector.Link(warp1.WarpID, warp2, preserveVisualMarkers))
                     {
                         //if (!wasUnlocked) System.Diagnostics.Debug.WriteLine("Unlocked map: " + MapSector.MapID);
-                        UpdateMap(warp1.MapID);
+                        if (UsesLogic) UpdateMap(warp1.MapID);
                         linked1 = true;
                     };
                 }
@@ -714,7 +729,7 @@ namespace LeahsPlatinumTracker
                     if (MapSector.IsLinked(warp2.WarpID))
                     {
                         UnlinkWarp((warp2.MapID, warp2.WarpID));
-                        if (!MapSector.IsAccessible(Checks)) RevertMap(MapSector.MapID);
+                        if (!MapSector.IsAccessible(Checks) && UsesLogic) RevertMap(MapSector.MapID);
                     }
 
                     bool wasUnlocked = MapSector.IsUnlocked;
@@ -722,7 +737,7 @@ namespace LeahsPlatinumTracker
                     if (MapSector.Link(warp2.WarpID, warp1, preserveVisualMarkers))
                     {
                         //if (!wasUnlocked) System.Diagnostics.Debug.WriteLine("Unlocked map: " + MapSector.MapID);
-                        UpdateMap(warp2.MapID);
+                        if (UsesLogic) UpdateMap(warp2.MapID);
                         linked2 = true;
                     }
                 }
@@ -754,7 +769,7 @@ namespace LeahsPlatinumTracker
                     // Unlink warp, and if this isolates the MapSector then update map
                     if (!MapSector1.Unlink(warp.WarpID, preserveVisualMarkers))
                     {
-                        if (!MapSector1.IsAccessible(Checks)) RevertMap(MapSector1.MapID);
+                        if (!MapSector1.IsAccessible(Checks) && UsesLogic) RevertMap(MapSector1.MapID);
                     };
                     // loop to find destination and unlink
                     foreach (MapSector MapSector2 in MapSectors)
@@ -764,7 +779,7 @@ namespace LeahsPlatinumTracker
                             // Unlink warp, and if this isolates the MapSector then update map
                             if (!MapSector2.Unlink(destinationID, preserveVisualMarkers))
                             {
-                                if (!MapSector2.IsAccessible(Checks)) RevertMap(MapSector2.MapID);
+                                if (!MapSector2.IsAccessible(Checks) && UsesLogic) RevertMap(MapSector2.MapID);
                             };
                             break;
                         }
@@ -871,8 +886,10 @@ namespace LeahsPlatinumTracker
             {
                 tracker = new Tracker((string)loadedTracker.Game);
 
-                tracker.CreatedVersion = loadedTracker.CreatedVersion;
+                tracker.CreatedVersion = new Version((string)loadedTracker.CreatedVersion);
                 tracker.UserNotes = loadedTracker.UserNotes ?? "";
+                if (tracker.CreatedVersion < new Version("1.1.0")) tracker.UsesLogic = true;
+                else tracker.UsesLogic = loadedTracker.UsesLogic;
 
                 tracker.Checks = new PlatinumChecks();
                 tracker.Checks.ChecksMade = loadedTracker.Checks.ChecksMade;
@@ -895,8 +912,8 @@ namespace LeahsPlatinumTracker
                             int thisWarpID = JSONWarp.WarpID;
 
                             // Invalid warps from older versions
-                            if (tracker.CreatedVersion == "0.1.0" && (thisWarpID == 1 && thisMapID == "MtCoronet 2F B")) continue;
-                            if (tracker.CreatedVersion == "0.1.0" && (thisWarpID == 3 && thisMapID == "SurvivalArea A")) continue;
+                            if (tracker.CreatedVersion.CompareTo(new Version("0.1.0")) == 0 && (thisWarpID == 1 && thisMapID == "MtCoronet 2F B")) continue;
+                            if (tracker.CreatedVersion.CompareTo(new Version("0.1.0")) == 0 && (thisWarpID == 3 && thisMapID == "SurvivalArea A")) continue;
 
                             Warp thisWarp = thisMapSector.Warps[thisWarpID];
                             string thisWarpDestinationMapID = JSONWarp.Destination.Item1;
@@ -922,4 +939,5 @@ namespace LeahsPlatinumTracker
             return tracker;
         }
     }
+
 }

@@ -53,7 +53,7 @@ namespace LeahsPlatinumTracker
         public void UpdateAppearance()
         {
             if (parent == null) Init();
-            if (MeetsUnlockedCriteria()){
+            if (MeetsUnlockedCriteria() || !Player.UsesLogic){
                 // regular visuals, unlocked
                 ForeColor = Color.White;
                 BackColor = Color.FromArgb(255, 73, 180, 111);
@@ -73,7 +73,7 @@ namespace LeahsPlatinumTracker
         {
             if (ButtonToolTip == null)
             {
-                if (MeetsUnlockedCriteria()) return;
+                if (MeetsUnlockedCriteria() || !Player.UsesLogic) return;
                 else
                 {
                     ButtonToolTip = new ToolTip
