@@ -109,10 +109,18 @@
         /// <em>e.g; in Pokémon Platinum, a given value of 65 requires Rock Climb (64), Icicle Badge (64), Rock Smash (1) and Coal Badge (1).</em>  <br />
         /// </summary>
         /// <param name="flags">The given integer to be converted to enum.</param>
-        public Checks(int flags)
+        /// <param name="HMMaxValue">The max integer available</param>
+        public Checks(int flags, int HMMaxValue = -1)
         {
             Progress = flags;
-            HMs = flags;
+            if (HMMaxValue < 0) HMs = flags;
+            else
+            {
+                // gets all flags that fall within bounds
+                int max = int.MaxValue;
+                int bounds = max - HMMaxValue;
+                HMs = ~bounds & flags;
+            }
         }
 
         // Methods

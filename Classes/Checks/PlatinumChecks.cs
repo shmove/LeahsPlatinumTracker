@@ -115,7 +115,7 @@
         /// <em>e.g; in Pokémon Platinum, a given value of 65 requires Rock Climb (64), Icicle Badge (64), Rock Smash (1) and Coal Badge (1).</em>  <br />
         /// </summary>
         /// <param name="flags">The given integer to be converted to enum.</param>
-        public PlatinumChecks(int flags): base(flags) {}
+        public PlatinumChecks(int flags): base(flags, (int)Enum.GetValues(typeof(HMFlags)).Cast<HMFlags>().Sum(f => Convert.ToDouble(f))) {}
 
         /// <summary>
         /// Complex flag constructor. Can be given any amount of flags in any order. Flags of different categories must be passed separately.
