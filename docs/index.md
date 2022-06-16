@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Downloading
 Download and run `LPTSetup.exe` from the most recent release on the [Releases](https://github.com/shmove/LeahsPlatinumTracker/releases) page, then subsequently launch from the desktop icon.
 
