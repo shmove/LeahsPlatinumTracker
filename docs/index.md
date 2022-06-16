@@ -10,8 +10,6 @@ This tracker has the ability to:
 ## Usage
 Areas can be navigated by clicking between their associated buttons from the top and right hand sections for locations and routes respectively.	<br />
 
-<br />
-
 <b>Colour coding</b>
 - *Grey* areas are considered inaccessible to the player.
 - *Blue* areas contain warps that haven't been checked yet.
@@ -19,18 +17,12 @@ Areas can be navigated by clicking between their associated buttons from the top
 - *Green* areas are considered fully checked for what is currently accessible.
 - *Darker green* areas signify an area that is completely checked of all of its warps.
 
-<br />
-
 <b>Linking</b>
 - Each warp can be linked by selecting it, clicking the link button and then selecting another warp. Linked warps can be middle-clicked on to instantly load their destination page. <br />
 - Each warp can also be given a marker by selecting it and choosing a marker from the left hand side, or simply right clicking to mark the warp as a dead end.
 
-<br />
-
 <b>Markers</b>
 - Markers selected from the upper section are considered as 'Check-Locks' to the tracker, and an area won't display as completed unless the associated warps are linked, or have their markers changed to one from the lower section.
-
-<br />
 
 <b>Checks</b>
 - Checks are managed by clicking / right clicking on their icons in the bottom left. 

@@ -1,5 +1,4 @@
 
 description: An advanced tracker for Pokémon Platinum Warp Randomisers.
-logo: ../Resources/Pictures/Logo.png
-theme: jekyll-theme-minimal
-title: Leah\'s Platinum Tracker
+logo: ./Resources/Pictures/Logo.png
+title: Leah's Platinum Tracker
