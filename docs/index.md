@@ -1,6 +1,5 @@
----
-layout: default
----
+This tracker is intended to be used with PointCrow's Universal Warp Randomiser.
+
 ## Downloading
 Download and run `LPTSetup.exe` from the most recent release on the [Releases](https://github.com/shmove/LeahsPlatinumTracker/releases) page, then subsequently launch from the desktop icon.
 
