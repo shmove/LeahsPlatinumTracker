@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/shmove/LeahsPlatinumTracker/blob/master/Resources/Pictures/Logo.png" width="600"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/shmove/LeahsPlatinumTracker/master/Resources/Pictures/Logo.png" width="600"></p>
 <p align="center">An advanced tracker for Pokémon Platinum Warp Randomisers.<br />Intended to be used with PointCrow's Universal Warp Randomiser.</p>
 
 ## Downloading
