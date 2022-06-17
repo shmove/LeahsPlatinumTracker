@@ -33,5 +33,5 @@ If you find any bugs or have any feature requests, please message me on Discord 
 - Spriters Resource
 	- spaceemotion - NPC overworld sprites (Pt), Area Icons (Pt)
 	- KillerAslox - Key Item sprites (D/P)
-	- Pokencyclopedia SpriteDex (Shaymin sprites)
+- Pokencyclopedia SpriteDex (Shaymin sprites)
 - Cat333Pokémon - [Pokémon fonts](http://www.victoryroad.net/showthread.php?t=1507)
