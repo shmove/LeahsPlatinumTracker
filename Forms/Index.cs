@@ -96,29 +96,20 @@ namespace LeahsPlatinumTracker
 
         private async Task CheckForUpdates()
         {
-            ReleaseEntry release = null;
             var updateInfo = await Manager.CheckForUpdate();
 
             if (updateInfo.ReleasesToApply.Count > 0)
             {
                 DialogResult updateDialog = 
                     MessageBox.Show(
-                        "Your version of Leah's Platinum Tracker is outdated. Do you want to install the new version?" +
-                        "\n(Current version: v" + updateInfo.CurrentlyInstalledVersion.Version + ")" +
-                        "\n(New version: v" + updateInfo.FutureReleaseEntry.Version + ")",
-                            
-                        "New update available", 
-                        MessageBoxButtons.YesNo
+                        "Your version of Leah's Platinum Tracker is outdated (v" + updateInfo.CurrentlyInstalledVersion.Version + "). Do you want to install the new version (v" + updateInfo.FutureReleaseEntry.Version + ")?",
+                        "New update available",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Asterisk
                     );
                 if (updateDialog == DialogResult.Yes)
                 {
-                    release = await Manager.UpdateApp();
-                }
-
-                if (release != null)
-                {
-                    MessageBox.Show("Successfully updated! Restarting application...", "Update successful");
-                    UpdateManager.RestartApp();
+                    UpdateManager.RestartApp($"\"{Path.Combine(await Manager.ApplyReleases(updateInfo), "Leah's Platinum Tracker.exe")}\"");
                 }
             }
         }
