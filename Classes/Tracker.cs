@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace LeahsPlatinumTracker
 {
     /// <summary>
-    /// <see cref="Tracker"/> class. This is version 0.1.1 of Leah's Platinum Tracker.  <br/>
+    /// <see cref="Tracker"/> class. This is version 1.1.1 of Leah's Platinum Tracker.  <br/>
     ///                                                                                 <br/>
     /// This version supports:                                                          <br/>
     ///     - Pokemon Platinum.                                                         <br/>
@@ -888,7 +888,7 @@ namespace LeahsPlatinumTracker
 
                 tracker.CreatedVersion = new Version((string)loadedTracker.CreatedVersion);
                 tracker.UserNotes = loadedTracker.UserNotes ?? "";
-                if (tracker.CreatedVersion < new Version("1.1.1")) tracker.UsesLogic = true;
+                if (tracker.CreatedVersion < new Version("1.1.0")) tracker.UsesLogic = true; // logic bool implementation version
                 else tracker.UsesLogic = loadedTracker.UsesLogic;
 
                 tracker.Checks = new PlatinumChecks();

@@ -19,5 +19,5 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("LeahsPlatinumTracker")]
 [assembly: AssemblyDescription("A tracker for Pokémon Map Randomisers.")]
-[assembly: AssemblyVersion("1.1.0")]
-[assembly: AssemblyFileVersion("1.1.0")]
+[assembly: AssemblyVersion("1.1.1")]
+[assembly: AssemblyFileVersion("1.1.1")]
