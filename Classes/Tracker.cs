@@ -465,7 +465,7 @@ namespace LeahsPlatinumTracker
                     VisualMapSectors.Add(new VisualMapSector(this, new MapSector("Poketch", 3), "Pokétch")); // self contained
                     VisualMapSectors.Add(new VisualMapSector(this, "ResortArea", new List<MapSector>
                     {
-                        new MapSector("ResortArea", 2, new List<Condition>
+                        new MapSector("ResortArea", 4, new List<Condition>
                         {
                             new Condition("FightArea", new PlatinumChecks(16)), // surf through 230 to fight area
                             new Condition("228"),
@@ -888,7 +888,7 @@ namespace LeahsPlatinumTracker
 
                 tracker.CreatedVersion = new Version((string)loadedTracker.CreatedVersion);
                 tracker.UserNotes = loadedTracker.UserNotes ?? "";
-                if (tracker.CreatedVersion < new Version("1.1.0")) tracker.UsesLogic = true;
+                if (tracker.CreatedVersion < new Version("1.1.1")) tracker.UsesLogic = true;
                 else tracker.UsesLogic = loadedTracker.UsesLogic;
 
                 tracker.Checks = new PlatinumChecks();

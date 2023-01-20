@@ -38,6 +38,8 @@
             this.warpButton4 = new LeahsPlatinumTracker.WarpButton();
             this.warpButton5 = new LeahsPlatinumTracker.WarpButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.warpButton6 = new LeahsPlatinumTracker.WarpButton();
+            this.warpButton7 = new LeahsPlatinumTracker.WarpButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -212,12 +214,54 @@
             this.pictureBox2.TabIndex = 64;
             this.pictureBox2.TabStop = false;
             // 
+            // warpButton6
+            // 
+            this.warpButton6.associatedWarp = null;
+            this.warpButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.warpButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.warpButton6.FlatAppearance.BorderSize = 2;
+            this.warpButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.warpButton6.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.warpButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.warpButton6.Location = new System.Drawing.Point(341, 270);
+            this.warpButton6.MapID = "ResortArea";
+            this.warpButton6.Name = "warpButton6";
+            this.warpButton6.selected = false;
+            this.warpButton6.Size = new System.Drawing.Size(107, 23);
+            this.warpButton6.TabIndex = 65;
+            this.warpButton6.Text = "warpButton6";
+            this.warpButton6.UseCompatibleTextRendering = true;
+            this.warpButton6.UseVisualStyleBackColor = false;
+            this.warpButton6.WarpID = 2;
+            // 
+            // warpButton7
+            // 
+            this.warpButton7.associatedWarp = null;
+            this.warpButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.warpButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.warpButton7.FlatAppearance.BorderSize = 2;
+            this.warpButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.warpButton7.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.warpButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.warpButton7.Location = new System.Drawing.Point(373, 90);
+            this.warpButton7.MapID = "ResortArea";
+            this.warpButton7.Name = "warpButton7";
+            this.warpButton7.selected = false;
+            this.warpButton7.Size = new System.Drawing.Size(107, 23);
+            this.warpButton7.TabIndex = 66;
+            this.warpButton7.Text = "warpButton7";
+            this.warpButton7.UseCompatibleTextRendering = true;
+            this.warpButton7.UseVisualStyleBackColor = false;
+            this.warpButton7.WarpID = 3;
+            // 
             // ResortArea
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(996, 802);
+            this.Controls.Add(this.warpButton7);
+            this.Controls.Add(this.warpButton6);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.warpButton5);
             this.Controls.Add(this.warpButton4);
@@ -251,5 +295,7 @@
         private WarpButton warpButton4;
         private WarpButton warpButton5;
         private PictureBox pictureBox2;
+        private WarpButton warpButton6;
+        private WarpButton warpButton7;
     }
 }
