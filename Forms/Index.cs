@@ -109,7 +109,10 @@ namespace LeahsPlatinumTracker
                     );
                 if (updateDialog == DialogResult.Yes)
                 {
-                    UpdateManager.RestartApp($"\"{Path.Combine(await Manager.ApplyReleases(updateInfo), "Leah's Platinum Tracker.exe")}\"");
+                    Cursor.Current = Cursors.WaitCursor;
+                    string path = await Manager.ApplyReleases(updateInfo);
+                    Cursor.Current = Cursors.Default;
+                    UpdateManager.RestartApp($"\"{Path.Combine(path, "Leah's Platinum Tracker.exe")}\"");
                 }
             }
         }
