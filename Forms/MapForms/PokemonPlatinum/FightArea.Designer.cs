@@ -40,6 +40,7 @@
             this.warpButton8 = new LeahsPlatinumTracker.WarpButton();
             this.routeConnectorButton1 = new LeahsPlatinumTracker.RouteConnectorButton();
             this.routeConnectorButton2 = new LeahsPlatinumTracker.RouteConnectorButton();
+            this.warpButton9 = new LeahsPlatinumTracker.WarpButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -263,12 +264,33 @@
             this.routeConnectorButton2.UseCompatibleTextRendering = true;
             this.routeConnectorButton2.UseVisualStyleBackColor = false;
             // 
+            // warpButton9
+            // 
+            this.warpButton9.associatedWarp = null;
+            this.warpButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(183)))), ((int)(((byte)(214)))));
+            this.warpButton9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(146)))), ((int)(((byte)(190)))));
+            this.warpButton9.FlatAppearance.BorderSize = 2;
+            this.warpButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.warpButton9.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.warpButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(82)))), ((int)(((byte)(129)))));
+            this.warpButton9.Location = new System.Drawing.Point(633, 78);
+            this.warpButton9.MapID = "FightArea";
+            this.warpButton9.Name = "warpButton9";
+            this.warpButton9.selected = false;
+            this.warpButton9.Size = new System.Drawing.Size(107, 23);
+            this.warpButton9.TabIndex = 53;
+            this.warpButton9.Text = "warpButton9";
+            this.warpButton9.UseCompatibleTextRendering = true;
+            this.warpButton9.UseVisualStyleBackColor = false;
+            this.warpButton9.WarpID = 5;
+            // 
             // FightArea
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
             this.ClientSize = new System.Drawing.Size(996, 802);
+            this.Controls.Add(this.warpButton9);
             this.Controls.Add(this.routeConnectorButton2);
             this.Controls.Add(this.routeConnectorButton1);
             this.Controls.Add(this.warpButton8);
@@ -305,5 +327,6 @@
         private WarpButton warpButton8;
         private RouteConnectorButton routeConnectorButton1;
         private RouteConnectorButton routeConnectorButton2;
+        private WarpButton warpButton9;
     }
 }

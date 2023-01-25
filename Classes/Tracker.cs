@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace LeahsPlatinumTracker
 {
     /// <summary>
-    /// <see cref="Tracker"/> class. This is version 1.1.1 of Leah's Platinum Tracker.  <br/>
+    /// <see cref="Tracker"/> class.                                                    <br/>
     ///                                                                                 <br/>
     /// This version supports:                                                          <br/>
     ///     - Pokemon Platinum.                                                         <br/>
@@ -301,7 +301,7 @@ namespace LeahsPlatinumTracker
                     }, "T.G. Eterna"));
                     VisualMapSectors.Add(new VisualMapSector(this, "FightArea", new List<MapSector>
                     {
-                        new MapSector("FightArea", 5, new List<Condition>
+                        new MapSector("FightArea", 6, new List<Condition>
                         {
                             new Condition("ResortArea", new PlatinumChecks(16)), // Accessible via ResortArea/229 if Surf through 230
                             new Condition("Snowpoint", new PlatinumChecks(PlatinumChecks.ProgressFlags.HasCynthia)), // can get here from Snowpoint, but only postgame
