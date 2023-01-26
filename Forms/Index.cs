@@ -96,6 +96,7 @@ namespace LeahsPlatinumTracker
 
         private async Task CheckForUpdates()
         {
+            ReleaseEntry release = null;
             var updateInfo = await Manager.CheckForUpdate();
 
             if (updateInfo.ReleasesToApply.Count > 0)
@@ -110,9 +111,19 @@ namespace LeahsPlatinumTracker
                 if (updateDialog == DialogResult.Yes)
                 {
                     Cursor.Current = Cursors.WaitCursor;
-                    string path = await Manager.ApplyReleases(updateInfo);
+                    release = await Manager.UpdateApp();
                     Cursor.Current = Cursors.Default;
-                    UpdateManager.RestartApp($"\"{Path.Combine(path, "Leah's Platinum Tracker.exe")}\"");
+                }
+
+                if (release != null)
+                {
+                    MessageBox.Show(
+                        "Successfully updated! Please relaunch the application.",
+                        "Update successful",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Asterisk
+                    );
+                    UpdateManager.RestartApp();
                 }
             }
         }
