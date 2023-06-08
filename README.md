@@ -23,7 +23,7 @@ Checks are managed by clicking / right clicking on their icons in the bottom lef
 Right clicking marks a check as found/discovered, but doesn't consider it usable in terms of tracking. <!--(for example; marking surf and gym 5 as discovered won't unlock any sections of the map, but once they are both marked as unlocked, sections blocked by a surf check will open up.)-->
 
 ## Contact
-If you find any bugs or have any feature requests, please message me on Discord (@shmove#0615), or create an issue on the GitHub repository.
+If you find any bugs or have any feature requests, please message me on Discord (@shmove), or create an issue on the GitHub repository.
 
 ## Acknowledgements
 - [SaltContainer's Pokémon Platinum EmoTracker pack](https://github.com/SaltContainer/PokemonPlatinumMapRandoTracker)
