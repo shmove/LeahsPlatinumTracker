@@ -29,7 +29,7 @@ Areas can be navigated by clicking between their associated buttons from the top
 - Right clicking marks a check as discovered, but doesn't consider it usable in terms of tracking. <em>(for example, in Pokémon Platinum; marking Surf and Gym 5 as discovered won't unlock any sections of the map, but once they are both marked as unlocked, sections blocked by a Surf check will open up.)</em>
 
 ## Contact
-If you find any bugs or have any feature requests, please message me on Discord (@shmove#0615), or create an issue on the GitHub repository.
+If you find any bugs or have any feature requests, please message me on Discord (@shmove), or create an issue on the GitHub repository.
 
 ## Acknowledgements
 - [SaltContainer's Pokémon Platinum EmoTracker pack](https://github.com/SaltContainer/PokemonPlatinumMapRandoTracker)
